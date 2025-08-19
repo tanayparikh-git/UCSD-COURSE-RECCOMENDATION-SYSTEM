@@ -34,30 +34,33 @@ class AIService {
       console.log("aiService: Searching for query:", query);
       console.log("aiService: Using Supabase URL:", this.supabaseUrl);
       
-      // First, get courses from Supabase
-      const searchParams = new URLSearchParams({
+      // First, try to get all courses to see the structure
+      const testParams = new URLSearchParams({
         select: "*",
-        or: `course_name.ilike.%${query}%,course_code.ilike.%${query}%,course_description.ilike.%${query}%`,
-        limit: limit.toString(),
+        limit: "5",
       });
 
-      const url = `${this.supabaseUrl}/courses?${searchParams}`;
-      console.log("aiService: Making request to:", url);
+      const testUrl = `${this.supabaseUrl}/courses?${testParams}`;
+      console.log("aiService: Testing with URL:", testUrl);
 
-      const response = await fetch(url, {
+      const testResponse = await fetch(testUrl, {
         headers: {
           apikey: this.supabaseKey,
           Authorization: `Bearer ${this.supabaseKey}`,
         },
       });
 
-      console.log("aiService: Response status:", response.status);
+      console.log("aiService: Test response status:", testResponse.status);
 
-      if (!response.ok) {
-        throw new Error(`Failed to fetch courses: ${response.status}`);
+      if (!testResponse.ok) {
+        throw new Error(`Failed to fetch courses: ${testResponse.status} - ${testResponse.statusText}`);
       }
 
-      const courses: Course[] = await response.json();
+      const testCourses = await testResponse.json();
+      console.log("aiService: Test courses structure:", testCourses);
+
+      // For now, just return the test courses as a fallback
+      const courses: Course[] = testCourses;
       console.log("aiService: Found courses:", courses.length);
 
       // Get AI recommendations if we have courses
