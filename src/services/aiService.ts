@@ -242,6 +242,34 @@ class AIService {
       }
     }
 
+    // Engineering & Design
+    if (searchTerm.includes('engineering') || searchTerm.includes('design') || searchTerm.includes('mechanical') || searchTerm.includes('electrical') || searchTerm.includes('thermodynamics') || searchTerm.includes('fluid mechanics') || searchTerm.includes('heat transfer') || searchTerm.includes('dynamics') || searchTerm.includes('vibrations') || searchTerm.includes('circuits') || searchTerm.includes('electronics') || searchTerm.includes('signal processing')) {
+      if (courseCode.startsWith('mae') || courseCode.startsWith('ece') || courseDesc.includes('engineering') || courseDesc.includes('design') || courseDesc.includes('thermodynamics') || courseDesc.includes('fluid mechanics') || courseDesc.includes('heat transfer') || courseDesc.includes('dynamics') || courseDesc.includes('vibrations') || courseDesc.includes('circuits') || courseDesc.includes('electronics') || courseDesc.includes('signal processing')) {
+        return 0.6;
+      }
+    }
+
+    // Business & Management
+    if (searchTerm.includes('business') || searchTerm.includes('management') || searchTerm.includes('marketing') || searchTerm.includes('finance') || searchTerm.includes('accounting') || searchTerm.includes('strategy') || searchTerm.includes('operations') || searchTerm.includes('supply chain') || searchTerm.includes('investment') || searchTerm.includes('corporate') || searchTerm.includes('organizational')) {
+      if (courseCode.startsWith('mgt') || courseDesc.includes('business') || courseDesc.includes('management') || courseDesc.includes('marketing') || courseDesc.includes('finance') || courseDesc.includes('accounting') || courseDesc.includes('operations') || courseDesc.includes('supply chain') || courseDesc.includes('investment') || courseDesc.includes('corporate') || courseDesc.includes('organizational')) {
+        return 0.6;
+      }
+    }
+
+    // Communication & Media
+    if (searchTerm.includes('communication') || searchTerm.includes('media') || searchTerm.includes('public speaking') || searchTerm.includes('journalism') || searchTerm.includes('digital media') || searchTerm.includes('interpersonal') || searchTerm.includes('argumentation') || searchTerm.includes('debate') || searchTerm.includes('persuasion') || searchTerm.includes('social media')) {
+      if (courseCode.startsWith('comm') || courseDesc.includes('communication') || courseDesc.includes('media') || courseDesc.includes('public speaking') || courseDesc.includes('journalism') || courseDesc.includes('interpersonal') || courseDesc.includes('argumentation') || courseDesc.includes('debate') || courseDesc.includes('persuasion') || courseDesc.includes('social media')) {
+        return 0.6;
+      }
+    }
+
+    // Literature & Writing
+    if (searchTerm.includes('literature') || searchTerm.includes('writing') || searchTerm.includes('poetry') || searchTerm.includes('fiction') || searchTerm.includes('creative writing') || searchTerm.includes('drama') || searchTerm.includes('narrative') || searchTerm.includes('character') || searchTerm.includes('story') || searchTerm.includes('theatrical') || searchTerm.includes('performance') || searchTerm.includes('literary analysis')) {
+      if (courseCode.startsWith('lit') || courseDesc.includes('literature') || courseDesc.includes('writing') || courseDesc.includes('poetry') || courseDesc.includes('fiction') || courseDesc.includes('drama') || courseDesc.includes('narrative') || courseDesc.includes('character') || courseDesc.includes('story') || courseDesc.includes('theatrical') || courseDesc.includes('performance') || courseDesc.includes('literary analysis')) {
+        return 0.6;
+      }
+    }
+
     return 0;
   }
 
