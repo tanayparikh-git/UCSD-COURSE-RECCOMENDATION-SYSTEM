@@ -3238,4 +3238,464 @@ export const courseDatabase: CourseData[] = [
       "Theater production including technical theater, stage management, and theatrical logistics.",
     prerequisites: "TDGE 1",
   },
+
+  // Additional German Language Courses
+  {
+    id: "351",
+    course_code: "GERM 1",
+    course_name: "Elementary German I",
+    course_units: "4",
+    course_description:
+      "Elementary German I including basic grammar, vocabulary, and communication skills for beginners.",
+    prerequisites: "None",
+  },
+  {
+    id: "352",
+    course_code: "GERM 2",
+    course_name: "Elementary German II",
+    course_units: "4",
+    course_description:
+      "Elementary German II including intermediate grammar, vocabulary, and communication skills.",
+    prerequisites: "GERM 1",
+  },
+  {
+    id: "353",
+    course_code: "GERM 3",
+    course_name: "Intermediate German I",
+    course_units: "4",
+    course_description:
+      "Intermediate German I including advanced grammar, reading comprehension, and cultural studies.",
+    prerequisites: "GERM 2",
+  },
+  {
+    id: "354",
+    course_code: "GERM 4",
+    course_name: "Intermediate German II",
+    course_units: "4",
+    course_description:
+      "Intermediate German II including advanced conversation, composition, and German literature.",
+    prerequisites: "GERM 3",
+  },
+  {
+    id: "355",
+    course_code: "GERM 5",
+    course_name: "Advanced German",
+    course_units: "4",
+    course_description:
+      "Advanced German including advanced composition, literary analysis, and cultural studies.",
+    prerequisites: "GERM 4",
+  },
+  {
+    id: "356",
+    course_code: "GERM 100",
+    course_name: "German Literature",
+    course_units: "4",
+    course_description:
+      "German literature including major works, literary analysis, and cultural context.",
+    prerequisites: "GERM 5",
+  },
+  {
+    id: "357",
+    course_code: "GERM 101",
+    course_name: "German Culture",
+    course_units: "4",
+    course_description:
+      "German culture including history, art, music, and contemporary German society.",
+    prerequisites: "GERM 4",
+  },
+  {
+    id: "358",
+    course_code: "GERM 102",
+    course_name: "German Cinema",
+    course_units: "4",
+    course_description:
+      "German cinema including film analysis, German film history, and cultural context.",
+    prerequisites: "GERM 4",
+  },
+  {
+    id: "359",
+    course_code: "GERM 103",
+    course_name: "German Linguistics",
+    course_units: "4",
+    course_description:
+      "German linguistics including German phonology, morphology, syntax, and dialectal variation.",
+    prerequisites: "LING 1, GERM 4",
+  },
+  {
+    id: "360",
+    course_code: "GERM 104",
+    course_name: "German Translation",
+    course_units: "4",
+    course_description:
+      "German translation including translation theory, techniques, and practical translation exercises.",
+    prerequisites: "GERM 5",
+  },
+
+  // Additional Chinese Language Courses
+  {
+    id: "361",
+    course_code: "CHIN 1",
+    course_name: "Elementary Chinese I",
+    course_units: "4",
+    course_description:
+      "Elementary Chinese I including basic grammar, vocabulary, and communication skills for beginners.",
+    prerequisites: "None",
+  },
+  {
+    id: "362",
+    course_code: "CHIN 2",
+    course_name: "Elementary Chinese II",
+    course_units: "4",
+    course_description:
+      "Elementary Chinese II including intermediate grammar, vocabulary, and communication skills.",
+    prerequisites: "CHIN 1",
+  },
+  {
+    id: "363",
+    course_code: "CHIN 3",
+    course_name: "Intermediate Chinese I",
+    course_units: "4",
+    course_description:
+      "Intermediate Chinese I including advanced grammar, reading comprehension, and cultural studies.",
+    prerequisites: "CHIN 2",
+  },
+  {
+    id: "364",
+    course_code: "CHIN 4",
+    course_name: "Intermediate Chinese II",
+    course_units: "4",
+    course_description:
+      "Intermediate Chinese II including advanced conversation, composition, and Chinese literature.",
+    prerequisites: "CHIN 3",
+  },
+  {
+    id: "365",
+    course_code: "CHIN 5",
+    course_name: "Advanced Chinese",
+    course_units: "4",
+    course_description:
+      "Advanced Chinese including advanced composition, literary analysis, and cultural studies.",
+    prerequisites: "CHIN 4",
+  },
+  {
+    id: "366",
+    course_code: "CHIN 100",
+    course_name: "Chinese Literature",
+    course_units: "4",
+    course_description:
+      "Chinese literature including major works, literary analysis, and cultural context.",
+    prerequisites: "CHIN 5",
+  },
+  {
+    id: "367",
+    course_code: "CHIN 101",
+    course_name: "Chinese Culture",
+    course_units: "4",
+    course_description:
+      "Chinese culture including history, art, philosophy, and contemporary Chinese society.",
+    prerequisites: "CHIN 4",
+  },
+  {
+    id: "368",
+    course_code: "CHIN 102",
+    course_name: "Chinese Calligraphy",
+    course_units: "4",
+    course_description:
+      "Chinese calligraphy including brush techniques, character writing, and artistic expression.",
+    prerequisites: "CHIN 2",
+  },
+  {
+    id: "369",
+    course_code: "CHIN 103",
+    course_name: "Chinese Linguistics",
+    course_units: "4",
+    course_description:
+      "Chinese linguistics including Chinese phonology, morphology, syntax, and dialectal variation.",
+    prerequisites: "LING 1, CHIN 4",
+  },
+  {
+    id: "370",
+    course_code: "CHIN 104",
+    course_name: "Chinese Translation",
+    course_units: "4",
+    course_description:
+      "Chinese translation including translation theory, techniques, and practical translation exercises.",
+    prerequisites: "CHIN 5",
+  },
+
+  // Additional Japanese Language Courses
+  {
+    id: "371",
+    course_code: "JAPN 1",
+    course_name: "Elementary Japanese I",
+    course_units: "4",
+    course_description:
+      "Elementary Japanese I including basic grammar, vocabulary, and communication skills for beginners.",
+    prerequisites: "None",
+  },
+  {
+    id: "372",
+    course_code: "JAPN 2",
+    course_name: "Elementary Japanese II",
+    course_units: "4",
+    course_description:
+      "Elementary Japanese II including intermediate grammar, vocabulary, and communication skills.",
+    prerequisites: "JAPN 1",
+  },
+  {
+    id: "373",
+    course_code: "JAPN 3",
+    course_name: "Intermediate Japanese I",
+    course_units: "4",
+    course_description:
+      "Intermediate Japanese I including advanced grammar, reading comprehension, and cultural studies.",
+    prerequisites: "JAPN 2",
+  },
+  {
+    id: "374",
+    course_code: "JAPN 4",
+    course_name: "Intermediate Japanese II",
+    course_units: "4",
+    course_description:
+      "Intermediate Japanese II including advanced conversation, composition, and Japanese literature.",
+    prerequisites: "JAPN 3",
+  },
+  {
+    id: "375",
+    course_code: "JAPN 5",
+    course_name: "Advanced Japanese",
+    course_units: "4",
+    course_description:
+      "Advanced Japanese including advanced composition, literary analysis, and cultural studies.",
+    prerequisites: "JAPN 4",
+  },
+  {
+    id: "376",
+    course_code: "JAPN 100",
+    course_name: "Japanese Literature",
+    course_units: "4",
+    course_description:
+      "Japanese literature including major works, literary analysis, and cultural context.",
+    prerequisites: "JAPN 5",
+  },
+  {
+    id: "377",
+    course_code: "JAPN 101",
+    course_name: "Japanese Culture",
+    course_units: "4",
+    course_description:
+      "Japanese culture including history, art, philosophy, and contemporary Japanese society.",
+    prerequisites: "JAPN 4",
+  },
+  {
+    id: "378",
+    course_code: "JAPN 102",
+    course_name: "Japanese Cinema",
+    course_units: "4",
+    course_description:
+      "Japanese cinema including film analysis, Japanese film history, and cultural context.",
+    prerequisites: "JAPN 4",
+  },
+  {
+    id: "379",
+    course_code: "JAPN 103",
+    course_name: "Japanese Linguistics",
+    course_units: "4",
+    course_description:
+      "Japanese linguistics including Japanese phonology, morphology, syntax, and dialectal variation.",
+    prerequisites: "LING 1, JAPN 4",
+  },
+  {
+    id: "380",
+    course_code: "JAPN 104",
+    course_name: "Japanese Translation",
+    course_units: "4",
+    course_description:
+      "Japanese translation including translation theory, techniques, and practical translation exercises.",
+    prerequisites: "JAPN 5",
+  },
+
+  // Additional Korean Language Courses
+  {
+    id: "381",
+    course_code: "KORE 1",
+    course_name: "Elementary Korean I",
+    course_units: "4",
+    course_description:
+      "Elementary Korean I including basic grammar, vocabulary, and communication skills for beginners.",
+    prerequisites: "None",
+  },
+  {
+    id: "382",
+    course_code: "KORE 2",
+    course_name: "Elementary Korean II",
+    course_units: "4",
+    course_description:
+      "Elementary Korean II including intermediate grammar, vocabulary, and communication skills.",
+    prerequisites: "KORE 1",
+  },
+  {
+    id: "383",
+    course_code: "KORE 3",
+    course_name: "Intermediate Korean I",
+    course_units: "4",
+    course_description:
+      "Intermediate Korean I including advanced grammar, reading comprehension, and cultural studies.",
+    prerequisites: "KORE 2",
+  },
+  {
+    id: "384",
+    course_code: "KORE 4",
+    course_name: "Intermediate Korean II",
+    course_units: "4",
+    course_description:
+      "Intermediate Korean II including advanced conversation, composition, and Korean literature.",
+    prerequisites: "KORE 3",
+  },
+  {
+    id: "385",
+    course_code: "KORE 5",
+    course_name: "Advanced Korean",
+    course_units: "4",
+    course_description:
+      "Advanced Korean including advanced composition, literary analysis, and cultural studies.",
+    prerequisites: "KORE 4",
+  },
+  {
+    id: "386",
+    course_code: "KORE 100",
+    course_name: "Korean Literature",
+    course_units: "4",
+    course_description:
+      "Korean literature including major works, literary analysis, and cultural context.",
+    prerequisites: "KORE 5",
+  },
+  {
+    id: "387",
+    course_code: "KORE 101",
+    course_name: "Korean Culture",
+    course_units: "4",
+    course_description:
+      "Korean culture including history, art, music, and contemporary Korean society.",
+    prerequisites: "KORE 4",
+  },
+  {
+    id: "388",
+    course_code: "KORE 102",
+    course_name: "Korean Cinema",
+    course_units: "4",
+    course_description:
+      "Korean cinema including film analysis, Korean film history, and cultural context.",
+    prerequisites: "KORE 4",
+  },
+  {
+    id: "389",
+    course_code: "KORE 103",
+    course_name: "Korean Linguistics",
+    course_units: "4",
+    course_description:
+      "Korean linguistics including Korean phonology, morphology, syntax, and dialectal variation.",
+    prerequisites: "LING 1, KORE 4",
+  },
+  {
+    id: "390",
+    course_code: "KORE 104",
+    course_name: "Korean Translation",
+    course_units: "4",
+    course_description:
+      "Korean translation including translation theory, techniques, and practical translation exercises.",
+    prerequisites: "KORE 5",
+  },
+
+  // Additional Italian Language Courses
+  {
+    id: "391",
+    course_code: "ITAL 1",
+    course_name: "Elementary Italian I",
+    course_units: "4",
+    course_description:
+      "Elementary Italian I including basic grammar, vocabulary, and communication skills for beginners.",
+    prerequisites: "None",
+  },
+  {
+    id: "392",
+    course_code: "ITAL 2",
+    course_name: "Elementary Italian II",
+    course_units: "4",
+    course_description:
+      "Elementary Italian II including intermediate grammar, vocabulary, and communication skills.",
+    prerequisites: "ITAL 1",
+  },
+  {
+    id: "393",
+    course_code: "ITAL 3",
+    course_name: "Intermediate Italian I",
+    course_units: "4",
+    course_description:
+      "Intermediate Italian I including advanced grammar, reading comprehension, and cultural studies.",
+    prerequisites: "ITAL 2",
+  },
+  {
+    id: "394",
+    course_code: "ITAL 4",
+    course_name: "Intermediate Italian II",
+    course_units: "4",
+    course_description:
+      "Intermediate Italian II including advanced conversation, composition, and Italian literature.",
+    prerequisites: "ITAL 3",
+  },
+  {
+    id: "395",
+    course_code: "ITAL 5",
+    course_name: "Advanced Italian",
+    course_units: "4",
+    course_description:
+      "Advanced Italian including advanced composition, literary analysis, and cultural studies.",
+    prerequisites: "ITAL 4",
+  },
+  {
+    id: "396",
+    course_code: "ITAL 100",
+    course_name: "Italian Literature",
+    course_units: "4",
+    course_description:
+      "Italian literature including major works, literary analysis, and cultural context.",
+    prerequisites: "ITAL 5",
+  },
+  {
+    id: "397",
+    course_code: "ITAL 101",
+    course_name: "Italian Culture",
+    course_units: "4",
+    course_description:
+      "Italian culture including history, art, music, and contemporary Italian society.",
+    prerequisites: "ITAL 4",
+  },
+  {
+    id: "398",
+    course_code: "ITAL 102",
+    course_name: "Italian Cinema",
+    course_units: "4",
+    course_description:
+      "Italian cinema including film analysis, Italian film history, and cultural context.",
+    prerequisites: "ITAL 4",
+  },
+  {
+    id: "399",
+    course_code: "ITAL 103",
+    course_name: "Italian Linguistics",
+    course_units: "4",
+    course_description:
+      "Italian linguistics including Italian phonology, morphology, syntax, and dialectal variation.",
+    prerequisites: "LING 1, ITAL 4",
+  },
+  {
+    id: "400",
+    course_code: "ITAL 104",
+    course_name: "Italian Translation",
+    course_units: "4",
+    course_description:
+      "Italian translation including translation theory, techniques, and practical translation exercises.",
+    prerequisites: "ITAL 5",
+  },
 ];
