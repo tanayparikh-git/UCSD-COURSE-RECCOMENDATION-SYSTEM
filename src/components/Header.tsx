@@ -30,7 +30,10 @@ export function Header() {
         <nav className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0">
           <ul className="flex flex-wrap justify-center space-x-4 md:space-x-6 mb-2 md:mb-0 md:mr-6">
             <li>
-              <Link to="/" className="hover:text-[#FFCD00] transition-colors text-sm md:text-base">
+              <Link
+                to="/"
+                className="hover:text-[#FFCD00] transition-colors text-sm md:text-base"
+              >
                 Home
               </Link>
             </li>
@@ -56,7 +59,9 @@ export function Header() {
             <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4">
               <div className="flex items-center">
                 <UserIcon size={16} className="mr-2" />
-                <span className="text-xs md:text-sm">{user?.name || user?.email}</span>
+                <span className="text-xs md:text-sm">
+                  {user?.name || user?.email}
+                </span>
               </div>
               <Link
                 to="/profile"

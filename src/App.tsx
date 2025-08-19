@@ -43,6 +43,7 @@ export function App() {
 
   // Search courses with AI recommendations
   const handleSearch = async (query: string) => {
+    console.log("Searching for:", query);
     setSearchQuery(query);
 
     if (!query.trim()) {
@@ -54,17 +55,24 @@ export function App() {
     setIsSearching(true);
 
     try {
+      console.log("Attempting to search with aiService...");
       const result = await aiService.searchCourses(query, 20);
+      console.log("Search result:", result);
       setCourses(result.courses);
       setRecommendations(result.recommendations || []);
     } catch (error) {
       console.error("Search error:", error);
+      console.log("Falling back to mock data...");
+      
       // Fallback to mock data
       const filteredCourses = mockCourses.filter(
         (course) =>
           course.code.toLowerCase().includes(query.toLowerCase()) ||
-          course.name.toLowerCase().includes(query.toLowerCase())
+          course.name.toLowerCase().includes(query.toLowerCase()) ||
+          course.description.toLowerCase().includes(query.toLowerCase())
       );
+
+      console.log("Filtered mock courses:", filteredCourses);
 
       const convertedCourses: Course[] = filteredCourses.map((course) => ({
         id: course.id.toString(),

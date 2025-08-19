@@ -31,6 +31,9 @@ class AIService {
     limit: number = 20
   ): Promise<SearchResult> {
     try {
+      console.log("aiService: Searching for query:", query);
+      console.log("aiService: Using Supabase URL:", this.supabaseUrl);
+      
       // First, get courses from Supabase
       const searchParams = new URLSearchParams({
         select: "*",
@@ -38,18 +41,24 @@ class AIService {
         limit: limit.toString(),
       });
 
-      const response = await fetch(`${this.supabaseUrl}/courses?${searchParams}`, {
+      const url = `${this.supabaseUrl}/courses?${searchParams}`;
+      console.log("aiService: Making request to:", url);
+
+      const response = await fetch(url, {
         headers: {
           apikey: this.supabaseKey,
           Authorization: `Bearer ${this.supabaseKey}`,
         },
       });
 
+      console.log("aiService: Response status:", response.status);
+
       if (!response.ok) {
-        throw new Error("Failed to fetch courses");
+        throw new Error(`Failed to fetch courses: ${response.status}`);
       }
 
       const courses: Course[] = await response.json();
+      console.log("aiService: Found courses:", courses.length);
 
       // Get AI recommendations if we have courses
       let recommendations: AIRecommendation[] = [];
