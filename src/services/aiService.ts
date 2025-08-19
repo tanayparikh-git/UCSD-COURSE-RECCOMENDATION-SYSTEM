@@ -440,14 +440,14 @@ class AIService {
 
     // Computer Science & Programming
     if (searchTerm.includes('computer') || searchTerm.includes('programming') || searchTerm.includes('cs') || searchTerm.includes('software') || searchTerm.includes('algorithm') || searchTerm.includes('data structure')) {
-      if (courseCode.startsWith('cse') || courseCode.startsWith('dsc') || courseDesc.includes('programming') || courseDesc.includes('software') || courseDesc.includes('algorithm') || courseDesc.includes('data structure')) {
+      if (courseCode.startsWith('cse') || courseCode.startsWith('CSE') || courseCode.startsWith('dsc') || courseCode.startsWith('DSC') || courseDesc.includes('programming') || courseDesc.includes('software') || courseDesc.includes('algorithm') || courseDesc.includes('data structure')) {
         return 0.6;
       }
     }
 
     // Mathematics & Calculus
     if (searchTerm.includes('math') || searchTerm.includes('calculus') || searchTerm.includes('algebra') || searchTerm.includes('linear') || searchTerm.includes('analysis') || searchTerm.includes('differential') || searchTerm.includes('integral')) {
-      if (courseCode.startsWith('math') || courseDesc.includes('calculus') || courseDesc.includes('algebra') || courseDesc.includes('analysis') || courseDesc.includes('differential') || courseDesc.includes('integral')) {
+      if (courseCode.startsWith('math') || courseCode.startsWith('MATH') || courseDesc.includes('calculus') || courseDesc.includes('algebra') || courseDesc.includes('analysis') || courseDesc.includes('differential') || courseDesc.includes('integral')) {
         return 0.6;
       }
     }
@@ -461,7 +461,7 @@ class AIService {
 
     // Economics & Game Theory
     if (searchTerm.includes('econ') || searchTerm.includes('economics') || searchTerm.includes('game theory') || searchTerm.includes('microeconomics') || searchTerm.includes('macroeconomics') || searchTerm.includes('econometrics')) {
-      if (courseCode.startsWith('econ') || courseDesc.includes('economics') || courseDesc.includes('game theory') || courseDesc.includes('microeconomics') || courseDesc.includes('macroeconomics') || courseDesc.includes('econometrics')) {
+      if (courseCode.startsWith('econ') || courseCode.startsWith('ECON') || courseDesc.includes('economics') || courseDesc.includes('game theory') || courseDesc.includes('microeconomics') || courseDesc.includes('macroeconomics') || courseDesc.includes('econometrics')) {
         return 0.6;
       }
     }
@@ -482,7 +482,7 @@ class AIService {
 
     // Biology & Life Sciences
     if (searchTerm.includes('bio') || searchTerm.includes('biology') || searchTerm.includes('cell') || searchTerm.includes('genetics') || searchTerm.includes('physiology') || searchTerm.includes('anatomy') || searchTerm.includes('immunology') || searchTerm.includes('neurobiology')) {
-      if (courseCode.startsWith('bild') || courseDesc.includes('biology') || courseDesc.includes('cell') || courseDesc.includes('genetics') || courseDesc.includes('physiology') || courseDesc.includes('anatomy') || courseDesc.includes('immunology') || courseDesc.includes('neurobiology')) {
+      if (courseCode.startsWith('bild') || courseCode.startsWith('BILD') || courseCode.startsWith('biol') || courseCode.startsWith('BIOL') || courseDesc.includes('biology') || courseDesc.includes('cell') || courseDesc.includes('genetics') || courseDesc.includes('physiology') || courseDesc.includes('anatomy') || courseDesc.includes('immunology') || courseDesc.includes('neurobiology')) {
         return 0.6;
       }
     }
