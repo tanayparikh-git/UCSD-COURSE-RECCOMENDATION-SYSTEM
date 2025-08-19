@@ -10598,4 +10598,924 @@ export const courseDatabase: CourseData[] = [
       "IoT research including research methods, experimental design, and IoT research projects.",
     prerequisites: "IOT 1",
   },
+
+  // Additional Hungarian Language Courses
+  {
+    id: "1151",
+    course_code: "HUNG 1",
+    course_name: "Elementary Hungarian I",
+    course_units: "4",
+    course_description:
+      "Elementary Hungarian I including basic grammar, vocabulary, and reading skills for beginners.",
+    prerequisites: "None",
+  },
+  {
+    id: "1152",
+    course_code: "HUNG 2",
+    course_name: "Elementary Hungarian II",
+    course_units: "4",
+    course_description:
+      "Elementary Hungarian II including intermediate grammar, vocabulary, and reading skills.",
+    prerequisites: "HUNG 1",
+  },
+  {
+    id: "1153",
+    course_code: "HUNG 3",
+    course_name: "Intermediate Hungarian I",
+    course_units: "4",
+    course_description:
+      "Intermediate Hungarian I including advanced grammar, reading comprehension, and cultural studies.",
+    prerequisites: "HUNG 2",
+  },
+  {
+    id: "1154",
+    course_code: "HUNG 4",
+    course_name: "Intermediate Hungarian II",
+    course_units: "4",
+    course_description:
+      "Intermediate Hungarian II including advanced reading, composition, and Hungarian literature.",
+    prerequisites: "HUNG 3",
+  },
+  {
+    id: "1155",
+    course_code: "HUNG 5",
+    course_name: "Advanced Hungarian",
+    course_units: "4",
+    course_description:
+      "Advanced Hungarian including advanced reading, literary analysis, and cultural studies.",
+    prerequisites: "HUNG 4",
+  },
+  {
+    id: "1156",
+    course_code: "HUNG 100",
+    course_name: "Hungarian Literature",
+    course_units: "4",
+    course_description:
+      "Hungarian literature including major works, literary analysis, and cultural context.",
+    prerequisites: "HUNG 5",
+  },
+  {
+    id: "1157",
+    course_code: "HUNG 101",
+    course_name: "Modern Hungarian",
+    course_units: "4",
+    course_description:
+      "Modern Hungarian including contemporary Hungarian, modern literature, and current events.",
+    prerequisites: "HUNG 4",
+  },
+  {
+    id: "1158",
+    course_code: "HUNG 102",
+    course_name: "Hungarian Linguistics",
+    course_units: "4",
+    course_description:
+      "Hungarian linguistics including Hungarian phonology, morphology, syntax, and historical linguistics.",
+    prerequisites: "LING 1, HUNG 4",
+  },
+  {
+    id: "1159",
+    course_code: "HUNG 103",
+    course_name: "Hungarian Translation",
+    course_units: "4",
+    course_description:
+      "Hungarian translation including translation theory, techniques, and practical translation exercises.",
+    prerequisites: "HUNG 5",
+  },
+  {
+    id: "1160",
+    course_code: "HUNG 104",
+    course_name: "Hungarian Culture",
+    course_units: "4",
+    course_description:
+      "Hungarian culture including cultural studies, traditions, and contemporary Hungarian society.",
+    prerequisites: "HUNG 3",
+  },
+
+  // Additional Czech Language Courses
+  {
+    id: "1161",
+    course_code: "CZEC 1",
+    course_name: "Elementary Czech I",
+    course_units: "4",
+    course_description:
+      "Elementary Czech I including basic grammar, vocabulary, and reading skills for beginners.",
+    prerequisites: "None",
+  },
+  {
+    id: "1162",
+    course_code: "CZEC 2",
+    course_name: "Elementary Czech II",
+    course_units: "4",
+    course_description:
+      "Elementary Czech II including intermediate grammar, vocabulary, and reading skills.",
+    prerequisites: "CZEC 1",
+  },
+  {
+    id: "1163",
+    course_code: "CZEC 3",
+    course_name: "Intermediate Czech I",
+    course_units: "4",
+    course_description:
+      "Intermediate Czech I including advanced grammar, reading comprehension, and cultural studies.",
+    prerequisites: "CZEC 2",
+  },
+  {
+    id: "1164",
+    course_code: "CZEC 4",
+    course_name: "Intermediate Czech II",
+    course_units: "4",
+    course_description:
+      "Intermediate Czech II including advanced reading, composition, and Czech literature.",
+    prerequisites: "CZEC 3",
+  },
+  {
+    id: "1165",
+    course_code: "CZEC 5",
+    course_name: "Advanced Czech",
+    course_units: "4",
+    course_description:
+      "Advanced Czech including advanced reading, literary analysis, and cultural studies.",
+    prerequisites: "CZEC 4",
+  },
+  {
+    id: "1166",
+    course_code: "CZEC 100",
+    course_name: "Czech Literature",
+    course_units: "4",
+    course_description:
+      "Czech literature including major works, literary analysis, and cultural context.",
+    prerequisites: "CZEC 5",
+  },
+  {
+    id: "1167",
+    course_code: "CZEC 101",
+    course_name: "Modern Czech",
+    course_units: "4",
+    course_description:
+      "Modern Czech including contemporary Czech, modern literature, and current events.",
+    prerequisites: "CZEC 4",
+  },
+  {
+    id: "1168",
+    course_code: "CZEC 102",
+    course_name: "Czech Linguistics",
+    course_units: "4",
+    course_description:
+      "Czech linguistics including Czech phonology, morphology, syntax, and historical linguistics.",
+    prerequisites: "LING 1, CZEC 4",
+  },
+  {
+    id: "1169",
+    course_code: "CZEC 103",
+    course_name: "Czech Translation",
+    course_units: "4",
+    course_description:
+      "Czech translation including translation theory, techniques, and practical translation exercises.",
+    prerequisites: "CZEC 5",
+  },
+  {
+    id: "1170",
+    course_code: "CZEC 104",
+    course_name: "Czech Culture",
+    course_units: "4",
+    course_description:
+      "Czech culture including cultural studies, traditions, and contemporary Czech society.",
+    prerequisites: "CZEC 3",
+  },
+
+  // Additional Bioinformatics Courses
+  {
+    id: "1171",
+    course_code: "BINF 1",
+    course_name: "Introduction to Bioinformatics",
+    course_units: "4",
+    course_description:
+      "Introduction to bioinformatics including computational biology, sequence analysis, and biological data processing.",
+    prerequisites: "None",
+  },
+  {
+    id: "1172",
+    course_code: "BINF 2",
+    course_name: "Sequence Analysis",
+    course_units: "4",
+    course_description:
+      "Sequence analysis including DNA sequence analysis, protein sequence analysis, and alignment algorithms.",
+    prerequisites: "BINF 1",
+  },
+  {
+    id: "1173",
+    course_code: "BINF 3",
+    course_name: "Genomics",
+    course_units: "4",
+    course_description:
+      "Genomics including genome analysis, comparative genomics, and functional genomics.",
+    prerequisites: "BINF 1",
+  },
+  {
+    id: "1174",
+    course_code: "BINF 4",
+    course_name: "Proteomics",
+    course_units: "4",
+    course_description:
+      "Proteomics including protein structure prediction, protein-protein interactions, and mass spectrometry.",
+    prerequisites: "BINF 1",
+  },
+  {
+    id: "1175",
+    course_code: "BINF 5",
+    course_name: "Systems Biology",
+    course_units: "4",
+    course_description:
+      "Systems biology including biological networks, metabolic pathways, and computational modeling.",
+    prerequisites: "BINF 1",
+  },
+  {
+    id: "1176",
+    course_code: "BINF 100",
+    course_name: "Advanced Bioinformatics",
+    course_units: "4",
+    course_description:
+      "Advanced bioinformatics including advanced algorithms, machine learning in biology, and research applications.",
+    prerequisites: "BINF 1",
+  },
+  {
+    id: "1177",
+    course_code: "BINF 101",
+    course_name: "Bioinformatics Tools",
+    course_units: "4",
+    course_description:
+      "Bioinformatics tools including software development, database design, and computational tools for biology.",
+    prerequisites: "BINF 1",
+  },
+  {
+    id: "1178",
+    course_code: "BINF 102",
+    course_name: "Computational Biology",
+    course_units: "4",
+    course_description:
+      "Computational biology including mathematical modeling, simulation, and computational approaches to biological problems.",
+    prerequisites: "BINF 1",
+  },
+  {
+    id: "1179",
+    course_code: "BINF 103",
+    course_name: "Bioinformatics Research",
+    course_units: "4",
+    course_description:
+      "Bioinformatics research including research methods, experimental design, and bioinformatics research projects.",
+    prerequisites: "BINF 1",
+  },
+  {
+    id: "1180",
+    course_code: "BINF 104",
+    course_name: "Bioinformatics Applications",
+    course_units: "4",
+    course_description:
+      "Bioinformatics applications including medical applications, drug discovery, and personalized medicine.",
+    prerequisites: "BINF 1",
+  },
+
+  // Additional Nanotechnology Courses
+  {
+    id: "1181",
+    course_code: "NANO 1",
+    course_name: "Introduction to Nanotechnology",
+    course_units: "4",
+    course_description:
+      "Introduction to nanotechnology including nanoscale science, nanomaterials, and nanofabrication techniques.",
+    prerequisites: "None",
+  },
+  {
+    id: "1182",
+    course_code: "NANO 2",
+    course_name: "Nanomaterials",
+    course_units: "4",
+    course_description:
+      "Nanomaterials including nanoparticle synthesis, characterization, and applications in various fields.",
+    prerequisites: "NANO 1",
+  },
+  {
+    id: "1183",
+    course_code: "NANO 3",
+    course_name: "Nanofabrication",
+    course_units: "4",
+    course_description:
+      "Nanofabrication including lithography techniques, self-assembly, and nanoscale manufacturing processes.",
+    prerequisites: "NANO 1",
+  },
+  {
+    id: "1184",
+    course_code: "NANO 4",
+    course_name: "Nanoelectronics",
+    course_units: "4",
+    course_description:
+      "Nanoelectronics including quantum electronics, molecular electronics, and nanoscale electronic devices.",
+    prerequisites: "NANO 1",
+  },
+  {
+    id: "1185",
+    course_code: "NANO 5",
+    course_name: "Nanomedicine",
+    course_units: "4",
+    course_description:
+      "Nanomedicine including drug delivery systems, diagnostic tools, and therapeutic applications of nanotechnology.",
+    prerequisites: "NANO 1",
+  },
+  {
+    id: "1186",
+    course_code: "NANO 100",
+    course_name: "Advanced Nanotechnology",
+    course_units: "4",
+    course_description:
+      "Advanced nanotechnology including cutting-edge research, emerging applications, and future directions.",
+    prerequisites: "NANO 1",
+  },
+  {
+    id: "1187",
+    course_code: "NANO 101",
+    course_name: "Nanotechnology Tools",
+    course_units: "4",
+    course_description:
+      "Nanotechnology tools including microscopy techniques, spectroscopy, and characterization methods.",
+    prerequisites: "NANO 1",
+  },
+  {
+    id: "1188",
+    course_code: "NANO 102",
+    course_name: "Nanotechnology Safety",
+    course_units: "4",
+    course_description:
+      "Nanotechnology safety including risk assessment, safety protocols, and environmental considerations.",
+    prerequisites: "NANO 1",
+  },
+  {
+    id: "1189",
+    course_code: "NANO 103",
+    course_name: "Nanotechnology Ethics",
+    course_units: "4",
+    course_description:
+      "Nanotechnology ethics including ethical considerations, societal impacts, and responsible development.",
+    prerequisites: "NANO 1",
+  },
+  {
+    id: "1190",
+    course_code: "NANO 104",
+    course_name: "Nanotechnology Research",
+    course_units: "4",
+    course_description:
+      "Nanotechnology research including research methods, experimental design, and nanotechnology research projects.",
+    prerequisites: "NANO 1",
+  },
+
+  // Additional Renewable Energy Courses
+  {
+    id: "1191",
+    course_code: "RENE 1",
+    course_name: "Introduction to Renewable Energy",
+    course_units: "4",
+    course_description:
+      "Introduction to renewable energy including solar, wind, hydroelectric, and geothermal energy systems.",
+    prerequisites: "None",
+  },
+  {
+    id: "1192",
+    course_code: "RENE 2",
+    course_name: "Solar Energy",
+    course_units: "4",
+    course_description:
+      "Solar energy including photovoltaic systems, solar thermal systems, and solar energy applications.",
+    prerequisites: "RENE 1",
+  },
+  {
+    id: "1193",
+    course_code: "RENE 3",
+    course_name: "Wind Energy",
+    course_units: "4",
+    course_description:
+      "Wind energy including wind turbine technology, wind farm design, and wind energy integration.",
+    prerequisites: "RENE 1",
+  },
+  {
+    id: "1194",
+    course_code: "RENE 4",
+    course_name: "Hydroelectric Energy",
+    course_units: "4",
+    course_description:
+      "Hydroelectric energy including dam design, turbine technology, and hydroelectric power generation.",
+    prerequisites: "RENE 1",
+  },
+  {
+    id: "1195",
+    course_code: "RENE 5",
+    course_name: "Geothermal Energy",
+    course_units: "4",
+    course_description:
+      "Geothermal energy including geothermal systems, heat pumps, and geothermal power generation.",
+    prerequisites: "RENE 1",
+  },
+  {
+    id: "1196",
+    course_code: "RENE 100",
+    course_name: "Advanced Renewable Energy",
+    course_units: "4",
+    course_description:
+      "Advanced renewable energy including emerging technologies, energy storage, and grid integration.",
+    prerequisites: "RENE 1",
+  },
+  {
+    id: "1197",
+    course_code: "RENE 101",
+    course_name: "Energy Policy",
+    course_units: "4",
+    course_description:
+      "Energy policy including renewable energy policies, regulations, and sustainable energy planning.",
+    prerequisites: "RENE 1",
+  },
+  {
+    id: "1198",
+    course_code: "RENE 102",
+    course_name: "Energy Economics",
+    course_units: "4",
+    course_description:
+      "Energy economics including cost analysis, market dynamics, and economic feasibility of renewable energy.",
+    prerequisites: "RENE 1",
+  },
+  {
+    id: "1199",
+    course_code: "RENE 103",
+    course_name: "Energy Storage",
+    course_units: "4",
+    course_description:
+      "Energy storage including battery technology, energy storage systems, and grid-scale storage solutions.",
+    prerequisites: "RENE 1",
+  },
+  {
+    id: "1200",
+    course_code: "RENE 104",
+    course_name: "Energy Research",
+    course_units: "4",
+    course_description:
+      "Energy research including research methods, experimental design, and renewable energy research projects.",
+    prerequisites: "RENE 1",
+  },
+
+  // Additional Digital Marketing Courses
+  {
+    id: "1201",
+    course_code: "DMKT 1",
+    course_name: "Introduction to Digital Marketing",
+    course_units: "4",
+    course_description:
+      "Introduction to digital marketing including online marketing strategies, digital platforms, and marketing fundamentals.",
+    prerequisites: "None",
+  },
+  {
+    id: "1202",
+    course_code: "DMKT 2",
+    course_name: "Social Media Marketing",
+    course_units: "4",
+    course_description:
+      "Social media marketing including platform strategies, content creation, and social media campaigns.",
+    prerequisites: "DMKT 1",
+  },
+  {
+    id: "1203",
+    course_code: "DMKT 3",
+    course_name: "Search Engine Optimization",
+    course_units: "4",
+    course_description:
+      "Search engine optimization including SEO strategies, keyword research, and website optimization techniques.",
+    prerequisites: "DMKT 1",
+  },
+  {
+    id: "1204",
+    course_code: "DMKT 4",
+    course_name: "Email Marketing",
+    course_units: "4",
+    course_description:
+      "Email marketing including email campaigns, automation, and email marketing analytics.",
+    prerequisites: "DMKT 1",
+  },
+  {
+    id: "1205",
+    course_code: "DMKT 5",
+    course_name: "Content Marketing",
+    course_units: "4",
+    course_description:
+      "Content marketing including content strategy, content creation, and content distribution.",
+    prerequisites: "DMKT 1",
+  },
+  {
+    id: "1206",
+    course_code: "DMKT 100",
+    course_name: "Advanced Digital Marketing",
+    course_units: "4",
+    course_description:
+      "Advanced digital marketing including advanced strategies, analytics, and digital marketing innovation.",
+    prerequisites: "DMKT 1",
+  },
+  {
+    id: "1207",
+    course_code: "DMKT 101",
+    course_name: "Marketing Analytics",
+    course_units: "4",
+    course_description:
+      "Marketing analytics including data analysis, performance metrics, and marketing measurement.",
+    prerequisites: "DMKT 1",
+  },
+  {
+    id: "1208",
+    course_code: "DMKT 102",
+    course_name: "Digital Advertising",
+    course_units: "4",
+    course_description:
+      "Digital advertising including online advertising platforms, ad creation, and advertising campaigns.",
+    prerequisites: "DMKT 1",
+  },
+  {
+    id: "1209",
+    course_code: "DMKT 103",
+    course_name: "Marketing Automation",
+    course_units: "4",
+    course_description:
+      "Marketing automation including automation tools, workflow design, and automated marketing campaigns.",
+    prerequisites: "DMKT 1",
+  },
+  {
+    id: "1210",
+    course_code: "DMKT 104",
+    course_name: "Digital Marketing Research",
+    course_units: "4",
+    course_description:
+      "Digital marketing research including research methods, market research, and digital marketing research projects.",
+    prerequisites: "DMKT 1",
+  },
+
+  // Additional Supply Chain Management Courses
+  {
+    id: "1211",
+    course_code: "SCM 1",
+    course_name: "Introduction to Supply Chain Management",
+    course_units: "4",
+    course_description:
+      "Introduction to supply chain management including logistics, operations, and supply chain fundamentals.",
+    prerequisites: "None",
+  },
+  {
+    id: "1212",
+    course_code: "SCM 2",
+    course_name: "Logistics Management",
+    course_units: "4",
+    course_description:
+      "Logistics management including transportation, warehousing, and distribution systems.",
+    prerequisites: "SCM 1",
+  },
+  {
+    id: "1213",
+    course_code: "SCM 3",
+    course_name: "Inventory Management",
+    course_units: "4",
+    course_description:
+      "Inventory management including inventory control, demand forecasting, and inventory optimization.",
+    prerequisites: "SCM 1",
+  },
+  {
+    id: "1214",
+    course_code: "SCM 4",
+    course_name: "Procurement",
+    course_units: "4",
+    course_description:
+      "Procurement including supplier management, purchasing strategies, and procurement processes.",
+    prerequisites: "SCM 1",
+  },
+  {
+    id: "1215",
+    course_code: "SCM 5",
+    course_name: "Supply Chain Analytics",
+    course_units: "4",
+    course_description:
+      "Supply chain analytics including data analysis, performance metrics, and analytical tools for supply chains.",
+    prerequisites: "SCM 1",
+  },
+  {
+    id: "1216",
+    course_code: "SCM 100",
+    course_name: "Advanced Supply Chain Management",
+    course_units: "4",
+    course_description:
+      "Advanced supply chain management including advanced strategies, global supply chains, and supply chain innovation.",
+    prerequisites: "SCM 1",
+  },
+  {
+    id: "1217",
+    course_code: "SCM 101",
+    course_name: "Global Supply Chains",
+    course_units: "4",
+    course_description:
+      "Global supply chains including international logistics, global sourcing, and cross-border operations.",
+    prerequisites: "SCM 1",
+  },
+  {
+    id: "1218",
+    course_code: "SCM 102",
+    course_name: "Supply Chain Technology",
+    course_units: "4",
+    course_description:
+      "Supply chain technology including digital technologies, automation, and technological innovation in supply chains.",
+    prerequisites: "SCM 1",
+  },
+  {
+    id: "1219",
+    course_code: "SCM 103",
+    course_name: "Supply Chain Sustainability",
+    course_units: "4",
+    course_description:
+      "Supply chain sustainability including sustainable practices, environmental impact, and social responsibility.",
+    prerequisites: "SCM 1",
+  },
+  {
+    id: "1220",
+    course_code: "SCM 104",
+    course_name: "Supply Chain Research",
+    course_units: "4",
+    course_description:
+      "Supply chain research including research methods, experimental design, and supply chain research projects.",
+    prerequisites: "SCM 1",
+  },
+
+  // Additional Data Engineering Courses
+  {
+    id: "1221",
+    course_code: "DENG 1",
+    course_name: "Introduction to Data Engineering",
+    course_units: "4",
+    course_description:
+      "Introduction to data engineering including data pipelines, data infrastructure, and data processing fundamentals.",
+    prerequisites: "None",
+  },
+  {
+    id: "1222",
+    course_code: "DENG 2",
+    course_name: "Data Pipeline Design",
+    course_units: "4",
+    course_description:
+      "Data pipeline design including ETL processes, data flow design, and pipeline architecture.",
+    prerequisites: "DENG 1",
+  },
+  {
+    id: "1223",
+    course_code: "DENG 3",
+    course_name: "Big Data Processing",
+    course_units: "4",
+    course_description:
+      "Big data processing including distributed computing, Hadoop, Spark, and large-scale data processing.",
+    prerequisites: "DENG 1",
+  },
+  {
+    id: "1224",
+    course_code: "DENG 4",
+    course_name: "Data Warehousing",
+    course_units: "4",
+    course_description:
+      "Data warehousing including warehouse design, data modeling, and data storage optimization.",
+    prerequisites: "DENG 1",
+  },
+  {
+    id: "1225",
+    course_code: "DENG 5",
+    course_name: "Data Quality",
+    course_units: "4",
+    course_description:
+      "Data quality including data validation, data cleaning, and data quality management.",
+    prerequisites: "DENG 1",
+  },
+  {
+    id: "1226",
+    course_code: "DENG 100",
+    course_name: "Advanced Data Engineering",
+    course_units: "4",
+    course_description:
+      "Advanced data engineering including advanced techniques, real-time processing, and data engineering innovation.",
+    prerequisites: "DENG 1",
+  },
+  {
+    id: "1227",
+    course_code: "DENG 101",
+    course_name: "Stream Processing",
+    course_units: "4",
+    course_description:
+      "Stream processing including real-time data processing, stream analytics, and event-driven architectures.",
+    prerequisites: "DENG 1",
+  },
+  {
+    id: "1228",
+    course_code: "DENG 102",
+    course_name: "Data Infrastructure",
+    course_units: "4",
+    course_description:
+      "Data infrastructure including cloud data platforms, data architecture, and infrastructure management.",
+    prerequisites: "DENG 1",
+  },
+  {
+    id: "1229",
+    course_code: "DENG 103",
+    course_name: "Data Governance",
+    course_units: "4",
+    course_description:
+      "Data governance including data policies, data security, and data management frameworks.",
+    prerequisites: "DENG 1",
+  },
+  {
+    id: "1230",
+    course_code: "DENG 104",
+    course_name: "Data Engineering Research",
+    course_units: "4",
+    course_description:
+      "Data engineering research including research methods, experimental design, and data engineering research projects.",
+    prerequisites: "DENG 1",
+  },
+
+  // Additional Human-Computer Interaction Courses
+  {
+    id: "1231",
+    course_code: "HCI 1",
+    course_name: "Introduction to Human-Computer Interaction",
+    course_units: "4",
+    course_description:
+      "Introduction to human-computer interaction including user interface design, usability, and interaction design principles.",
+    prerequisites: "None",
+  },
+  {
+    id: "1232",
+    course_code: "HCI 2",
+    course_name: "User Interface Design",
+    course_units: "4",
+    course_description:
+      "User interface design including design principles, visual design, and interface prototyping.",
+    prerequisites: "HCI 1",
+  },
+  {
+    id: "1233",
+    course_code: "HCI 3",
+    course_name: "Usability Testing",
+    course_units: "4",
+    course_description:
+      "Usability testing including user research, testing methods, and usability evaluation techniques.",
+    prerequisites: "HCI 1",
+  },
+  {
+    id: "1234",
+    course_code: "HCI 4",
+    course_name: "Interaction Design",
+    course_units: "4",
+    course_description:
+      "Interaction design including interaction patterns, user experience design, and interactive systems.",
+    prerequisites: "HCI 1",
+  },
+  {
+    id: "1235",
+    course_code: "HCI 5",
+    course_name: "User Experience Design",
+    course_units: "4",
+    course_description:
+      "User experience design including UX principles, user research, and experience design methodologies.",
+    prerequisites: "HCI 1",
+  },
+  {
+    id: "1236",
+    course_code: "HCI 100",
+    course_name: "Advanced Human-Computer Interaction",
+    course_units: "4",
+    course_description:
+      "Advanced human-computer interaction including advanced techniques, emerging technologies, and HCI innovation.",
+    prerequisites: "HCI 1",
+  },
+  {
+    id: "1237",
+    course_code: "HCI 101",
+    course_name: "Mobile Interface Design",
+    course_units: "4",
+    course_description:
+      "Mobile interface design including mobile design principles, responsive design, and mobile user experience.",
+    prerequisites: "HCI 1",
+  },
+  {
+    id: "1238",
+    course_code: "HCI 102",
+    course_name: "Accessibility Design",
+    course_units: "4",
+    course_description:
+      "Accessibility design including inclusive design, assistive technologies, and universal design principles.",
+    prerequisites: "HCI 1",
+  },
+  {
+    id: "1239",
+    course_code: "HCI 103",
+    course_name: "Virtual Reality Interfaces",
+    course_units: "4",
+    course_description:
+      "Virtual reality interfaces including VR design, immersive experiences, and virtual environment design.",
+    prerequisites: "HCI 1",
+  },
+  {
+    id: "1240",
+    course_code: "HCI 104",
+    course_name: "HCI Research",
+    course_units: "4",
+    course_description:
+      "HCI research including research methods, experimental design, and human-computer interaction research projects.",
+    prerequisites: "HCI 1",
+  },
+
+  // Additional Environmental Engineering Courses
+  {
+    id: "1241",
+    course_code: "ENVE 1",
+    course_name: "Introduction to Environmental Engineering",
+    course_units: "4",
+    course_description:
+      "Introduction to environmental engineering including environmental systems, pollution control, and sustainable engineering.",
+    prerequisites: "None",
+  },
+  {
+    id: "1242",
+    course_code: "ENVE 2",
+    course_name: "Water Treatment",
+    course_units: "4",
+    course_description:
+      "Water treatment including water purification, wastewater treatment, and water quality management.",
+    prerequisites: "ENVE 1",
+  },
+  {
+    id: "1243",
+    course_code: "ENVE 3",
+    course_name: "Air Pollution Control",
+    course_units: "4",
+    course_description:
+      "Air pollution control including air quality management, emission control, and atmospheric monitoring.",
+    prerequisites: "ENVE 1",
+  },
+  {
+    id: "1244",
+    course_code: "ENVE 4",
+    course_name: "Waste Management",
+    course_units: "4",
+    course_description:
+      "Waste management including solid waste treatment, recycling systems, and waste reduction strategies.",
+    prerequisites: "ENVE 1",
+  },
+  {
+    id: "1245",
+    course_code: "ENVE 5",
+    course_name: "Environmental Impact Assessment",
+    course_units: "4",
+    course_description:
+      "Environmental impact assessment including impact analysis, environmental planning, and regulatory compliance.",
+    prerequisites: "ENVE 1",
+  },
+  {
+    id: "1246",
+    course_code: "ENVE 100",
+    course_name: "Advanced Environmental Engineering",
+    course_units: "4",
+    course_description:
+      "Advanced environmental engineering including advanced techniques, emerging technologies, and environmental innovation.",
+    prerequisites: "ENVE 1",
+  },
+  {
+    id: "1247",
+    course_code: "ENVE 101",
+    course_name: "Sustainable Engineering",
+    course_units: "4",
+    course_description:
+      "Sustainable engineering including sustainable design, green technologies, and environmental sustainability.",
+    prerequisites: "ENVE 1",
+  },
+  {
+    id: "1248",
+    course_code: "ENVE 102",
+    course_name: "Environmental Modeling",
+    course_units: "4",
+    course_description:
+      "Environmental modeling including mathematical modeling, simulation, and environmental system analysis.",
+    prerequisites: "ENVE 1",
+  },
+  {
+    id: "1249",
+    course_code: "ENVE 103",
+    course_name: "Environmental Policy",
+    course_units: "4",
+    course_description:
+      "Environmental policy including environmental regulations, policy analysis, and environmental governance.",
+    prerequisites: "ENVE 1",
+  },
+  {
+    id: "1250",
+    course_code: "ENVE 104",
+    course_name: "Environmental Research",
+    course_units: "4",
+    course_description:
+      "Environmental research including research methods, experimental design, and environmental engineering research projects.",
+    prerequisites: "ENVE 1",
+  },
 ];

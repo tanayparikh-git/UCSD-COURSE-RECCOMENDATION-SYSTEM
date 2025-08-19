@@ -1117,6 +1117,76 @@ class AIService {
       }
     }
 
+    // Hungarian & Central European Languages
+    if (searchTerm.includes('hungarian') || searchTerm.includes('modern hungarian') || searchTerm.includes('hungarian literature') || searchTerm.includes('hungarian linguistics') || searchTerm.includes('hungarian translation') || searchTerm.includes('hungarian culture')) {
+      if (courseCode.startsWith('hung') || courseDesc.includes('hungarian') || courseDesc.includes('modern hungarian') || courseDesc.includes('hungarian literature') || courseDesc.includes('hungarian linguistics') || courseDesc.includes('hungarian translation') || courseDesc.includes('hungarian culture')) {
+        return 0.6;
+      }
+    }
+
+    // Czech & Slavic Languages
+    if (searchTerm.includes('czech') || searchTerm.includes('modern czech') || searchTerm.includes('czech literature') || searchTerm.includes('czech linguistics') || searchTerm.includes('czech translation') || searchTerm.includes('czech culture')) {
+      if (courseCode.startsWith('czec') || courseDesc.includes('czech') || courseDesc.includes('modern czech') || courseDesc.includes('czech literature') || courseDesc.includes('czech linguistics') || courseDesc.includes('czech translation') || courseDesc.includes('czech culture')) {
+        return 0.6;
+      }
+    }
+
+    // Bioinformatics & Computational Biology
+    if (searchTerm.includes('bioinformatics') || searchTerm.includes('sequence analysis') || searchTerm.includes('genomics') || searchTerm.includes('proteomics') || searchTerm.includes('systems biology') || searchTerm.includes('advanced bioinformatics') || searchTerm.includes('bioinformatics tools') || searchTerm.includes('computational biology') || searchTerm.includes('bioinformatics research') || searchTerm.includes('bioinformatics applications')) {
+      if (courseCode.startsWith('binf') || courseDesc.includes('bioinformatics') || courseDesc.includes('sequence analysis') || courseDesc.includes('genomics') || courseDesc.includes('proteomics') || courseDesc.includes('systems biology') || courseDesc.includes('advanced bioinformatics') || courseDesc.includes('bioinformatics tools') || courseDesc.includes('computational biology') || courseDesc.includes('bioinformatics research') || courseDesc.includes('bioinformatics applications')) {
+        return 0.6;
+      }
+    }
+
+    // Nanotechnology & Nanoscale Science
+    if (searchTerm.includes('nanotechnology') || searchTerm.includes('nanomaterials') || searchTerm.includes('nanofabrication') || searchTerm.includes('nanoelectronics') || searchTerm.includes('nanomedicine') || searchTerm.includes('advanced nanotechnology') || searchTerm.includes('nanotechnology tools') || searchTerm.includes('nanotechnology safety') || searchTerm.includes('nanotechnology ethics') || searchTerm.includes('nanotechnology research')) {
+      if (courseCode.startsWith('nano') || courseDesc.includes('nanotechnology') || courseDesc.includes('nanomaterials') || courseDesc.includes('nanofabrication') || courseDesc.includes('nanoelectronics') || courseDesc.includes('nanomedicine') || courseDesc.includes('advanced nanotechnology') || courseDesc.includes('nanotechnology tools') || courseDesc.includes('nanotechnology safety') || courseDesc.includes('nanotechnology ethics') || courseDesc.includes('nanotechnology research')) {
+        return 0.6;
+      }
+    }
+
+    // Renewable Energy & Sustainable Energy
+    if (searchTerm.includes('renewable energy') || searchTerm.includes('solar energy') || searchTerm.includes('wind energy') || searchTerm.includes('hydroelectric energy') || searchTerm.includes('geothermal energy') || searchTerm.includes('advanced renewable energy') || searchTerm.includes('energy policy') || searchTerm.includes('energy economics') || searchTerm.includes('energy storage') || searchTerm.includes('energy research')) {
+      if (courseCode.startsWith('rene') || courseDesc.includes('renewable energy') || courseDesc.includes('solar energy') || courseDesc.includes('wind energy') || courseDesc.includes('hydroelectric energy') || courseDesc.includes('geothermal energy') || courseDesc.includes('advanced renewable energy') || courseDesc.includes('energy policy') || courseDesc.includes('energy economics') || courseDesc.includes('energy storage') || courseDesc.includes('energy research')) {
+        return 0.6;
+      }
+    }
+
+    // Digital Marketing & Online Marketing
+    if (searchTerm.includes('digital marketing') || searchTerm.includes('social media marketing') || searchTerm.includes('search engine optimization') || searchTerm.includes('email marketing') || searchTerm.includes('content marketing') || searchTerm.includes('advanced digital marketing') || searchTerm.includes('marketing analytics') || searchTerm.includes('digital advertising') || searchTerm.includes('marketing automation') || searchTerm.includes('digital marketing research')) {
+      if (courseCode.startsWith('dmkt') || courseDesc.includes('digital marketing') || courseDesc.includes('social media marketing') || courseDesc.includes('search engine optimization') || courseDesc.includes('email marketing') || courseDesc.includes('content marketing') || courseDesc.includes('advanced digital marketing') || courseDesc.includes('marketing analytics') || courseDesc.includes('digital advertising') || courseDesc.includes('marketing automation') || courseDesc.includes('digital marketing research')) {
+        return 0.6;
+      }
+    }
+
+    // Supply Chain Management & Logistics
+    if (searchTerm.includes('supply chain management') || searchTerm.includes('logistics management') || searchTerm.includes('inventory management') || searchTerm.includes('procurement') || searchTerm.includes('supply chain analytics') || searchTerm.includes('advanced supply chain management') || searchTerm.includes('global supply chains') || searchTerm.includes('supply chain technology') || searchTerm.includes('supply chain sustainability') || searchTerm.includes('supply chain research')) {
+      if (courseCode.startsWith('scm') || courseDesc.includes('supply chain management') || courseDesc.includes('logistics management') || courseDesc.includes('inventory management') || courseDesc.includes('procurement') || courseDesc.includes('supply chain analytics') || courseDesc.includes('advanced supply chain management') || courseDesc.includes('global supply chains') || courseDesc.includes('supply chain technology') || courseDesc.includes('supply chain sustainability') || courseDesc.includes('supply chain research')) {
+        return 0.6;
+      }
+    }
+
+    // Data Engineering & Data Infrastructure
+    if (searchTerm.includes('data engineering') || searchTerm.includes('data pipeline design') || searchTerm.includes('big data processing') || searchTerm.includes('data warehousing') || searchTerm.includes('data quality') || searchTerm.includes('advanced data engineering') || searchTerm.includes('stream processing') || searchTerm.includes('data infrastructure') || searchTerm.includes('data governance') || searchTerm.includes('data engineering research')) {
+      if (courseCode.startsWith('deng') || courseDesc.includes('data engineering') || courseDesc.includes('data pipeline design') || courseDesc.includes('big data processing') || courseDesc.includes('data warehousing') || courseDesc.includes('data quality') || courseDesc.includes('advanced data engineering') || courseDesc.includes('stream processing') || courseDesc.includes('data infrastructure') || courseDesc.includes('data governance') || courseDesc.includes('data engineering research')) {
+        return 0.6;
+      }
+    }
+
+    // Human-Computer Interaction & UX Design
+    if (searchTerm.includes('human-computer interaction') || searchTerm.includes('user interface design') || searchTerm.includes('usability testing') || searchTerm.includes('interaction design') || searchTerm.includes('user experience design') || searchTerm.includes('advanced human-computer interaction') || searchTerm.includes('mobile interface design') || searchTerm.includes('accessibility design') || searchTerm.includes('virtual reality interfaces') || searchTerm.includes('hci research')) {
+      if (courseCode.startsWith('hci') || courseDesc.includes('human-computer interaction') || courseDesc.includes('user interface design') || courseDesc.includes('usability testing') || courseDesc.includes('interaction design') || courseDesc.includes('user experience design') || courseDesc.includes('advanced human-computer interaction') || courseDesc.includes('mobile interface design') || courseDesc.includes('accessibility design') || courseDesc.includes('virtual reality interfaces') || courseDesc.includes('hci research')) {
+        return 0.6;
+      }
+    }
+
+    // Environmental Engineering & Sustainability
+    if (searchTerm.includes('environmental engineering') || searchTerm.includes('water treatment') || searchTerm.includes('air pollution control') || searchTerm.includes('waste management') || searchTerm.includes('environmental impact assessment') || searchTerm.includes('advanced environmental engineering') || searchTerm.includes('sustainable engineering') || searchTerm.includes('environmental modeling') || searchTerm.includes('environmental policy') || searchTerm.includes('environmental research')) {
+      if (courseCode.startsWith('enve') || courseDesc.includes('environmental engineering') || courseDesc.includes('water treatment') || courseDesc.includes('air pollution control') || courseDesc.includes('waste management') || courseDesc.includes('environmental impact assessment') || courseDesc.includes('advanced environmental engineering') || courseDesc.includes('sustainable engineering') || courseDesc.includes('environmental modeling') || courseDesc.includes('environmental policy') || courseDesc.includes('environmental research')) {
+        return 0.6;
+      }
+    }
+
     return 0;
   }
 
