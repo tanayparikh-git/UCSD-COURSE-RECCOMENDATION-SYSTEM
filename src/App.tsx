@@ -7,6 +7,7 @@ import { AIRecommendations } from "./components/AIRecommendations";
 import { SimilarCourses } from "./components/SimilarCourses";
 import { aiService, Course, AIRecommendation } from "./services/aiService";
 import { mockCourses } from "./utils/mockData";
+import { favoritesService } from "./services/favoritesService";
 
 export function App() {
   console.log("App component rendering");
@@ -21,9 +22,9 @@ export function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [isSearching, setIsSearching] = useState(false);
 
-  // Get favorites from localStorage
-  const [favorites, setFavorites] = useState<string[]>(() => {
-    const saved = localStorage.getItem("favorites");
+  // Get user favorites
+  const [userFavorites, setUserFavorites] = useState<string[]>(() => {
+    const saved = localStorage.getItem("user_favorites");
     return saved ? JSON.parse(saved) : [];
   });
 
@@ -113,13 +114,14 @@ export function App() {
     setSimilarCourses([]);
   };
 
-  const toggleFavorite = (courseId: string) => {
-    const newFavorites = favorites.includes(courseId)
-      ? favorites.filter((id) => id !== courseId)
-      : [...favorites, courseId];
-
-    setFavorites(newFavorites);
-    localStorage.setItem("favorites", JSON.stringify(newFavorites));
+  const toggleFavorite = (courseId: string, courseCode: string, courseName: string) => {
+    const isFavorited = favoritesService.toggleUserFavorite(courseId, courseCode, courseName);
+    
+    if (isFavorited) {
+      setUserFavorites(prev => [...prev, courseId]);
+    } else {
+      setUserFavorites(prev => prev.filter(id => id !== courseId));
+    }
   };
 
   return (
@@ -219,7 +221,7 @@ export function App() {
           <CourseGrid
             courses={courses}
             onViewDetails={openCourseModal}
-            favorites={favorites}
+            favorites={userFavorites}
             isLoading={isSearching}
           />
         )}
@@ -230,8 +232,8 @@ export function App() {
             course={selectedCourse}
             isOpen={isModalOpen}
             onClose={closeCourseModal}
-            isFavorite={favorites.includes(selectedCourse.id)}
-            onToggleFavorite={() => toggleFavorite(selectedCourse.id)}
+            isFavorite={userFavorites.includes(selectedCourse.id)}
+            onToggleFavorite={() => toggleFavorite(selectedCourse.id, selectedCourse.course_code, selectedCourse.course_name)}
           >
             {/* Similar Courses Section */}
             <div className="mt-6">

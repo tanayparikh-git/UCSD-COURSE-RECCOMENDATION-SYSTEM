@@ -1,5 +1,6 @@
 import { Course } from "../services/aiService";
-import { StarIcon } from "lucide-react";
+import { StarIcon, Heart } from "lucide-react";
+import { favoritesService } from "../services/favoritesService";
 
 interface CourseCardProps {
   course: Course;
@@ -19,9 +20,15 @@ export function CourseCard({
           <h3 className="text-xl font-bold text-[#003B5C]">
             {course.course_code}
           </h3>
-          {isFavorite && (
-            <StarIcon size={20} className="text-[#FFCD00] fill-[#FFCD00]" />
-          )}
+          <div className="flex items-center space-x-2">
+            <div className="flex items-center text-sm text-gray-500">
+              <Heart size={14} className="mr-1" />
+              <span>{favoritesService.getFavoriteCount(course.id)}</span>
+            </div>
+            {isFavorite && (
+              <StarIcon size={20} className="text-[#FFCD00] fill-[#FFCD00]" />
+            )}
+          </div>
         </div>
 
         <h4 className="text-lg font-medium mb-2">{course.course_name}</h4>

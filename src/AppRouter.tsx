@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { App } from "./App";
+import { FavoritesPage } from "./pages/FavoritesPage";
 import { AuthProvider } from "./contexts/AuthContext";
 
 // Simple error boundary
@@ -44,6 +45,7 @@ export function AppRouter() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<App />} />
+            <Route path="/favorites" element={<FavoritesPage />} />
           </Routes>
         </BrowserRouter>
       </AuthProvider>

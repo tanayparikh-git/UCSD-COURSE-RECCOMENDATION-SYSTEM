@@ -424,6 +424,76 @@ class AIService {
       }
     }
 
+    // Greek & Classical Languages
+    if (searchTerm.includes('greek') || searchTerm.includes('ancient greek') || searchTerm.includes('classical greek') || searchTerm.includes('greek literature') || searchTerm.includes('greek philosophy') || searchTerm.includes('greek linguistics') || searchTerm.includes('greek translation')) {
+      if (courseCode.startsWith('grk') || courseDesc.includes('greek') || courseDesc.includes('ancient greek') || courseDesc.includes('classical greek') || courseDesc.includes('greek literature') || courseDesc.includes('greek philosophy') || courseDesc.includes('greek linguistics') || courseDesc.includes('greek translation')) {
+        return 0.6;
+      }
+    }
+
+    // Sanskrit & Classical Languages
+    if (searchTerm.includes('sanskrit') || searchTerm.includes('vedic') || searchTerm.includes('classical sanskrit') || searchTerm.includes('sanskrit literature') || searchTerm.includes('sanskrit linguistics') || searchTerm.includes('sanskrit translation')) {
+      if (courseCode.startsWith('sans') || courseDesc.includes('sanskrit') || courseDesc.includes('vedic') || courseDesc.includes('classical sanskrit') || courseDesc.includes('sanskrit literature') || courseDesc.includes('sanskrit linguistics') || courseDesc.includes('sanskrit translation')) {
+        return 0.6;
+      }
+    }
+
+    // Astronomy & Space Science
+    if (searchTerm.includes('astronomy') || searchTerm.includes('astrophysics') || searchTerm.includes('cosmology') || searchTerm.includes('solar system') || searchTerm.includes('stellar') || searchTerm.includes('galactic') || searchTerm.includes('exoplanets') || searchTerm.includes('observational astronomy') || searchTerm.includes('high energy astrophysics') || searchTerm.includes('astrobiology')) {
+      if (courseCode.startsWith('astr') || courseDesc.includes('astronomy') || courseDesc.includes('astrophysics') || courseDesc.includes('cosmology') || courseDesc.includes('solar system') || courseDesc.includes('stellar') || courseDesc.includes('galactic') || courseDesc.includes('exoplanets') || courseDesc.includes('observational astronomy') || courseDesc.includes('high energy astrophysics') || courseDesc.includes('astrobiology')) {
+        return 0.6;
+      }
+    }
+
+    // Geology & Earth Sciences
+    if (searchTerm.includes('geology') || searchTerm.includes('mineralogy') || searchTerm.includes('petrology') || searchTerm.includes('structural geology') || searchTerm.includes('sedimentology') || searchTerm.includes('paleontology') || searchTerm.includes('geochemistry') || searchTerm.includes('geophysics') || searchTerm.includes('volcanology') || searchTerm.includes('environmental geology')) {
+      if (courseCode.startsWith('geol') || courseDesc.includes('geology') || courseDesc.includes('mineralogy') || courseDesc.includes('petrology') || courseDesc.includes('structural geology') || courseDesc.includes('sedimentology') || courseDesc.includes('paleontology') || courseDesc.includes('geochemistry') || courseDesc.includes('geophysics') || courseDesc.includes('volcanology') || courseDesc.includes('environmental geology')) {
+        return 0.6;
+      }
+    }
+
+    // Dance & Performance Arts
+    if (searchTerm.includes('dance') || searchTerm.includes('ballet') || searchTerm.includes('modern dance') || searchTerm.includes('jazz dance') || searchTerm.includes('contemporary dance') || searchTerm.includes('choreography') || searchTerm.includes('dance history') || searchTerm.includes('dance theory') || searchTerm.includes('world dance') || searchTerm.includes('dance performance')) {
+      if (courseCode.startsWith('danc') || courseDesc.includes('dance') || courseDesc.includes('ballet') || courseDesc.includes('modern dance') || courseDesc.includes('jazz dance') || courseDesc.includes('contemporary dance') || courseDesc.includes('choreography') || courseDesc.includes('dance history') || courseDesc.includes('dance theory') || courseDesc.includes('world dance') || courseDesc.includes('dance performance')) {
+        return 0.6;
+      }
+    }
+
+    // Creative Writing & Literature
+    if (searchTerm.includes('creative writing') || searchTerm.includes('fiction writing') || searchTerm.includes('poetry writing') || searchTerm.includes('creative nonfiction') || searchTerm.includes('screenwriting') || searchTerm.includes('advanced fiction') || searchTerm.includes('advanced poetry') || searchTerm.includes('writing workshop') || searchTerm.includes('literary magazine') || searchTerm.includes('writing for digital media')) {
+      if (courseCode.startsWith('crwr') || courseDesc.includes('creative writing') || courseDesc.includes('fiction writing') || courseDesc.includes('poetry writing') || courseDesc.includes('creative nonfiction') || courseDesc.includes('screenwriting') || courseDesc.includes('advanced fiction') || courseDesc.includes('advanced poetry') || courseDesc.includes('writing workshop') || courseDesc.includes('literary magazine') || courseDesc.includes('writing for digital media')) {
+        return 0.6;
+      }
+    }
+
+    // Criminal Justice & Law Enforcement
+    if (searchTerm.includes('criminal justice') || searchTerm.includes('criminology') || searchTerm.includes('law enforcement') || searchTerm.includes('courts') || searchTerm.includes('judicial process') || searchTerm.includes('corrections') || searchTerm.includes('criminal law') || searchTerm.includes('juvenile justice') || searchTerm.includes('victimology') || searchTerm.includes('forensic science')) {
+      if (courseCode.startsWith('crim') || courseDesc.includes('criminal justice') || courseDesc.includes('criminology') || courseDesc.includes('law enforcement') || courseDesc.includes('courts') || courseDesc.includes('judicial process') || courseDesc.includes('corrections') || courseDesc.includes('criminal law') || courseDesc.includes('juvenile justice') || courseDesc.includes('victimology') || courseDesc.includes('forensic science')) {
+        return 0.6;
+      }
+    }
+
+    // Gender Studies & Feminist Theory
+    if (searchTerm.includes('gender studies') || searchTerm.includes('feminist theory') || searchTerm.includes('women history') || searchTerm.includes('masculinity studies') || searchTerm.includes('queer studies') || searchTerm.includes('gender and society') || searchTerm.includes('gender and media') || searchTerm.includes('gender and politics') || searchTerm.includes('gender and health') || searchTerm.includes('gender and work')) {
+      if (courseCode.startsWith('gss') || courseDesc.includes('gender studies') || courseDesc.includes('feminist theory') || courseDesc.includes('women history') || courseDesc.includes('masculinity studies') || courseDesc.includes('queer studies') || courseDesc.includes('gender and society') || courseDesc.includes('gender and media') || courseDesc.includes('gender and politics') || courseDesc.includes('gender and health') || courseDesc.includes('gender and work')) {
+        return 0.6;
+      }
+    }
+
+    // Urban Studies & Urban Analysis
+    if (searchTerm.includes('urban studies') || searchTerm.includes('urban sociology') || searchTerm.includes('urban economics') || searchTerm.includes('urban geography') || searchTerm.includes('urban politics') || searchTerm.includes('urban history') || searchTerm.includes('urban culture') || searchTerm.includes('urban environment') || searchTerm.includes('urban technology') || searchTerm.includes('urban research methods')) {
+      if (courseCode.startsWith('usp') || courseDesc.includes('urban studies') || courseDesc.includes('urban sociology') || courseDesc.includes('urban economics') || courseDesc.includes('urban geography') || courseDesc.includes('urban politics') || courseDesc.includes('urban history') || courseDesc.includes('urban culture') || courseDesc.includes('urban environment') || courseDesc.includes('urban technology') || courseDesc.includes('urban research methods')) {
+        return 0.6;
+      }
+    }
+
+    // Public Administration & Government
+    if (searchTerm.includes('public administration') || searchTerm.includes('public management') || searchTerm.includes('public budgeting') || searchTerm.includes('public personnel management') || searchTerm.includes('public policy analysis') || searchTerm.includes('nonprofit management') || searchTerm.includes('public sector ethics') || searchTerm.includes('public sector innovation') || searchTerm.includes('intergovernmental relations') || searchTerm.includes('public administration research')) {
+      if (courseCode.startsWith('pa') || courseDesc.includes('public administration') || courseDesc.includes('public management') || courseDesc.includes('public budgeting') || courseDesc.includes('public personnel management') || courseDesc.includes('public policy analysis') || courseDesc.includes('nonprofit management') || courseDesc.includes('public sector ethics') || courseDesc.includes('public sector innovation') || courseDesc.includes('intergovernmental relations') || courseDesc.includes('public administration research')) {
+        return 0.6;
+      }
+    }
+
     return 0;
   }
 

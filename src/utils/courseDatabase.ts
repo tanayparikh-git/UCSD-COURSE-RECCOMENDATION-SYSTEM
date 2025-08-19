@@ -5078,4 +5078,924 @@ export const courseDatabase: CourseData[] = [
       "Information visualization including data visualization, visual analytics, and information design.",
     prerequisites: "INFO 1",
   },
+
+  // Additional Greek Language Courses
+  {
+    id: "551",
+    course_code: "GRK 1",
+    course_name: "Elementary Greek I",
+    course_units: "4",
+    course_description:
+      "Elementary Greek I including basic grammar, vocabulary, and reading skills for beginners.",
+    prerequisites: "None",
+  },
+  {
+    id: "552",
+    course_code: "GRK 2",
+    course_name: "Elementary Greek II",
+    course_units: "4",
+    course_description:
+      "Elementary Greek II including intermediate grammar, vocabulary, and reading skills.",
+    prerequisites: "GRK 1",
+  },
+  {
+    id: "553",
+    course_code: "GRK 3",
+    course_name: "Intermediate Greek I",
+    course_units: "4",
+    course_description:
+      "Intermediate Greek I including advanced grammar, reading comprehension, and cultural studies.",
+    prerequisites: "GRK 2",
+  },
+  {
+    id: "554",
+    course_code: "GRK 4",
+    course_name: "Intermediate Greek II",
+    course_units: "4",
+    course_description:
+      "Intermediate Greek II including advanced reading, composition, and Greek literature.",
+    prerequisites: "GRK 3",
+  },
+  {
+    id: "555",
+    course_code: "GRK 5",
+    course_name: "Advanced Greek",
+    course_units: "4",
+    course_description:
+      "Advanced Greek including advanced reading, literary analysis, and cultural studies.",
+    prerequisites: "GRK 4",
+  },
+  {
+    id: "556",
+    course_code: "GRK 100",
+    course_name: "Ancient Greek Literature",
+    course_units: "4",
+    course_description:
+      "Ancient Greek literature including major works, literary analysis, and cultural context.",
+    prerequisites: "GRK 5",
+  },
+  {
+    id: "557",
+    course_code: "GRK 101",
+    course_name: "Greek Philosophy",
+    course_units: "4",
+    course_description:
+      "Greek philosophy including philosophical texts, philosophical analysis, and cultural context.",
+    prerequisites: "GRK 4",
+  },
+  {
+    id: "558",
+    course_code: "GRK 102",
+    course_name: "Classical Greek",
+    course_units: "4",
+    course_description:
+      "Classical Greek including classical texts, historical language study, and ancient literature.",
+    prerequisites: "GRK 3",
+  },
+  {
+    id: "559",
+    course_code: "GRK 103",
+    course_name: "Greek Linguistics",
+    course_units: "4",
+    course_description:
+      "Greek linguistics including Greek phonology, morphology, syntax, and historical linguistics.",
+    prerequisites: "LING 1, GRK 4",
+  },
+  {
+    id: "560",
+    course_code: "GRK 104",
+    course_name: "Greek Translation",
+    course_units: "4",
+    course_description:
+      "Greek translation including translation theory, techniques, and practical translation exercises.",
+    prerequisites: "GRK 5",
+  },
+
+  // Additional Sanskrit Language Courses
+  {
+    id: "561",
+    course_code: "SANS 1",
+    course_name: "Elementary Sanskrit I",
+    course_units: "4",
+    course_description:
+      "Elementary Sanskrit I including basic grammar, vocabulary, and reading skills for beginners.",
+    prerequisites: "None",
+  },
+  {
+    id: "562",
+    course_code: "SANS 2",
+    course_name: "Elementary Sanskrit II",
+    course_units: "4",
+    course_description:
+      "Elementary Sanskrit II including intermediate grammar, vocabulary, and reading skills.",
+    prerequisites: "SANS 1",
+  },
+  {
+    id: "563",
+    course_code: "SANS 3",
+    course_name: "Intermediate Sanskrit I",
+    course_units: "4",
+    course_description:
+      "Intermediate Sanskrit I including advanced grammar, reading comprehension, and cultural studies.",
+    prerequisites: "SANS 2",
+  },
+  {
+    id: "564",
+    course_code: "SANS 4",
+    course_name: "Intermediate Sanskrit II",
+    course_units: "4",
+    course_description:
+      "Intermediate Sanskrit II including advanced reading, composition, and Sanskrit literature.",
+    prerequisites: "SANS 3",
+  },
+  {
+    id: "565",
+    course_code: "SANS 5",
+    course_name: "Advanced Sanskrit",
+    course_units: "4",
+    course_description:
+      "Advanced Sanskrit including advanced reading, literary analysis, and cultural studies.",
+    prerequisites: "SANS 4",
+  },
+  {
+    id: "566",
+    course_code: "SANS 100",
+    course_name: "Sanskrit Literature",
+    course_units: "4",
+    course_description:
+      "Sanskrit literature including major works, literary analysis, and cultural context.",
+    prerequisites: "SANS 5",
+  },
+  {
+    id: "567",
+    course_code: "SANS 101",
+    course_name: "Vedic Sanskrit",
+    course_units: "4",
+    course_description:
+      "Vedic Sanskrit including Vedic texts, religious literature, and historical language study.",
+    prerequisites: "SANS 3",
+  },
+  {
+    id: "568",
+    course_code: "SANS 102",
+    course_name: "Classical Sanskrit",
+    course_units: "4",
+    course_description:
+      "Classical Sanskrit including classical texts, historical language study, and ancient literature.",
+    prerequisites: "SANS 3",
+  },
+  {
+    id: "569",
+    course_code: "SANS 103",
+    course_name: "Sanskrit Linguistics",
+    course_units: "4",
+    course_description:
+      "Sanskrit linguistics including Sanskrit phonology, morphology, syntax, and historical linguistics.",
+    prerequisites: "LING 1, SANS 4",
+  },
+  {
+    id: "570",
+    course_code: "SANS 104",
+    course_name: "Sanskrit Translation",
+    course_units: "4",
+    course_description:
+      "Sanskrit translation including translation theory, techniques, and practical translation exercises.",
+    prerequisites: "SANS 5",
+  },
+
+  // Additional Astronomy Courses
+  {
+    id: "571",
+    course_code: "ASTR 1",
+    course_name: "Introduction to Astronomy",
+    course_units: "4",
+    course_description:
+      "Introduction to astronomy including celestial objects, astronomical observations, and basic astrophysics.",
+    prerequisites: "None",
+  },
+  {
+    id: "572",
+    course_code: "ASTR 2",
+    course_name: "Solar System Astronomy",
+    course_units: "4",
+    course_description:
+      "Solar system astronomy including planets, moons, asteroids, and solar system formation.",
+    prerequisites: "ASTR 1",
+  },
+  {
+    id: "573",
+    course_code: "ASTR 3",
+    course_name: "Stellar Astronomy",
+    course_units: "4",
+    course_description:
+      "Stellar astronomy including star formation, stellar evolution, and stellar classification.",
+    prerequisites: "ASTR 1",
+  },
+  {
+    id: "574",
+    course_code: "ASTR 4",
+    course_name: "Galactic Astronomy",
+    course_units: "4",
+    course_description:
+      "Galactic astronomy including galaxy structure, galaxy evolution, and galactic dynamics.",
+    prerequisites: "ASTR 1",
+  },
+  {
+    id: "575",
+    course_code: "ASTR 5",
+    course_name: "Cosmology",
+    course_units: "4",
+    course_description:
+      "Cosmology including universe evolution, dark matter, dark energy, and cosmic microwave background.",
+    prerequisites: "ASTR 1",
+  },
+  {
+    id: "576",
+    course_code: "ASTR 100",
+    course_name: "Observational Astronomy",
+    course_units: "4",
+    course_description:
+      "Observational astronomy including telescope use, data analysis, and astronomical imaging.",
+    prerequisites: "ASTR 1",
+  },
+  {
+    id: "577",
+    course_code: "ASTR 101",
+    course_name: "Astrophysics",
+    course_units: "4",
+    course_description:
+      "Astrophysics including physical processes in astronomy, radiation mechanisms, and stellar physics.",
+    prerequisites: "PHYS 2A",
+  },
+  {
+    id: "578",
+    course_code: "ASTR 102",
+    course_name: "Exoplanets",
+    course_units: "4",
+    course_description:
+      "Exoplanets including planet detection, planetary atmospheres, and habitability studies.",
+    prerequisites: "ASTR 1",
+  },
+  {
+    id: "579",
+    course_code: "ASTR 103",
+    course_name: "High Energy Astrophysics",
+    course_units: "4",
+    course_description:
+      "High energy astrophysics including black holes, neutron stars, and gamma-ray astronomy.",
+    prerequisites: "ASTR 1",
+  },
+  {
+    id: "580",
+    course_code: "ASTR 104",
+    course_name: "Astrobiology",
+    course_units: "4",
+    course_description:
+      "Astrobiology including life in the universe, extremophiles, and the search for extraterrestrial life.",
+    prerequisites: "ASTR 1",
+  },
+
+  // Additional Geology Courses
+  {
+    id: "581",
+    course_code: "GEOL 1",
+    course_name: "Introduction to Geology",
+    course_units: "4",
+    course_description:
+      "Introduction to geology including Earth materials, geological processes, and Earth history.",
+    prerequisites: "None",
+  },
+  {
+    id: "582",
+    course_code: "GEOL 2",
+    course_name: "Mineralogy",
+    course_units: "4",
+    course_description:
+      "Mineralogy including mineral identification, crystal structure, and mineral formation.",
+    prerequisites: "GEOL 1",
+  },
+  {
+    id: "583",
+    course_code: "GEOL 3",
+    course_name: "Petrology",
+    course_units: "4",
+    course_description:
+      "Petrology including rock classification, rock formation, and rock identification.",
+    prerequisites: "GEOL 2",
+  },
+  {
+    id: "584",
+    course_code: "GEOL 4",
+    course_name: "Structural Geology",
+    course_units: "4",
+    course_description:
+      "Structural geology including rock deformation, faulting, folding, and tectonic processes.",
+    prerequisites: "GEOL 1",
+  },
+  {
+    id: "585",
+    course_code: "GEOL 5",
+    course_name: "Sedimentology",
+    course_units: "4",
+    course_description:
+      "Sedimentology including sedimentary processes, sedimentary environments, and sedimentary rocks.",
+    prerequisites: "GEOL 1",
+  },
+  {
+    id: "586",
+    course_code: "GEOL 100",
+    course_name: "Paleontology",
+    course_units: "4",
+    course_description:
+      "Paleontology including fossil identification, evolution, and Earth's biological history.",
+    prerequisites: "GEOL 1",
+  },
+  {
+    id: "587",
+    course_code: "GEOL 101",
+    course_name: "Geochemistry",
+    course_units: "4",
+    course_description:
+      "Geochemistry including chemical processes in Earth systems, isotope geochemistry, and geochemical analysis.",
+    prerequisites: "CHEM 6A",
+  },
+  {
+    id: "588",
+    course_code: "GEOL 102",
+    course_name: "Geophysics",
+    course_units: "4",
+    course_description:
+      "Geophysics including Earth's physical properties, seismic methods, and geophysical exploration.",
+    prerequisites: "PHYS 2A",
+  },
+  {
+    id: "589",
+    course_code: "GEOL 103",
+    course_name: "Volcanology",
+    course_units: "4",
+    course_description:
+      "Volcanology including volcanic processes, volcanic hazards, and volcanic monitoring.",
+    prerequisites: "GEOL 1",
+  },
+  {
+    id: "590",
+    course_code: "GEOL 104",
+    course_name: "Environmental Geology",
+    course_units: "4",
+    course_description:
+      "Environmental geology including geological hazards, environmental impacts, and geological resources.",
+    prerequisites: "GEOL 1",
+  },
+
+  // Additional Dance Courses
+  {
+    id: "591",
+    course_code: "DANC 1",
+    course_name: "Introduction to Dance",
+    course_units: "4",
+    course_description:
+      "Introduction to dance including dance history, movement fundamentals, and dance appreciation.",
+    prerequisites: "None",
+  },
+  {
+    id: "592",
+    course_code: "DANC 2",
+    course_name: "Ballet I",
+    course_units: "4",
+    course_description:
+      "Ballet I including ballet technique, ballet history, and classical dance forms.",
+    prerequisites: "None",
+  },
+  {
+    id: "593",
+    course_code: "DANC 3",
+    course_name: "Modern Dance I",
+    course_units: "4",
+    course_description:
+      "Modern dance I including modern dance technique, contemporary movement, and modern dance history.",
+    prerequisites: "None",
+  },
+  {
+    id: "594",
+    course_code: "DANC 4",
+    course_name: "Jazz Dance I",
+    course_units: "4",
+    course_description:
+      "Jazz dance I including jazz technique, jazz history, and jazz dance styles.",
+    prerequisites: "None",
+  },
+  {
+    id: "595",
+    course_code: "DANC 5",
+    course_name: "Contemporary Dance",
+    course_units: "4",
+    course_description:
+      "Contemporary dance including contemporary technique, improvisation, and contemporary choreography.",
+    prerequisites: "DANC 1",
+  },
+  {
+    id: "596",
+    course_code: "DANC 100",
+    course_name: "Choreography",
+    course_units: "4",
+    course_description:
+      "Choreography including dance composition, choreographic principles, and creative movement.",
+    prerequisites: "DANC 1",
+  },
+  {
+    id: "597",
+    course_code: "DANC 101",
+    course_name: "Dance History",
+    course_units: "4",
+    course_description:
+      "Dance history including historical dance forms, cultural dance traditions, and dance evolution.",
+    prerequisites: "DANC 1",
+  },
+  {
+    id: "598",
+    course_code: "DANC 102",
+    course_name: "Dance Theory",
+    course_units: "4",
+    course_description:
+      "Dance theory including dance analysis, movement theory, and dance criticism.",
+    prerequisites: "DANC 1",
+  },
+  {
+    id: "599",
+    course_code: "DANC 103",
+    course_name: "World Dance",
+    course_units: "4",
+    course_description:
+      "World dance including international dance forms, cultural dance traditions, and global dance practices.",
+    prerequisites: "DANC 1",
+  },
+  {
+    id: "600",
+    course_code: "DANC 104",
+    course_name: "Dance Performance",
+    course_units: "4",
+    course_description:
+      "Dance performance including performance techniques, stage presence, and dance production.",
+    prerequisites: "DANC 1",
+  },
+
+  // Additional Creative Writing Courses
+  {
+    id: "601",
+    course_code: "CRWR 1",
+    course_name: "Introduction to Creative Writing",
+    course_units: "4",
+    course_description:
+      "Introduction to creative writing including writing fundamentals, creative expression, and literary forms.",
+    prerequisites: "None",
+  },
+  {
+    id: "602",
+    course_code: "CRWR 2",
+    course_name: "Fiction Writing",
+    course_units: "4",
+    course_description:
+      "Fiction writing including short story writing, novel writing, and narrative techniques.",
+    prerequisites: "CRWR 1",
+  },
+  {
+    id: "603",
+    course_code: "CRWR 3",
+    course_name: "Poetry Writing",
+    course_units: "4",
+    course_description:
+      "Poetry writing including poetic forms, verse techniques, and poetic expression.",
+    prerequisites: "CRWR 1",
+  },
+  {
+    id: "604",
+    course_code: "CRWR 4",
+    course_name: "Creative Nonfiction",
+    course_units: "4",
+    course_description:
+      "Creative nonfiction including memoir writing, personal essays, and narrative nonfiction.",
+    prerequisites: "CRWR 1",
+  },
+  {
+    id: "605",
+    course_code: "CRWR 5",
+    course_name: "Screenwriting",
+    course_units: "4",
+    course_description:
+      "Screenwriting including screenplay writing, script formatting, and film narrative.",
+    prerequisites: "CRWR 1",
+  },
+  {
+    id: "606",
+    course_code: "CRWR 100",
+    course_name: "Advanced Fiction",
+    course_units: "4",
+    course_description:
+      "Advanced fiction including advanced narrative techniques, novel development, and literary fiction.",
+    prerequisites: "CRWR 2",
+  },
+  {
+    id: "607",
+    course_code: "CRWR 101",
+    course_name: "Advanced Poetry",
+    course_units: "4",
+    course_description:
+      "Advanced poetry including advanced poetic forms, experimental poetry, and contemporary poetry.",
+    prerequisites: "CRWR 3",
+  },
+  {
+    id: "608",
+    course_code: "CRWR 102",
+    course_name: "Writing Workshop",
+    course_units: "4",
+    course_description:
+      "Writing workshop including peer review, writing critique, and collaborative writing.",
+    prerequisites: "CRWR 1",
+  },
+  {
+    id: "609",
+    course_code: "CRWR 103",
+    course_name: "Literary Magazine",
+    course_units: "4",
+    course_description:
+      "Literary magazine including publication editing, literary publishing, and editorial work.",
+    prerequisites: "CRWR 1",
+  },
+  {
+    id: "610",
+    course_code: "CRWR 104",
+    course_name: "Writing for Digital Media",
+    course_units: "4",
+    course_description:
+      "Writing for digital media including digital storytelling, online writing, and multimedia writing.",
+    prerequisites: "CRWR 1",
+  },
+
+  // Additional Criminal Justice Courses
+  {
+    id: "611",
+    course_code: "CRIM 1",
+    course_name: "Introduction to Criminal Justice",
+    course_units: "4",
+    course_description:
+      "Introduction to criminal justice including justice systems, law enforcement, and criminal procedures.",
+    prerequisites: "None",
+  },
+  {
+    id: "612",
+    course_code: "CRIM 2",
+    course_name: "Criminology",
+    course_units: "4",
+    course_description:
+      "Criminology including crime theories, criminal behavior, and crime prevention.",
+    prerequisites: "CRIM 1",
+  },
+  {
+    id: "613",
+    course_code: "CRIM 3",
+    course_name: "Law Enforcement",
+    course_units: "4",
+    course_description:
+      "Law enforcement including police work, law enforcement procedures, and community policing.",
+    prerequisites: "CRIM 1",
+  },
+  {
+    id: "614",
+    course_code: "CRIM 4",
+    course_name: "Courts and Judicial Process",
+    course_units: "4",
+    course_description:
+      "Courts and judicial process including court systems, judicial procedures, and legal processes.",
+    prerequisites: "CRIM 1",
+  },
+  {
+    id: "615",
+    course_code: "CRIM 5",
+    course_name: "Corrections",
+    course_units: "4",
+    course_description:
+      "Corrections including prison systems, rehabilitation, and correctional policies.",
+    prerequisites: "CRIM 1",
+  },
+  {
+    id: "616",
+    course_code: "CRIM 100",
+    course_name: "Criminal Law",
+    course_units: "4",
+    course_description:
+      "Criminal law including criminal offenses, criminal defenses, and criminal justice law.",
+    prerequisites: "CRIM 1",
+  },
+  {
+    id: "617",
+    course_code: "CRIM 101",
+    course_name: "Juvenile Justice",
+    course_units: "4",
+    course_description:
+      "Juvenile justice including juvenile court systems, youth crime, and juvenile rehabilitation.",
+    prerequisites: "CRIM 1",
+  },
+  {
+    id: "618",
+    course_code: "CRIM 102",
+    course_name: "Victimology",
+    course_units: "4",
+    course_description:
+      "Victimology including victim rights, victim services, and victim advocacy.",
+    prerequisites: "CRIM 1",
+  },
+  {
+    id: "619",
+    course_code: "CRIM 103",
+    course_name: "Forensic Science",
+    course_units: "4",
+    course_description:
+      "Forensic science including crime scene investigation, forensic analysis, and evidence collection.",
+    prerequisites: "CRIM 1",
+  },
+  {
+    id: "620",
+    course_code: "CRIM 104",
+    course_name: "Criminal Justice Research",
+    course_units: "4",
+    course_description:
+      "Criminal justice research including research methods, data analysis, and criminal justice policy.",
+    prerequisites: "CRIM 1",
+  },
+
+  // Additional Gender Studies Courses
+  {
+    id: "621",
+    course_code: "GSS 1",
+    course_name: "Introduction to Gender Studies",
+    course_units: "4",
+    course_description:
+      "Introduction to gender studies including gender theory, feminist theory, and gender analysis.",
+    prerequisites: "None",
+  },
+  {
+    id: "622",
+    course_code: "GSS 2",
+    course_name: "Feminist Theory",
+    course_units: "4",
+    course_description:
+      "Feminist theory including feminist movements, feminist philosophy, and feminist analysis.",
+    prerequisites: "GSS 1",
+  },
+  {
+    id: "623",
+    course_code: "GSS 3",
+    course_name: "Women's History",
+    course_units: "4",
+    course_description:
+      "Women's history including women's movements, women's rights, and women's contributions.",
+    prerequisites: "GSS 1",
+  },
+  {
+    id: "624",
+    course_code: "GSS 4",
+    course_name: "Masculinity Studies",
+    course_units: "4",
+    course_description:
+      "Masculinity studies including male identity, masculinity theory, and gender roles.",
+    prerequisites: "GSS 1",
+  },
+  {
+    id: "625",
+    course_code: "GSS 5",
+    course_name: "Queer Studies",
+    course_units: "4",
+    course_description:
+      "Queer studies including LGBTQ+ history, queer theory, and sexual identity.",
+    prerequisites: "GSS 1",
+  },
+  {
+    id: "626",
+    course_code: "GSS 100",
+    course_name: "Gender and Society",
+    course_units: "4",
+    course_description:
+      "Gender and society including gender roles, gender inequality, and social construction of gender.",
+    prerequisites: "GSS 1",
+  },
+  {
+    id: "627",
+    course_code: "GSS 101",
+    course_name: "Gender and Media",
+    course_units: "4",
+    course_description:
+      "Gender and media including media representation, gender stereotypes, and media analysis.",
+    prerequisites: "GSS 1",
+  },
+  {
+    id: "628",
+    course_code: "GSS 102",
+    course_name: "Gender and Politics",
+    course_units: "4",
+    course_description:
+      "Gender and politics including women in politics, gender policy, and political representation.",
+    prerequisites: "GSS 1",
+  },
+  {
+    id: "629",
+    course_code: "GSS 103",
+    course_name: "Gender and Health",
+    course_units: "4",
+    course_description:
+      "Gender and health including women's health, men's health, and gender-based health disparities.",
+    prerequisites: "GSS 1",
+  },
+  {
+    id: "630",
+    course_code: "GSS 104",
+    course_name: "Gender and Work",
+    course_units: "4",
+    course_description:
+      "Gender and work including workplace gender issues, pay equity, and work-life balance.",
+    prerequisites: "GSS 1",
+  },
+
+  // Additional Urban Studies Courses
+  {
+    id: "631",
+    course_code: "USP 200",
+    course_name: "Introduction to Urban Studies",
+    course_units: "4",
+    course_description:
+      "Introduction to urban studies including urban theory, urban development, and urban analysis.",
+    prerequisites: "None",
+  },
+  {
+    id: "632",
+    course_code: "USP 201",
+    course_name: "Urban Sociology",
+    course_units: "4",
+    course_description:
+      "Urban sociology including urban communities, social urban issues, and urban social theory.",
+    prerequisites: "USP 200",
+  },
+  {
+    id: "633",
+    course_code: "USP 202",
+    course_name: "Urban Economics",
+    course_units: "4",
+    course_description:
+      "Urban economics including urban markets, urban development economics, and urban economic policy.",
+    prerequisites: "ECON 1",
+  },
+  {
+    id: "634",
+    course_code: "USP 203",
+    course_name: "Urban Geography",
+    course_units: "4",
+    course_description:
+      "Urban geography including urban spatial patterns, urban landscapes, and geographic urban analysis.",
+    prerequisites: "USP 200",
+  },
+  {
+    id: "635",
+    course_code: "USP 204",
+    course_name: "Urban Politics",
+    course_units: "4",
+    course_description:
+      "Urban politics including urban governance, urban policy, and urban political processes.",
+    prerequisites: "USP 200",
+  },
+  {
+    id: "636",
+    course_code: "USP 205",
+    course_name: "Urban History",
+    course_units: "4",
+    course_description:
+      "Urban history including historical urban development, urban transformation, and urban historical analysis.",
+    prerequisites: "USP 200",
+  },
+  {
+    id: "637",
+    course_code: "USP 206",
+    course_name: "Urban Culture",
+    course_units: "4",
+    course_description:
+      "Urban culture including urban cultural practices, urban identity, and cultural urban analysis.",
+    prerequisites: "USP 200",
+  },
+  {
+    id: "638",
+    course_code: "USP 207",
+    course_name: "Urban Environment",
+    course_units: "4",
+    course_description:
+      "Urban environment including urban environmental issues, urban sustainability, and environmental urban planning.",
+    prerequisites: "USP 200",
+  },
+  {
+    id: "639",
+    course_code: "USP 208",
+    course_name: "Urban Technology",
+    course_units: "4",
+    course_description:
+      "Urban technology including smart cities, urban innovation, and technological urban solutions.",
+    prerequisites: "USP 200",
+  },
+  {
+    id: "640",
+    course_code: "USP 209",
+    course_name: "Urban Research Methods",
+    course_units: "4",
+    course_description:
+      "Urban research methods including urban data analysis, urban research design, and urban research techniques.",
+    prerequisites: "USP 200",
+  },
+
+  // Additional Public Administration Courses
+  {
+    id: "641",
+    course_code: "PA 1",
+    course_name: "Introduction to Public Administration",
+    course_units: "4",
+    course_description:
+      "Introduction to public administration including administrative theory, public management, and government administration.",
+    prerequisites: "None",
+  },
+  {
+    id: "642",
+    course_code: "PA 2",
+    course_name: "Public Management",
+    course_units: "4",
+    course_description:
+      "Public management including organizational management, public sector leadership, and administrative processes.",
+    prerequisites: "PA 1",
+  },
+  {
+    id: "643",
+    course_code: "PA 3",
+    course_name: "Public Budgeting",
+    course_units: "4",
+    course_description:
+      "Public budgeting including budget processes, fiscal management, and financial administration.",
+    prerequisites: "PA 1",
+  },
+  {
+    id: "644",
+    course_code: "PA 4",
+    course_name: "Public Personnel Management",
+    course_units: "4",
+    course_description:
+      "Public personnel management including human resources, employee relations, and personnel administration.",
+    prerequisites: "PA 1",
+  },
+  {
+    id: "645",
+    course_code: "PA 5",
+    course_name: "Public Policy Analysis",
+    course_units: "4",
+    course_description:
+      "Public policy analysis including policy evaluation, policy implementation, and policy analysis methods.",
+    prerequisites: "PA 1",
+  },
+  {
+    id: "646",
+    course_code: "PA 100",
+    course_name: "Nonprofit Management",
+    course_units: "4",
+    course_description:
+      "Nonprofit management including nonprofit organizations, nonprofit leadership, and nonprofit administration.",
+    prerequisites: "PA 1",
+  },
+  {
+    id: "647",
+    course_code: "PA 101",
+    course_name: "Public Sector Ethics",
+    course_units: "4",
+    course_description:
+      "Public sector ethics including administrative ethics, ethical decision-making, and public service values.",
+    prerequisites: "PA 1",
+  },
+  {
+    id: "648",
+    course_code: "PA 102",
+    course_name: "Public Sector Innovation",
+    course_units: "4",
+    course_description:
+      "Public sector innovation including government innovation, administrative reform, and public sector change.",
+    prerequisites: "PA 1",
+  },
+  {
+    id: "649",
+    course_code: "PA 103",
+    course_name: "Intergovernmental Relations",
+    course_units: "4",
+    course_description:
+      "Intergovernmental relations including federal-state relations, intergovernmental cooperation, and administrative coordination.",
+    prerequisites: "PA 1",
+  },
+  {
+    id: "650",
+    course_code: "PA 104",
+    course_name: "Public Administration Research",
+    course_units: "4",
+    course_description:
+      "Public administration research including administrative research methods, public sector data analysis, and administrative research design.",
+    prerequisites: "PA 1",
+  },
 ];
