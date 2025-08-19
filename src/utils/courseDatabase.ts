@@ -12438,4 +12438,924 @@ export const courseDatabase: CourseData[] = [
       "Biology research including research methods, experimental biology, and biology research projects.",
     prerequisites: "BIOL 10",
   },
+
+  // Additional Communication Studies Courses
+  {
+    id: "1351",
+    course_code: "COMM 1",
+    course_name: "Introduction to Communication",
+    course_units: "4",
+    course_description:
+      "Introduction to communication including communication theory, interpersonal communication, and communication principles.",
+    prerequisites: "None",
+  },
+  {
+    id: "1352",
+    course_code: "COMM 2",
+    course_name: "Public Speaking",
+    course_units: "4",
+    course_description:
+      "Public speaking including speech preparation, delivery techniques, and effective communication strategies.",
+    prerequisites: "COMM 1",
+  },
+  {
+    id: "1353",
+    course_code: "COMM 3",
+    course_name: "Interpersonal Communication",
+    course_units: "4",
+    course_description:
+      "Interpersonal communication including relationship communication, conflict resolution, and communication skills.",
+    prerequisites: "COMM 1",
+  },
+  {
+    id: "1354",
+    course_code: "COMM 4",
+    course_name: "Mass Communication",
+    course_units: "4",
+    course_description:
+      "Mass communication including media theory, media effects, and mass communication processes.",
+    prerequisites: "COMM 1",
+  },
+  {
+    id: "1355",
+    course_code: "COMM 5",
+    course_name: "Organizational Communication",
+    course_units: "4",
+    course_description:
+      "Organizational communication including workplace communication, organizational culture, and communication management.",
+    prerequisites: "COMM 1",
+  },
+  {
+    id: "1356",
+    course_code: "COMM 100",
+    course_name: "Advanced Communication Theory",
+    course_units: "4",
+    course_description:
+      "Advanced communication theory including theoretical frameworks, research methods, and communication analysis.",
+    prerequisites: "COMM 1",
+  },
+  {
+    id: "1357",
+    course_code: "COMM 101",
+    course_name: "Digital Communication",
+    course_units: "4",
+    course_description:
+      "Digital communication including online communication, social media, and digital communication strategies.",
+    prerequisites: "COMM 1",
+  },
+  {
+    id: "1358",
+    course_code: "COMM 102",
+    course_name: "Intercultural Communication",
+    course_units: "4",
+    course_description:
+      "Intercultural communication including cross-cultural communication, cultural sensitivity, and global communication.",
+    prerequisites: "COMM 1",
+  },
+  {
+    id: "1359",
+    course_code: "COMM 103",
+    course_name: "Communication Research",
+    course_units: "4",
+    course_description:
+      "Communication research including research methods, communication analysis, and communication research projects.",
+    prerequisites: "COMM 1",
+  },
+  {
+    id: "1360",
+    course_code: "COMM 104",
+    course_name: "Communication Ethics",
+    course_units: "4",
+    course_description:
+      "Communication ethics including ethical communication, media ethics, and communication responsibility.",
+    prerequisites: "COMM 1",
+  },
+
+  // Additional Political Science Courses
+  {
+    id: "1361",
+    course_code: "POLI 10",
+    course_name: "Introduction to Political Science",
+    course_units: "4",
+    course_description:
+      "Introduction to political science including political theory, government systems, and political analysis.",
+    prerequisites: "None",
+  },
+  {
+    id: "1362",
+    course_code: "POLI 20",
+    course_name: "American Politics",
+    course_units: "4",
+    course_description:
+      "American politics including U.S. government, political institutions, and American political processes.",
+    prerequisites: "POLI 10",
+  },
+  {
+    id: "1363",
+    course_code: "POLI 30",
+    course_name: "Comparative Politics",
+    course_units: "4",
+    course_description:
+      "Comparative politics including political systems, comparative analysis, and global political structures.",
+    prerequisites: "POLI 10",
+  },
+  {
+    id: "1364",
+    course_code: "POLI 40",
+    course_name: "International Relations",
+    course_units: "4",
+    course_description:
+      "International relations including global politics, international cooperation, and international conflict.",
+    prerequisites: "POLI 10",
+  },
+  {
+    id: "1365",
+    course_code: "POLI 50",
+    course_name: "Political Theory",
+    course_units: "4",
+    course_description:
+      "Political theory including political philosophy, theoretical frameworks, and political thought.",
+    prerequisites: "POLI 10",
+  },
+  {
+    id: "1366",
+    course_code: "POLI 100",
+    course_name: "Advanced Political Science",
+    course_units: "4",
+    course_description:
+      "Advanced political science including advanced theory, research methods, and political analysis.",
+    prerequisites: "POLI 10",
+  },
+  {
+    id: "1367",
+    course_code: "POLI 101",
+    course_name: "Public Policy",
+    course_units: "4",
+    course_description:
+      "Public policy including policy analysis, policy development, and policy implementation.",
+    prerequisites: "POLI 10",
+  },
+  {
+    id: "1368",
+    course_code: "POLI 102",
+    course_name: "Political Economy",
+    course_units: "4",
+    course_description:
+      "Political economy including economic policy, political-economic systems, and policy analysis.",
+    prerequisites: "POLI 10",
+  },
+  {
+    id: "1369",
+    course_code: "POLI 103",
+    course_name: "Political Research",
+    course_units: "4",
+    course_description:
+      "Political research including research methods, political analysis, and political research projects.",
+    prerequisites: "POLI 10",
+  },
+  {
+    id: "1370",
+    course_code: "POLI 104",
+    course_name: "Political Communication",
+    course_units: "4",
+    course_description:
+      "Political communication including political messaging, campaign communication, and political media.",
+    prerequisites: "POLI 10",
+  },
+
+  // Additional Sociology Courses
+  {
+    id: "1371",
+    course_code: "SOC 10",
+    course_name: "Introduction to Sociology",
+    course_units: "4",
+    course_description:
+      "Introduction to sociology including sociological theory, social structures, and sociological analysis.",
+    prerequisites: "None",
+  },
+  {
+    id: "1372",
+    course_code: "SOC 20",
+    course_name: "Social Theory",
+    course_units: "4",
+    course_description:
+      "Social theory including classical and contemporary sociological theories and theoretical frameworks.",
+    prerequisites: "SOC 10",
+  },
+  {
+    id: "1373",
+    course_code: "SOC 30",
+    course_name: "Social Research Methods",
+    course_units: "4",
+    course_description:
+      "Social research methods including research design, data collection, and sociological research.",
+    prerequisites: "SOC 10",
+  },
+  {
+    id: "1374",
+    course_code: "SOC 40",
+    course_name: "Social Inequality",
+    course_units: "4",
+    course_description:
+      "Social inequality including class, race, gender inequality, and social stratification.",
+    prerequisites: "SOC 10",
+  },
+  {
+    id: "1375",
+    course_code: "SOC 50",
+    course_name: "Social Institutions",
+    course_units: "4",
+    course_description:
+      "Social institutions including family, education, religion, and institutional analysis.",
+    prerequisites: "SOC 10",
+  },
+  {
+    id: "1376",
+    course_code: "SOC 100",
+    course_name: "Advanced Sociology",
+    course_units: "4",
+    course_description:
+      "Advanced sociology including advanced theory, specialized areas, and sociological research.",
+    prerequisites: "SOC 10",
+  },
+  {
+    id: "1377",
+    course_code: "SOC 101",
+    course_name: "Urban Sociology",
+    course_units: "4",
+    course_description:
+      "Urban sociology including urban development, urban communities, and urban social processes.",
+    prerequisites: "SOC 10",
+  },
+  {
+    id: "1378",
+    course_code: "SOC 102",
+    course_name: "Criminology",
+    course_units: "4",
+    course_description:
+      "Criminology including crime theory, criminal behavior, and criminal justice systems.",
+    prerequisites: "SOC 10",
+  },
+  {
+    id: "1379",
+    course_code: "SOC 103",
+    course_name: "Medical Sociology",
+    course_units: "4",
+    course_description:
+      "Medical sociology including health and society, medical institutions, and health behavior.",
+    prerequisites: "SOC 10",
+  },
+  {
+    id: "1380",
+    course_code: "SOC 104",
+    course_name: "Sociology Research",
+    course_units: "4",
+    course_description:
+      "Sociology research including research projects, sociological analysis, and sociological research methods.",
+    prerequisites: "SOC 10",
+  },
+
+  // Additional Anthropology Courses
+  {
+    id: "1381",
+    course_code: "ANTH 10",
+    course_name: "Introduction to Anthropology",
+    course_units: "4",
+    course_description:
+      "Introduction to anthropology including cultural anthropology, physical anthropology, and anthropological methods.",
+    prerequisites: "None",
+  },
+  {
+    id: "1382",
+    course_code: "ANTH 20",
+    course_name: "Cultural Anthropology",
+    course_units: "4",
+    course_description:
+      "Cultural anthropology including cultural diversity, cultural analysis, and ethnographic methods.",
+    prerequisites: "ANTH 10",
+  },
+  {
+    id: "1383",
+    course_code: "ANTH 30",
+    course_name: "Physical Anthropology",
+    course_units: "4",
+    course_description:
+      "Physical anthropology including human evolution, biological anthropology, and human variation.",
+    prerequisites: "ANTH 10",
+  },
+  {
+    id: "1384",
+    course_code: "ANTH 40",
+    course_name: "Archaeology",
+    course_units: "4",
+    course_description:
+      "Archaeology including archaeological methods, cultural heritage, and archaeological analysis.",
+    prerequisites: "ANTH 10",
+  },
+  {
+    id: "1385",
+    course_code: "ANTH 50",
+    course_name: "Linguistic Anthropology",
+    course_units: "4",
+    course_description:
+      "Linguistic anthropology including language and culture, linguistic analysis, and communication systems.",
+    prerequisites: "ANTH 10",
+  },
+  {
+    id: "1386",
+    course_code: "ANTH 100",
+    course_name: "Advanced Anthropology",
+    course_units: "4",
+    course_description:
+      "Advanced anthropology including advanced theory, specialized areas, and anthropological research.",
+    prerequisites: "ANTH 10",
+  },
+  {
+    id: "1387",
+    course_code: "ANTH 101",
+    course_name: "Medical Anthropology",
+    course_units: "4",
+    course_description:
+      "Medical anthropology including health and culture, medical systems, and cross-cultural health.",
+    prerequisites: "ANTH 10",
+  },
+  {
+    id: "1388",
+    course_code: "ANTH 102",
+    course_name: "Economic Anthropology",
+    course_units: "4",
+    course_description:
+      "Economic anthropology including economic systems, cultural economics, and economic behavior.",
+    prerequisites: "ANTH 10",
+  },
+  {
+    id: "1389",
+    course_code: "ANTH 103",
+    course_name: "Political Anthropology",
+    course_units: "4",
+    course_description:
+      "Political anthropology including political systems, power structures, and political organization.",
+    prerequisites: "ANTH 10",
+  },
+  {
+    id: "1390",
+    course_code: "ANTH 104",
+    course_name: "Anthropology Research",
+    course_units: "4",
+    course_description:
+      "Anthropology research including research methods, ethnographic research, and anthropological analysis.",
+    prerequisites: "ANTH 10",
+  },
+
+  // Additional Philosophy Courses
+  {
+    id: "1391",
+    course_code: "PHIL 10",
+    course_name: "Introduction to Philosophy",
+    course_units: "4",
+    course_description:
+      "Introduction to philosophy including philosophical methods, major philosophical questions, and critical thinking.",
+    prerequisites: "None",
+  },
+  {
+    id: "1392",
+    course_code: "PHIL 20",
+    course_name: "Ethics",
+    course_units: "4",
+    course_description:
+      "Ethics including moral theory, ethical reasoning, and applied ethics.",
+    prerequisites: "PHIL 10",
+  },
+  {
+    id: "1393",
+    course_code: "PHIL 30",
+    course_name: "Logic",
+    course_units: "4",
+    course_description:
+      "Logic including formal logic, logical reasoning, and argument analysis.",
+    prerequisites: "PHIL 10",
+  },
+  {
+    id: "1394",
+    course_code: "PHIL 40",
+    course_name: "Metaphysics",
+    course_units: "4",
+    course_description:
+      "Metaphysics including fundamental reality, existence, and metaphysical theories.",
+    prerequisites: "PHIL 10",
+  },
+  {
+    id: "1395",
+    course_code: "PHIL 50",
+    course_name: "Epistemology",
+    course_units: "4",
+    course_description:
+      "Epistemology including knowledge theory, belief, and understanding.",
+    prerequisites: "PHIL 10",
+  },
+  {
+    id: "1396",
+    course_code: "PHIL 100",
+    course_name: "Advanced Philosophy",
+    course_units: "4",
+    course_description:
+      "Advanced philosophy including advanced theory, specialized areas, and philosophical research.",
+    prerequisites: "PHIL 10",
+  },
+  {
+    id: "1397",
+    course_code: "PHIL 101",
+    course_name: "Philosophy of Science",
+    course_units: "4",
+    course_description:
+      "Philosophy of science including scientific method, scientific knowledge, and scientific reasoning.",
+    prerequisites: "PHIL 10",
+  },
+  {
+    id: "1398",
+    course_code: "PHIL 102",
+    course_name: "Philosophy of Mind",
+    course_units: "4",
+    course_description:
+      "Philosophy of mind including consciousness, mental states, and cognitive philosophy.",
+    prerequisites: "PHIL 10",
+  },
+  {
+    id: "1399",
+    course_code: "PHIL 103",
+    course_name: "Political Philosophy",
+    course_units: "4",
+    course_description:
+      "Political philosophy including political theory, justice, and political values.",
+    prerequisites: "PHIL 10",
+  },
+  {
+    id: "1400",
+    course_code: "PHIL 104",
+    course_name: "Philosophy Research",
+    course_units: "4",
+    course_description:
+      "Philosophy research including research methods, philosophical analysis, and philosophical research projects.",
+    prerequisites: "PHIL 10",
+  },
+
+  // Additional History Courses
+  {
+    id: "1401",
+    course_code: "HIST 10",
+    course_name: "Introduction to History",
+    course_units: "4",
+    course_description:
+      "Introduction to history including historical methods, historical analysis, and historical thinking.",
+    prerequisites: "None",
+  },
+  {
+    id: "1402",
+    course_code: "HIST 20",
+    course_name: "World History",
+    course_units: "4",
+    course_description:
+      "World history including global historical developments, cross-cultural interactions, and world civilizations.",
+    prerequisites: "HIST 10",
+  },
+  {
+    id: "1403",
+    course_code: "HIST 30",
+    course_name: "American History",
+    course_units: "4",
+    course_description:
+      "American history including U.S. historical development, American society, and American institutions.",
+    prerequisites: "HIST 10",
+  },
+  {
+    id: "1404",
+    course_code: "HIST 40",
+    course_name: "European History",
+    course_units: "4",
+    course_description:
+      "European history including European historical developments, European society, and European culture.",
+    prerequisites: "HIST 10",
+  },
+  {
+    id: "1405",
+    course_code: "HIST 50",
+    course_name: "Asian History",
+    course_units: "4",
+    course_description:
+      "Asian history including Asian historical developments, Asian societies, and Asian cultures.",
+    prerequisites: "HIST 10",
+  },
+  {
+    id: "1406",
+    course_code: "HIST 100",
+    course_name: "Advanced History",
+    course_units: "4",
+    course_description:
+      "Advanced history including advanced historical analysis, specialized areas, and historical research.",
+    prerequisites: "HIST 10",
+  },
+  {
+    id: "1407",
+    course_code: "HIST 101",
+    course_name: "Military History",
+    course_units: "4",
+    course_description:
+      "Military history including warfare, military strategy, and military developments.",
+    prerequisites: "HIST 10",
+  },
+  {
+    id: "1408",
+    course_code: "HIST 102",
+    course_name: "Social History",
+    course_units: "4",
+    course_description:
+      "Social history including social movements, social change, and social developments.",
+    prerequisites: "HIST 10",
+  },
+  {
+    id: "1409",
+    course_code: "HIST 103",
+    course_name: "Economic History",
+    course_units: "4",
+    course_description:
+      "Economic history including economic developments, economic systems, and economic change.",
+    prerequisites: "HIST 10",
+  },
+  {
+    id: "1410",
+    course_code: "HIST 104",
+    course_name: "History Research",
+    course_units: "4",
+    course_description:
+      "History research including research methods, historical analysis, and historical research projects.",
+    prerequisites: "HIST 10",
+  },
+
+  // Additional Literature Courses
+  {
+    id: "1411",
+    course_code: "LIT 10",
+    course_name: "Introduction to Literature",
+    course_units: "4",
+    course_description:
+      "Introduction to literature including literary analysis, literary forms, and literary interpretation.",
+    prerequisites: "None",
+  },
+  {
+    id: "1412",
+    course_code: "LIT 20",
+    course_name: "World Literature",
+    course_units: "4",
+    course_description:
+      "World literature including global literary traditions, cross-cultural literature, and world literary works.",
+    prerequisites: "LIT 10",
+  },
+  {
+    id: "1413",
+    course_code: "LIT 30",
+    course_name: "American Literature",
+    course_units: "4",
+    course_description:
+      "American literature including American literary traditions, American authors, and American literary works.",
+    prerequisites: "LIT 10",
+  },
+  {
+    id: "1414",
+    course_code: "LIT 40",
+    course_name: "British Literature",
+    course_units: "4",
+    course_description:
+      "British literature including British literary traditions, British authors, and British literary works.",
+    prerequisites: "LIT 10",
+  },
+  {
+    id: "1415",
+    course_code: "LIT 50",
+    course_name: "Poetry",
+    course_units: "4",
+    course_description:
+      "Poetry including poetic forms, poetic analysis, and poetic interpretation.",
+    prerequisites: "LIT 10",
+  },
+  {
+    id: "1416",
+    course_code: "LIT 100",
+    course_name: "Advanced Literature",
+    course_units: "4",
+    course_description:
+      "Advanced literature including advanced literary analysis, specialized areas, and literary research.",
+    prerequisites: "LIT 10",
+  },
+  {
+    id: "1417",
+    course_code: "LIT 101",
+    course_name: "Drama",
+    course_units: "4",
+    course_description:
+      "Drama including dramatic forms, dramatic analysis, and dramatic interpretation.",
+    prerequisites: "LIT 10",
+  },
+  {
+    id: "1418",
+    course_code: "LIT 102",
+    course_name: "Fiction",
+    course_units: "4",
+    course_description:
+      "Fiction including fictional forms, fictional analysis, and fictional interpretation.",
+    prerequisites: "LIT 10",
+  },
+  {
+    id: "1419",
+    course_code: "LIT 103",
+    course_name: "Literary Theory",
+    course_units: "4",
+    course_description:
+      "Literary theory including theoretical frameworks, critical approaches, and literary criticism.",
+    prerequisites: "LIT 10",
+  },
+  {
+    id: "1420",
+    course_code: "LIT 104",
+    course_name: "Literature Research",
+    course_units: "4",
+    course_description:
+      "Literature research including research methods, literary analysis, and literary research projects.",
+    prerequisites: "LIT 10",
+  },
+
+  // Additional Music Courses
+  {
+    id: "1421",
+    course_code: "MUS 10",
+    course_name: "Introduction to Music",
+    course_units: "4",
+    course_description:
+      "Introduction to music including music fundamentals, music appreciation, and musical concepts.",
+    prerequisites: "None",
+  },
+  {
+    id: "1422",
+    course_code: "MUS 20",
+    course_name: "Music Theory",
+    course_units: "4",
+    course_description:
+      "Music theory including musical notation, harmonic analysis, and theoretical concepts.",
+    prerequisites: "MUS 10",
+  },
+  {
+    id: "1423",
+    course_code: "MUS 30",
+    course_name: "Music History",
+    course_units: "4",
+    course_description:
+      "Music history including historical developments, musical periods, and musical traditions.",
+    prerequisites: "MUS 10",
+  },
+  {
+    id: "1424",
+    course_code: "MUS 40",
+    course_name: "Music Performance",
+    course_units: "4",
+    course_description:
+      "Music performance including instrumental performance, vocal performance, and performance techniques.",
+    prerequisites: "MUS 10",
+  },
+  {
+    id: "1425",
+    course_code: "MUS 50",
+    course_name: "Music Composition",
+    course_units: "4",
+    course_description:
+      "Music composition including compositional techniques, creative processes, and musical creation.",
+    prerequisites: "MUS 20",
+  },
+  {
+    id: "1426",
+    course_code: "MUS 100",
+    course_name: "Advanced Music",
+    course_units: "4",
+    course_description:
+      "Advanced music including advanced theory, specialized areas, and musical research.",
+    prerequisites: "MUS 10",
+  },
+  {
+    id: "1427",
+    course_code: "MUS 101",
+    course_name: "Jazz Studies",
+    course_units: "4",
+    course_description:
+      "Jazz studies including jazz theory, jazz history, and jazz performance.",
+    prerequisites: "MUS 10",
+  },
+  {
+    id: "1428",
+    course_code: "MUS 102",
+    course_name: "World Music",
+    course_units: "4",
+    course_description:
+      "World music including global musical traditions, cross-cultural music, and world musical forms.",
+    prerequisites: "MUS 10",
+  },
+  {
+    id: "1429",
+    course_code: "MUS 103",
+    course_name: "Music Technology",
+    course_units: "4",
+    course_description:
+      "Music technology including digital music, recording technology, and music production.",
+    prerequisites: "MUS 10",
+  },
+  {
+    id: "1430",
+    course_code: "MUS 104",
+    course_name: "Music Research",
+    course_units: "4",
+    course_description:
+      "Music research including research methods, musical analysis, and music research projects.",
+    prerequisites: "MUS 10",
+  },
+
+  // Additional Visual Arts Courses
+  {
+    id: "1431",
+    course_code: "VIS 10",
+    course_name: "Introduction to Visual Arts",
+    course_units: "4",
+    course_description:
+      "Introduction to visual arts including art fundamentals, art appreciation, and artistic concepts.",
+    prerequisites: "None",
+  },
+  {
+    id: "1432",
+    course_code: "VIS 20",
+    course_name: "Drawing",
+    course_units: "4",
+    course_description:
+      "Drawing including drawing techniques, observational drawing, and drawing fundamentals.",
+    prerequisites: "VIS 10",
+  },
+  {
+    id: "1433",
+    course_code: "VIS 30",
+    course_name: "Painting",
+    course_units: "4",
+    course_description:
+      "Painting including painting techniques, color theory, and painting fundamentals.",
+    prerequisites: "VIS 10",
+  },
+  {
+    id: "1434",
+    course_code: "VIS 40",
+    course_name: "Sculpture",
+    course_units: "4",
+    course_description:
+      "Sculpture including sculptural techniques, three-dimensional design, and sculptural fundamentals.",
+    prerequisites: "VIS 10",
+  },
+  {
+    id: "1435",
+    course_code: "VIS 50",
+    course_name: "Digital Art",
+    course_units: "4",
+    course_description:
+      "Digital art including digital techniques, computer graphics, and digital art fundamentals.",
+    prerequisites: "VIS 10",
+  },
+  {
+    id: "1436",
+    course_code: "VIS 100",
+    course_name: "Advanced Visual Arts",
+    course_units: "4",
+    course_description:
+      "Advanced visual arts including advanced techniques, specialized areas, and artistic research.",
+    prerequisites: "VIS 10",
+  },
+  {
+    id: "1437",
+    course_code: "VIS 101",
+    course_name: "Art History",
+    course_units: "4",
+    course_description:
+      "Art history including historical developments, artistic periods, and artistic traditions.",
+    prerequisites: "VIS 10",
+  },
+  {
+    id: "1438",
+    course_code: "VIS 102",
+    course_name: "Photography",
+    course_units: "4",
+    course_description:
+      "Photography including photographic techniques, visual storytelling, and photographic fundamentals.",
+    prerequisites: "VIS 10",
+  },
+  {
+    id: "1439",
+    course_code: "VIS 103",
+    course_name: "Printmaking",
+    course_units: "4",
+    course_description:
+      "Printmaking including printmaking techniques, print processes, and printmaking fundamentals.",
+    prerequisites: "VIS 10",
+  },
+  {
+    id: "1440",
+    course_code: "VIS 104",
+    course_name: "Visual Arts Research",
+    course_units: "4",
+    course_description:
+      "Visual arts research including research methods, artistic analysis, and visual arts research projects.",
+    prerequisites: "VIS 10",
+  },
+
+  // Additional Theater Courses
+  {
+    id: "1441",
+    course_code: "TDGE 10",
+    course_name: "Introduction to Theater",
+    course_units: "4",
+    course_description:
+      "Introduction to theater including theater fundamentals, theater appreciation, and theatrical concepts.",
+    prerequisites: "None",
+  },
+  {
+    id: "1442",
+    course_code: "TDGE 20",
+    course_name: "Acting",
+    course_units: "4",
+    course_description:
+      "Acting including acting techniques, performance skills, and acting fundamentals.",
+    prerequisites: "TDGE 10",
+  },
+  {
+    id: "1443",
+    course_code: "TDGE 30",
+    course_name: "Directing",
+    course_units: "4",
+    course_description:
+      "Directing including directing techniques, production management, and directing fundamentals.",
+    prerequisites: "TDGE 10",
+  },
+  {
+    id: "1444",
+    course_code: "TDGE 40",
+    course_name: "Stage Design",
+    course_units: "4",
+    course_description:
+      "Stage design including set design, lighting design, and design fundamentals.",
+    prerequisites: "TDGE 10",
+  },
+  {
+    id: "1445",
+    course_code: "TDGE 50",
+    course_name: "Playwriting",
+    course_units: "4",
+    course_description:
+      "Playwriting including dramatic writing, script development, and playwriting fundamentals.",
+    prerequisites: "TDGE 10",
+  },
+  {
+    id: "1446",
+    course_code: "TDGE 100",
+    course_name: "Advanced Theater",
+    course_units: "4",
+    course_description:
+      "Advanced theater including advanced techniques, specialized areas, and theatrical research.",
+    prerequisites: "TDGE 10",
+  },
+  {
+    id: "1447",
+    course_code: "TDGE 101",
+    course_name: "Theater History",
+    course_units: "4",
+    course_description:
+      "Theater history including historical developments, theatrical periods, and theatrical traditions.",
+    prerequisites: "TDGE 10",
+  },
+  {
+    id: "1448",
+    course_code: "TDGE 102",
+    course_name: "Musical Theater",
+    course_units: "4",
+    course_description:
+      "Musical theater including musical performance, theatrical music, and musical theater fundamentals.",
+    prerequisites: "TDGE 10",
+  },
+  {
+    id: "1449",
+    course_code: "TDGE 103",
+    course_name: "Theater Production",
+    course_units: "4",
+    course_description:
+      "Theater production including production management, technical theater, and production fundamentals.",
+    prerequisites: "TDGE 10",
+  },
+  {
+    id: "1450",
+    course_code: "TDGE 104",
+    course_name: "Theater Research",
+    course_units: "4",
+    course_description:
+      "Theater research including research methods, theatrical analysis, and theater research projects.",
+    prerequisites: "TDGE 10",
+  },
 ];

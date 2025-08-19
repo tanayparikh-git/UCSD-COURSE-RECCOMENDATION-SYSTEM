@@ -1257,6 +1257,76 @@ class AIService {
       }
     }
 
+    // Communication Studies & Media
+    if (searchTerm.includes('communication') || searchTerm.includes('public speaking') || searchTerm.includes('interpersonal communication') || searchTerm.includes('mass communication') || searchTerm.includes('organizational communication') || searchTerm.includes('advanced communication theory') || searchTerm.includes('digital communication') || searchTerm.includes('intercultural communication') || searchTerm.includes('communication research') || searchTerm.includes('communication ethics')) {
+      if (courseCode.startsWith('comm') || courseDesc.includes('communication') || courseDesc.includes('public speaking') || courseDesc.includes('interpersonal communication') || courseDesc.includes('mass communication') || courseDesc.includes('organizational communication') || courseDesc.includes('advanced communication theory') || courseDesc.includes('digital communication') || courseDesc.includes('intercultural communication') || courseDesc.includes('communication research') || courseDesc.includes('communication ethics')) {
+        return 0.6;
+      }
+    }
+
+    // Political Science & Government
+    if (searchTerm.includes('political science') || searchTerm.includes('american politics') || searchTerm.includes('comparative politics') || searchTerm.includes('international relations') || searchTerm.includes('political theory') || searchTerm.includes('advanced political science') || searchTerm.includes('public policy') || searchTerm.includes('political economy') || searchTerm.includes('political research') || searchTerm.includes('political communication')) {
+      if (courseCode.startsWith('poli') || courseDesc.includes('political science') || courseDesc.includes('american politics') || courseDesc.includes('comparative politics') || courseDesc.includes('international relations') || courseDesc.includes('political theory') || courseDesc.includes('advanced political science') || courseDesc.includes('public policy') || courseDesc.includes('political economy') || courseDesc.includes('political research') || courseDesc.includes('political communication')) {
+        return 0.6;
+      }
+    }
+
+    // Sociology & Social Sciences
+    if (searchTerm.includes('sociology') || searchTerm.includes('social theory') || searchTerm.includes('social research methods') || searchTerm.includes('social inequality') || searchTerm.includes('social institutions') || searchTerm.includes('advanced sociology') || searchTerm.includes('urban sociology') || searchTerm.includes('criminology') || searchTerm.includes('medical sociology') || searchTerm.includes('sociology research')) {
+      if (courseCode.startsWith('soc') || courseDesc.includes('sociology') || courseDesc.includes('social theory') || courseDesc.includes('social research methods') || courseDesc.includes('social inequality') || courseDesc.includes('social institutions') || courseDesc.includes('advanced sociology') || courseDesc.includes('urban sociology') || courseDesc.includes('criminology') || courseDesc.includes('medical sociology') || courseDesc.includes('sociology research')) {
+        return 0.6;
+      }
+    }
+
+    // Anthropology & Cultural Studies
+    if (searchTerm.includes('anthropology') || searchTerm.includes('cultural anthropology') || searchTerm.includes('physical anthropology') || searchTerm.includes('archaeology') || searchTerm.includes('linguistic anthropology') || searchTerm.includes('advanced anthropology') || searchTerm.includes('medical anthropology') || searchTerm.includes('economic anthropology') || searchTerm.includes('political anthropology') || searchTerm.includes('anthropology research')) {
+      if (courseCode.startsWith('anth') || courseDesc.includes('anthropology') || courseDesc.includes('cultural anthropology') || courseDesc.includes('physical anthropology') || courseDesc.includes('archaeology') || courseDesc.includes('linguistic anthropology') || courseDesc.includes('advanced anthropology') || courseDesc.includes('medical anthropology') || courseDesc.includes('economic anthropology') || courseDesc.includes('political anthropology') || courseDesc.includes('anthropology research')) {
+        return 0.6;
+      }
+    }
+
+    // Philosophy & Ethics
+    if (searchTerm.includes('philosophy') || searchTerm.includes('ethics') || searchTerm.includes('logic') || searchTerm.includes('metaphysics') || searchTerm.includes('epistemology') || searchTerm.includes('advanced philosophy') || searchTerm.includes('philosophy of science') || searchTerm.includes('philosophy of mind') || searchTerm.includes('political philosophy') || searchTerm.includes('philosophy research')) {
+      if (courseCode.startsWith('phil') || courseDesc.includes('philosophy') || courseDesc.includes('ethics') || courseDesc.includes('logic') || courseDesc.includes('metaphysics') || courseDesc.includes('epistemology') || courseDesc.includes('advanced philosophy') || courseDesc.includes('philosophy of science') || courseDesc.includes('philosophy of mind') || courseDesc.includes('political philosophy') || courseDesc.includes('philosophy research')) {
+        return 0.6;
+      }
+    }
+
+    // History & Historical Studies
+    if (searchTerm.includes('history') || searchTerm.includes('world history') || searchTerm.includes('american history') || searchTerm.includes('european history') || searchTerm.includes('asian history') || searchTerm.includes('advanced history') || searchTerm.includes('military history') || searchTerm.includes('social history') || searchTerm.includes('economic history') || searchTerm.includes('history research')) {
+      if (courseCode.startsWith('hist') || courseDesc.includes('history') || courseDesc.includes('world history') || courseDesc.includes('american history') || courseDesc.includes('european history') || courseDesc.includes('asian history') || courseDesc.includes('advanced history') || courseDesc.includes('military history') || courseDesc.includes('social history') || courseDesc.includes('economic history') || courseDesc.includes('history research')) {
+        return 0.6;
+      }
+    }
+
+    // Literature & Literary Studies
+    if (searchTerm.includes('literature') || searchTerm.includes('world literature') || searchTerm.includes('american literature') || searchTerm.includes('british literature') || searchTerm.includes('poetry') || searchTerm.includes('advanced literature') || searchTerm.includes('drama') || searchTerm.includes('fiction') || searchTerm.includes('literary theory') || searchTerm.includes('literature research')) {
+      if (courseCode.startsWith('lit') || courseDesc.includes('literature') || courseDesc.includes('world literature') || courseDesc.includes('american literature') || courseDesc.includes('british literature') || courseDesc.includes('poetry') || courseDesc.includes('advanced literature') || courseDesc.includes('drama') || courseDesc.includes('fiction') || courseDesc.includes('literary theory') || courseDesc.includes('literature research')) {
+        return 0.6;
+      }
+    }
+
+    // Music & Musical Studies
+    if (searchTerm.includes('music') || searchTerm.includes('music theory') || searchTerm.includes('music history') || searchTerm.includes('music performance') || searchTerm.includes('music composition') || searchTerm.includes('advanced music') || searchTerm.includes('jazz studies') || searchTerm.includes('world music') || searchTerm.includes('music technology') || searchTerm.includes('music research')) {
+      if (courseCode.startsWith('mus') || courseDesc.includes('music') || courseDesc.includes('music theory') || courseDesc.includes('music history') || courseDesc.includes('music performance') || courseDesc.includes('music composition') || courseDesc.includes('advanced music') || courseDesc.includes('jazz studies') || courseDesc.includes('world music') || courseDesc.includes('music technology') || courseDesc.includes('music research')) {
+        return 0.6;
+      }
+    }
+
+    // Visual Arts & Art Studies
+    if (searchTerm.includes('visual arts') || searchTerm.includes('drawing') || searchTerm.includes('painting') || searchTerm.includes('sculpture') || searchTerm.includes('digital art') || searchTerm.includes('advanced visual arts') || searchTerm.includes('art history') || searchTerm.includes('photography') || searchTerm.includes('printmaking') || searchTerm.includes('visual arts research')) {
+      if (courseCode.startsWith('vis') || courseDesc.includes('visual arts') || courseDesc.includes('drawing') || courseDesc.includes('painting') || courseDesc.includes('sculpture') || courseDesc.includes('digital art') || courseDesc.includes('advanced visual arts') || courseDesc.includes('art history') || courseDesc.includes('photography') || courseDesc.includes('printmaking') || courseDesc.includes('visual arts research')) {
+        return 0.6;
+      }
+    }
+
+    // Theater & Performance Studies
+    if (searchTerm.includes('theater') || searchTerm.includes('acting') || searchTerm.includes('directing') || searchTerm.includes('stage design') || searchTerm.includes('playwriting') || searchTerm.includes('advanced theater') || searchTerm.includes('theater history') || searchTerm.includes('musical theater') || searchTerm.includes('theater production') || searchTerm.includes('theater research')) {
+      if (courseCode.startsWith('tdge') || courseDesc.includes('theater') || courseDesc.includes('acting') || courseDesc.includes('directing') || courseDesc.includes('stage design') || courseDesc.includes('playwriting') || courseDesc.includes('advanced theater') || courseDesc.includes('theater history') || courseDesc.includes('musical theater') || courseDesc.includes('theater production') || courseDesc.includes('theater research')) {
+        return 0.6;
+      }
+    }
+
     return 0;
   }
 
