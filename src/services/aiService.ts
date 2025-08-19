@@ -64,11 +64,13 @@ class AIService {
   // Search the course database with scoring
   private searchCourseDatabase(query: string): AIRecommendation[] {
     const searchTerm = query.toLowerCase().trim();
+    const searchWords = searchTerm.split(/\s+/).filter(word => word.length > 0);
     const results: AIRecommendation[] = [];
 
     for (const course of courseDatabase) {
       let score = 0;
       let reason = "";
+      let matchType = "";
 
       // Exact course code match (highest priority)
       const courseCode = course.course_code.toLowerCase();
@@ -78,26 +80,61 @@ class AIService {
       if (cleanCourseCode === cleanSearchTerm) {
         score = 1.0;
         reason = `Exact match for course code "${query}"`;
+        matchType = "exact_code";
       }
       // Partial course code match
       else if (cleanCourseCode.includes(cleanSearchTerm) || cleanSearchTerm.includes(cleanCourseCode)) {
         score = 0.9;
         reason = `Course code matches "${query}"`;
+        matchType = "partial_code";
       }
       // Course name match
       else if (course.course_name.toLowerCase().includes(searchTerm)) {
         score = 0.8;
         reason = `Course name contains "${query}"`;
+        matchType = "course_name";
       }
-      // Description keyword match
-      else if (course.course_description.toLowerCase().includes(searchTerm)) {
-        score = 0.7;
-        reason = `Course description contains "${query}"`;
-      }
-      // Subject area match
-      else if (this.getSubjectMatchScore(course, searchTerm) > 0) {
-        score = this.getSubjectMatchScore(course, searchTerm);
-        reason = `Related to "${query}"`;
+      // Comprehensive description search
+      else {
+        const courseDesc = course.course_description.toLowerCase();
+        const courseName = course.course_name.toLowerCase();
+        const courseCodeLower = course.course_code.toLowerCase();
+        
+        // Check if ALL search words are found in description, name, or code
+        const allWordsFound = searchWords.every(word => 
+          courseDesc.includes(word) || 
+          courseName.includes(word) || 
+          courseCodeLower.includes(word)
+        );
+        
+        // Check if ANY search words are found
+        const anyWordsFound = searchWords.some(word => 
+          courseDesc.includes(word) || 
+          courseName.includes(word) || 
+          courseCodeLower.includes(word)
+        );
+        
+        if (allWordsFound) {
+          score = 0.75;
+          reason = `All search terms found in course description: "${query}"`;
+          matchType = "all_words";
+        } else if (anyWordsFound) {
+          // Count how many words match
+          const matchingWords = searchWords.filter(word => 
+            courseDesc.includes(word) || 
+            courseName.includes(word) || 
+            courseCodeLower.includes(word)
+          );
+          score = 0.6 + (matchingWords.length / searchWords.length) * 0.1;
+          reason = `${matchingWords.length}/${searchWords.length} search terms found: "${query}"`;
+          matchType = "partial_words";
+        }
+        // Subject area match as fallback
+        else if (this.getSubjectMatchScore(course, searchTerm) > 0) {
+          score = this.getSubjectMatchScore(course, searchTerm);
+          reason = `Related to "${query}"`;
+          matchType = "subject_area";
+        }
       }
 
       if (score > 0) {
@@ -128,66 +165,80 @@ class AIService {
     const courseName = course.course_name.toLowerCase();
     const courseDesc = course.course_description.toLowerCase();
 
-    // Computer Science
-    if (searchTerm.includes('computer') || searchTerm.includes('programming') || searchTerm.includes('cs') || searchTerm.includes('software')) {
-      if (courseCode.startsWith('cse') || courseCode.startsWith('dsc') || courseDesc.includes('programming') || courseDesc.includes('software')) {
+    // Computer Science & Programming
+    if (searchTerm.includes('computer') || searchTerm.includes('programming') || searchTerm.includes('cs') || searchTerm.includes('software') || searchTerm.includes('algorithm') || searchTerm.includes('data structure')) {
+      if (courseCode.startsWith('cse') || courseCode.startsWith('dsc') || courseDesc.includes('programming') || courseDesc.includes('software') || courseDesc.includes('algorithm') || courseDesc.includes('data structure')) {
         return 0.6;
       }
     }
 
-    // Mathematics
-    if (searchTerm.includes('math') || searchTerm.includes('calculus') || searchTerm.includes('algebra') || searchTerm.includes('statistics')) {
-      if (courseCode.startsWith('math') || courseCode.startsWith('stat') || courseDesc.includes('calculus') || courseDesc.includes('statistics')) {
+    // Mathematics & Calculus
+    if (searchTerm.includes('math') || searchTerm.includes('calculus') || searchTerm.includes('algebra') || searchTerm.includes('linear') || searchTerm.includes('analysis') || searchTerm.includes('differential') || searchTerm.includes('integral')) {
+      if (courseCode.startsWith('math') || courseDesc.includes('calculus') || courseDesc.includes('algebra') || courseDesc.includes('analysis') || courseDesc.includes('differential') || courseDesc.includes('integral')) {
         return 0.6;
       }
     }
 
-    // Economics
-    if (searchTerm.includes('econ') || searchTerm.includes('economics') || searchTerm.includes('game theory')) {
-      if (courseCode.startsWith('econ') || courseDesc.includes('economics') || courseDesc.includes('game theory')) {
+    // Statistics & Probability
+    if (searchTerm.includes('statistics') || searchTerm.includes('statistical') || searchTerm.includes('probability') || searchTerm.includes('regression') || searchTerm.includes('inference') || searchTerm.includes('experimental design')) {
+      if (courseCode.startsWith('stat') || courseCode.startsWith('math 180') || courseDesc.includes('statistics') || courseDesc.includes('probability') || courseDesc.includes('regression') || courseDesc.includes('inference')) {
         return 0.6;
       }
     }
 
-    // Chemistry
-    if (searchTerm.includes('chem') || searchTerm.includes('chemistry')) {
-      if (courseCode.startsWith('chem') || courseDesc.includes('chemistry')) {
+    // Economics & Game Theory
+    if (searchTerm.includes('econ') || searchTerm.includes('economics') || searchTerm.includes('game theory') || searchTerm.includes('microeconomics') || searchTerm.includes('macroeconomics') || searchTerm.includes('econometrics')) {
+      if (courseCode.startsWith('econ') || courseDesc.includes('economics') || courseDesc.includes('game theory') || courseDesc.includes('microeconomics') || courseDesc.includes('macroeconomics') || courseDesc.includes('econometrics')) {
         return 0.6;
       }
     }
 
-    // Physics
-    if (searchTerm.includes('phys') || searchTerm.includes('physics')) {
-      if (courseCode.startsWith('phys') || courseDesc.includes('physics')) {
+    // Chemistry & Organic Chemistry
+    if (searchTerm.includes('chem') || searchTerm.includes('chemistry') || searchTerm.includes('organic') || searchTerm.includes('biochemistry') || searchTerm.includes('physical chemistry') || searchTerm.includes('inorganic')) {
+      if (courseCode.startsWith('chem') || courseDesc.includes('chemistry') || courseDesc.includes('organic') || courseDesc.includes('biochemistry') || courseDesc.includes('physical chemistry') || courseDesc.includes('inorganic')) {
         return 0.6;
       }
     }
 
-    // Biology
-    if (searchTerm.includes('bio') || searchTerm.includes('biology')) {
-      if (courseCode.startsWith('bild') || courseDesc.includes('biology')) {
+    // Physics & Quantum Mechanics
+    if (searchTerm.includes('phys') || searchTerm.includes('physics') || searchTerm.includes('mechanics') || searchTerm.includes('quantum') || searchTerm.includes('electromagnetism') || searchTerm.includes('thermodynamics')) {
+      if (courseCode.startsWith('phys') || courseDesc.includes('physics') || courseDesc.includes('mechanics') || courseDesc.includes('quantum') || courseDesc.includes('electromagnetism') || courseDesc.includes('thermodynamics')) {
         return 0.6;
       }
     }
 
-    // Psychology
-    if (searchTerm.includes('psych') || searchTerm.includes('psychology')) {
-      if (courseCode.startsWith('psyc') || courseDesc.includes('psychology')) {
+    // Biology & Life Sciences
+    if (searchTerm.includes('bio') || searchTerm.includes('biology') || searchTerm.includes('cell') || searchTerm.includes('genetics') || searchTerm.includes('physiology') || searchTerm.includes('anatomy') || searchTerm.includes('immunology') || searchTerm.includes('neurobiology')) {
+      if (courseCode.startsWith('bild') || courseDesc.includes('biology') || courseDesc.includes('cell') || courseDesc.includes('genetics') || courseDesc.includes('physiology') || courseDesc.includes('anatomy') || courseDesc.includes('immunology') || courseDesc.includes('neurobiology')) {
         return 0.6;
       }
     }
 
-    // Data Science
-    if (searchTerm.includes('data') || searchTerm.includes('machine learning') || searchTerm.includes('analytics')) {
-      if (courseCode.startsWith('dsc') || courseDesc.includes('data') || courseDesc.includes('machine learning')) {
+    // Psychology & Cognitive Science
+    if (searchTerm.includes('psych') || searchTerm.includes('psychology') || searchTerm.includes('cognitive') || searchTerm.includes('perception') || searchTerm.includes('memory') || searchTerm.includes('learning') || searchTerm.includes('neural') || searchTerm.includes('brain')) {
+      if (courseCode.startsWith('psyc') || courseCode.startsWith('cogs') || courseDesc.includes('psychology') || courseDesc.includes('cognitive') || courseDesc.includes('perception') || courseDesc.includes('memory') || courseDesc.includes('learning') || courseDesc.includes('neural') || courseDesc.includes('brain')) {
         return 0.6;
       }
     }
 
-    // Probability and Statistics
-    if (searchTerm.includes('probability') || searchTerm.includes('statistical')) {
-      if (courseDesc.includes('probability') || courseDesc.includes('statistical') || courseCode.startsWith('stat') || courseCode.startsWith('math 180')) {
+    // Data Science & Machine Learning
+    if (searchTerm.includes('data') || searchTerm.includes('machine learning') || searchTerm.includes('analytics') || searchTerm.includes('mining') || searchTerm.includes('artificial intelligence') || searchTerm.includes('nlp') || searchTerm.includes('text mining')) {
+      if (courseCode.startsWith('dsc') || courseDesc.includes('data') || courseDesc.includes('machine learning') || courseDesc.includes('analytics') || courseDesc.includes('mining') || courseDesc.includes('artificial intelligence') || courseDesc.includes('natural language')) {
         return 0.6;
+      }
+    }
+
+    // Laboratory & Experimental
+    if (searchTerm.includes('laboratory') || searchTerm.includes('lab') || searchTerm.includes('experimental') || searchTerm.includes('techniques') || searchTerm.includes('methodology')) {
+      if (courseDesc.includes('laboratory') || courseDesc.includes('lab') || courseDesc.includes('experimental') || courseDesc.includes('techniques') || courseDesc.includes('methodology')) {
+        return 0.5;
+      }
+    }
+
+    // Research & Capstone
+    if (searchTerm.includes('research') || searchTerm.includes('capstone') || searchTerm.includes('project') || searchTerm.includes('seminar')) {
+      if (courseDesc.includes('research') || courseDesc.includes('capstone') || courseDesc.includes('project') || courseDesc.includes('seminar')) {
+        return 0.5;
       }
     }
 
