@@ -112,6 +112,20 @@ class AIService {
         reason = `Department code "${searchWords[0]}" matches course code`;
         matchType = "department_code";
       }
+      // Department code + number match (e.g., "bild 1" should match courses starting with "bild")
+      else if (searchWords.length === 2 && courseCode.startsWith(searchWords[0])) {
+        score = 0.8;
+        reason = `Department code "${searchWords[0]}" matches course code`;
+        matchType = "department_code";
+      }
+      // Biology department variations (bild should match biom, bicd, bibc, bimm, etc.)
+      else if (searchWords.length >= 1 && (searchWords[0] === 'bild' || searchWords[0] === 'bio')) {
+        if (courseCode.startsWith('biom') || courseCode.startsWith('bicd') || courseCode.startsWith('bibc') || courseCode.startsWith('bimm') || courseCode.startsWith('beng')) {
+          score = 0.75;
+          reason = `Biology-related department code matches "${searchWords[0]}"`;
+          matchType = "biology_department";
+        }
+      }
       // Course name match
       else if (course.course_name.toLowerCase().includes(searchTerm)) {
         score = 0.8;
@@ -488,7 +502,7 @@ class AIService {
 
     // Biology & Life Sciences
     if (searchTerm.includes('bio') || searchTerm.includes('biology') || searchTerm.includes('bild') || searchTerm.includes('cell') || searchTerm.includes('genetics') || searchTerm.includes('physiology') || searchTerm.includes('anatomy') || searchTerm.includes('immunology') || searchTerm.includes('neurobiology')) {
-      if (courseCode.startsWith('bild') || courseCode.startsWith('BILD') || courseCode.startsWith('biol') || courseCode.startsWith('BIOL') || courseDesc.includes('biology') || courseDesc.includes('cell') || courseDesc.includes('genetics') || courseDesc.includes('physiology') || courseDesc.includes('anatomy') || courseDesc.includes('immunology') || courseDesc.includes('neurobiology')) {
+      if (courseCode.startsWith('bild') || courseCode.startsWith('BILD') || courseCode.startsWith('biol') || courseCode.startsWith('BIOL') || courseCode.startsWith('biom') || courseCode.startsWith('BIOM') || courseCode.startsWith('bicd') || courseCode.startsWith('BICD') || courseCode.startsWith('bibc') || courseCode.startsWith('BIBC') || courseCode.startsWith('bimm') || courseCode.startsWith('BIMM') || courseCode.startsWith('beng') || courseCode.startsWith('BENG') || courseDesc.includes('biology') || courseDesc.includes('cell') || courseDesc.includes('genetics') || courseDesc.includes('physiology') || courseDesc.includes('anatomy') || courseDesc.includes('immunology') || courseDesc.includes('neurobiology')) {
         return 0.6;
       }
     }

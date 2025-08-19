@@ -133,6 +133,9 @@ export function App() {
             Find Your UCSD Courses
           </h1>
           <SearchBar onSearch={handleSearch} />
+          <p className="text-center text-gray-600 mt-4 text-lg">
+            Type in a subject, theory, or course that you like/are interested in, and our algorithm will find perfect courses for you
+          </p>
         </div>
 
         {/* Fake Reviews Section - Moved to Top */}
