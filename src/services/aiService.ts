@@ -305,6 +305,20 @@ class AIService {
       }
     }
 
+    // Languages & Linguistics
+    if (searchTerm.includes('language') || searchTerm.includes('linguistics') || searchTerm.includes('spanish') || searchTerm.includes('french') || searchTerm.includes('german') || searchTerm.includes('chinese') || searchTerm.includes('japanese') || searchTerm.includes('korean') || searchTerm.includes('italian') || searchTerm.includes('russian') || searchTerm.includes('arabic') || searchTerm.includes('grammar') || searchTerm.includes('translation') || searchTerm.includes('phonetics') || searchTerm.includes('syntax') || searchTerm.includes('morphology') || searchTerm.includes('semantics')) {
+      if (courseCode.startsWith('ling') || courseCode.startsWith('span') || courseCode.startsWith('fren') || courseCode.startsWith('germ') || courseCode.startsWith('chin') || courseCode.startsWith('japn') || courseCode.startsWith('kore') || courseCode.startsWith('ital') || courseCode.startsWith('russ') || courseCode.startsWith('arab') || courseDesc.includes('language') || courseDesc.includes('linguistics') || courseDesc.includes('grammar') || courseDesc.includes('translation') || courseDesc.includes('phonetics') || courseDesc.includes('syntax') || courseDesc.includes('morphology') || courseDesc.includes('semantics')) {
+        return 0.6;
+      }
+    }
+
+    // Music & Arts
+    if (searchTerm.includes('music') || searchTerm.includes('musical') || searchTerm.includes('art') || searchTerm.includes('painting') || searchTerm.includes('sculpture') || searchTerm.includes('photography') || searchTerm.includes('drawing') || searchTerm.includes('composition') || searchTerm.includes('orchestration') || searchTerm.includes('jazz') || searchTerm.includes('classical') || searchTerm.includes('popular music') || searchTerm.includes('world music') || searchTerm.includes('digital art') || searchTerm.includes('contemporary art') || searchTerm.includes('modern art')) {
+      if (courseCode.startsWith('mus') || courseCode.startsWith('vis') || courseDesc.includes('music') || courseDesc.includes('musical') || courseDesc.includes('art') || courseDesc.includes('painting') || courseDesc.includes('sculpture') || courseDesc.includes('photography') || courseDesc.includes('drawing') || courseDesc.includes('composition') || courseDesc.includes('orchestration') || courseDesc.includes('jazz') || courseDesc.includes('classical') || courseDesc.includes('popular music') || courseDesc.includes('world music') || courseDesc.includes('digital art') || courseDesc.includes('contemporary art') || courseDesc.includes('modern art')) {
+        return 0.6;
+      }
+    }
+
     return 0;
   }
 

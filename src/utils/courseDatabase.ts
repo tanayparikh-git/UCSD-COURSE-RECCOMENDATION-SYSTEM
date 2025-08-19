@@ -1865,7 +1865,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "HIST 1",
     course_name: "World History",
     course_units: "4",
-    course_description: "World history including major civilizations, historical events, and global developments from ancient times to present.",
+    course_description:
+      "World history including major civilizations, historical events, and global developments from ancient times to present.",
     prerequisites: "None",
   },
   {
@@ -1873,7 +1874,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "HIST 2",
     course_name: "United States History",
     course_units: "4",
-    course_description: "United States history including colonial period, independence, civil war, and modern American development.",
+    course_description:
+      "United States history including colonial period, independence, civil war, and modern American development.",
     prerequisites: "None",
   },
   {
@@ -1881,7 +1883,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "HIST 3",
     course_name: "European History",
     course_units: "4",
-    course_description: "European history including medieval period, renaissance, enlightenment, and modern European development.",
+    course_description:
+      "European history including medieval period, renaissance, enlightenment, and modern European development.",
     prerequisites: "None",
   },
   {
@@ -1889,7 +1892,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "HIST 4",
     course_name: "Asian History",
     course_units: "4",
-    course_description: "Asian history including Chinese, Japanese, Korean, and South Asian civilizations and developments.",
+    course_description:
+      "Asian history including Chinese, Japanese, Korean, and South Asian civilizations and developments.",
     prerequisites: "None",
   },
   {
@@ -1897,7 +1901,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "HIST 5",
     course_name: "Latin American History",
     course_units: "4",
-    course_description: "Latin American history including pre-Columbian civilizations, colonial period, and modern Latin American development.",
+    course_description:
+      "Latin American history including pre-Columbian civilizations, colonial period, and modern Latin American development.",
     prerequisites: "None",
   },
   {
@@ -1905,7 +1910,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "HIST 100",
     course_name: "Historical Methods",
     course_units: "4",
-    course_description: "Historical methods including research techniques, source analysis, and historical writing.",
+    course_description:
+      "Historical methods including research techniques, source analysis, and historical writing.",
     prerequisites: "HIST 1",
   },
   {
@@ -1913,7 +1919,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "HIST 101",
     course_name: "Ancient History",
     course_units: "4",
-    course_description: "Ancient history including Egyptian, Greek, Roman, and other ancient civilizations.",
+    course_description:
+      "Ancient history including Egyptian, Greek, Roman, and other ancient civilizations.",
     prerequisites: "HIST 1",
   },
   {
@@ -1921,7 +1928,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "HIST 102",
     course_name: "Medieval History",
     course_units: "4",
-    course_description: "Medieval history including feudalism, crusades, and medieval European society.",
+    course_description:
+      "Medieval history including feudalism, crusades, and medieval European society.",
     prerequisites: "HIST 1",
   },
   {
@@ -1929,7 +1937,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "HIST 103",
     course_name: "Modern History",
     course_units: "4",
-    course_description: "Modern history including industrial revolution, world wars, and contemporary global developments.",
+    course_description:
+      "Modern history including industrial revolution, world wars, and contemporary global developments.",
     prerequisites: "HIST 1",
   },
   {
@@ -1937,7 +1946,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "HIST 104",
     course_name: "Military History",
     course_units: "4",
-    course_description: "Military history including warfare, strategy, and military technology throughout history.",
+    course_description:
+      "Military history including warfare, strategy, and military technology throughout history.",
     prerequisites: "HIST 1",
   },
 
@@ -1947,7 +1957,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "POLI 1",
     course_name: "Introduction to Political Science",
     course_units: "4",
-    course_description: "Introduction to political science including political theory, comparative politics, and international relations.",
+    course_description:
+      "Introduction to political science including political theory, comparative politics, and international relations.",
     prerequisites: "None",
   },
   {
@@ -1955,7 +1966,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "POLI 2",
     course_name: "Introduction to American Politics",
     course_units: "4",
-    course_description: "Introduction to American politics including government structure, political parties, and democratic processes.",
+    course_description:
+      "Introduction to American politics including government structure, political parties, and democratic processes.",
     prerequisites: "None",
   },
   {
@@ -1963,7 +1975,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "POLI 3",
     course_name: "Introduction to Comparative Politics",
     course_units: "4",
-    course_description: "Introduction to comparative politics including political systems, institutions, and political behavior across countries.",
+    course_description:
+      "Introduction to comparative politics including political systems, institutions, and political behavior across countries.",
     prerequisites: "None",
   },
   {
@@ -1971,7 +1984,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "POLI 4",
     course_name: "Introduction to International Relations",
     course_units: "4",
-    course_description: "Introduction to international relations including diplomacy, conflict, cooperation, and global governance.",
+    course_description:
+      "Introduction to international relations including diplomacy, conflict, cooperation, and global governance.",
     prerequisites: "None",
   },
   {
@@ -1979,7 +1993,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "POLI 5",
     course_name: "Introduction to Political Theory",
     course_units: "4",
-    course_description: "Introduction to political theory including classical and modern political thought, justice, and democracy.",
+    course_description:
+      "Introduction to political theory including classical and modern political thought, justice, and democracy.",
     prerequisites: "None",
   },
   {
@@ -1987,7 +2002,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "POLI 100",
     course_name: "Political Theory",
     course_units: "4",
-    course_description: "Political theory including major thinkers, political ideologies, and theoretical frameworks.",
+    course_description:
+      "Political theory including major thinkers, political ideologies, and theoretical frameworks.",
     prerequisites: "POLI 1",
   },
   {
@@ -1995,7 +2011,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "POLI 101",
     course_name: "American Political Institutions",
     course_units: "4",
-    course_description: "American political institutions including Congress, presidency, judiciary, and federal bureaucracy.",
+    course_description:
+      "American political institutions including Congress, presidency, judiciary, and federal bureaucracy.",
     prerequisites: "POLI 2",
   },
   {
@@ -2003,7 +2020,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "POLI 102",
     course_name: "Political Behavior",
     course_units: "4",
-    course_description: "Political behavior including voting, public opinion, political participation, and political psychology.",
+    course_description:
+      "Political behavior including voting, public opinion, political participation, and political psychology.",
     prerequisites: "POLI 2",
   },
   {
@@ -2011,7 +2029,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "POLI 103",
     course_name: "Public Policy",
     course_units: "4",
-    course_description: "Public policy including policy analysis, implementation, and evaluation in various policy areas.",
+    course_description:
+      "Public policy including policy analysis, implementation, and evaluation in various policy areas.",
     prerequisites: "POLI 1",
   },
   {
@@ -2019,7 +2038,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "POLI 104",
     course_name: "International Security",
     course_units: "4",
-    course_description: "International security including conflict resolution, arms control, and global security challenges.",
+    course_description:
+      "International security including conflict resolution, arms control, and global security challenges.",
     prerequisites: "POLI 4",
   },
 
@@ -2029,7 +2049,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "SOC 1",
     course_name: "Introduction to Sociology",
     course_units: "4",
-    course_description: "Introduction to sociology including social theory, social institutions, and social change.",
+    course_description:
+      "Introduction to sociology including social theory, social institutions, and social change.",
     prerequisites: "None",
   },
   {
@@ -2037,7 +2058,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "SOC 2",
     course_name: "Social Problems",
     course_units: "4",
-    course_description: "Social problems including inequality, crime, poverty, and social justice issues.",
+    course_description:
+      "Social problems including inequality, crime, poverty, and social justice issues.",
     prerequisites: "None",
   },
   {
@@ -2045,7 +2067,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "SOC 3",
     course_name: "Social Psychology",
     course_units: "4",
-    course_description: "Social psychology including group behavior, social influence, and interpersonal relationships.",
+    course_description:
+      "Social psychology including group behavior, social influence, and interpersonal relationships.",
     prerequisites: "None",
   },
   {
@@ -2053,7 +2076,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "SOC 4",
     course_name: "Sociology of the Family",
     course_units: "4",
-    course_description: "Sociology of the family including family structures, relationships, and social change.",
+    course_description:
+      "Sociology of the family including family structures, relationships, and social change.",
     prerequisites: "None",
   },
   {
@@ -2061,7 +2085,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "SOC 5",
     course_name: "Sociology of Education",
     course_units: "4",
-    course_description: "Sociology of education including educational inequality, school systems, and social mobility.",
+    course_description:
+      "Sociology of education including educational inequality, school systems, and social mobility.",
     prerequisites: "None",
   },
   {
@@ -2069,7 +2094,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "SOC 100",
     course_name: "Classical Sociological Theory",
     course_units: "4",
-    course_description: "Classical sociological theory including Marx, Weber, Durkheim, and other foundational theorists.",
+    course_description:
+      "Classical sociological theory including Marx, Weber, Durkheim, and other foundational theorists.",
     prerequisites: "SOC 1",
   },
   {
@@ -2077,7 +2103,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "SOC 101",
     course_name: "Contemporary Sociological Theory",
     course_units: "4",
-    course_description: "Contemporary sociological theory including modern theoretical perspectives and applications.",
+    course_description:
+      "Contemporary sociological theory including modern theoretical perspectives and applications.",
     prerequisites: "SOC 100",
   },
   {
@@ -2085,7 +2112,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "SOC 102",
     course_name: "Research Methods in Sociology",
     course_units: "4",
-    course_description: "Research methods in sociology including quantitative and qualitative research, data analysis, and research design.",
+    course_description:
+      "Research methods in sociology including quantitative and qualitative research, data analysis, and research design.",
     prerequisites: "SOC 1",
   },
   {
@@ -2093,7 +2121,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "SOC 103",
     course_name: "Social Inequality",
     course_units: "4",
-    course_description: "Social inequality including class, race, gender, and other forms of social stratification.",
+    course_description:
+      "Social inequality including class, race, gender, and other forms of social stratification.",
     prerequisites: "SOC 1",
   },
   {
@@ -2101,7 +2130,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "SOC 104",
     course_name: "Urban Sociology",
     course_units: "4",
-    course_description: "Urban sociology including urban development, community studies, and urban social problems.",
+    course_description:
+      "Urban sociology including urban development, community studies, and urban social problems.",
     prerequisites: "SOC 1",
   },
 
@@ -2111,7 +2141,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "ANTH 1",
     course_name: "Introduction to Anthropology",
     course_units: "4",
-    course_description: "Introduction to anthropology including cultural anthropology, physical anthropology, archaeology, and linguistic anthropology.",
+    course_description:
+      "Introduction to anthropology including cultural anthropology, physical anthropology, archaeology, and linguistic anthropology.",
     prerequisites: "None",
   },
   {
@@ -2119,7 +2150,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "ANTH 2",
     course_name: "Cultural Anthropology",
     course_units: "4",
-    course_description: "Cultural anthropology including cultural diversity, ethnography, and cross-cultural understanding.",
+    course_description:
+      "Cultural anthropology including cultural diversity, ethnography, and cross-cultural understanding.",
     prerequisites: "None",
   },
   {
@@ -2127,7 +2159,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "ANTH 3",
     course_name: "Physical Anthropology",
     course_units: "4",
-    course_description: "Physical anthropology including human evolution, biological diversity, and forensic anthropology.",
+    course_description:
+      "Physical anthropology including human evolution, biological diversity, and forensic anthropology.",
     prerequisites: "None",
   },
   {
@@ -2135,7 +2168,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "ANTH 4",
     course_name: "Archaeology",
     course_units: "4",
-    course_description: "Archaeology including archaeological methods, ancient civilizations, and material culture analysis.",
+    course_description:
+      "Archaeology including archaeological methods, ancient civilizations, and material culture analysis.",
     prerequisites: "None",
   },
   {
@@ -2143,7 +2177,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "ANTH 5",
     course_name: "Linguistic Anthropology",
     course_units: "4",
-    course_description: "Linguistic anthropology including language and culture, communication systems, and linguistic diversity.",
+    course_description:
+      "Linguistic anthropology including language and culture, communication systems, and linguistic diversity.",
     prerequisites: "None",
   },
   {
@@ -2151,7 +2186,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "ANTH 100",
     course_name: "Anthropological Theory",
     course_units: "4",
-    course_description: "Anthropological theory including major theoretical perspectives and their applications in anthropology.",
+    course_description:
+      "Anthropological theory including major theoretical perspectives and their applications in anthropology.",
     prerequisites: "ANTH 1",
   },
   {
@@ -2159,7 +2195,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "ANTH 101",
     course_name: "Ethnographic Methods",
     course_units: "4",
-    course_description: "Ethnographic methods including fieldwork, participant observation, and ethnographic writing.",
+    course_description:
+      "Ethnographic methods including fieldwork, participant observation, and ethnographic writing.",
     prerequisites: "ANTH 2",
   },
   {
@@ -2167,7 +2204,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "ANTH 102",
     course_name: "Human Evolution",
     course_units: "4",
-    course_description: "Human evolution including fossil evidence, evolutionary theory, and human biological development.",
+    course_description:
+      "Human evolution including fossil evidence, evolutionary theory, and human biological development.",
     prerequisites: "ANTH 3",
   },
   {
@@ -2175,7 +2213,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "ANTH 103",
     course_name: "Archaeological Methods",
     course_units: "4",
-    course_description: "Archaeological methods including excavation techniques, artifact analysis, and archaeological interpretation.",
+    course_description:
+      "Archaeological methods including excavation techniques, artifact analysis, and archaeological interpretation.",
     prerequisites: "ANTH 4",
   },
   {
@@ -2183,7 +2222,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "ANTH 104",
     course_name: "Language and Culture",
     course_units: "4",
-    course_description: "Language and culture including linguistic relativity, language acquisition, and cultural communication patterns.",
+    course_description:
+      "Language and culture including linguistic relativity, language acquisition, and cultural communication patterns.",
     prerequisites: "ANTH 5",
   },
 
@@ -2193,7 +2233,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "PHIL 1",
     course_name: "Introduction to Philosophy",
     course_units: "4",
-    course_description: "Introduction to philosophy including logic, ethics, metaphysics, and epistemology.",
+    course_description:
+      "Introduction to philosophy including logic, ethics, metaphysics, and epistemology.",
     prerequisites: "None",
   },
   {
@@ -2201,7 +2242,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "PHIL 2",
     course_name: "Introduction to Logic",
     course_units: "4",
-    course_description: "Introduction to logic including formal logic, logical reasoning, and argument analysis.",
+    course_description:
+      "Introduction to logic including formal logic, logical reasoning, and argument analysis.",
     prerequisites: "None",
   },
   {
@@ -2209,7 +2251,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "PHIL 3",
     course_name: "Introduction to Ethics",
     course_units: "4",
-    course_description: "Introduction to ethics including moral theory, applied ethics, and ethical reasoning.",
+    course_description:
+      "Introduction to ethics including moral theory, applied ethics, and ethical reasoning.",
     prerequisites: "None",
   },
   {
@@ -2217,7 +2260,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "PHIL 4",
     course_name: "Introduction to Metaphysics",
     course_units: "4",
-    course_description: "Introduction to metaphysics including reality, existence, and fundamental questions about the nature of being.",
+    course_description:
+      "Introduction to metaphysics including reality, existence, and fundamental questions about the nature of being.",
     prerequisites: "None",
   },
   {
@@ -2225,7 +2269,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "PHIL 5",
     course_name: "Introduction to Epistemology",
     course_units: "4",
-    course_description: "Introduction to epistemology including knowledge, belief, justification, and the nature of understanding.",
+    course_description:
+      "Introduction to epistemology including knowledge, belief, justification, and the nature of understanding.",
     prerequisites: "None",
   },
   {
@@ -2233,7 +2278,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "PHIL 100",
     course_name: "Ancient Philosophy",
     course_units: "4",
-    course_description: "Ancient philosophy including Greek and Roman philosophers, classical philosophical problems, and historical development.",
+    course_description:
+      "Ancient philosophy including Greek and Roman philosophers, classical philosophical problems, and historical development.",
     prerequisites: "PHIL 1",
   },
   {
@@ -2241,7 +2287,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "PHIL 101",
     course_name: "Modern Philosophy",
     course_units: "4",
-    course_description: "Modern philosophy including rationalism, empiricism, and major modern philosophical movements.",
+    course_description:
+      "Modern philosophy including rationalism, empiricism, and major modern philosophical movements.",
     prerequisites: "PHIL 1",
   },
   {
@@ -2249,7 +2296,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "PHIL 102",
     course_name: "Contemporary Philosophy",
     course_units: "4",
-    course_description: "Contemporary philosophy including analytic philosophy, continental philosophy, and current philosophical debates.",
+    course_description:
+      "Contemporary philosophy including analytic philosophy, continental philosophy, and current philosophical debates.",
     prerequisites: "PHIL 1",
   },
   {
@@ -2257,7 +2305,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "PHIL 103",
     course_name: "Philosophy of Science",
     course_units: "4",
-    course_description: "Philosophy of science including scientific method, scientific explanation, and the nature of scientific knowledge.",
+    course_description:
+      "Philosophy of science including scientific method, scientific explanation, and the nature of scientific knowledge.",
     prerequisites: "PHIL 1",
   },
   {
@@ -2265,7 +2314,418 @@ export const courseDatabase: CourseData[] = [
     course_code: "PHIL 104",
     course_name: "Philosophy of Mind",
     course_units: "4",
-    course_description: "Philosophy of mind including consciousness, mental states, and the relationship between mind and body.",
+    course_description:
+      "Philosophy of mind including consciousness, mental states, and the relationship between mind and body.",
     prerequisites: "PHIL 1",
+  },
+
+  // Additional Language & Linguistics Courses
+  {
+    id: "251",
+    course_code: "LING 1",
+    course_name: "Introduction to Linguistics",
+    course_units: "4",
+    course_description: "Introduction to linguistics including language structure, phonetics, morphology, syntax, and language acquisition.",
+    prerequisites: "None",
+  },
+  {
+    id: "252",
+    course_code: "LING 2",
+    course_name: "Language and Society",
+    course_units: "4",
+    course_description: "Language and society including sociolinguistics, language variation, and the relationship between language and culture.",
+    prerequisites: "None",
+  },
+  {
+    id: "253",
+    course_code: "LING 3",
+    course_name: "Language and Mind",
+    course_units: "4",
+    course_description: "Language and mind including psycholinguistics, cognitive linguistics, and the psychology of language.",
+    prerequisites: "None",
+  },
+  {
+    id: "254",
+    course_code: "LING 4",
+    course_name: "Language and Technology",
+    course_units: "4",
+    course_description: "Language and technology including computational linguistics, natural language processing, and language technology applications.",
+    prerequisites: "None",
+  },
+  {
+    id: "255",
+    course_code: "LING 5",
+    course_name: "Language and Culture",
+    course_units: "4",
+    course_description: "Language and culture including anthropological linguistics, cultural communication, and cross-cultural language studies.",
+    prerequisites: "None",
+  },
+  {
+    id: "256",
+    course_code: "LING 100",
+    course_name: "Phonetics",
+    course_units: "4",
+    course_description: "Phonetics including speech sounds, phonetic transcription, and acoustic analysis of speech.",
+    prerequisites: "LING 1",
+  },
+  {
+    id: "257",
+    course_code: "LING 101",
+    course_name: "Phonology",
+    course_units: "4",
+    course_description: "Phonology including sound patterns, phonological rules, and theoretical approaches to sound systems.",
+    prerequisites: "LING 100",
+  },
+  {
+    id: "258",
+    course_code: "LING 102",
+    course_name: "Morphology",
+    course_units: "4",
+    course_description: "Morphology including word structure, morphological analysis, and theoretical approaches to word formation.",
+    prerequisites: "LING 1",
+  },
+  {
+    id: "259",
+    course_code: "LING 103",
+    course_name: "Syntax",
+    course_units: "4",
+    course_description: "Syntax including sentence structure, grammatical analysis, and theoretical approaches to syntax.",
+    prerequisites: "LING 1",
+  },
+  {
+    id: "260",
+    course_code: "LING 104",
+    course_name: "Semantics",
+    course_units: "4",
+    course_description: "Semantics including meaning, truth conditions, and theoretical approaches to linguistic meaning.",
+    prerequisites: "LING 1",
+  },
+
+  // Additional Spanish Language Courses
+  {
+    id: "261",
+    course_code: "SPAN 1",
+    course_name: "Elementary Spanish I",
+    course_units: "4",
+    course_description: "Elementary Spanish I including basic grammar, vocabulary, and communication skills for beginners.",
+    prerequisites: "None",
+  },
+  {
+    id: "262",
+    course_code: "SPAN 2",
+    course_name: "Elementary Spanish II",
+    course_units: "4",
+    course_description: "Elementary Spanish II including intermediate grammar, vocabulary, and communication skills.",
+    prerequisites: "SPAN 1",
+  },
+  {
+    id: "263",
+    course_code: "SPAN 3",
+    course_name: "Intermediate Spanish I",
+    course_units: "4",
+    course_description: "Intermediate Spanish I including advanced grammar, reading comprehension, and cultural studies.",
+    prerequisites: "SPAN 2",
+  },
+  {
+    id: "264",
+    course_code: "SPAN 4",
+    course_name: "Intermediate Spanish II",
+    course_units: "4",
+    course_description: "Intermediate Spanish II including advanced conversation, composition, and Hispanic literature.",
+    prerequisites: "SPAN 3",
+  },
+  {
+    id: "265",
+    course_code: "SPAN 5",
+    course_name: "Advanced Spanish",
+    course_units: "4",
+    course_description: "Advanced Spanish including advanced composition, literary analysis, and cultural studies.",
+    prerequisites: "SPAN 4",
+  },
+  {
+    id: "266",
+    course_code: "SPAN 100",
+    course_name: "Spanish Literature",
+    course_units: "4",
+    course_description: "Spanish literature including major works, literary analysis, and cultural context.",
+    prerequisites: "SPAN 5",
+  },
+  {
+    id: "267",
+    course_code: "SPAN 101",
+    course_name: "Spanish Culture",
+    course_units: "4",
+    course_description: "Spanish culture including history, art, music, and contemporary Spanish society.",
+    prerequisites: "SPAN 4",
+  },
+  {
+    id: "268",
+    course_code: "SPAN 102",
+    course_name: "Latin American Literature",
+    course_units: "4",
+    course_description: "Latin American literature including major works, literary movements, and cultural context.",
+    prerequisites: "SPAN 5",
+  },
+  {
+    id: "269",
+    course_code: "SPAN 103",
+    course_name: "Spanish Linguistics",
+    course_units: "4",
+    course_description: "Spanish linguistics including Spanish phonology, morphology, syntax, and dialectal variation.",
+    prerequisites: "LING 1, SPAN 4",
+  },
+  {
+    id: "270",
+    course_code: "SPAN 104",
+    course_name: "Spanish Translation",
+    course_units: "4",
+    course_description: "Spanish translation including translation theory, techniques, and practical translation exercises.",
+    prerequisites: "SPAN 5",
+  },
+
+  // Additional French Language Courses
+  {
+    id: "271",
+    course_code: "FREN 1",
+    course_name: "Elementary French I",
+    course_units: "4",
+    course_description: "Elementary French I including basic grammar, vocabulary, and communication skills for beginners.",
+    prerequisites: "None",
+  },
+  {
+    id: "272",
+    course_code: "FREN 2",
+    course_name: "Elementary French II",
+    course_units: "4",
+    course_description: "Elementary French II including intermediate grammar, vocabulary, and communication skills.",
+    prerequisites: "FREN 1",
+  },
+  {
+    id: "273",
+    course_code: "FREN 3",
+    course_name: "Intermediate French I",
+    course_units: "4",
+    course_description: "Intermediate French I including advanced grammar, reading comprehension, and cultural studies.",
+    prerequisites: "FREN 2",
+  },
+  {
+    id: "274",
+    course_code: "FREN 4",
+    course_name: "Intermediate French II",
+    course_units: "4",
+    course_description: "Intermediate French II including advanced conversation, composition, and French literature.",
+    prerequisites: "FREN 3",
+  },
+  {
+    id: "275",
+    course_code: "FREN 5",
+    course_name: "Advanced French",
+    course_units: "4",
+    course_description: "Advanced French including advanced composition, literary analysis, and cultural studies.",
+    prerequisites: "FREN 4",
+  },
+  {
+    id: "276",
+    course_code: "FREN 100",
+    course_name: "French Literature",
+    course_units: "4",
+    course_description: "French literature including major works, literary analysis, and cultural context.",
+    prerequisites: "FREN 5",
+  },
+  {
+    id: "277",
+    course_code: "FREN 101",
+    course_name: "French Culture",
+    course_units: "4",
+    course_description: "French culture including history, art, music, and contemporary French society.",
+    prerequisites: "FREN 4",
+  },
+  {
+    id: "278",
+    course_code: "FREN 102",
+    course_name: "French Cinema",
+    course_units: "4",
+    course_description: "French cinema including film analysis, French film history, and cultural context.",
+    prerequisites: "FREN 4",
+  },
+  {
+    id: "279",
+    course_code: "FREN 103",
+    course_name: "French Linguistics",
+    course_units: "4",
+    course_description: "French linguistics including French phonology, morphology, syntax, and dialectal variation.",
+    prerequisites: "LING 1, FREN 4",
+  },
+  {
+    id: "280",
+    course_code: "FREN 104",
+    course_name: "French Translation",
+    course_units: "4",
+    course_description: "French translation including translation theory, techniques, and practical translation exercises.",
+    prerequisites: "FREN 5",
+  },
+
+  // Additional Music Courses
+  {
+    id: "281",
+    course_code: "MUS 1",
+    course_name: "Introduction to Music",
+    course_units: "4",
+    course_description: "Introduction to music including music theory, history, and appreciation of various musical styles.",
+    prerequisites: "None",
+  },
+  {
+    id: "282",
+    course_code: "MUS 2",
+    course_name: "Music Theory I",
+    course_units: "4",
+    course_description: "Music theory I including basic music notation, scales, chords, and harmonic analysis.",
+    prerequisites: "None",
+  },
+  {
+    id: "283",
+    course_code: "MUS 3",
+    course_name: "Music Theory II",
+    course_units: "4",
+    course_description: "Music theory II including advanced harmony, counterpoint, and musical analysis.",
+    prerequisites: "MUS 2",
+  },
+  {
+    id: "284",
+    course_code: "MUS 4",
+    course_name: "Music History I",
+    course_units: "4",
+    course_description: "Music history I including Western music from medieval period through classical era.",
+    prerequisites: "None",
+  },
+  {
+    id: "285",
+    course_code: "MUS 5",
+    course_name: "Music History II",
+    course_units: "4",
+    course_description: "Music history II including Western music from romantic period to contemporary music.",
+    prerequisites: "MUS 4",
+  },
+  {
+    id: "286",
+    course_code: "MUS 6",
+    course_name: "World Music",
+    course_units: "4",
+    course_description: "World music including music from various cultures, traditions, and global musical practices.",
+    prerequisites: "None",
+  },
+  {
+    id: "287",
+    course_code: "MUS 7",
+    course_name: "Jazz History",
+    course_units: "4",
+    course_description: "Jazz history including development of jazz, major artists, and jazz analysis.",
+    prerequisites: "None",
+  },
+  {
+    id: "288",
+    course_code: "MUS 8",
+    course_name: "Popular Music",
+    course_units: "4",
+    course_description: "Popular music including rock, pop, hip-hop, and contemporary popular music analysis.",
+    prerequisites: "None",
+  },
+  {
+    id: "289",
+    course_code: "MUS 100",
+    course_name: "Composition",
+    course_units: "4",
+    course_description: "Composition including musical composition techniques, creative writing, and musical form.",
+    prerequisites: "MUS 3",
+  },
+  {
+    id: "290",
+    course_code: "MUS 101",
+    course_name: "Orchestration",
+    course_units: "4",
+    course_description: "Orchestration including instrument characteristics, scoring techniques, and ensemble writing.",
+    prerequisites: "MUS 3",
+  },
+
+  // Additional Visual Arts Courses
+  {
+    id: "291",
+    course_code: "VIS 1",
+    course_name: "Introduction to Visual Arts",
+    course_units: "4",
+    course_description: "Introduction to visual arts including art history, theory, and appreciation of various art forms.",
+    prerequisites: "None",
+  },
+  {
+    id: "292",
+    course_code: "VIS 2",
+    course_name: "Drawing I",
+    course_units: "4",
+    course_description: "Drawing I including basic drawing techniques, perspective, and observational drawing skills.",
+    prerequisites: "None",
+  },
+  {
+    id: "293",
+    course_code: "VIS 3",
+    course_name: "Painting I",
+    course_units: "4",
+    course_description: "Painting I including basic painting techniques, color theory, and painting fundamentals.",
+    prerequisites: "VIS 2",
+  },
+  {
+    id: "294",
+    course_code: "VIS 4",
+    course_name: "Sculpture I",
+    course_units: "4",
+    course_description: "Sculpture I including basic sculpting techniques, materials, and three-dimensional design.",
+    prerequisites: "None",
+  },
+  {
+    id: "295",
+    course_code: "VIS 5",
+    course_name: "Photography I",
+    course_units: "4",
+    course_description: "Photography I including camera techniques, composition, and digital photography fundamentals.",
+    prerequisites: "None",
+  },
+  {
+    id: "296",
+    course_code: "VIS 6",
+    course_name: "Digital Art",
+    course_units: "4",
+    course_description: "Digital art including digital tools, software, and creative digital media techniques.",
+    prerequisites: "None",
+  },
+  {
+    id: "297",
+    course_code: "VIS 7",
+    course_name: "Art History I",
+    course_units: "4",
+    course_description: "Art history I including Western art from ancient times through the Renaissance.",
+    prerequisites: "None",
+  },
+  {
+    id: "298",
+    course_code: "VIS 8",
+    course_name: "Art History II",
+    course_units: "4",
+    course_description: "Art history II including Western art from Baroque period to contemporary art.",
+    prerequisites: "VIS 7",
+  },
+  {
+    id: "299",
+    course_code: "VIS 9",
+    course_name: "Modern Art",
+    course_units: "4",
+    course_description: "Modern art including 20th century art movements, modernism, and contemporary art practices.",
+    prerequisites: "VIS 7",
+  },
+  {
+    id: "300",
+    course_code: "VIS 10",
+    course_name: "Contemporary Art",
+    course_units: "4",
+    course_description: "Contemporary art including current art practices, conceptual art, and contemporary art theory.",
+    prerequisites: "VIS 7",
   },
 ];
