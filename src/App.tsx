@@ -198,7 +198,7 @@ export function App() {
                 <span className="ml-2 text-sm text-gray-600">4.0</span>
               </div>
               <p className="text-gray-800 mb-3 italic">
-                "素晴らしいウェブサイトです！コースが見つかりました。とても便利です。"
+                "私はバナナがとてもとても大好きです、バナナナナ"
               </p>
               <p className="text-sm text-gray-600">- 日本の学生</p>
             </div>

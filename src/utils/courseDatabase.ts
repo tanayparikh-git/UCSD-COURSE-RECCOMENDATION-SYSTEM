@@ -4158,4 +4158,464 @@ export const courseDatabase: CourseData[] = [
       "Regional studies including area studies, regional politics, and cultural understanding of specific regions.",
     prerequisites: "IRGN 1",
   },
+
+  // Additional Portuguese Language Courses
+  {
+    id: "451",
+    course_code: "PORT 1",
+    course_name: "Elementary Portuguese I",
+    course_units: "4",
+    course_description:
+      "Elementary Portuguese I including basic grammar, vocabulary, and communication skills for beginners.",
+    prerequisites: "None",
+  },
+  {
+    id: "452",
+    course_code: "PORT 2",
+    course_name: "Elementary Portuguese II",
+    course_units: "4",
+    course_description:
+      "Elementary Portuguese II including intermediate grammar, vocabulary, and communication skills.",
+    prerequisites: "PORT 1",
+  },
+  {
+    id: "453",
+    course_code: "PORT 3",
+    course_name: "Intermediate Portuguese I",
+    course_units: "4",
+    course_description:
+      "Intermediate Portuguese I including advanced grammar, reading comprehension, and cultural studies.",
+    prerequisites: "PORT 2",
+  },
+  {
+    id: "454",
+    course_code: "PORT 4",
+    course_name: "Intermediate Portuguese II",
+    course_units: "4",
+    course_description:
+      "Intermediate Portuguese II including advanced conversation, composition, and Portuguese literature.",
+    prerequisites: "PORT 3",
+  },
+  {
+    id: "455",
+    course_code: "PORT 5",
+    course_name: "Advanced Portuguese",
+    course_units: "4",
+    course_description:
+      "Advanced Portuguese including advanced composition, literary analysis, and cultural studies.",
+    prerequisites: "PORT 4",
+  },
+  {
+    id: "456",
+    course_code: "PORT 100",
+    course_name: "Portuguese Literature",
+    course_units: "4",
+    course_description:
+      "Portuguese literature including major works, literary analysis, and cultural context.",
+    prerequisites: "PORT 5",
+  },
+  {
+    id: "457",
+    course_code: "PORT 101",
+    course_name: "Portuguese Culture",
+    course_units: "4",
+    course_description:
+      "Portuguese culture including history, art, music, and contemporary Portuguese society.",
+    prerequisites: "PORT 4",
+  },
+  {
+    id: "458",
+    course_code: "PORT 102",
+    course_name: "Brazilian Literature",
+    course_units: "4",
+    course_description:
+      "Brazilian literature including major works, literary analysis, and cultural context.",
+    prerequisites: "PORT 5",
+  },
+  {
+    id: "459",
+    course_code: "PORT 103",
+    course_name: "Portuguese Linguistics",
+    course_units: "4",
+    course_description:
+      "Portuguese linguistics including Portuguese phonology, morphology, syntax, and dialectal variation.",
+    prerequisites: "LING 1, PORT 4",
+  },
+  {
+    id: "460",
+    course_code: "PORT 104",
+    course_name: "Portuguese Translation",
+    course_units: "4",
+    course_description:
+      "Portuguese translation including translation theory, techniques, and practical translation exercises.",
+    prerequisites: "PORT 5",
+  },
+
+  // Additional Hebrew Language Courses
+  {
+    id: "461",
+    course_code: "HEBR 1",
+    course_name: "Elementary Hebrew I",
+    course_units: "4",
+    course_description:
+      "Elementary Hebrew I including basic grammar, vocabulary, and communication skills for beginners.",
+    prerequisites: "None",
+  },
+  {
+    id: "462",
+    course_code: "HEBR 2",
+    course_name: "Elementary Hebrew II",
+    course_units: "4",
+    course_description:
+      "Elementary Hebrew II including intermediate grammar, vocabulary, and communication skills.",
+    prerequisites: "HEBR 1",
+  },
+  {
+    id: "463",
+    course_code: "HEBR 3",
+    course_name: "Intermediate Hebrew I",
+    course_units: "4",
+    course_description:
+      "Intermediate Hebrew I including advanced grammar, reading comprehension, and cultural studies.",
+    prerequisites: "HEBR 2",
+  },
+  {
+    id: "464",
+    course_code: "HEBR 4",
+    course_name: "Intermediate Hebrew II",
+    course_units: "4",
+    course_description:
+      "Intermediate Hebrew II including advanced conversation, composition, and Hebrew literature.",
+    prerequisites: "HEBR 3",
+  },
+  {
+    id: "465",
+    course_code: "HEBR 5",
+    course_name: "Advanced Hebrew",
+    course_units: "4",
+    course_description:
+      "Advanced Hebrew including advanced composition, literary analysis, and cultural studies.",
+    prerequisites: "HEBR 4",
+  },
+  {
+    id: "466",
+    course_code: "HEBR 100",
+    course_name: "Hebrew Literature",
+    course_units: "4",
+    course_description:
+      "Hebrew literature including major works, literary analysis, and cultural context.",
+    prerequisites: "HEBR 5",
+  },
+  {
+    id: "467",
+    course_code: "HEBR 101",
+    course_name: "Hebrew Culture",
+    course_units: "4",
+    course_description:
+      "Hebrew culture including history, art, music, and contemporary Hebrew society.",
+    prerequisites: "HEBR 4",
+  },
+  {
+    id: "468",
+    course_code: "HEBR 102",
+    course_name: "Biblical Hebrew",
+    course_units: "4",
+    course_description:
+      "Biblical Hebrew including ancient texts, religious literature, and historical language study.",
+    prerequisites: "HEBR 3",
+  },
+  {
+    id: "469",
+    course_code: "HEBR 103",
+    course_name: "Hebrew Linguistics",
+    course_units: "4",
+    course_description:
+      "Hebrew linguistics including Hebrew phonology, morphology, syntax, and dialectal variation.",
+    prerequisites: "LING 1, HEBR 4",
+  },
+  {
+    id: "470",
+    course_code: "HEBR 104",
+    course_name: "Hebrew Translation",
+    course_units: "4",
+    course_description:
+      "Hebrew translation including translation theory, techniques, and practical translation exercises.",
+    prerequisites: "HEBR 5",
+  },
+
+  // Additional Latin Language Courses
+  {
+    id: "471",
+    course_code: "LATN 1",
+    course_name: "Elementary Latin I",
+    course_units: "4",
+    course_description:
+      "Elementary Latin I including basic grammar, vocabulary, and reading skills for beginners.",
+    prerequisites: "None",
+  },
+  {
+    id: "472",
+    course_code: "LATN 2",
+    course_name: "Elementary Latin II",
+    course_units: "4",
+    course_description:
+      "Elementary Latin II including intermediate grammar, vocabulary, and reading skills.",
+    prerequisites: "LATN 1",
+  },
+  {
+    id: "473",
+    course_code: "LATN 3",
+    course_name: "Intermediate Latin I",
+    course_units: "4",
+    course_description:
+      "Intermediate Latin I including advanced grammar, reading comprehension, and cultural studies.",
+    prerequisites: "LATN 2",
+  },
+  {
+    id: "474",
+    course_code: "LATN 4",
+    course_name: "Intermediate Latin II",
+    course_units: "4",
+    course_description:
+      "Intermediate Latin II including advanced reading, composition, and Latin literature.",
+    prerequisites: "LATN 3",
+  },
+  {
+    id: "475",
+    course_code: "LATN 5",
+    course_name: "Advanced Latin",
+    course_units: "4",
+    course_description:
+      "Advanced Latin including advanced reading, literary analysis, and cultural studies.",
+    prerequisites: "LATN 4",
+  },
+  {
+    id: "476",
+    course_code: "LATN 100",
+    course_name: "Latin Literature",
+    course_units: "4",
+    course_description:
+      "Latin literature including major works, literary analysis, and cultural context.",
+    prerequisites: "LATN 5",
+  },
+  {
+    id: "477",
+    course_code: "LATN 101",
+    course_name: "Roman Culture",
+    course_units: "4",
+    course_description:
+      "Roman culture including history, art, architecture, and ancient Roman society.",
+    prerequisites: "LATN 4",
+  },
+  {
+    id: "478",
+    course_code: "LATN 102",
+    course_name: "Classical Latin",
+    course_units: "4",
+    course_description:
+      "Classical Latin including classical texts, historical language study, and ancient literature.",
+    prerequisites: "LATN 3",
+  },
+  {
+    id: "479",
+    course_code: "LATN 103",
+    course_name: "Latin Linguistics",
+    course_units: "4",
+    course_description:
+      "Latin linguistics including Latin phonology, morphology, syntax, and historical linguistics.",
+    prerequisites: "LING 1, LATN 4",
+  },
+  {
+    id: "480",
+    course_code: "LATN 104",
+    course_name: "Latin Translation",
+    course_units: "4",
+    course_description:
+      "Latin translation including translation theory, techniques, and practical translation exercises.",
+    prerequisites: "LATN 5",
+  },
+
+  // Additional Law Courses
+  {
+    id: "481",
+    course_code: "LAW 1",
+    course_name: "Introduction to Law",
+    course_units: "4",
+    course_description:
+      "Introduction to law including legal systems, legal reasoning, and fundamental legal concepts.",
+    prerequisites: "None",
+  },
+  {
+    id: "482",
+    course_code: "LAW 2",
+    course_name: "Constitutional Law",
+    course_units: "4",
+    course_description:
+      "Constitutional law including constitutional interpretation, civil rights, and government structure.",
+    prerequisites: "LAW 1",
+  },
+  {
+    id: "483",
+    course_code: "LAW 3",
+    course_name: "Criminal Law",
+    course_units: "4",
+    course_description:
+      "Criminal law including criminal offenses, defenses, and criminal justice procedures.",
+    prerequisites: "LAW 1",
+  },
+  {
+    id: "484",
+    course_code: "LAW 4",
+    course_name: "Civil Law",
+    course_units: "4",
+    course_description:
+      "Civil law including contracts, torts, property law, and civil litigation.",
+    prerequisites: "LAW 1",
+  },
+  {
+    id: "485",
+    course_code: "LAW 5",
+    course_name: "Business Law",
+    course_units: "4",
+    course_description:
+      "Business law including corporate law, commercial transactions, and business regulations.",
+    prerequisites: "LAW 1",
+  },
+  {
+    id: "486",
+    course_code: "LAW 100",
+    course_name: "Legal Research",
+    course_units: "4",
+    course_description:
+      "Legal research including legal databases, case law analysis, and legal writing.",
+    prerequisites: "LAW 1",
+  },
+  {
+    id: "487",
+    course_code: "LAW 101",
+    course_name: "Environmental Law",
+    course_units: "4",
+    course_description:
+      "Environmental law including environmental regulations, natural resource law, and environmental policy.",
+    prerequisites: "LAW 1",
+  },
+  {
+    id: "488",
+    course_code: "LAW 102",
+    course_name: "Intellectual Property Law",
+    course_units: "4",
+    course_description:
+      "Intellectual property law including patents, copyrights, trademarks, and trade secrets.",
+    prerequisites: "LAW 1",
+  },
+  {
+    id: "489",
+    course_code: "LAW 103",
+    course_name: "Family Law",
+    course_units: "4",
+    course_description:
+      "Family law including marriage, divorce, child custody, and family legal issues.",
+    prerequisites: "LAW 1",
+  },
+  {
+    id: "490",
+    course_code: "LAW 104",
+    course_name: "Legal Ethics",
+    course_units: "4",
+    course_description:
+      "Legal ethics including professional responsibility, legal ethics, and attorney conduct.",
+    prerequisites: "LAW 1",
+  },
+
+  // Additional Architecture Courses
+  {
+    id: "491",
+    course_code: "ARCH 1",
+    course_name: "Introduction to Architecture",
+    course_units: "4",
+    course_description:
+      "Introduction to architecture including architectural history, design principles, and architectural theory.",
+    prerequisites: "None",
+  },
+  {
+    id: "492",
+    course_code: "ARCH 2",
+    course_name: "Architectural Design I",
+    course_units: "4",
+    course_description:
+      "Architectural design I including design fundamentals, drawing techniques, and basic design projects.",
+    prerequisites: "ARCH 1",
+  },
+  {
+    id: "493",
+    course_code: "ARCH 3",
+    course_name: "Architectural History",
+    course_units: "4",
+    course_description:
+      "Architectural history including major architectural movements, styles, and historical developments.",
+    prerequisites: "ARCH 1",
+  },
+  {
+    id: "494",
+    course_code: "ARCH 4",
+    course_name: "Building Technology",
+    course_units: "4",
+    course_description:
+      "Building technology including construction methods, materials, and building systems.",
+    prerequisites: "ARCH 1",
+  },
+  {
+    id: "495",
+    course_code: "ARCH 5",
+    course_name: "Urban Design",
+    course_units: "4",
+    course_description:
+      "Urban design including city planning, urban development, and community design.",
+    prerequisites: "ARCH 1",
+  },
+  {
+    id: "496",
+    course_code: "ARCH 100",
+    course_name: "Sustainable Architecture",
+    course_units: "4",
+    course_description:
+      "Sustainable architecture including green building design, energy efficiency, and environmental considerations.",
+    prerequisites: "ARCH 1",
+  },
+  {
+    id: "497",
+    course_code: "ARCH 101",
+    course_name: "Digital Design",
+    course_units: "4",
+    course_description:
+      "Digital design including computer-aided design, 3D modeling, and digital fabrication.",
+    prerequisites: "ARCH 1",
+  },
+  {
+    id: "498",
+    course_code: "ARCH 102",
+    course_name: "Interior Design",
+    course_units: "4",
+    course_description:
+      "Interior design including space planning, interior aesthetics, and furniture design.",
+    prerequisites: "ARCH 1",
+  },
+  {
+    id: "499",
+    course_code: "ARCH 103",
+    course_name: "Landscape Architecture",
+    course_units: "4",
+    course_description:
+      "Landscape architecture including landscape design, site planning, and environmental design.",
+    prerequisites: "ARCH 1",
+  },
+  {
+    id: "500",
+    course_code: "ARCH 104",
+    course_name: "Architectural Theory",
+    course_units: "4",
+    course_description:
+      "Architectural theory including theoretical frameworks, critical analysis, and architectural philosophy.",
+    prerequisites: "ARCH 1",
+  },
 ];
