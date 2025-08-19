@@ -100,11 +100,17 @@ class AIService {
         continue; // Skip other scoring for exact matches
       }
       
-      // Partial course code match
+      // Partial course code match (including department code matches)
       else if (cleanCourseCode.includes(cleanSearchTerm) || cleanSearchTerm.includes(cleanCourseCode)) {
         score = 0.9;
         reason = `Course code matches "${query}"`;
         matchType = "partial_code";
+      }
+      // Department code match (e.g., "bild" should match any course starting with "bild")
+      else if (searchWords.length === 1 && courseCode.startsWith(searchWords[0])) {
+        score = 0.85;
+        reason = `Department code "${searchWords[0]}" matches course code`;
+        matchType = "department_code";
       }
       // Course name match
       else if (course.course_name.toLowerCase().includes(searchTerm)) {
@@ -481,7 +487,7 @@ class AIService {
     }
 
     // Biology & Life Sciences
-    if (searchTerm.includes('bio') || searchTerm.includes('biology') || searchTerm.includes('cell') || searchTerm.includes('genetics') || searchTerm.includes('physiology') || searchTerm.includes('anatomy') || searchTerm.includes('immunology') || searchTerm.includes('neurobiology')) {
+    if (searchTerm.includes('bio') || searchTerm.includes('biology') || searchTerm.includes('bild') || searchTerm.includes('cell') || searchTerm.includes('genetics') || searchTerm.includes('physiology') || searchTerm.includes('anatomy') || searchTerm.includes('immunology') || searchTerm.includes('neurobiology')) {
       if (courseCode.startsWith('bild') || courseCode.startsWith('BILD') || courseCode.startsWith('biol') || courseCode.startsWith('BIOL') || courseDesc.includes('biology') || courseDesc.includes('cell') || courseDesc.includes('genetics') || courseDesc.includes('physiology') || courseDesc.includes('anatomy') || courseDesc.includes('immunology') || courseDesc.includes('neurobiology')) {
         return 0.6;
       }
