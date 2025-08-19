@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
-import { fileURLToPath } from 'url';
+import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -21,19 +21,19 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: {
-          vendor: ['react', 'react-dom'],
-          courseData: ['./src/utils/courseDatabase.ts']
-        }
-      }
+          vendor: ["react", "react-dom"],
+          courseData: ["./src/utils/courseDatabase.ts"],
+        },
+      },
     },
     chunkSizeWarningLimit: 4000,
-    target: 'es2015',
-    minify: 'terser',
+    target: "es2015",
+    minify: "terser",
     terserOptions: {
       compress: {
         drop_console: true,
-        drop_debugger: true
-      }
-    }
+        drop_debugger: true,
+      },
+    },
   },
 });
