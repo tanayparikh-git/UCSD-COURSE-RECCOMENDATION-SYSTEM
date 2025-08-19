@@ -48160,4 +48160,284 @@ export const courseDatabase: CourseData[] = [
       "Consideration of pedagogical methods appropriate to undergraduate teaching in Warren College Writing courses, under the supervision of the program director. (S/U grade only.)",
     prerequisites: "graduate standing.",
   },
+
+  {
+    id: "5352",
+    course_code: "BILD 1",
+    course_name: "The Cell",
+    course_units: "4",
+    course_description:
+      "An introduction to the fundamental principles of biology. Topics include cell structure and function, metabolism, genetics, and evolution. This course provides the foundation for understanding living systems at the molecular and cellular levels.",
+    prerequisites: "None",
+  },
+  {
+    id: "5353",
+    course_code: "BILD 2",
+    course_name: "Multicellular Life",
+    course_units: "4",
+    course_description:
+      "An introduction to the biology of multicellular organisms. Topics include development, physiology, ecology, and evolution. This course explores how cells work together to form complex organisms and how organisms interact with their environment.",
+    prerequisites: "BILD 1",
+  },
+  {
+    id: "5354",
+    course_code: "BILD 3",
+    course_name: "Organismic and Evolutionary Biology",
+    course_units: "4",
+    course_description:
+      "An introduction to the diversity of life and evolutionary processes. Topics include classification, adaptation, natural selection, and the history of life on Earth. This course examines how organisms have evolved and continue to evolve.",
+    prerequisites: "BILD 1",
+  },
+  {
+    id: "5355",
+    course_code: "BILD 4",
+    course_name: "Introduction to Modern Biology",
+    course_units: "4",
+    course_description:
+      "A comprehensive introduction to modern biology for non-majors. Topics include cell biology, genetics, evolution, ecology, and human biology. This course provides a broad understanding of biological principles and their applications.",
+    prerequisites: "None",
+  },
+  {
+    id: "5356",
+    course_code: "BILD 10",
+    course_name: "Introduction to Biology: The Cell and Molecular Biology",
+    course_units: "4",
+    course_description:
+      "An introduction to cell and molecular biology for life science majors. Topics include cell structure, metabolism, genetics, and molecular mechanisms. This course provides the foundation for advanced biology courses.",
+    prerequisites: "None",
+  },
+  {
+    id: "5357",
+    course_code: "BILD 12",
+    course_name: "Introduction to Biology: Neurobiology",
+    course_units: "4",
+    course_description:
+      "An introduction to neurobiology and the nervous system. Topics include neuron structure and function, neural circuits, sensory systems, motor control, and higher brain functions. This course explores how the brain works.",
+    prerequisites: "BILD 1 or BILD 4",
+  },
+  {
+    id: "5358",
+    course_code: "BILD 20",
+    course_name: "Introduction to Biology: Ecology and Evolution",
+    course_units: "4",
+    course_description:
+      "An introduction to ecology and evolutionary biology. Topics include population dynamics, community ecology, ecosystem processes, natural selection, and adaptation. This course examines how organisms interact with their environment and evolve.",
+    prerequisites: "BILD 1 or BILD 4",
+  },
+  {
+    id: "5359",
+    course_code: "BILD 22",
+    course_name: "Human Nutrition",
+    course_units: "4",
+    course_description:
+      "An introduction to human nutrition and its relationship to health. Topics include macronutrients, micronutrients, metabolism, dietary guidelines, and nutrition-related diseases. This course explores how nutrition affects human health.",
+    prerequisites: "BILD 1 or BILD 4",
+  },
+  {
+    id: "5360",
+    course_code: "BILD 26",
+    course_name: "Human Physiology",
+    course_units: "4",
+    course_description:
+      "An introduction to human physiology and organ systems. Topics include cardiovascular, respiratory, digestive, nervous, endocrine, and immune systems. This course examines how the human body functions.",
+    prerequisites: "BILD 1 or BILD 4",
+  },
+  {
+    id: "5361",
+    course_code: "BILD 30",
+    course_name: "Introduction to Biology: Genetics",
+    course_units: "4",
+    course_description:
+      "An introduction to genetics and inheritance. Topics include Mendelian genetics, molecular genetics, gene expression, genetic variation, and genetic disorders. This course explores how genes control traits and inheritance.",
+    prerequisites: "BILD 1 or BILD 4",
+  },
+  {
+    id: "5362",
+    course_code: "BILD 32",
+    course_name: "Introduction to Biology: Microbiology",
+    course_units: "4",
+    course_description:
+      "An introduction to microbiology and microorganisms. Topics include bacterial structure, metabolism, genetics, pathogenesis, and beneficial microbes. This course explores the diversity and importance of microorganisms.",
+    prerequisites: "BILD 1 or BILD 4",
+  },
+  {
+    id: "5363",
+    course_code: "BILD 36",
+    course_name: "AIDS, Science and Society",
+    course_units: "4",
+    course_description:
+      "An interdisciplinary examination of AIDS from scientific, social, and cultural perspectives. Topics include HIV biology, epidemiology, treatment, prevention, and the social impact of the disease. This course explores the complex relationship between science and society.",
+    prerequisites: "BILD 1 or BILD 4",
+  },
+  {
+    id: "5364",
+    course_code: "BILD 38",
+    course_name: "Aging: Science and Society",
+    course_units: "4",
+    course_description:
+      "An interdisciplinary examination of aging from biological, psychological, and social perspectives. Topics include cellular aging, age-related diseases, cognitive changes, and social aspects of aging. This course explores the science and social implications of aging.",
+    prerequisites: "BILD 1 or BILD 4",
+  },
+  {
+    id: "5365",
+    course_code: "BILD 42",
+    course_name: "Introduction to Biology: Plant Biology",
+    course_units: "4",
+    course_description:
+      "An introduction to plant biology and diversity. Topics include plant structure, physiology, reproduction, evolution, and ecology. This course explores the importance of plants in ecosystems and human society.",
+    prerequisites: "BILD 1 or BILD 4",
+  },
+  {
+    id: "5366",
+    course_code: "BILD 44",
+    course_name: "Introduction to Biology: Animal Biology",
+    course_units: "4",
+    course_description:
+      "An introduction to animal biology and diversity. Topics include animal structure, physiology, behavior, evolution, and ecology. This course explores the diversity and adaptations of animals.",
+    prerequisites: "BILD 1 or BILD 4",
+  },
+  {
+    id: "5367",
+    course_code: "BILD 46",
+    course_name: "Introduction to Biology: Marine Biology",
+    course_units: "4",
+    course_description:
+      "An introduction to marine biology and ocean ecosystems. Topics include marine organisms, oceanography, marine ecology, and human impacts on marine environments. This course explores the diversity and importance of marine life.",
+    prerequisites: "BILD 1 or BILD 4",
+  },
+  {
+    id: "5368",
+    course_code: "BILD 48",
+    course_name: "Introduction to Biology: Conservation Biology",
+    course_units: "4",
+    course_description:
+      "An introduction to conservation biology and biodiversity. Topics include extinction, habitat loss, invasive species, climate change, and conservation strategies. This course explores the science of preserving biodiversity.",
+    prerequisites: "BILD 1 or BILD 4",
+  },
+  {
+    id: "5369",
+    course_code: "BILD 50",
+    course_name: "Introduction to Biology: Biotechnology",
+    course_units: "4",
+    course_description:
+      "An introduction to biotechnology and its applications. Topics include genetic engineering, recombinant DNA technology, biopharmaceuticals, and ethical considerations. This course explores the science and applications of biotechnology.",
+    prerequisites: "BILD 1 or BILD 4",
+  },
+  {
+    id: "5370",
+    course_code: "BILD 52",
+    course_name: "Introduction to Biology: Cancer Biology",
+    course_units: "4",
+    course_description:
+      "An introduction to cancer biology and treatment. Topics include cancer genetics, cell cycle regulation, tumor formation, metastasis, and cancer therapies. This course explores the molecular basis of cancer.",
+    prerequisites: "BILD 1 or BILD 4",
+  },
+  {
+    id: "5371",
+    course_code: "BILD 54",
+    course_name: "Introduction to Biology: Stem Cell Biology",
+    course_units: "4",
+    course_description:
+      "An introduction to stem cell biology and regenerative medicine. Topics include stem cell types, differentiation, tissue regeneration, and therapeutic applications. This course explores the potential of stem cells in medicine.",
+    prerequisites: "BILD 1 or BILD 4",
+  },
+  {
+    id: "5372",
+    course_code: "BILD 60",
+    course_name: "Introduction to Biology: Immunology",
+    course_units: "4",
+    course_description:
+      "An introduction to immunology and the immune system. Topics include innate and adaptive immunity, antibody production, immune disorders, and vaccines. This course explores how the body defends against disease.",
+    prerequisites: "BILD 1 or BILD 4",
+  },
+  {
+    id: "5373",
+    course_code: "BILD 62",
+    course_name: "Introduction to Biology: Bioinformatics",
+    course_units: "4",
+    course_description:
+      "An introduction to bioinformatics and computational biology. Topics include sequence analysis, genomics, proteomics, and biological databases. This course explores the intersection of biology and computer science.",
+    prerequisites: "BILD 1 or BILD 4",
+  },
+  {
+    id: "5374",
+    course_code: "BILD 64",
+    course_name: "Introduction to Biology: Drug Discovery",
+    course_units: "4",
+    course_description:
+      "An introduction to drug discovery and development. Topics include target identification, drug design, clinical trials, and regulatory processes. This course explores the science behind developing new medicines.",
+    prerequisites: "BILD 1 or BILD 4",
+  },
+  {
+    id: "5375",
+    course_code: "BILD 66",
+    course_name: "Introduction to Biology: Global Health",
+    course_units: "4",
+    course_description:
+      "An introduction to global health and infectious diseases. Topics include epidemiology, disease transmission, public health interventions, and health disparities. This course explores health challenges facing the world.",
+    prerequisites: "BILD 1 or BILD 4",
+  },
+  {
+    id: "5376",
+    course_code: "BILD 68",
+    course_name: "Introduction to Biology: Environmental Health",
+    course_units: "4",
+    course_description:
+      "An introduction to environmental health and toxicology. Topics include environmental pollutants, exposure assessment, health effects, and risk assessment. This course explores the relationship between environment and health.",
+    prerequisites: "BILD 1 or BILD 4",
+  },
+  {
+    id: "5377",
+    course_code: "BILD 70",
+    course_name: "Introduction to Biology: Neuroscience",
+    course_units: "4",
+    course_description:
+      "An introduction to neuroscience and brain function. Topics include neural development, sensory systems, motor control, learning, memory, and neurological disorders. This course explores the biology of the brain and behavior.",
+    prerequisites: "BILD 1 or BILD 4",
+  },
+  {
+    id: "5378",
+    course_code: "BILD 72",
+    course_name: "Introduction to Biology: Developmental Biology",
+    course_units: "4",
+    course_description:
+      "An introduction to developmental biology and embryology. Topics include fertilization, cell differentiation, organogenesis, and developmental disorders. This course explores how organisms develop from single cells.",
+    prerequisites: "BILD 1 or BILD 4",
+  },
+  {
+    id: "5379",
+    course_code: "BILD 74",
+    course_name: "Introduction to Biology: Evolutionary Medicine",
+    course_units: "4",
+    course_description:
+      "An introduction to evolutionary medicine and human health. Topics include evolutionary perspectives on disease, antibiotic resistance, and human adaptations. This course explores how evolution shapes health and disease.",
+    prerequisites: "BILD 1 or BILD 4",
+  },
+  {
+    id: "5380",
+    course_code: "BILD 76",
+    course_name: "Introduction to Biology: Systems Biology",
+    course_units: "4",
+    course_description:
+      "An introduction to systems biology and biological networks. Topics include gene regulatory networks, metabolic pathways, and computational modeling. This course explores how biological systems function as integrated networks.",
+    prerequisites: "BILD 1 or BILD 4",
+  },
+  {
+    id: "5381",
+    course_code: "BILD 78",
+    course_name: "Introduction to Biology: Synthetic Biology",
+    course_units: "4",
+    course_description:
+      "An introduction to synthetic biology and genetic engineering. Topics include DNA synthesis, genetic circuits, and biological design. This course explores the engineering of biological systems.",
+    prerequisites: "BILD 1 or BILD 4",
+  },
+  {
+    id: "5382",
+    course_code: "BILD 80",
+    course_name: "Introduction to Biology: Quantitative Biology",
+    course_units: "4",
+    course_description:
+      "An introduction to quantitative biology and mathematical modeling. Topics include population dynamics, biochemical kinetics, and statistical analysis. This course explores the mathematical foundations of biology.",
+    prerequisites: "BILD 1 or BILD 4",
+  },
 ];
