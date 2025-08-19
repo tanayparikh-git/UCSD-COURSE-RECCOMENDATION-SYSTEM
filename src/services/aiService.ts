@@ -67,9 +67,12 @@ class AIService {
       let recommendations: AIRecommendation[] = [];
       if (courses.length > 0 && query.trim()) {
         try {
-          recommendations = await this.getAIRecommendations(query, courses);
+          // Skip AI recommendations for now since backend isn't deployed
+          console.log("Skipping AI recommendations - backend not deployed");
+          recommendations = this.getMockRecommendations(query);
         } catch (error) {
           console.warn("AI recommendations failed:", error);
+          recommendations = this.getMockRecommendations(query);
         }
       }
 
@@ -119,13 +122,9 @@ class AIService {
   // Get similar courses based on a course
   async getSimilarCourses(courseId: string): Promise<Course[]> {
     try {
-      const response = await fetch(`${this.baseUrl}/similar/${courseId}`);
-
-      if (!response.ok) {
-        throw new Error("Failed to get similar courses");
-      }
-
-      return await response.json();
+      // Skip similar courses for now since backend isn't deployed
+      console.log("Skipping similar courses - backend not deployed");
+      return [];
     } catch (error) {
       console.error("Similar courses error:", error);
       return [];
