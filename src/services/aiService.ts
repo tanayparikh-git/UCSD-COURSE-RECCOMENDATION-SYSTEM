@@ -186,37 +186,32 @@ class AIService {
       .slice(0, 5);
   }
 
-  // Find courses similar to the exact match based on combined name and description similarity
+  // Find courses similar to the exact match based on subject-specific relationships
   private findSimilarCourses(exactMatchCourse: Course, otherMatches: AIRecommendation[]): AIRecommendation[] {
     const exactMatchName = exactMatchCourse.course_name.toLowerCase();
     const exactMatchDesc = exactMatchCourse.course_description.toLowerCase();
-    const exactMatchNameWords = this.extractKeywords(exactMatchName);
-    const exactMatchDescWords = this.extractKeywords(exactMatchDesc);
     const exactMatchCourseCode = exactMatchCourse.course_code.toLowerCase();
+    const exactMatchDept = exactMatchCourseCode.split(' ')[0];
     
-    // Calculate combined similarity scores for other courses
+    // Calculate subject-specific similarity scores for other courses
     const coursesWithSimilarity = otherMatches.map(match => {
-      const nameSimilarity = this.calculateNameSimilarity(
-        exactMatchNameWords,
-        match.course.course_name.toLowerCase(),
-        exactMatchCourseCode,
-        match.course.course_code.toLowerCase()
-      );
+      const courseCode = match.course.course_code.toLowerCase();
+      const courseName = match.course.course_name.toLowerCase();
+      const courseDesc = match.course.course_description.toLowerCase();
+      const courseDept = courseCode.split(' ')[0];
       
-      const descriptionSimilarity = this.calculateDescriptionSimilarity(
-        exactMatchDescWords,
-        match.course.course_description.toLowerCase(),
-        exactMatchCourseCode,
-        match.course.course_code.toLowerCase()
-      );
+      // Calculate different types of similarity
+      const subjectSimilarity = this.calculateSubjectSimilarity(exactMatchCourse, match.course);
+      const nameSimilarity = this.calculateNameSimilarity(exactMatchName, courseName, exactMatchCourseCode, courseCode);
+      const descriptionSimilarity = this.calculateDescriptionSimilarity(exactMatchDesc, courseDesc, exactMatchCourseCode, courseCode);
       
-      // Combine the similarities with weights (name: 40%, description: 60%)
-      const combinedScore = (nameSimilarity * 0.4) + (descriptionSimilarity * 0.6);
+      // Weight the similarities based on importance
+      const combinedScore = (subjectSimilarity * 0.5) + (nameSimilarity * 0.25) + (descriptionSimilarity * 0.25);
       
       return {
         ...match,
         score: combinedScore,
-        reason: `Similar to ${exactMatchCourse.course_code}: Name (${Math.round(nameSimilarity * 100)}%) + Description (${Math.round(descriptionSimilarity * 100)}%) = ${Math.round(combinedScore * 100)}%`,
+        reason: `Similar to ${exactMatchCourse.course_code}: Subject (${Math.round(subjectSimilarity * 100)}%) + Name (${Math.round(nameSimilarity * 100)}%) + Description (${Math.round(descriptionSimilarity * 100)}%) = ${Math.round(combinedScore * 100)}%`,
       };
     });
 
@@ -224,6 +219,88 @@ class AIService {
     return coursesWithSimilarity
       .sort((a, b) => b.score - a.score)
       .slice(0, 4);
+  }
+
+  // Calculate subject-specific similarity (most important)
+  private calculateSubjectSimilarity(course1: Course, course2: Course): number {
+    const code1 = course1.course_code.toLowerCase();
+    const code2 = course2.course_code.toLowerCase();
+    const dept1 = code1.split(' ')[0];
+    const dept2 = code2.split(' ')[0];
+    const desc1 = course1.course_description.toLowerCase();
+    const desc2 = course2.course_description.toLowerCase();
+    
+    // Same department gets highest score
+    if (dept1 === dept2) {
+      return 0.9;
+    }
+    
+    // Related departments get high scores
+    const relatedDepts = this.getRelatedDepartments(dept1);
+    if (relatedDepts.includes(dept2)) {
+      return 0.7;
+    }
+    
+    // Check for subject-specific keywords in descriptions
+    const subjectKeywords = this.getSubjectKeywords(dept1);
+    const matchingKeywords = subjectKeywords.filter(keyword => 
+      desc2.includes(keyword)
+    );
+    
+    if (matchingKeywords.length >= 2) {
+      return 0.6;
+    } else if (matchingKeywords.length >= 1) {
+      return 0.4;
+    }
+    
+    return 0.1; // Very low score for unrelated subjects
+  }
+
+  // Get related departments for a given department
+  private getRelatedDepartments(dept: string): string[] {
+    const relatedMap: { [key: string]: string[] } = {
+      'econ': ['mgt', 'poli', 'soc', 'anth', 'irgn'],
+      'math': ['stat', 'cse', 'dsc', 'phys'],
+      'cse': ['dsc', 'math', 'stat', 'econ'],
+      'chem': ['bioc', 'biol', 'phys'],
+      'biol': ['bioc', 'chem', 'phys', 'molb'],
+      'phys': ['math', 'chem', 'eng'],
+      'eng': ['cse', 'math', 'phys'],
+      'psych': ['cogs', 'soc', 'anth'],
+      'cogs': ['psych', 'cse', 'ling'],
+      'soc': ['anth', 'psych', 'econ'],
+      'anth': ['soc', 'psych', 'econ'],
+      'poli': ['econ', 'soc', 'irgn'],
+      'hist': ['poli', 'soc', 'anth'],
+      'lit': ['vis', 'mus', 'tdge'],
+      'vis': ['lit', 'mus', 'tdge'],
+      'mus': ['lit', 'vis', 'tdge']
+    };
+    
+    return relatedMap[dept] || [];
+  }
+
+  // Get subject-specific keywords for a department
+  private getSubjectKeywords(dept: string): string[] {
+    const keywordMap: { [key: string]: string[] } = {
+      'econ': ['economics', 'economic', 'market', 'supply', 'demand', 'price', 'cost', 'profit', 'revenue', 'trade', 'business', 'finance', 'investment', 'policy', 'regulation', 'competition', 'monopoly', 'oligopoly', 'game theory', 'microeconomics', 'macroeconomics', 'econometrics', 'statistics', 'data analysis'],
+      'math': ['mathematics', 'mathematical', 'calculus', 'algebra', 'linear', 'analysis', 'differential', 'integral', 'equation', 'function', 'derivative', 'limit', 'series', 'vector', 'matrix', 'probability', 'statistics'],
+      'cse': ['computer', 'programming', 'software', 'algorithm', 'data structure', 'database', 'network', 'system', 'code', 'development', 'engineering', 'computing', 'digital', 'technology'],
+      'chem': ['chemistry', 'chemical', 'molecule', 'reaction', 'organic', 'inorganic', 'biochemistry', 'physical chemistry', 'analytical chemistry', 'synthesis', 'catalyst', 'equilibrium'],
+      'biol': ['biology', 'biological', 'cell', 'organism', 'evolution', 'genetics', 'ecology', 'physiology', 'anatomy', 'microbiology', 'molecular biology', 'biochemistry'],
+      'phys': ['physics', 'physical', 'mechanics', 'quantum', 'electromagnetism', 'thermodynamics', 'energy', 'force', 'motion', 'wave', 'particle', 'relativity'],
+      'psych': ['psychology', 'psychological', 'behavior', 'cognitive', 'mental', 'brain', 'mind', 'learning', 'memory', 'perception', 'emotion', 'social psychology'],
+      'cogs': ['cognitive', 'cognition', 'brain', 'mind', 'neural', 'artificial intelligence', 'machine learning', 'perception', 'language', 'reasoning', 'decision making'],
+      'soc': ['sociology', 'social', 'society', 'culture', 'group', 'institution', 'inequality', 'class', 'race', 'gender', 'social change', 'social theory'],
+      'anth': ['anthropology', 'anthropological', 'culture', 'society', 'human', 'evolution', 'archaeology', 'ethnography', 'cultural anthropology', 'physical anthropology'],
+      'poli': ['political', 'politics', 'government', 'policy', 'democracy', 'election', 'voting', 'legislation', 'constitution', 'international relations', 'political theory'],
+      'hist': ['history', 'historical', 'past', 'event', 'period', 'era', 'civilization', 'culture', 'society', 'political history', 'social history'],
+      'lit': ['literature', 'literary', 'text', 'novel', 'poetry', 'drama', 'fiction', 'writing', 'author', 'narrative', 'story', 'analysis'],
+      'vis': ['visual', 'art', 'design', 'image', 'painting', 'sculpture', 'photography', 'drawing', 'creative', 'aesthetic', 'composition', 'color'],
+      'mus': ['music', 'musical', 'sound', 'rhythm', 'melody', 'harmony', 'composition', 'performance', 'instrument', 'theory', 'history']
+    };
+    
+    return keywordMap[dept] || [];
   }
 
   // Extract keywords from text (improved approach)
@@ -251,16 +328,19 @@ class AIService {
   }
 
   // Calculate similarity between two course names
-  private calculateNameSimilarity(keywords1: string[], name2: string, courseCode1: string, courseCode2: string): number {
-    if (keywords1.length === 0) return 0;
+  private calculateNameSimilarity(name1: string, name2: string, courseCode1: string, courseCode2: string): number {
+    const words1 = this.extractKeywords(name1);
+    const words2 = this.extractKeywords(name2);
+    
+    if (words1.length === 0) return 0;
 
     // Count how many keywords from the exact match appear in the other name
-    const matchingKeywords = keywords1.filter(keyword => 
+    const matchingKeywords = words1.filter(keyword => 
       name2.includes(keyword)
     );
 
     // Base similarity score (0-1)
-    let similarityScore = matchingKeywords.length / keywords1.length;
+    let similarityScore = matchingKeywords.length / words1.length;
 
     // Boost for courses that share more keywords
     similarityScore += (matchingKeywords.length * 0.1);
@@ -290,16 +370,18 @@ class AIService {
   }
 
   // Calculate similarity between two descriptions
-  private calculateDescriptionSimilarity(keywords1: string[], description2: string, courseCode1: string, courseCode2: string): number {
-    if (keywords1.length === 0) return 0;
+  private calculateDescriptionSimilarity(desc1: string, desc2: string, courseCode1: string, courseCode2: string): number {
+    const words1 = this.extractKeywords(desc1);
+    
+    if (words1.length === 0) return 0;
 
     // Count how many keywords from the exact match appear in the other description
-    const matchingKeywords = keywords1.filter(keyword => 
-      description2.includes(keyword)
+    const matchingKeywords = words1.filter(keyword => 
+      desc2.includes(keyword)
     );
 
     // Base similarity score (0-1)
-    let similarityScore = matchingKeywords.length / keywords1.length;
+    let similarityScore = matchingKeywords.length / words1.length;
 
     // Boost for courses that share more keywords
     similarityScore += (matchingKeywords.length * 0.05);
