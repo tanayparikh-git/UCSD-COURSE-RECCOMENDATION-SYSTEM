@@ -1187,6 +1187,76 @@ class AIService {
       }
     }
 
+    // Business Administration & Management
+    if (searchTerm.includes('business administration') || searchTerm.includes('business management') || searchTerm.includes('business ethics') || searchTerm.includes('business communication') || searchTerm.includes('business law') || searchTerm.includes('business strategy') || searchTerm.includes('advanced business management') || searchTerm.includes('international business') || searchTerm.includes('entrepreneurship') || searchTerm.includes('business analytics') || searchTerm.includes('business research')) {
+      if (courseCode.startsWith('bus') || courseDesc.includes('business administration') || courseDesc.includes('business management') || courseDesc.includes('business ethics') || courseDesc.includes('business communication') || courseDesc.includes('business law') || courseDesc.includes('business strategy') || courseDesc.includes('advanced business management') || courseDesc.includes('international business') || courseDesc.includes('entrepreneurship') || courseDesc.includes('business analytics') || courseDesc.includes('business research')) {
+        return 0.6;
+      }
+    }
+
+    // Computer Science & Programming
+    if (searchTerm.includes('discrete mathematics') || searchTerm.includes('computer organization') || searchTerm.includes('systems programming') || searchTerm.includes('advanced data structures') || searchTerm.includes('algorithm analysis') || searchTerm.includes('software engineering') || searchTerm.includes('computer architecture') || searchTerm.includes('programming languages') || searchTerm.includes('digital systems') || searchTerm.includes('computer networks')) {
+      if (courseCode.startsWith('cse') || courseDesc.includes('discrete mathematics') || courseDesc.includes('computer organization') || courseDesc.includes('systems programming') || courseDesc.includes('advanced data structures') || courseDesc.includes('algorithm analysis') || courseDesc.includes('software engineering') || courseDesc.includes('computer architecture') || courseDesc.includes('programming languages') || courseDesc.includes('digital systems') || courseDesc.includes('computer networks')) {
+        return 0.6;
+      }
+    }
+
+    // Engineering & Technical Fields
+    if (searchTerm.includes('engineering design') || searchTerm.includes('engineering materials') || searchTerm.includes('engineering mechanics') || searchTerm.includes('engineering thermodynamics') || searchTerm.includes('advanced engineering analysis') || searchTerm.includes('engineering economics') || searchTerm.includes('engineering ethics') || searchTerm.includes('engineering project management') || searchTerm.includes('engineering research')) {
+      if (courseCode.startsWith('eng') || courseDesc.includes('engineering design') || courseDesc.includes('engineering materials') || courseDesc.includes('engineering mechanics') || courseDesc.includes('engineering thermodynamics') || courseDesc.includes('advanced engineering analysis') || courseDesc.includes('engineering economics') || courseDesc.includes('engineering ethics') || courseDesc.includes('engineering project management') || courseDesc.includes('engineering research')) {
+        return 0.6;
+      }
+    }
+
+    // Health Sciences & Medical Fields
+    if (searchTerm.includes('health sciences') || searchTerm.includes('human anatomy') || searchTerm.includes('human physiology') || searchTerm.includes('medical terminology') || searchTerm.includes('health assessment') || searchTerm.includes('advanced health sciences') || searchTerm.includes('clinical skills') || searchTerm.includes('health policy') || searchTerm.includes('health informatics') || searchTerm.includes('health research')) {
+      if (courseCode.startsWith('hsci') || courseDesc.includes('health sciences') || courseDesc.includes('human anatomy') || courseDesc.includes('human physiology') || courseDesc.includes('medical terminology') || courseDesc.includes('health assessment') || courseDesc.includes('advanced health sciences') || courseDesc.includes('clinical skills') || courseDesc.includes('health policy') || courseDesc.includes('health informatics') || courseDesc.includes('health research')) {
+        return 0.6;
+      }
+    }
+
+    // Psychology & Behavioral Sciences
+    if (searchTerm.includes('developmental psychology') || searchTerm.includes('social psychology') || searchTerm.includes('cognitive psychology') || searchTerm.includes('abnormal psychology') || searchTerm.includes('advanced psychology') || searchTerm.includes('research methods in psychology') || searchTerm.includes('biological psychology') || searchTerm.includes('personality psychology') || searchTerm.includes('psychology research')) {
+      if (courseCode.startsWith('psyc') || courseDesc.includes('developmental psychology') || courseDesc.includes('social psychology') || courseDesc.includes('cognitive psychology') || courseDesc.includes('abnormal psychology') || courseDesc.includes('advanced psychology') || courseDesc.includes('research methods in psychology') || courseDesc.includes('biological psychology') || courseDesc.includes('personality psychology') || courseDesc.includes('psychology research')) {
+        return 0.6;
+      }
+    }
+
+    // Economics & Economic Theory
+    if (searchTerm.includes('principles of economics') || searchTerm.includes('microeconomic theory') || searchTerm.includes('macroeconomic theory') || searchTerm.includes('econometrics') || searchTerm.includes('international economics') || searchTerm.includes('advanced microeconomics') || searchTerm.includes('advanced macroeconomics') || searchTerm.includes('labor economics') || searchTerm.includes('public economics') || searchTerm.includes('economics research')) {
+      if (courseCode.startsWith('econ') || courseDesc.includes('principles of economics') || courseDesc.includes('microeconomic theory') || courseDesc.includes('macroeconomic theory') || courseDesc.includes('econometrics') || courseDesc.includes('international economics') || courseDesc.includes('advanced microeconomics') || courseDesc.includes('advanced macroeconomics') || courseDesc.includes('labor economics') || courseDesc.includes('public economics') || courseDesc.includes('economics research')) {
+        return 0.6;
+      }
+    }
+
+    // Mathematics & Mathematical Sciences
+    if (searchTerm.includes('calculus') || searchTerm.includes('linear algebra') || searchTerm.includes('differential equations') || searchTerm.includes('numerical analysis') || searchTerm.includes('real analysis') || searchTerm.includes('mathematics research')) {
+      if (courseCode.startsWith('math') || courseDesc.includes('calculus') || courseDesc.includes('linear algebra') || courseDesc.includes('differential equations') || courseDesc.includes('numerical analysis') || courseDesc.includes('real analysis') || courseDesc.includes('mathematics research')) {
+        return 0.6;
+      }
+    }
+
+    // Chemistry & Chemical Sciences
+    if (searchTerm.includes('general chemistry') || searchTerm.includes('organic chemistry') || searchTerm.includes('physical chemistry') || searchTerm.includes('analytical chemistry') || searchTerm.includes('inorganic chemistry') || searchTerm.includes('biochemistry') || searchTerm.includes('chemistry research')) {
+      if (courseCode.startsWith('chem') || courseDesc.includes('general chemistry') || courseDesc.includes('organic chemistry') || courseDesc.includes('physical chemistry') || courseDesc.includes('analytical chemistry') || courseDesc.includes('inorganic chemistry') || courseDesc.includes('biochemistry') || courseDesc.includes('chemistry research')) {
+        return 0.6;
+      }
+    }
+
+    // Physics & Physical Sciences
+    if (searchTerm.includes('mechanics') || searchTerm.includes('electricity and magnetism') || searchTerm.includes('waves and optics') || searchTerm.includes('modern physics') || searchTerm.includes('classical mechanics') || searchTerm.includes('quantum mechanics') || searchTerm.includes('electromagnetism') || searchTerm.includes('thermodynamics') || searchTerm.includes('physics research')) {
+      if (courseCode.startsWith('phys') || courseDesc.includes('mechanics') || courseDesc.includes('electricity and magnetism') || courseDesc.includes('waves and optics') || courseDesc.includes('modern physics') || courseDesc.includes('classical mechanics') || courseDesc.includes('quantum mechanics') || courseDesc.includes('electromagnetism') || courseDesc.includes('thermodynamics') || courseDesc.includes('physics research')) {
+        return 0.6;
+      }
+    }
+
+    // Biology & Life Sciences
+    if (searchTerm.includes('introduction to biology') || searchTerm.includes('cell biology') || searchTerm.includes('genetics') || searchTerm.includes('ecology') || searchTerm.includes('evolution') || searchTerm.includes('advanced biology') || searchTerm.includes('molecular biology') || searchTerm.includes('microbiology') || searchTerm.includes('physiology') || searchTerm.includes('biology research')) {
+      if (courseCode.startsWith('biol') || courseDesc.includes('introduction to biology') || courseDesc.includes('cell biology') || courseDesc.includes('genetics') || courseDesc.includes('ecology') || courseDesc.includes('evolution') || courseDesc.includes('advanced biology') || courseDesc.includes('molecular biology') || courseDesc.includes('microbiology') || courseDesc.includes('physiology') || courseDesc.includes('biology research')) {
+        return 0.6;
+      }
+    }
+
     return 0;
   }
 

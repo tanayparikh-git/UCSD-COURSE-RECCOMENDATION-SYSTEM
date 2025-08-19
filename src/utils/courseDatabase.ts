@@ -11518,4 +11518,924 @@ export const courseDatabase: CourseData[] = [
       "Environmental research including research methods, experimental design, and environmental engineering research projects.",
     prerequisites: "ENVE 1",
   },
+
+  // Additional Business Administration Courses
+  {
+    id: "1251",
+    course_code: "BUS 1",
+    course_name: "Introduction to Business",
+    course_units: "4",
+    course_description:
+      "Introduction to business including business fundamentals, organizational structures, and business environment.",
+    prerequisites: "None",
+  },
+  {
+    id: "1252",
+    course_code: "BUS 2",
+    course_name: "Business Ethics",
+    course_units: "4",
+    course_description:
+      "Business ethics including ethical decision making, corporate social responsibility, and ethical business practices.",
+    prerequisites: "BUS 1",
+  },
+  {
+    id: "1253",
+    course_code: "BUS 3",
+    course_name: "Business Communication",
+    course_units: "4",
+    course_description:
+      "Business communication including professional writing, presentations, and interpersonal communication skills.",
+    prerequisites: "BUS 1",
+  },
+  {
+    id: "1254",
+    course_code: "BUS 4",
+    course_name: "Business Law",
+    course_units: "4",
+    course_description:
+      "Business law including contract law, corporate law, and legal aspects of business operations.",
+    prerequisites: "BUS 1",
+  },
+  {
+    id: "1255",
+    course_code: "BUS 5",
+    course_name: "Business Strategy",
+    course_units: "4",
+    course_description:
+      "Business strategy including strategic planning, competitive analysis, and strategic management.",
+    prerequisites: "BUS 1",
+  },
+  {
+    id: "1256",
+    course_code: "BUS 100",
+    course_name: "Advanced Business Management",
+    course_units: "4",
+    course_description:
+      "Advanced business management including leadership, organizational behavior, and management principles.",
+    prerequisites: "BUS 1",
+  },
+  {
+    id: "1257",
+    course_code: "BUS 101",
+    course_name: "International Business",
+    course_units: "4",
+    course_description:
+      "International business including global markets, international trade, and cross-cultural business.",
+    prerequisites: "BUS 1",
+  },
+  {
+    id: "1258",
+    course_code: "BUS 102",
+    course_name: "Entrepreneurship",
+    course_units: "4",
+    course_description:
+      "Entrepreneurship including business planning, startup strategies, and entrepreneurial skills.",
+    prerequisites: "BUS 1",
+  },
+  {
+    id: "1259",
+    course_code: "BUS 103",
+    course_name: "Business Analytics",
+    course_units: "4",
+    course_description:
+      "Business analytics including data analysis, business intelligence, and analytical decision making.",
+    prerequisites: "BUS 1",
+  },
+  {
+    id: "1260",
+    course_code: "BUS 104",
+    course_name: "Business Research",
+    course_units: "4",
+    course_description:
+      "Business research including research methods, market research, and business research projects.",
+    prerequisites: "BUS 1",
+  },
+
+  // Additional Computer Science Courses
+  {
+    id: "1261",
+    course_code: "CSE 20",
+    course_name: "Discrete Mathematics",
+    course_units: "4",
+    course_description:
+      "Discrete mathematics including logic, set theory, combinatorics, and mathematical foundations for computer science.",
+    prerequisites: "MATH 10A or MATH 20A",
+  },
+  {
+    id: "1262",
+    course_code: "CSE 21",
+    course_name: "Mathematics for Algorithms and Systems",
+    course_units: "4",
+    course_description:
+      "Mathematics for algorithms and systems including mathematical reasoning, proofs, and algorithmic thinking.",
+    prerequisites: "CSE 20",
+  },
+  {
+    id: "1263",
+    course_code: "CSE 30",
+    course_name: "Computer Organization and Systems Programming",
+    course_units: "4",
+    course_description:
+      "Computer organization and systems programming including assembly language, computer architecture, and systems programming.",
+    prerequisites: "CSE 12",
+  },
+  {
+    id: "1264",
+    course_code: "CSE 100",
+    course_name: "Advanced Data Structures",
+    course_units: "4",
+    course_description:
+      "Advanced data structures including complex data structures, algorithm analysis, and efficient data organization.",
+    prerequisites: "CSE 12",
+  },
+  {
+    id: "1265",
+    course_code: "CSE 101",
+    course_name: "Design and Analysis of Algorithms",
+    course_units: "4",
+    course_description:
+      "Design and analysis of algorithms including algorithm design techniques, complexity analysis, and algorithmic problem solving.",
+    prerequisites: "CSE 100",
+  },
+  {
+    id: "1266",
+    course_code: "CSE 110",
+    course_name: "Software Engineering",
+    course_units: "4",
+    course_description:
+      "Software engineering including software development methodologies, project management, and software design principles.",
+    prerequisites: "CSE 12",
+  },
+  {
+    id: "1267",
+    course_code: "CSE 120",
+    course_name: "Computer Architecture",
+    course_units: "4",
+    course_description:
+      "Computer architecture including processor design, memory systems, and computer hardware organization.",
+    prerequisites: "CSE 30",
+  },
+  {
+    id: "1268",
+    course_code: "CSE 130",
+    course_name: "Programming Languages",
+    course_units: "4",
+    course_description:
+      "Programming languages including language design, compilers, and programming language theory.",
+    prerequisites: "CSE 12",
+  },
+  {
+    id: "1269",
+    course_code: "CSE 140",
+    course_name: "Digital Systems",
+    course_units: "4",
+    course_description:
+      "Digital systems including digital logic, circuit design, and digital system implementation.",
+    prerequisites: "CSE 20",
+  },
+  {
+    id: "1270",
+    course_code: "CSE 150",
+    course_name: "Computer Networks",
+    course_units: "4",
+    course_description:
+      "Computer networks including network protocols, network architecture, and distributed systems.",
+    prerequisites: "CSE 12",
+  },
+
+  // Additional Engineering Courses
+  {
+    id: "1271",
+    course_code: "ENG 1",
+    course_name: "Introduction to Engineering",
+    course_units: "4",
+    course_description:
+      "Introduction to engineering including engineering principles, design process, and engineering disciplines.",
+    prerequisites: "None",
+  },
+  {
+    id: "1272",
+    course_code: "ENG 2",
+    course_name: "Engineering Design",
+    course_units: "4",
+    course_description:
+      "Engineering design including design methodology, prototyping, and engineering project development.",
+    prerequisites: "ENG 1",
+  },
+  {
+    id: "1273",
+    course_code: "ENG 3",
+    course_name: "Engineering Materials",
+    course_units: "4",
+    course_description:
+      "Engineering materials including material properties, material selection, and material science fundamentals.",
+    prerequisites: "ENG 1",
+  },
+  {
+    id: "1274",
+    course_code: "ENG 4",
+    course_name: "Engineering Mechanics",
+    course_units: "4",
+    course_description:
+      "Engineering mechanics including statics, dynamics, and mechanical principles for engineering applications.",
+    prerequisites: "ENG 1",
+  },
+  {
+    id: "1275",
+    course_code: "ENG 5",
+    course_name: "Engineering Thermodynamics",
+    course_units: "4",
+    course_description:
+      "Engineering thermodynamics including energy systems, heat transfer, and thermodynamic principles.",
+    prerequisites: "ENG 1",
+  },
+  {
+    id: "1276",
+    course_code: "ENG 100",
+    course_name: "Advanced Engineering Analysis",
+    course_units: "4",
+    course_description:
+      "Advanced engineering analysis including mathematical modeling, simulation, and engineering problem solving.",
+    prerequisites: "ENG 1",
+  },
+  {
+    id: "1277",
+    course_code: "ENG 101",
+    course_name: "Engineering Economics",
+    course_units: "4",
+    course_description:
+      "Engineering economics including cost analysis, economic decision making, and project evaluation.",
+    prerequisites: "ENG 1",
+  },
+  {
+    id: "1278",
+    course_code: "ENG 102",
+    course_name: "Engineering Ethics",
+    course_units: "4",
+    course_description:
+      "Engineering ethics including professional responsibility, ethical decision making, and engineering standards.",
+    prerequisites: "ENG 1",
+  },
+  {
+    id: "1279",
+    course_code: "ENG 103",
+    course_name: "Engineering Project Management",
+    course_units: "4",
+    course_description:
+      "Engineering project management including project planning, resource management, and project execution.",
+    prerequisites: "ENG 1",
+  },
+  {
+    id: "1280",
+    course_code: "ENG 104",
+    course_name: "Engineering Research",
+    course_units: "4",
+    course_description:
+      "Engineering research including research methods, experimental design, and engineering research projects.",
+    prerequisites: "ENG 1",
+  },
+
+  // Additional Health Sciences Courses
+  {
+    id: "1281",
+    course_code: "HSCI 1",
+    course_name: "Introduction to Health Sciences",
+    course_units: "4",
+    course_description:
+      "Introduction to health sciences including healthcare systems, public health, and health science fundamentals.",
+    prerequisites: "None",
+  },
+  {
+    id: "1282",
+    course_code: "HSCI 2",
+    course_name: "Human Anatomy",
+    course_units: "4",
+    course_description:
+      "Human anatomy including anatomical structures, body systems, and anatomical relationships.",
+    prerequisites: "HSCI 1",
+  },
+  {
+    id: "1283",
+    course_code: "HSCI 3",
+    course_name: "Human Physiology",
+    course_units: "4",
+    course_description:
+      "Human physiology including physiological processes, organ function, and body system integration.",
+    prerequisites: "HSCI 2",
+  },
+  {
+    id: "1284",
+    course_code: "HSCI 4",
+    course_name: "Medical Terminology",
+    course_units: "4",
+    course_description:
+      "Medical terminology including medical vocabulary, terminology systems, and healthcare communication.",
+    prerequisites: "HSCI 1",
+  },
+  {
+    id: "1285",
+    course_code: "HSCI 5",
+    course_name: "Health Assessment",
+    course_units: "4",
+    course_description:
+      "Health assessment including patient assessment, diagnostic techniques, and health evaluation methods.",
+    prerequisites: "HSCI 3",
+  },
+  {
+    id: "1286",
+    course_code: "HSCI 100",
+    course_name: "Advanced Health Sciences",
+    course_units: "4",
+    course_description:
+      "Advanced health sciences including advanced concepts, specialized areas, and health science innovation.",
+    prerequisites: "HSCI 1",
+  },
+  {
+    id: "1287",
+    course_code: "HSCI 101",
+    course_name: "Clinical Skills",
+    course_units: "4",
+    course_description:
+      "Clinical skills including clinical procedures, patient care, and healthcare practice.",
+    prerequisites: "HSCI 5",
+  },
+  {
+    id: "1288",
+    course_code: "HSCI 102",
+    course_name: "Health Policy",
+    course_units: "4",
+    course_description:
+      "Health policy including healthcare policy, health regulations, and health system management.",
+    prerequisites: "HSCI 1",
+  },
+  {
+    id: "1289",
+    course_code: "HSCI 103",
+    course_name: "Health Informatics",
+    course_units: "4",
+    course_description:
+      "Health informatics including health information systems, electronic health records, and health data management.",
+    prerequisites: "HSCI 1",
+  },
+  {
+    id: "1290",
+    course_code: "HSCI 104",
+    course_name: "Health Research",
+    course_units: "4",
+    course_description:
+      "Health research including research methods, clinical research, and health science research projects.",
+    prerequisites: "HSCI 1",
+  },
+
+  // Additional Psychology Courses
+  {
+    id: "1291",
+    course_code: "PSYC 10",
+    course_name: "Introduction to Psychology",
+    course_units: "4",
+    course_description:
+      "Introduction to psychology including psychological principles, research methods, and major psychological theories.",
+    prerequisites: "None",
+  },
+  {
+    id: "1292",
+    course_code: "PSYC 20",
+    course_name: "Developmental Psychology",
+    course_units: "4",
+    course_description:
+      "Developmental psychology including human development, lifespan psychology, and developmental theories.",
+    prerequisites: "PSYC 10",
+  },
+  {
+    id: "1293",
+    course_code: "PSYC 30",
+    course_name: "Social Psychology",
+    course_units: "4",
+    course_description:
+      "Social psychology including social behavior, group dynamics, and social influence.",
+    prerequisites: "PSYC 10",
+  },
+  {
+    id: "1294",
+    course_code: "PSYC 40",
+    course_name: "Cognitive Psychology",
+    course_units: "4",
+    course_description:
+      "Cognitive psychology including mental processes, memory, attention, and cognitive development.",
+    prerequisites: "PSYC 10",
+  },
+  {
+    id: "1295",
+    course_code: "PSYC 50",
+    course_name: "Abnormal Psychology",
+    course_units: "4",
+    course_description:
+      "Abnormal psychology including psychological disorders, mental health, and clinical psychology.",
+    prerequisites: "PSYC 10",
+  },
+  {
+    id: "1296",
+    course_code: "PSYC 100",
+    course_name: "Advanced Psychology",
+    course_units: "4",
+    course_description:
+      "Advanced psychology including advanced theories, research methods, and specialized psychological topics.",
+    prerequisites: "PSYC 10",
+  },
+  {
+    id: "1297",
+    course_code: "PSYC 101",
+    course_name: "Research Methods in Psychology",
+    course_units: "4",
+    course_description:
+      "Research methods in psychology including experimental design, statistical analysis, and psychological research.",
+    prerequisites: "PSYC 10",
+  },
+  {
+    id: "1298",
+    course_code: "PSYC 102",
+    course_name: "Biological Psychology",
+    course_units: "4",
+    course_description:
+      "Biological psychology including brain function, neural mechanisms, and biological basis of behavior.",
+    prerequisites: "PSYC 10",
+  },
+  {
+    id: "1299",
+    course_code: "PSYC 103",
+    course_name: "Personality Psychology",
+    course_units: "4",
+    course_description:
+      "Personality psychology including personality theories, individual differences, and personality assessment.",
+    prerequisites: "PSYC 10",
+  },
+  {
+    id: "1300",
+    course_code: "PSYC 104",
+    course_name: "Psychology Research",
+    course_units: "4",
+    course_description:
+      "Psychology research including research projects, experimental design, and psychological research methods.",
+    prerequisites: "PSYC 10",
+  },
+
+  // Additional Economics Courses
+  {
+    id: "1301",
+    course_code: "ECON 10",
+    course_name: "Principles of Economics",
+    course_units: "4",
+    course_description:
+      "Principles of economics including microeconomics, macroeconomics, and fundamental economic concepts.",
+    prerequisites: "None",
+  },
+  {
+    id: "1302",
+    course_code: "ECON 20",
+    course_name: "Microeconomic Theory",
+    course_units: "4",
+    course_description:
+      "Microeconomic theory including consumer behavior, producer theory, and market equilibrium.",
+    prerequisites: "ECON 10",
+  },
+  {
+    id: "1303",
+    course_code: "ECON 30",
+    course_name: "Macroeconomic Theory",
+    course_units: "4",
+    course_description:
+      "Macroeconomic theory including national income, economic growth, and macroeconomic policy.",
+    prerequisites: "ECON 10",
+  },
+  {
+    id: "1304",
+    course_code: "ECON 40",
+    course_name: "Econometrics",
+    course_units: "4",
+    course_description:
+      "Econometrics including statistical methods, economic modeling, and empirical analysis.",
+    prerequisites: "ECON 10, MATH 20A",
+  },
+  {
+    id: "1305",
+    course_code: "ECON 50",
+    course_name: "International Economics",
+    course_units: "4",
+    course_description:
+      "International economics including international trade, exchange rates, and global economic issues.",
+    prerequisites: "ECON 10",
+  },
+  {
+    id: "1306",
+    course_code: "ECON 100",
+    course_name: "Advanced Microeconomics",
+    course_units: "4",
+    course_description:
+      "Advanced microeconomics including advanced theory, mathematical economics, and microeconomic analysis.",
+    prerequisites: "ECON 20",
+  },
+  {
+    id: "1307",
+    course_code: "ECON 101",
+    course_name: "Advanced Macroeconomics",
+    course_units: "4",
+    course_description:
+      "Advanced macroeconomics including advanced theory, economic modeling, and macroeconomic analysis.",
+    prerequisites: "ECON 30",
+  },
+  {
+    id: "1308",
+    course_code: "ECON 102",
+    course_name: "Labor Economics",
+    course_units: "4",
+    course_description:
+      "Labor economics including labor markets, wage determination, and employment economics.",
+    prerequisites: "ECON 20",
+  },
+  {
+    id: "1309",
+    course_code: "ECON 103",
+    course_name: "Public Economics",
+    course_units: "4",
+    course_description:
+      "Public economics including government spending, taxation, and public policy analysis.",
+    prerequisites: "ECON 20",
+  },
+  {
+    id: "1310",
+    course_code: "ECON 104",
+    course_name: "Economics Research",
+    course_units: "4",
+    course_description:
+      "Economics research including research methods, economic analysis, and economics research projects.",
+    prerequisites: "ECON 40",
+  },
+
+  // Additional Mathematics Courses
+  {
+    id: "1311",
+    course_code: "MATH 10A",
+    course_name: "Calculus I",
+    course_units: "4",
+    course_description:
+      "Calculus I including limits, derivatives, and applications of differentiation.",
+    prerequisites: "MATH 3C or MATH 4C",
+  },
+  {
+    id: "1312",
+    course_code: "MATH 10B",
+    course_name: "Calculus II",
+    course_units: "4",
+    course_description:
+      "Calculus II including integration, applications of integration, and infinite series.",
+    prerequisites: "MATH 10A",
+  },
+  {
+    id: "1313",
+    course_code: "MATH 10C",
+    course_name: "Calculus III",
+    course_units: "4",
+    course_description:
+      "Calculus III including multivariable calculus, partial derivatives, and multiple integrals.",
+    prerequisites: "MATH 10B",
+  },
+  {
+    id: "1314",
+    course_code: "MATH 20A",
+    course_name: "Calculus for Science and Engineering",
+    course_units: "4",
+    course_description:
+      "Calculus for science and engineering including calculus with applications to scientific and engineering problems.",
+    prerequisites: "MATH 3C or MATH 4C",
+  },
+  {
+    id: "1315",
+    course_code: "MATH 20B",
+    course_name: "Calculus for Science and Engineering II",
+    course_units: "4",
+    course_description:
+      "Calculus for science and engineering II including advanced calculus with scientific and engineering applications.",
+    prerequisites: "MATH 20A",
+  },
+  {
+    id: "1316",
+    course_code: "MATH 100",
+    course_name: "Linear Algebra",
+    course_units: "4",
+    course_description:
+      "Linear algebra including vector spaces, linear transformations, and matrix theory.",
+    prerequisites: "MATH 10B or MATH 20B",
+  },
+  {
+    id: "1317",
+    course_code: "MATH 101",
+    course_name: "Differential Equations",
+    course_units: "4",
+    course_description:
+      "Differential equations including ordinary differential equations, systems of equations, and applications.",
+    prerequisites: "MATH 10B or MATH 20B",
+  },
+  {
+    id: "1318",
+    course_code: "MATH 102",
+    course_name: "Numerical Analysis",
+    course_units: "4",
+    course_description:
+      "Numerical analysis including numerical methods, computational mathematics, and mathematical algorithms.",
+    prerequisites: "MATH 10B or MATH 20B",
+  },
+  {
+    id: "1319",
+    course_code: "MATH 103",
+    course_name: "Real Analysis",
+    course_units: "4",
+    course_description:
+      "Real analysis including mathematical analysis, rigorous calculus, and mathematical proofs.",
+    prerequisites: "MATH 100",
+  },
+  {
+    id: "1320",
+    course_code: "MATH 104",
+    course_name: "Mathematics Research",
+    course_units: "4",
+    course_description:
+      "Mathematics research including research methods, mathematical proofs, and mathematics research projects.",
+    prerequisites: "MATH 100",
+  },
+
+  // Additional Chemistry Courses
+  {
+    id: "1321",
+    course_code: "CHEM 6A",
+    course_name: "General Chemistry I",
+    course_units: "4",
+    course_description:
+      "General chemistry I including atomic structure, chemical bonding, and fundamental chemical principles.",
+    prerequisites: "MATH 3C or MATH 4C",
+  },
+  {
+    id: "1322",
+    course_code: "CHEM 6B",
+    course_name: "General Chemistry II",
+    course_units: "4",
+    course_description:
+      "General chemistry II including thermodynamics, kinetics, and chemical equilibrium.",
+    prerequisites: "CHEM 6A",
+  },
+  {
+    id: "1323",
+    course_code: "CHEM 6C",
+    course_name: "General Chemistry III",
+    course_units: "4",
+    course_description:
+      "General chemistry III including electrochemistry, nuclear chemistry, and advanced chemical concepts.",
+    prerequisites: "CHEM 6B",
+  },
+  {
+    id: "1324",
+    course_code: "CHEM 40A",
+    course_name: "Organic Chemistry I",
+    course_units: "4",
+    course_description:
+      "Organic chemistry I including organic compounds, reaction mechanisms, and organic synthesis.",
+    prerequisites: "CHEM 6C",
+  },
+  {
+    id: "1325",
+    course_code: "CHEM 40B",
+    course_name: "Organic Chemistry II",
+    course_units: "4",
+    course_description:
+      "Organic chemistry II including advanced organic reactions, spectroscopy, and organic chemistry applications.",
+    prerequisites: "CHEM 40A",
+  },
+  {
+    id: "1326",
+    course_code: "CHEM 100",
+    course_name: "Physical Chemistry",
+    course_units: "4",
+    course_description:
+      "Physical chemistry including thermodynamics, quantum mechanics, and physical chemistry principles.",
+    prerequisites: "CHEM 6C, MATH 20B",
+  },
+  {
+    id: "1327",
+    course_code: "CHEM 101",
+    course_name: "Analytical Chemistry",
+    course_units: "4",
+    course_description:
+      "Analytical chemistry including chemical analysis, instrumental methods, and analytical techniques.",
+    prerequisites: "CHEM 6C",
+  },
+  {
+    id: "1328",
+    course_code: "CHEM 102",
+    course_name: "Inorganic Chemistry",
+    course_units: "4",
+    course_description:
+      "Inorganic chemistry including coordination chemistry, organometallic chemistry, and inorganic synthesis.",
+    prerequisites: "CHEM 6C",
+  },
+  {
+    id: "1329",
+    course_code: "CHEM 103",
+    course_name: "Biochemistry",
+    course_units: "4",
+    course_description:
+      "Biochemistry including biomolecules, metabolic pathways, and biochemical processes.",
+    prerequisites: "CHEM 40B",
+  },
+  {
+    id: "1330",
+    course_code: "CHEM 104",
+    course_name: "Chemistry Research",
+    course_units: "4",
+    course_description:
+      "Chemistry research including research methods, laboratory techniques, and chemistry research projects.",
+    prerequisites: "CHEM 6C",
+  },
+
+  // Additional Physics Courses
+  {
+    id: "1331",
+    course_code: "PHYS 1A",
+    course_name: "Mechanics",
+    course_units: "4",
+    course_description:
+      "Mechanics including Newton's laws, energy, momentum, and classical mechanics principles.",
+    prerequisites: "MATH 10A or MATH 20A",
+  },
+  {
+    id: "1332",
+    course_code: "PHYS 1B",
+    course_name: "Electricity and Magnetism",
+    course_units: "4",
+    course_description:
+      "Electricity and magnetism including electric fields, magnetic fields, and electromagnetic phenomena.",
+    prerequisites: "PHYS 1A",
+  },
+  {
+    id: "1333",
+    course_code: "PHYS 1C",
+    course_name: "Waves, Optics, and Modern Physics",
+    course_units: "4",
+    course_description:
+      "Waves, optics, and modern physics including wave phenomena, optical systems, and quantum physics.",
+    prerequisites: "PHYS 1B",
+  },
+  {
+    id: "1334",
+    course_code: "PHYS 2A",
+    course_name: "Physics for Scientists and Engineers I",
+    course_units: "4",
+    course_description:
+      "Physics for scientists and engineers I including mechanics with calculus-based approach.",
+    prerequisites: "MATH 20A",
+  },
+  {
+    id: "1335",
+    course_code: "PHYS 2B",
+    course_name: "Physics for Scientists and Engineers II",
+    course_units: "4",
+    course_description:
+      "Physics for scientists and engineers II including electricity and magnetism with calculus-based approach.",
+    prerequisites: "PHYS 2A",
+  },
+  {
+    id: "1336",
+    course_code: "PHYS 100",
+    course_name: "Classical Mechanics",
+    course_units: "4",
+    course_description:
+      "Classical mechanics including Lagrangian and Hamiltonian mechanics, and advanced classical physics.",
+    prerequisites: "PHYS 2B",
+  },
+  {
+    id: "1337",
+    course_code: "PHYS 101",
+    course_name: "Quantum Mechanics",
+    course_units: "4",
+    course_description:
+      "Quantum mechanics including wave functions, quantum theory, and quantum physics applications.",
+    prerequisites: "PHYS 2B",
+  },
+  {
+    id: "1338",
+    course_code: "PHYS 102",
+    course_name: "Electromagnetism",
+    course_units: "4",
+    course_description:
+      "Electromagnetism including Maxwell's equations, electromagnetic theory, and electromagnetic applications.",
+    prerequisites: "PHYS 2B",
+  },
+  {
+    id: "1339",
+    course_code: "PHYS 103",
+    course_name: "Thermodynamics",
+    course_units: "4",
+    course_description:
+      "Thermodynamics including thermodynamic laws, statistical mechanics, and thermal physics.",
+    prerequisites: "PHYS 2B",
+  },
+  {
+    id: "1340",
+    course_code: "PHYS 104",
+    course_name: "Physics Research",
+    course_units: "4",
+    course_description:
+      "Physics research including research methods, experimental physics, and physics research projects.",
+    prerequisites: "PHYS 2B",
+  },
+
+  // Additional Biology Courses
+  {
+    id: "1341",
+    course_code: "BIOL 10",
+    course_name: "Introduction to Biology",
+    course_units: "4",
+    course_description:
+      "Introduction to biology including cell biology, genetics, and fundamental biological principles.",
+    prerequisites: "None",
+  },
+  {
+    id: "1342",
+    course_code: "BIOL 20",
+    course_name: "Cell Biology",
+    course_units: "4",
+    course_description:
+      "Cell biology including cell structure, cell function, and cellular processes.",
+    prerequisites: "BIOL 10",
+  },
+  {
+    id: "1343",
+    course_code: "BIOL 30",
+    course_name: "Genetics",
+    course_units: "4",
+    course_description:
+      "Genetics including inheritance, gene expression, and genetic mechanisms.",
+    prerequisites: "BIOL 10",
+  },
+  {
+    id: "1344",
+    course_code: "BIOL 40",
+    course_name: "Ecology",
+    course_units: "4",
+    course_description:
+      "Ecology including population ecology, community ecology, and ecosystem dynamics.",
+    prerequisites: "BIOL 10",
+  },
+  {
+    id: "1345",
+    course_code: "BIOL 50",
+    course_name: "Evolution",
+    course_units: "4",
+    course_description:
+      "Evolution including evolutionary theory, natural selection, and evolutionary processes.",
+    prerequisites: "BIOL 10",
+  },
+  {
+    id: "1346",
+    course_code: "BIOL 100",
+    course_name: "Advanced Biology",
+    course_units: "4",
+    course_description:
+      "Advanced biology including advanced concepts, specialized areas, and biological research.",
+    prerequisites: "BIOL 10",
+  },
+  {
+    id: "1347",
+    course_code: "BIOL 101",
+    course_name: "Molecular Biology",
+    course_units: "4",
+    course_description:
+      "Molecular biology including molecular mechanisms, gene regulation, and molecular techniques.",
+    prerequisites: "BIOL 20",
+  },
+  {
+    id: "1348",
+    course_code: "BIOL 102",
+    course_name: "Microbiology",
+    course_units: "4",
+    course_description:
+      "Microbiology including microbial diversity, microbial physiology, and microbial applications.",
+    prerequisites: "BIOL 10",
+  },
+  {
+    id: "1349",
+    course_code: "BIOL 103",
+    course_name: "Physiology",
+    course_units: "4",
+    course_description:
+      "Physiology including organ systems, physiological processes, and human physiology.",
+    prerequisites: "BIOL 20",
+  },
+  {
+    id: "1350",
+    course_code: "BIOL 104",
+    course_name: "Biology Research",
+    course_units: "4",
+    course_description:
+      "Biology research including research methods, experimental biology, and biology research projects.",
+    prerequisites: "BIOL 10",
+  },
 ];
