@@ -306,8 +306,8 @@ class AIService {
     }
 
     // Languages & Linguistics
-    if (searchTerm.includes('language') || searchTerm.includes('linguistics') || searchTerm.includes('spanish') || searchTerm.includes('french') || searchTerm.includes('german') || searchTerm.includes('chinese') || searchTerm.includes('japanese') || searchTerm.includes('korean') || searchTerm.includes('italian') || searchTerm.includes('russian') || searchTerm.includes('arabic') || searchTerm.includes('grammar') || searchTerm.includes('translation') || searchTerm.includes('phonetics') || searchTerm.includes('syntax') || searchTerm.includes('morphology') || searchTerm.includes('semantics') || searchTerm.includes('calligraphy')) {
-      if (courseCode.startsWith('ling') || courseCode.startsWith('span') || courseCode.startsWith('fren') || courseCode.startsWith('germ') || courseCode.startsWith('chin') || courseCode.startsWith('japn') || courseCode.startsWith('kore') || courseCode.startsWith('ital') || courseCode.startsWith('russ') || courseCode.startsWith('arab') || courseDesc.includes('language') || courseDesc.includes('linguistics') || courseDesc.includes('grammar') || courseDesc.includes('translation') || courseDesc.includes('phonetics') || courseDesc.includes('syntax') || courseDesc.includes('morphology') || courseDesc.includes('semantics') || courseDesc.includes('calligraphy')) {
+    if (searchTerm.includes('language') || searchTerm.includes('linguistics') || searchTerm.includes('spanish') || searchTerm.includes('french') || searchTerm.includes('german') || searchTerm.includes('chinese') || searchTerm.includes('japanese') || searchTerm.includes('korean') || searchTerm.includes('italian') || searchTerm.includes('russian') || searchTerm.includes('arabic') || searchTerm.includes('grammar') || searchTerm.includes('translation') || searchTerm.includes('phonetics') || searchTerm.includes('syntax') || searchTerm.includes('morphology') || searchTerm.includes('semantics') || searchTerm.includes('calligraphy') || searchTerm.includes('islamic')) {
+      if (courseCode.startsWith('ling') || courseCode.startsWith('span') || courseCode.startsWith('fren') || courseCode.startsWith('germ') || courseCode.startsWith('chin') || courseCode.startsWith('japn') || courseCode.startsWith('kore') || courseCode.startsWith('ital') || courseCode.startsWith('russ') || courseCode.startsWith('arab') || courseDesc.includes('language') || courseDesc.includes('linguistics') || courseDesc.includes('grammar') || courseDesc.includes('translation') || courseDesc.includes('phonetics') || courseDesc.includes('syntax') || courseDesc.includes('morphology') || courseDesc.includes('semantics') || courseDesc.includes('calligraphy') || courseDesc.includes('islamic')) {
         return 0.6;
       }
     }
@@ -350,6 +350,27 @@ class AIService {
     // Theater & Performance
     if (searchTerm.includes('theater') || searchTerm.includes('theatre') || searchTerm.includes('drama') || searchTerm.includes('acting') || searchTerm.includes('performance') || searchTerm.includes('stage') || searchTerm.includes('play') || searchTerm.includes('directing') || searchTerm.includes('playwriting') || searchTerm.includes('musical theater') || searchTerm.includes('dance') || searchTerm.includes('choreography') || searchTerm.includes('theatrical') || searchTerm.includes('production')) {
       if (courseCode.startsWith('tdge') || courseDesc.includes('theater') || courseDesc.includes('theatre') || courseDesc.includes('drama') || courseDesc.includes('acting') || courseDesc.includes('performance') || courseDesc.includes('stage') || courseDesc.includes('play') || courseDesc.includes('directing') || courseDesc.includes('playwriting') || courseDesc.includes('musical theater') || courseDesc.includes('dance') || courseDesc.includes('choreography') || courseDesc.includes('theatrical') || courseDesc.includes('production')) {
+        return 0.6;
+      }
+    }
+
+    // Bioengineering & Biomedical
+    if (searchTerm.includes('bioengineering') || searchTerm.includes('biomedical') || searchTerm.includes('biomechanics') || searchTerm.includes('biomaterials') || searchTerm.includes('tissue engineering') || searchTerm.includes('medical device') || searchTerm.includes('drug delivery') || searchTerm.includes('neural engineering') || searchTerm.includes('biomedical imaging') || searchTerm.includes('signal processing') || searchTerm.includes('regenerative medicine') || searchTerm.includes('neuroprosthetics')) {
+      if (courseCode.startsWith('beng') || courseDesc.includes('bioengineering') || courseDesc.includes('biomedical') || courseDesc.includes('biomechanics') || courseDesc.includes('biomaterials') || courseDesc.includes('tissue engineering') || courseDesc.includes('medical device') || courseDesc.includes('drug delivery') || courseDesc.includes('neural engineering') || courseDesc.includes('biomedical imaging') || courseDesc.includes('signal processing') || courseDesc.includes('regenerative medicine') || courseDesc.includes('neuroprosthetics')) {
+        return 0.6;
+      }
+    }
+
+    // Nanotechnology & Nanoengineering
+    if (searchTerm.includes('nanotechnology') || searchTerm.includes('nanoengineering') || searchTerm.includes('nanomaterials') || searchTerm.includes('nanofabrication') || searchTerm.includes('nanophotonics') || searchTerm.includes('nanobiotechnology') || searchTerm.includes('quantum nanoscience') || searchTerm.includes('nanoelectronics') || searchTerm.includes('nanomechanics') || searchTerm.includes('nanoscale') || searchTerm.includes('nanoparticle') || searchTerm.includes('quantum dots') || searchTerm.includes('molecular electronics')) {
+      if (courseCode.startsWith('nano') || courseDesc.includes('nanotechnology') || courseDesc.includes('nanoengineering') || courseDesc.includes('nanomaterials') || courseDesc.includes('nanofabrication') || courseDesc.includes('nanophotonics') || courseDesc.includes('nanobiotechnology') || courseDesc.includes('quantum nanoscience') || courseDesc.includes('nanoelectronics') || courseDesc.includes('nanomechanics') || courseDesc.includes('nanoscale') || courseDesc.includes('nanoparticle') || courseDesc.includes('quantum dots') || courseDesc.includes('molecular electronics')) {
+        return 0.6;
+      }
+    }
+
+    // International Relations & Global Studies
+    if (searchTerm.includes('international relations') || searchTerm.includes('global politics') || searchTerm.includes('international law') || searchTerm.includes('diplomacy') || searchTerm.includes('international economics') || searchTerm.includes('conflict resolution') || searchTerm.includes('human rights') || searchTerm.includes('global security') || searchTerm.includes('international development') || searchTerm.includes('regional studies') || searchTerm.includes('peacebuilding') || searchTerm.includes('mediation') || searchTerm.includes('global governance')) {
+      if (courseCode.startsWith('irgn') || courseDesc.includes('international relations') || courseDesc.includes('global politics') || courseDesc.includes('international law') || courseDesc.includes('diplomacy') || courseDesc.includes('international economics') || courseDesc.includes('conflict resolution') || courseDesc.includes('human rights') || courseDesc.includes('global security') || courseDesc.includes('international development') || courseDesc.includes('regional studies') || courseDesc.includes('peacebuilding') || courseDesc.includes('mediation') || courseDesc.includes('global governance')) {
         return 0.6;
       }
     }

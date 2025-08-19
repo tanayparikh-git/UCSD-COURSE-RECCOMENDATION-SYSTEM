@@ -3698,4 +3698,464 @@ export const courseDatabase: CourseData[] = [
       "Italian translation including translation theory, techniques, and practical translation exercises.",
     prerequisites: "ITAL 5",
   },
+
+  // Additional Russian Language Courses
+  {
+    id: "401",
+    course_code: "RUSS 1",
+    course_name: "Elementary Russian I",
+    course_units: "4",
+    course_description:
+      "Elementary Russian I including basic grammar, vocabulary, and communication skills for beginners.",
+    prerequisites: "None",
+  },
+  {
+    id: "402",
+    course_code: "RUSS 2",
+    course_name: "Elementary Russian II",
+    course_units: "4",
+    course_description:
+      "Elementary Russian II including intermediate grammar, vocabulary, and communication skills.",
+    prerequisites: "RUSS 1",
+  },
+  {
+    id: "403",
+    course_code: "RUSS 3",
+    course_name: "Intermediate Russian I",
+    course_units: "4",
+    course_description:
+      "Intermediate Russian I including advanced grammar, reading comprehension, and cultural studies.",
+    prerequisites: "RUSS 2",
+  },
+  {
+    id: "404",
+    course_code: "RUSS 4",
+    course_name: "Intermediate Russian II",
+    course_units: "4",
+    course_description:
+      "Intermediate Russian II including advanced conversation, composition, and Russian literature.",
+    prerequisites: "RUSS 3",
+  },
+  {
+    id: "405",
+    course_code: "RUSS 5",
+    course_name: "Advanced Russian",
+    course_units: "4",
+    course_description:
+      "Advanced Russian including advanced composition, literary analysis, and cultural studies.",
+    prerequisites: "RUSS 4",
+  },
+  {
+    id: "406",
+    course_code: "RUSS 100",
+    course_name: "Russian Literature",
+    course_units: "4",
+    course_description:
+      "Russian literature including major works, literary analysis, and cultural context.",
+    prerequisites: "RUSS 5",
+  },
+  {
+    id: "407",
+    course_code: "RUSS 101",
+    course_name: "Russian Culture",
+    course_units: "4",
+    course_description:
+      "Russian culture including history, art, music, and contemporary Russian society.",
+    prerequisites: "RUSS 4",
+  },
+  {
+    id: "408",
+    course_code: "RUSS 102",
+    course_name: "Russian Cinema",
+    course_units: "4",
+    course_description:
+      "Russian cinema including film analysis, Russian film history, and cultural context.",
+    prerequisites: "RUSS 4",
+  },
+  {
+    id: "409",
+    course_code: "RUSS 103",
+    course_name: "Russian Linguistics",
+    course_units: "4",
+    course_description:
+      "Russian linguistics including Russian phonology, morphology, syntax, and dialectal variation.",
+    prerequisites: "LING 1, RUSS 4",
+  },
+  {
+    id: "410",
+    course_code: "RUSS 104",
+    course_name: "Russian Translation",
+    course_units: "4",
+    course_description:
+      "Russian translation including translation theory, techniques, and practical translation exercises.",
+    prerequisites: "RUSS 5",
+  },
+
+  // Additional Arabic Language Courses
+  {
+    id: "411",
+    course_code: "ARAB 1",
+    course_name: "Elementary Arabic I",
+    course_units: "4",
+    course_description:
+      "Elementary Arabic I including basic grammar, vocabulary, and communication skills for beginners.",
+    prerequisites: "None",
+  },
+  {
+    id: "412",
+    course_code: "ARAB 2",
+    course_name: "Elementary Arabic II",
+    course_units: "4",
+    course_description:
+      "Elementary Arabic II including intermediate grammar, vocabulary, and communication skills.",
+    prerequisites: "ARAB 1",
+  },
+  {
+    id: "413",
+    course_code: "ARAB 3",
+    course_name: "Intermediate Arabic I",
+    course_units: "4",
+    course_description:
+      "Intermediate Arabic I including advanced grammar, reading comprehension, and cultural studies.",
+    prerequisites: "ARAB 2",
+  },
+  {
+    id: "414",
+    course_code: "ARAB 4",
+    course_name: "Intermediate Arabic II",
+    course_units: "4",
+    course_description:
+      "Intermediate Arabic II including advanced conversation, composition, and Arabic literature.",
+    prerequisites: "ARAB 3",
+  },
+  {
+    id: "415",
+    course_code: "ARAB 5",
+    course_name: "Advanced Arabic",
+    course_units: "4",
+    course_description:
+      "Advanced Arabic including advanced composition, literary analysis, and cultural studies.",
+    prerequisites: "ARAB 4",
+  },
+  {
+    id: "416",
+    course_code: "ARAB 100",
+    course_name: "Arabic Literature",
+    course_units: "4",
+    course_description:
+      "Arabic literature including major works, literary analysis, and cultural context.",
+    prerequisites: "ARAB 5",
+  },
+  {
+    id: "417",
+    course_code: "ARAB 101",
+    course_name: "Arabic Culture",
+    course_units: "4",
+    course_description:
+      "Arabic culture including history, art, philosophy, and contemporary Arabic society.",
+    prerequisites: "ARAB 4",
+  },
+  {
+    id: "418",
+    course_code: "ARAB 102",
+    course_name: "Islamic Studies",
+    course_units: "4",
+    course_description:
+      "Islamic studies including Islamic history, theology, and cultural practices.",
+    prerequisites: "ARAB 3",
+  },
+  {
+    id: "419",
+    course_code: "ARAB 103",
+    course_name: "Arabic Linguistics",
+    course_units: "4",
+    course_description:
+      "Arabic linguistics including Arabic phonology, morphology, syntax, and dialectal variation.",
+    prerequisites: "LING 1, ARAB 4",
+  },
+  {
+    id: "420",
+    course_code: "ARAB 104",
+    course_name: "Arabic Translation",
+    course_units: "4",
+    course_description:
+      "Arabic translation including translation theory, techniques, and practical translation exercises.",
+    prerequisites: "ARAB 5",
+  },
+
+  // Additional Bioengineering Courses
+  {
+    id: "421",
+    course_code: "BENG 1",
+    course_name: "Introduction to Bioengineering",
+    course_units: "4",
+    course_description:
+      "Introduction to bioengineering including biological systems, engineering principles, and biomedical applications.",
+    prerequisites: "None",
+  },
+  {
+    id: "422",
+    course_code: "BENG 2",
+    course_name: "Biomechanics",
+    course_units: "4",
+    course_description:
+      "Biomechanics including mechanical properties of biological tissues, movement analysis, and medical device design.",
+    prerequisites: "PHYS 2A",
+  },
+  {
+    id: "423",
+    course_code: "BENG 3",
+    course_name: "Biomaterials",
+    course_units: "4",
+    course_description:
+      "Biomaterials including material properties, biocompatibility, and medical implant design.",
+    prerequisites: "CHEM 6A",
+  },
+  {
+    id: "424",
+    course_code: "BENG 4",
+    course_name: "Biomedical Imaging",
+    course_units: "4",
+    course_description:
+      "Biomedical imaging including medical imaging techniques, image processing, and diagnostic applications.",
+    prerequisites: "PHYS 2A",
+  },
+  {
+    id: "425",
+    course_code: "BENG 5",
+    course_name: "Tissue Engineering",
+    course_units: "4",
+    course_description:
+      "Tissue engineering including cell culture, scaffold design, and regenerative medicine applications.",
+    prerequisites: "BILD 1",
+  },
+  {
+    id: "426",
+    course_code: "BENG 100",
+    course_name: "Medical Device Design",
+    course_units: "4",
+    course_description:
+      "Medical device design including design principles, regulatory requirements, and clinical applications.",
+    prerequisites: "BENG 1",
+  },
+  {
+    id: "427",
+    course_code: "BENG 101",
+    course_name: "Biomedical Signal Processing",
+    course_units: "4",
+    course_description:
+      "Biomedical signal processing including signal analysis, filtering, and physiological monitoring.",
+    prerequisites: "ECE 35",
+  },
+  {
+    id: "428",
+    course_code: "BENG 102",
+    course_name: "Drug Delivery Systems",
+    course_units: "4",
+    course_description:
+      "Drug delivery systems including controlled release, targeting strategies, and pharmaceutical applications.",
+    prerequisites: "CHEM 6A",
+  },
+  {
+    id: "429",
+    course_code: "BENG 103",
+    course_name: "Neural Engineering",
+    course_units: "4",
+    course_description:
+      "Neural engineering including neural interfaces, brain-computer interfaces, and neuroprosthetics.",
+    prerequisites: "BENG 1",
+  },
+  {
+    id: "430",
+    course_code: "BENG 104",
+    course_name: "Biomedical Ethics",
+    course_units: "4",
+    course_description:
+      "Biomedical ethics including ethical issues in medical technology, research ethics, and patient rights.",
+    prerequisites: "None",
+  },
+
+  // Additional Nanoengineering Courses
+  {
+    id: "431",
+    course_code: "NANO 1",
+    course_name: "Introduction to Nanoengineering",
+    course_units: "4",
+    course_description:
+      "Introduction to nanoengineering including nanotechnology principles, nanoscale phenomena, and engineering applications.",
+    prerequisites: "None",
+  },
+  {
+    id: "432",
+    course_code: "NANO 2",
+    course_name: "Nanomaterials",
+    course_units: "4",
+    course_description:
+      "Nanomaterials including nanoparticle synthesis, characterization, and material properties at the nanoscale.",
+    prerequisites: "CHEM 6A",
+  },
+  {
+    id: "433",
+    course_code: "NANO 3",
+    course_name: "Nanofabrication",
+    course_units: "4",
+    course_description:
+      "Nanofabrication including lithography techniques, nanoscale patterning, and device fabrication.",
+    prerequisites: "NANO 1",
+  },
+  {
+    id: "434",
+    course_code: "NANO 4",
+    course_name: "Nanophotonics",
+    course_units: "4",
+    course_description:
+      "Nanophotonics including light-matter interactions at the nanoscale, plasmonics, and optical devices.",
+    prerequisites: "PHYS 2A",
+  },
+  {
+    id: "435",
+    course_code: "NANO 5",
+    course_name: "Nanobiotechnology",
+    course_units: "4",
+    course_description:
+      "Nanobiotechnology including biological applications of nanotechnology, biosensors, and nanomedicine.",
+    prerequisites: "BILD 1",
+  },
+  {
+    id: "436",
+    course_code: "NANO 100",
+    course_name: "Quantum Nanoscience",
+    course_units: "4",
+    course_description:
+      "Quantum nanoscience including quantum effects at the nanoscale, quantum dots, and quantum computing applications.",
+    prerequisites: "PHYS 2A",
+  },
+  {
+    id: "437",
+    course_code: "NANO 101",
+    course_name: "Nanoelectronics",
+    course_units: "4",
+    course_description:
+      "Nanoelectronics including nanoscale electronic devices, quantum electronics, and molecular electronics.",
+    prerequisites: "ECE 35",
+  },
+  {
+    id: "438",
+    course_code: "NANO 102",
+    course_name: "Nanomechanics",
+    course_units: "4",
+    course_description:
+      "Nanomechanics including mechanical properties at the nanoscale, atomic force microscopy, and nanomechanical devices.",
+    prerequisites: "MAE 3",
+  },
+  {
+    id: "439",
+    course_code: "NANO 103",
+    course_name: "Nanoscale Characterization",
+    course_units: "4",
+    course_description:
+      "Nanoscale characterization including microscopy techniques, spectroscopy, and analytical methods for nanomaterials.",
+    prerequisites: "NANO 1",
+  },
+  {
+    id: "440",
+    course_code: "NANO 104",
+    course_name: "Nanotechnology Applications",
+    course_units: "4",
+    course_description:
+      "Nanotechnology applications including commercial applications, environmental nanotechnology, and energy applications.",
+    prerequisites: "NANO 1",
+  },
+
+  // Additional International Relations Courses
+  {
+    id: "441",
+    course_code: "IRGN 1",
+    course_name: "Introduction to International Relations",
+    course_units: "4",
+    course_description:
+      "Introduction to international relations including global politics, international organizations, and diplomatic relations.",
+    prerequisites: "None",
+  },
+  {
+    id: "442",
+    course_code: "IRGN 2",
+    course_name: "Global Politics",
+    course_units: "4",
+    course_description:
+      "Global politics including international power dynamics, global governance, and political systems.",
+    prerequisites: "IRGN 1",
+  },
+  {
+    id: "443",
+    course_code: "IRGN 3",
+    course_name: "International Law",
+    course_units: "4",
+    course_description:
+      "International law including legal frameworks, treaties, and international dispute resolution.",
+    prerequisites: "IRGN 1",
+  },
+  {
+    id: "444",
+    course_code: "IRGN 4",
+    course_name: "Diplomacy",
+    course_units: "4",
+    course_description:
+      "Diplomacy including diplomatic practices, negotiation strategies, and international communication.",
+    prerequisites: "IRGN 1",
+  },
+  {
+    id: "445",
+    course_code: "IRGN 5",
+    course_name: "International Economics",
+    course_units: "4",
+    course_description:
+      "International economics including global trade, international finance, and economic development.",
+    prerequisites: "ECON 1",
+  },
+  {
+    id: "446",
+    course_code: "IRGN 100",
+    course_name: "Conflict Resolution",
+    course_units: "4",
+    course_description:
+      "Conflict resolution including peacebuilding, mediation techniques, and international conflict management.",
+    prerequisites: "IRGN 1",
+  },
+  {
+    id: "447",
+    course_code: "IRGN 101",
+    course_name: "Human Rights",
+    course_units: "4",
+    course_description:
+      "Human rights including international human rights law, advocacy, and human rights protection.",
+    prerequisites: "IRGN 1",
+  },
+  {
+    id: "448",
+    course_code: "IRGN 102",
+    course_name: "Global Security",
+    course_units: "4",
+    course_description:
+      "Global security including security threats, defense policies, and international security cooperation.",
+    prerequisites: "IRGN 1",
+  },
+  {
+    id: "449",
+    course_code: "IRGN 103",
+    course_name: "International Development",
+    course_units: "4",
+    course_description:
+      "International development including development theory, aid programs, and sustainable development goals.",
+    prerequisites: "IRGN 1",
+  },
+  {
+    id: "450",
+    course_code: "IRGN 104",
+    course_name: "Regional Studies",
+    course_units: "4",
+    course_description:
+      "Regional studies including area studies, regional politics, and cultural understanding of specific regions.",
+    prerequisites: "IRGN 1",
+  },
 ];
