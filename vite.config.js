@@ -15,5 +15,14 @@ export default defineConfig({
   },
   build: {
     outDir: "dist",
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+          courseData: ['./src/utils/courseDatabase.ts']
+        }
+      }
+    },
+    chunkSizeWarningLimit: 4000
   },
 });
