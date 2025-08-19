@@ -2325,7 +2325,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "LING 1",
     course_name: "Introduction to Linguistics",
     course_units: "4",
-    course_description: "Introduction to linguistics including language structure, phonetics, morphology, syntax, and language acquisition.",
+    course_description:
+      "Introduction to linguistics including language structure, phonetics, morphology, syntax, and language acquisition.",
     prerequisites: "None",
   },
   {
@@ -2333,7 +2334,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "LING 2",
     course_name: "Language and Society",
     course_units: "4",
-    course_description: "Language and society including sociolinguistics, language variation, and the relationship between language and culture.",
+    course_description:
+      "Language and society including sociolinguistics, language variation, and the relationship between language and culture.",
     prerequisites: "None",
   },
   {
@@ -2341,7 +2343,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "LING 3",
     course_name: "Language and Mind",
     course_units: "4",
-    course_description: "Language and mind including psycholinguistics, cognitive linguistics, and the psychology of language.",
+    course_description:
+      "Language and mind including psycholinguistics, cognitive linguistics, and the psychology of language.",
     prerequisites: "None",
   },
   {
@@ -2349,7 +2352,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "LING 4",
     course_name: "Language and Technology",
     course_units: "4",
-    course_description: "Language and technology including computational linguistics, natural language processing, and language technology applications.",
+    course_description:
+      "Language and technology including computational linguistics, natural language processing, and language technology applications.",
     prerequisites: "None",
   },
   {
@@ -2357,7 +2361,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "LING 5",
     course_name: "Language and Culture",
     course_units: "4",
-    course_description: "Language and culture including anthropological linguistics, cultural communication, and cross-cultural language studies.",
+    course_description:
+      "Language and culture including anthropological linguistics, cultural communication, and cross-cultural language studies.",
     prerequisites: "None",
   },
   {
@@ -2365,7 +2370,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "LING 100",
     course_name: "Phonetics",
     course_units: "4",
-    course_description: "Phonetics including speech sounds, phonetic transcription, and acoustic analysis of speech.",
+    course_description:
+      "Phonetics including speech sounds, phonetic transcription, and acoustic analysis of speech.",
     prerequisites: "LING 1",
   },
   {
@@ -2373,7 +2379,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "LING 101",
     course_name: "Phonology",
     course_units: "4",
-    course_description: "Phonology including sound patterns, phonological rules, and theoretical approaches to sound systems.",
+    course_description:
+      "Phonology including sound patterns, phonological rules, and theoretical approaches to sound systems.",
     prerequisites: "LING 100",
   },
   {
@@ -2381,7 +2388,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "LING 102",
     course_name: "Morphology",
     course_units: "4",
-    course_description: "Morphology including word structure, morphological analysis, and theoretical approaches to word formation.",
+    course_description:
+      "Morphology including word structure, morphological analysis, and theoretical approaches to word formation.",
     prerequisites: "LING 1",
   },
   {
@@ -2389,7 +2397,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "LING 103",
     course_name: "Syntax",
     course_units: "4",
-    course_description: "Syntax including sentence structure, grammatical analysis, and theoretical approaches to syntax.",
+    course_description:
+      "Syntax including sentence structure, grammatical analysis, and theoretical approaches to syntax.",
     prerequisites: "LING 1",
   },
   {
@@ -2397,7 +2406,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "LING 104",
     course_name: "Semantics",
     course_units: "4",
-    course_description: "Semantics including meaning, truth conditions, and theoretical approaches to linguistic meaning.",
+    course_description:
+      "Semantics including meaning, truth conditions, and theoretical approaches to linguistic meaning.",
     prerequisites: "LING 1",
   },
 
@@ -2407,7 +2417,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "SPAN 1",
     course_name: "Elementary Spanish I",
     course_units: "4",
-    course_description: "Elementary Spanish I including basic grammar, vocabulary, and communication skills for beginners.",
+    course_description:
+      "Elementary Spanish I including basic grammar, vocabulary, and communication skills for beginners.",
     prerequisites: "None",
   },
   {
@@ -2415,7 +2426,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "SPAN 2",
     course_name: "Elementary Spanish II",
     course_units: "4",
-    course_description: "Elementary Spanish II including intermediate grammar, vocabulary, and communication skills.",
+    course_description:
+      "Elementary Spanish II including intermediate grammar, vocabulary, and communication skills.",
     prerequisites: "SPAN 1",
   },
   {
@@ -2423,7 +2435,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "SPAN 3",
     course_name: "Intermediate Spanish I",
     course_units: "4",
-    course_description: "Intermediate Spanish I including advanced grammar, reading comprehension, and cultural studies.",
+    course_description:
+      "Intermediate Spanish I including advanced grammar, reading comprehension, and cultural studies.",
     prerequisites: "SPAN 2",
   },
   {
@@ -2431,7 +2444,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "SPAN 4",
     course_name: "Intermediate Spanish II",
     course_units: "4",
-    course_description: "Intermediate Spanish II including advanced conversation, composition, and Hispanic literature.",
+    course_description:
+      "Intermediate Spanish II including advanced conversation, composition, and Hispanic literature.",
     prerequisites: "SPAN 3",
   },
   {
@@ -2439,7 +2453,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "SPAN 5",
     course_name: "Advanced Spanish",
     course_units: "4",
-    course_description: "Advanced Spanish including advanced composition, literary analysis, and cultural studies.",
+    course_description:
+      "Advanced Spanish including advanced composition, literary analysis, and cultural studies.",
     prerequisites: "SPAN 4",
   },
   {
@@ -2447,7 +2462,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "SPAN 100",
     course_name: "Spanish Literature",
     course_units: "4",
-    course_description: "Spanish literature including major works, literary analysis, and cultural context.",
+    course_description:
+      "Spanish literature including major works, literary analysis, and cultural context.",
     prerequisites: "SPAN 5",
   },
   {
@@ -2455,7 +2471,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "SPAN 101",
     course_name: "Spanish Culture",
     course_units: "4",
-    course_description: "Spanish culture including history, art, music, and contemporary Spanish society.",
+    course_description:
+      "Spanish culture including history, art, music, and contemporary Spanish society.",
     prerequisites: "SPAN 4",
   },
   {
@@ -2463,7 +2480,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "SPAN 102",
     course_name: "Latin American Literature",
     course_units: "4",
-    course_description: "Latin American literature including major works, literary movements, and cultural context.",
+    course_description:
+      "Latin American literature including major works, literary movements, and cultural context.",
     prerequisites: "SPAN 5",
   },
   {
@@ -2471,7 +2489,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "SPAN 103",
     course_name: "Spanish Linguistics",
     course_units: "4",
-    course_description: "Spanish linguistics including Spanish phonology, morphology, syntax, and dialectal variation.",
+    course_description:
+      "Spanish linguistics including Spanish phonology, morphology, syntax, and dialectal variation.",
     prerequisites: "LING 1, SPAN 4",
   },
   {
@@ -2479,7 +2498,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "SPAN 104",
     course_name: "Spanish Translation",
     course_units: "4",
-    course_description: "Spanish translation including translation theory, techniques, and practical translation exercises.",
+    course_description:
+      "Spanish translation including translation theory, techniques, and practical translation exercises.",
     prerequisites: "SPAN 5",
   },
 
@@ -2489,7 +2509,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "FREN 1",
     course_name: "Elementary French I",
     course_units: "4",
-    course_description: "Elementary French I including basic grammar, vocabulary, and communication skills for beginners.",
+    course_description:
+      "Elementary French I including basic grammar, vocabulary, and communication skills for beginners.",
     prerequisites: "None",
   },
   {
@@ -2497,7 +2518,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "FREN 2",
     course_name: "Elementary French II",
     course_units: "4",
-    course_description: "Elementary French II including intermediate grammar, vocabulary, and communication skills.",
+    course_description:
+      "Elementary French II including intermediate grammar, vocabulary, and communication skills.",
     prerequisites: "FREN 1",
   },
   {
@@ -2505,7 +2527,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "FREN 3",
     course_name: "Intermediate French I",
     course_units: "4",
-    course_description: "Intermediate French I including advanced grammar, reading comprehension, and cultural studies.",
+    course_description:
+      "Intermediate French I including advanced grammar, reading comprehension, and cultural studies.",
     prerequisites: "FREN 2",
   },
   {
@@ -2513,7 +2536,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "FREN 4",
     course_name: "Intermediate French II",
     course_units: "4",
-    course_description: "Intermediate French II including advanced conversation, composition, and French literature.",
+    course_description:
+      "Intermediate French II including advanced conversation, composition, and French literature.",
     prerequisites: "FREN 3",
   },
   {
@@ -2521,7 +2545,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "FREN 5",
     course_name: "Advanced French",
     course_units: "4",
-    course_description: "Advanced French including advanced composition, literary analysis, and cultural studies.",
+    course_description:
+      "Advanced French including advanced composition, literary analysis, and cultural studies.",
     prerequisites: "FREN 4",
   },
   {
@@ -2529,7 +2554,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "FREN 100",
     course_name: "French Literature",
     course_units: "4",
-    course_description: "French literature including major works, literary analysis, and cultural context.",
+    course_description:
+      "French literature including major works, literary analysis, and cultural context.",
     prerequisites: "FREN 5",
   },
   {
@@ -2537,7 +2563,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "FREN 101",
     course_name: "French Culture",
     course_units: "4",
-    course_description: "French culture including history, art, music, and contemporary French society.",
+    course_description:
+      "French culture including history, art, music, and contemporary French society.",
     prerequisites: "FREN 4",
   },
   {
@@ -2545,7 +2572,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "FREN 102",
     course_name: "French Cinema",
     course_units: "4",
-    course_description: "French cinema including film analysis, French film history, and cultural context.",
+    course_description:
+      "French cinema including film analysis, French film history, and cultural context.",
     prerequisites: "FREN 4",
   },
   {
@@ -2553,7 +2581,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "FREN 103",
     course_name: "French Linguistics",
     course_units: "4",
-    course_description: "French linguistics including French phonology, morphology, syntax, and dialectal variation.",
+    course_description:
+      "French linguistics including French phonology, morphology, syntax, and dialectal variation.",
     prerequisites: "LING 1, FREN 4",
   },
   {
@@ -2561,7 +2590,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "FREN 104",
     course_name: "French Translation",
     course_units: "4",
-    course_description: "French translation including translation theory, techniques, and practical translation exercises.",
+    course_description:
+      "French translation including translation theory, techniques, and practical translation exercises.",
     prerequisites: "FREN 5",
   },
 
@@ -2571,7 +2601,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "MUS 1",
     course_name: "Introduction to Music",
     course_units: "4",
-    course_description: "Introduction to music including music theory, history, and appreciation of various musical styles.",
+    course_description:
+      "Introduction to music including music theory, history, and appreciation of various musical styles.",
     prerequisites: "None",
   },
   {
@@ -2579,7 +2610,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "MUS 2",
     course_name: "Music Theory I",
     course_units: "4",
-    course_description: "Music theory I including basic music notation, scales, chords, and harmonic analysis.",
+    course_description:
+      "Music theory I including basic music notation, scales, chords, and harmonic analysis.",
     prerequisites: "None",
   },
   {
@@ -2587,7 +2619,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "MUS 3",
     course_name: "Music Theory II",
     course_units: "4",
-    course_description: "Music theory II including advanced harmony, counterpoint, and musical analysis.",
+    course_description:
+      "Music theory II including advanced harmony, counterpoint, and musical analysis.",
     prerequisites: "MUS 2",
   },
   {
@@ -2595,7 +2628,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "MUS 4",
     course_name: "Music History I",
     course_units: "4",
-    course_description: "Music history I including Western music from medieval period through classical era.",
+    course_description:
+      "Music history I including Western music from medieval period through classical era.",
     prerequisites: "None",
   },
   {
@@ -2603,7 +2637,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "MUS 5",
     course_name: "Music History II",
     course_units: "4",
-    course_description: "Music history II including Western music from romantic period to contemporary music.",
+    course_description:
+      "Music history II including Western music from romantic period to contemporary music.",
     prerequisites: "MUS 4",
   },
   {
@@ -2611,7 +2646,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "MUS 6",
     course_name: "World Music",
     course_units: "4",
-    course_description: "World music including music from various cultures, traditions, and global musical practices.",
+    course_description:
+      "World music including music from various cultures, traditions, and global musical practices.",
     prerequisites: "None",
   },
   {
@@ -2619,7 +2655,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "MUS 7",
     course_name: "Jazz History",
     course_units: "4",
-    course_description: "Jazz history including development of jazz, major artists, and jazz analysis.",
+    course_description:
+      "Jazz history including development of jazz, major artists, and jazz analysis.",
     prerequisites: "None",
   },
   {
@@ -2627,7 +2664,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "MUS 8",
     course_name: "Popular Music",
     course_units: "4",
-    course_description: "Popular music including rock, pop, hip-hop, and contemporary popular music analysis.",
+    course_description:
+      "Popular music including rock, pop, hip-hop, and contemporary popular music analysis.",
     prerequisites: "None",
   },
   {
@@ -2635,7 +2673,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "MUS 100",
     course_name: "Composition",
     course_units: "4",
-    course_description: "Composition including musical composition techniques, creative writing, and musical form.",
+    course_description:
+      "Composition including musical composition techniques, creative writing, and musical form.",
     prerequisites: "MUS 3",
   },
   {
@@ -2643,7 +2682,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "MUS 101",
     course_name: "Orchestration",
     course_units: "4",
-    course_description: "Orchestration including instrument characteristics, scoring techniques, and ensemble writing.",
+    course_description:
+      "Orchestration including instrument characteristics, scoring techniques, and ensemble writing.",
     prerequisites: "MUS 3",
   },
 
@@ -2653,7 +2693,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "VIS 1",
     course_name: "Introduction to Visual Arts",
     course_units: "4",
-    course_description: "Introduction to visual arts including art history, theory, and appreciation of various art forms.",
+    course_description:
+      "Introduction to visual arts including art history, theory, and appreciation of various art forms.",
     prerequisites: "None",
   },
   {
@@ -2661,7 +2702,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "VIS 2",
     course_name: "Drawing I",
     course_units: "4",
-    course_description: "Drawing I including basic drawing techniques, perspective, and observational drawing skills.",
+    course_description:
+      "Drawing I including basic drawing techniques, perspective, and observational drawing skills.",
     prerequisites: "None",
   },
   {
@@ -2669,7 +2711,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "VIS 3",
     course_name: "Painting I",
     course_units: "4",
-    course_description: "Painting I including basic painting techniques, color theory, and painting fundamentals.",
+    course_description:
+      "Painting I including basic painting techniques, color theory, and painting fundamentals.",
     prerequisites: "VIS 2",
   },
   {
@@ -2677,7 +2720,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "VIS 4",
     course_name: "Sculpture I",
     course_units: "4",
-    course_description: "Sculpture I including basic sculpting techniques, materials, and three-dimensional design.",
+    course_description:
+      "Sculpture I including basic sculpting techniques, materials, and three-dimensional design.",
     prerequisites: "None",
   },
   {
@@ -2685,7 +2729,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "VIS 5",
     course_name: "Photography I",
     course_units: "4",
-    course_description: "Photography I including camera techniques, composition, and digital photography fundamentals.",
+    course_description:
+      "Photography I including camera techniques, composition, and digital photography fundamentals.",
     prerequisites: "None",
   },
   {
@@ -2693,7 +2738,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "VIS 6",
     course_name: "Digital Art",
     course_units: "4",
-    course_description: "Digital art including digital tools, software, and creative digital media techniques.",
+    course_description:
+      "Digital art including digital tools, software, and creative digital media techniques.",
     prerequisites: "None",
   },
   {
@@ -2701,7 +2747,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "VIS 7",
     course_name: "Art History I",
     course_units: "4",
-    course_description: "Art history I including Western art from ancient times through the Renaissance.",
+    course_description:
+      "Art history I including Western art from ancient times through the Renaissance.",
     prerequisites: "None",
   },
   {
@@ -2709,7 +2756,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "VIS 8",
     course_name: "Art History II",
     course_units: "4",
-    course_description: "Art history II including Western art from Baroque period to contemporary art.",
+    course_description:
+      "Art history II including Western art from Baroque period to contemporary art.",
     prerequisites: "VIS 7",
   },
   {
@@ -2717,7 +2765,8 @@ export const courseDatabase: CourseData[] = [
     course_code: "VIS 9",
     course_name: "Modern Art",
     course_units: "4",
-    course_description: "Modern art including 20th century art movements, modernism, and contemporary art practices.",
+    course_description:
+      "Modern art including 20th century art movements, modernism, and contemporary art practices.",
     prerequisites: "VIS 7",
   },
   {
@@ -2725,7 +2774,468 @@ export const courseDatabase: CourseData[] = [
     course_code: "VIS 10",
     course_name: "Contemporary Art",
     course_units: "4",
-    course_description: "Contemporary art including current art practices, conceptual art, and contemporary art theory.",
+    course_description:
+      "Contemporary art including current art practices, conceptual art, and contemporary art theory.",
     prerequisites: "VIS 7",
+  },
+
+  // Additional Environmental Studies Courses
+  {
+    id: "301",
+    course_code: "ENVR 1",
+    course_name: "Introduction to Environmental Studies",
+    course_units: "4",
+    course_description:
+      "Introduction to environmental studies including environmental science, policy, and sustainability principles.",
+    prerequisites: "None",
+  },
+  {
+    id: "302",
+    course_code: "ENVR 2",
+    course_name: "Environmental Science",
+    course_units: "4",
+    course_description:
+      "Environmental science including ecosystems, biodiversity, climate change, and environmental monitoring.",
+    prerequisites: "None",
+  },
+  {
+    id: "303",
+    course_code: "ENVR 3",
+    course_name: "Environmental Policy",
+    course_units: "4",
+    course_description:
+      "Environmental policy including environmental law, regulations, and policy-making processes.",
+    prerequisites: "None",
+  },
+  {
+    id: "304",
+    course_code: "ENVR 4",
+    course_name: "Sustainability",
+    course_units: "4",
+    course_description:
+      "Sustainability including sustainable development, renewable energy, and environmental conservation.",
+    prerequisites: "None",
+  },
+  {
+    id: "305",
+    course_code: "ENVR 5",
+    course_name: "Climate Change",
+    course_units: "4",
+    course_description:
+      "Climate change including global warming, climate science, and climate change mitigation strategies.",
+    prerequisites: "None",
+  },
+  {
+    id: "306",
+    course_code: "ENVR 100",
+    course_name: "Environmental Ethics",
+    course_units: "4",
+    course_description:
+      "Environmental ethics including moral philosophy, environmental values, and ethical decision-making.",
+    prerequisites: "ENVR 1",
+  },
+  {
+    id: "307",
+    course_code: "ENVR 101",
+    course_name: "Environmental Economics",
+    course_units: "4",
+    course_description:
+      "Environmental economics including economic analysis of environmental issues and natural resource management.",
+    prerequisites: "ECON 1",
+  },
+  {
+    id: "308",
+    course_code: "ENVR 102",
+    course_name: "Environmental Justice",
+    course_units: "4",
+    course_description:
+      "Environmental justice including social equity, environmental racism, and community environmental health.",
+    prerequisites: "ENVR 1",
+  },
+  {
+    id: "309",
+    course_code: "ENVR 103",
+    course_name: "Oceanography",
+    course_units: "4",
+    course_description:
+      "Oceanography including marine science, ocean ecosystems, and ocean conservation.",
+    prerequisites: "None",
+  },
+  {
+    id: "310",
+    course_code: "ENVR 104",
+    course_name: "Conservation Biology",
+    course_units: "4",
+    course_description:
+      "Conservation biology including biodiversity conservation, endangered species, and habitat protection.",
+    prerequisites: "BILD 1",
+  },
+
+  // Additional Medicine & Health Courses
+  {
+    id: "311",
+    course_code: "MED 1",
+    course_name: "Introduction to Medicine",
+    course_units: "4",
+    course_description:
+      "Introduction to medicine including medical terminology, healthcare systems, and medical ethics.",
+    prerequisites: "None",
+  },
+  {
+    id: "312",
+    course_code: "MED 2",
+    course_name: "Human Anatomy",
+    course_units: "4",
+    course_description:
+      "Human anatomy including body structure, organ systems, and anatomical terminology.",
+    prerequisites: "None",
+  },
+  {
+    id: "313",
+    course_code: "MED 3",
+    course_name: "Human Physiology",
+    course_units: "4",
+    course_description:
+      "Human physiology including body functions, organ systems, and physiological processes.",
+    prerequisites: "MED 2",
+  },
+  {
+    id: "314",
+    course_code: "MED 4",
+    course_name: "Medical Ethics",
+    course_units: "4",
+    course_description:
+      "Medical ethics including bioethics, patient rights, and ethical decision-making in healthcare.",
+    prerequisites: "None",
+  },
+  {
+    id: "315",
+    course_code: "MED 5",
+    course_name: "Public Health",
+    course_units: "4",
+    course_description:
+      "Public health including epidemiology, disease prevention, and community health promotion.",
+    prerequisites: "None",
+  },
+  {
+    id: "316",
+    course_code: "MED 100",
+    course_name: "Pathophysiology",
+    course_units: "4",
+    course_description:
+      "Pathophysiology including disease mechanisms, pathology, and clinical manifestations.",
+    prerequisites: "MED 3",
+  },
+  {
+    id: "317",
+    course_code: "MED 101",
+    course_name: "Pharmacology",
+    course_units: "4",
+    course_description:
+      "Pharmacology including drug mechanisms, pharmacokinetics, and therapeutic applications.",
+    prerequisites: "CHEM 6A",
+  },
+  {
+    id: "318",
+    course_code: "MED 102",
+    course_name: "Medical Research",
+    course_units: "4",
+    course_description:
+      "Medical research including research methods, clinical trials, and evidence-based medicine.",
+    prerequisites: "STAT 10",
+  },
+  {
+    id: "319",
+    course_code: "MED 103",
+    course_name: "Global Health",
+    course_units: "4",
+    course_description:
+      "Global health including international health issues, health disparities, and global health policy.",
+    prerequisites: "MED 5",
+  },
+  {
+    id: "320",
+    course_code: "MED 104",
+    course_name: "Health Psychology",
+    course_units: "4",
+    course_description:
+      "Health psychology including psychological factors in health, illness, and healthcare.",
+    prerequisites: "PSYC 1",
+  },
+
+  // Additional Education Courses
+  {
+    id: "321",
+    course_code: "EDS 1",
+    course_name: "Introduction to Education",
+    course_units: "4",
+    course_description:
+      "Introduction to education including educational theory, teaching methods, and learning principles.",
+    prerequisites: "None",
+  },
+  {
+    id: "322",
+    course_code: "EDS 2",
+    course_name: "Educational Psychology",
+    course_units: "4",
+    course_description:
+      "Educational psychology including learning theories, cognitive development, and motivation in education.",
+    prerequisites: "PSYC 1",
+  },
+  {
+    id: "323",
+    course_code: "EDS 3",
+    course_name: "Curriculum Development",
+    course_units: "4",
+    course_description:
+      "Curriculum development including instructional design, assessment methods, and educational planning.",
+    prerequisites: "EDS 1",
+  },
+  {
+    id: "324",
+    course_code: "EDS 4",
+    course_name: "Classroom Management",
+    course_units: "4",
+    course_description:
+      "Classroom management including behavior management, classroom organization, and student engagement.",
+    prerequisites: "EDS 1",
+  },
+  {
+    id: "325",
+    course_code: "EDS 5",
+    course_name: "Special Education",
+    course_units: "4",
+    course_description:
+      "Special education including learning disabilities, inclusive education, and special needs support.",
+    prerequisites: "EDS 1",
+  },
+  {
+    id: "326",
+    course_code: "EDS 100",
+    course_name: "Educational Technology",
+    course_units: "4",
+    course_description:
+      "Educational technology including digital learning tools, online education, and technology integration.",
+    prerequisites: "EDS 1",
+  },
+  {
+    id: "327",
+    course_code: "EDS 101",
+    course_name: "Assessment and Evaluation",
+    course_units: "4",
+    course_description:
+      "Assessment and evaluation including testing methods, grading systems, and educational measurement.",
+    prerequisites: "EDS 1",
+  },
+  {
+    id: "328",
+    course_code: "EDS 102",
+    course_name: "Multicultural Education",
+    course_units: "4",
+    course_description:
+      "Multicultural education including cultural diversity, inclusive teaching, and social justice in education.",
+    prerequisites: "EDS 1",
+  },
+  {
+    id: "329",
+    course_code: "EDS 103",
+    course_name: "Literacy Education",
+    course_units: "4",
+    course_description:
+      "Literacy education including reading instruction, writing development, and language arts teaching.",
+    prerequisites: "EDS 1",
+  },
+  {
+    id: "330",
+    course_code: "EDS 104",
+    course_name: "Mathematics Education",
+    course_units: "4",
+    course_description:
+      "Mathematics education including math teaching methods, mathematical thinking, and STEM education.",
+    prerequisites: "MATH 10A",
+  },
+
+  // Additional Film & Media Courses
+  {
+    id: "331",
+    course_code: "FILM 1",
+    course_name: "Introduction to Film",
+    course_units: "4",
+    course_description:
+      "Introduction to film including film history, analysis, and appreciation of cinematic art.",
+    prerequisites: "None",
+  },
+  {
+    id: "332",
+    course_code: "FILM 2",
+    course_name: "Film Production",
+    course_units: "4",
+    course_description:
+      "Film production including cinematography, editing, and filmmaking techniques.",
+    prerequisites: "FILM 1",
+  },
+  {
+    id: "333",
+    course_code: "FILM 3",
+    course_name: "Screenwriting",
+    course_units: "4",
+    course_description:
+      "Screenwriting including script development, storytelling, and screenplay structure.",
+    prerequisites: "None",
+  },
+  {
+    id: "334",
+    course_code: "FILM 4",
+    course_name: "Film History",
+    course_units: "4",
+    course_description:
+      "Film history including major film movements, directors, and cinematic evolution.",
+    prerequisites: "FILM 1",
+  },
+  {
+    id: "335",
+    course_code: "FILM 5",
+    course_name: "Documentary Film",
+    course_units: "4",
+    course_description:
+      "Documentary film including documentary production, storytelling, and social impact.",
+    prerequisites: "FILM 1",
+  },
+  {
+    id: "336",
+    course_code: "FILM 100",
+    course_name: "Film Theory",
+    course_units: "4",
+    course_description:
+      "Film theory including critical analysis, film criticism, and theoretical approaches to cinema.",
+    prerequisites: "FILM 1",
+  },
+  {
+    id: "337",
+    course_code: "FILM 101",
+    course_name: "Digital Media",
+    course_units: "4",
+    course_description:
+      "Digital media including digital filmmaking, multimedia production, and new media technologies.",
+    prerequisites: "FILM 1",
+  },
+  {
+    id: "338",
+    course_code: "FILM 102",
+    course_name: "Animation",
+    course_units: "4",
+    course_description:
+      "Animation including animation techniques, character design, and animated storytelling.",
+    prerequisites: "None",
+  },
+  {
+    id: "339",
+    course_code: "FILM 103",
+    course_name: "Sound Design",
+    course_units: "4",
+    course_description:
+      "Sound design including audio production, sound effects, and music in film.",
+    prerequisites: "FILM 1",
+  },
+  {
+    id: "340",
+    course_code: "FILM 104",
+    course_name: "Film Marketing",
+    course_units: "4",
+    course_description:
+      "Film marketing including film distribution, audience analysis, and promotional strategies.",
+    prerequisites: "FILM 1",
+  },
+
+  // Additional Theater & Performance Courses
+  {
+    id: "341",
+    course_code: "TDGE 1",
+    course_name: "Introduction to Theater",
+    course_units: "4",
+    course_description:
+      "Introduction to theater including theater history, dramatic literature, and theatrical production.",
+    prerequisites: "None",
+  },
+  {
+    id: "342",
+    course_code: "TDGE 2",
+    course_name: "Acting I",
+    course_units: "4",
+    course_description:
+      "Acting I including acting techniques, character development, and performance skills.",
+    prerequisites: "None",
+  },
+  {
+    id: "343",
+    course_code: "TDGE 3",
+    course_name: "Directing",
+    course_units: "4",
+    course_description:
+      "Directing including stage direction, theatrical vision, and production leadership.",
+    prerequisites: "TDGE 1",
+  },
+  {
+    id: "344",
+    course_code: "TDGE 4",
+    course_name: "Stage Design",
+    course_units: "4",
+    course_description:
+      "Stage design including set design, lighting design, and theatrical aesthetics.",
+    prerequisites: "TDGE 1",
+  },
+  {
+    id: "345",
+    course_code: "TDGE 5",
+    course_name: "Playwriting",
+    course_units: "4",
+    course_description:
+      "Playwriting including dramatic writing, script development, and theatrical storytelling.",
+    prerequisites: "None",
+  },
+  {
+    id: "346",
+    course_code: "TDGE 100",
+    course_name: "Theater History",
+    course_units: "4",
+    course_description:
+      "Theater history including dramatic traditions, theatrical movements, and cultural performance.",
+    prerequisites: "TDGE 1",
+  },
+  {
+    id: "347",
+    course_code: "TDGE 101",
+    course_name: "Performance Studies",
+    course_units: "4",
+    course_description:
+      "Performance studies including performance theory, cultural performance, and embodied practice.",
+    prerequisites: "TDGE 1",
+  },
+  {
+    id: "348",
+    course_code: "TDGE 102",
+    course_name: "Musical Theater",
+    course_units: "4",
+    course_description:
+      "Musical theater including musical performance, theatrical singing, and musical production.",
+    prerequisites: "TDGE 1, MUS 1",
+  },
+  {
+    id: "349",
+    course_code: "TDGE 103",
+    course_name: "Dance Theater",
+    course_units: "4",
+    course_description:
+      "Dance theater including movement performance, choreography, and physical theater.",
+    prerequisites: "None",
+  },
+  {
+    id: "350",
+    course_code: "TDGE 104",
+    course_name: "Theater Production",
+    course_units: "4",
+    course_description:
+      "Theater production including technical theater, stage management, and theatrical logistics.",
+    prerequisites: "TDGE 1",
   },
 ];

@@ -1,7 +1,6 @@
 import React from "react";
 
 export function Header() {
-
   return (
     <header className="bg-[#003B5C] text-white py-4">
       <div className="container mx-auto px-4 flex items-center justify-center">

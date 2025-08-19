@@ -319,6 +319,41 @@ class AIService {
       }
     }
 
+    // Environmental Studies & Sustainability
+    if (searchTerm.includes('environmental') || searchTerm.includes('environment') || searchTerm.includes('sustainability') || searchTerm.includes('climate') || searchTerm.includes('ecology') || searchTerm.includes('conservation') || searchTerm.includes('biodiversity') || searchTerm.includes('oceanography') || searchTerm.includes('marine') || searchTerm.includes('renewable') || searchTerm.includes('green') || searchTerm.includes('pollution') || searchTerm.includes('ecosystem')) {
+      if (courseCode.startsWith('envr') || courseDesc.includes('environmental') || courseDesc.includes('environment') || courseDesc.includes('sustainability') || courseDesc.includes('climate') || courseDesc.includes('ecology') || courseDesc.includes('conservation') || courseDesc.includes('biodiversity') || courseDesc.includes('oceanography') || courseDesc.includes('marine') || courseDesc.includes('renewable') || courseDesc.includes('green') || courseDesc.includes('pollution') || courseDesc.includes('ecosystem')) {
+        return 0.6;
+      }
+    }
+
+    // Medicine & Health
+    if (searchTerm.includes('medicine') || searchTerm.includes('medical') || searchTerm.includes('health') || searchTerm.includes('anatomy') || searchTerm.includes('physiology') || searchTerm.includes('pharmacology') || searchTerm.includes('pathology') || searchTerm.includes('clinical') || searchTerm.includes('patient') || searchTerm.includes('diagnosis') || searchTerm.includes('treatment') || searchTerm.includes('disease') || searchTerm.includes('public health') || searchTerm.includes('epidemiology') || searchTerm.includes('bioethics')) {
+      if (courseCode.startsWith('med') || courseDesc.includes('medicine') || courseDesc.includes('medical') || courseDesc.includes('health') || courseDesc.includes('anatomy') || courseDesc.includes('physiology') || courseDesc.includes('pharmacology') || courseDesc.includes('pathology') || courseDesc.includes('clinical') || courseDesc.includes('patient') || courseDesc.includes('diagnosis') || courseDesc.includes('treatment') || courseDesc.includes('disease') || courseDesc.includes('public health') || courseDesc.includes('epidemiology') || courseDesc.includes('bioethics')) {
+        return 0.6;
+      }
+    }
+
+    // Education & Teaching
+    if (searchTerm.includes('education') || searchTerm.includes('teaching') || searchTerm.includes('learning') || searchTerm.includes('curriculum') || searchTerm.includes('classroom') || searchTerm.includes('pedagogy') || searchTerm.includes('instruction') || searchTerm.includes('assessment') || searchTerm.includes('evaluation') || searchTerm.includes('multicultural') || searchTerm.includes('literacy') || searchTerm.includes('special education') || searchTerm.includes('educational technology')) {
+      if (courseCode.startsWith('eds') || courseDesc.includes('education') || courseDesc.includes('teaching') || courseDesc.includes('learning') || courseDesc.includes('curriculum') || courseDesc.includes('classroom') || courseDesc.includes('pedagogy') || courseDesc.includes('instruction') || courseDesc.includes('assessment') || courseDesc.includes('evaluation') || courseDesc.includes('multicultural') || courseDesc.includes('literacy') || courseDesc.includes('special education') || courseDesc.includes('educational technology')) {
+        return 0.6;
+      }
+    }
+
+    // Film & Media
+    if (searchTerm.includes('film') || searchTerm.includes('cinema') || searchTerm.includes('movie') || searchTerm.includes('video') || searchTerm.includes('media') || searchTerm.includes('screenwriting') || searchTerm.includes('directing') || searchTerm.includes('cinematography') || searchTerm.includes('editing') || searchTerm.includes('documentary') || searchTerm.includes('animation') || searchTerm.includes('sound design') || searchTerm.includes('digital media') || searchTerm.includes('filmmaking')) {
+      if (courseCode.startsWith('film') || courseDesc.includes('film') || courseDesc.includes('cinema') || courseDesc.includes('movie') || courseDesc.includes('video') || courseDesc.includes('media') || courseDesc.includes('screenwriting') || courseDesc.includes('directing') || courseDesc.includes('cinematography') || courseDesc.includes('editing') || courseDesc.includes('documentary') || courseDesc.includes('animation') || courseDesc.includes('sound design') || courseDesc.includes('digital media') || courseDesc.includes('filmmaking')) {
+        return 0.6;
+      }
+    }
+
+    // Theater & Performance
+    if (searchTerm.includes('theater') || searchTerm.includes('theatre') || searchTerm.includes('drama') || searchTerm.includes('acting') || searchTerm.includes('performance') || searchTerm.includes('stage') || searchTerm.includes('play') || searchTerm.includes('directing') || searchTerm.includes('playwriting') || searchTerm.includes('musical theater') || searchTerm.includes('dance') || searchTerm.includes('choreography') || searchTerm.includes('theatrical') || searchTerm.includes('production')) {
+      if (courseCode.startsWith('tdge') || courseDesc.includes('theater') || courseDesc.includes('theatre') || courseDesc.includes('drama') || courseDesc.includes('acting') || courseDesc.includes('performance') || courseDesc.includes('stage') || courseDesc.includes('play') || courseDesc.includes('directing') || courseDesc.includes('playwriting') || courseDesc.includes('musical theater') || courseDesc.includes('dance') || courseDesc.includes('choreography') || courseDesc.includes('theatrical') || courseDesc.includes('production')) {
+        return 0.6;
+      }
+    }
+
     return 0;
   }
 
