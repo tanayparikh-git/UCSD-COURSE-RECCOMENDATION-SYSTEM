@@ -9678,4 +9678,924 @@ export const courseDatabase: CourseData[] = [
       "AI research including research methods, experimental design, and artificial intelligence research.",
     prerequisites: "AINT 1",
   },
+
+  // Additional Finnish Language Courses
+  {
+    id: "1051",
+    course_code: "FINN 1",
+    course_name: "Elementary Finnish I",
+    course_units: "4",
+    course_description:
+      "Elementary Finnish I including basic grammar, vocabulary, and reading skills for beginners.",
+    prerequisites: "None",
+  },
+  {
+    id: "1052",
+    course_code: "FINN 2",
+    course_name: "Elementary Finnish II",
+    course_units: "4",
+    course_description:
+      "Elementary Finnish II including intermediate grammar, vocabulary, and reading skills.",
+    prerequisites: "FINN 1",
+  },
+  {
+    id: "1053",
+    course_code: "FINN 3",
+    course_name: "Intermediate Finnish I",
+    course_units: "4",
+    course_description:
+      "Intermediate Finnish I including advanced grammar, reading comprehension, and cultural studies.",
+    prerequisites: "FINN 2",
+  },
+  {
+    id: "1054",
+    course_code: "FINN 4",
+    course_name: "Intermediate Finnish II",
+    course_units: "4",
+    course_description:
+      "Intermediate Finnish II including advanced reading, composition, and Finnish literature.",
+    prerequisites: "FINN 3",
+  },
+  {
+    id: "1055",
+    course_code: "FINN 5",
+    course_name: "Advanced Finnish",
+    course_units: "4",
+    course_description:
+      "Advanced Finnish including advanced reading, literary analysis, and cultural studies.",
+    prerequisites: "FINN 4",
+  },
+  {
+    id: "1056",
+    course_code: "FINN 100",
+    course_name: "Finnish Literature",
+    course_units: "4",
+    course_description:
+      "Finnish literature including major works, literary analysis, and cultural context.",
+    prerequisites: "FINN 5",
+  },
+  {
+    id: "1057",
+    course_code: "FINN 101",
+    course_name: "Modern Finnish",
+    course_units: "4",
+    course_description:
+      "Modern Finnish including contemporary Finnish, modern literature, and current events.",
+    prerequisites: "FINN 4",
+  },
+  {
+    id: "1058",
+    course_code: "FINN 102",
+    course_name: "Finnish Linguistics",
+    course_units: "4",
+    course_description:
+      "Finnish linguistics including Finnish phonology, morphology, syntax, and historical linguistics.",
+    prerequisites: "LING 1, FINN 4",
+  },
+  {
+    id: "1059",
+    course_code: "FINN 103",
+    course_name: "Finnish Translation",
+    course_units: "4",
+    course_description:
+      "Finnish translation including translation theory, techniques, and practical translation exercises.",
+    prerequisites: "FINN 5",
+  },
+  {
+    id: "1060",
+    course_code: "FINN 104",
+    course_name: "Finnish Culture",
+    course_units: "4",
+    course_description:
+      "Finnish culture including cultural studies, traditions, and contemporary Finnish society.",
+    prerequisites: "FINN 3",
+  },
+
+  // Additional Polish Language Courses
+  {
+    id: "1061",
+    course_code: "POL 1",
+    course_name: "Elementary Polish I",
+    course_units: "4",
+    course_description:
+      "Elementary Polish I including basic grammar, vocabulary, and reading skills for beginners.",
+    prerequisites: "None",
+  },
+  {
+    id: "1062",
+    course_code: "POL 2",
+    course_name: "Elementary Polish II",
+    course_units: "4",
+    course_description:
+      "Elementary Polish II including intermediate grammar, vocabulary, and reading skills.",
+    prerequisites: "POL 1",
+  },
+  {
+    id: "1063",
+    course_code: "POL 3",
+    course_name: "Intermediate Polish I",
+    course_units: "4",
+    course_description:
+      "Intermediate Polish I including advanced grammar, reading comprehension, and cultural studies.",
+    prerequisites: "POL 2",
+  },
+  {
+    id: "1064",
+    course_code: "POL 4",
+    course_name: "Intermediate Polish II",
+    course_units: "4",
+    course_description:
+      "Intermediate Polish II including advanced reading, composition, and Polish literature.",
+    prerequisites: "POL 3",
+  },
+  {
+    id: "1065",
+    course_code: "POL 5",
+    course_name: "Advanced Polish",
+    course_units: "4",
+    course_description:
+      "Advanced Polish including advanced reading, literary analysis, and cultural studies.",
+    prerequisites: "POL 4",
+  },
+  {
+    id: "1066",
+    course_code: "POL 100",
+    course_name: "Polish Literature",
+    course_units: "4",
+    course_description:
+      "Polish literature including major works, literary analysis, and cultural context.",
+    prerequisites: "POL 5",
+  },
+  {
+    id: "1067",
+    course_code: "POL 101",
+    course_name: "Modern Polish",
+    course_units: "4",
+    course_description:
+      "Modern Polish including contemporary Polish, modern literature, and current events.",
+    prerequisites: "POL 4",
+  },
+  {
+    id: "1068",
+    course_code: "POL 102",
+    course_name: "Polish Linguistics",
+    course_units: "4",
+    course_description:
+      "Polish linguistics including Polish phonology, morphology, syntax, and historical linguistics.",
+    prerequisites: "LING 1, POL 4",
+  },
+  {
+    id: "1069",
+    course_code: "POL 103",
+    course_name: "Polish Translation",
+    course_units: "4",
+    course_description:
+      "Polish translation including translation theory, techniques, and practical translation exercises.",
+    prerequisites: "POL 5",
+  },
+  {
+    id: "1070",
+    course_code: "POL 104",
+    course_name: "Polish Culture",
+    course_units: "4",
+    course_description:
+      "Polish culture including cultural studies, traditions, and contemporary Polish society.",
+    prerequisites: "POL 3",
+  },
+
+  // Additional Biochemistry Courses
+  {
+    id: "1071",
+    course_code: "BIOC 1",
+    course_name: "Introduction to Biochemistry",
+    course_units: "4",
+    course_description:
+      "Introduction to biochemistry including biomolecules, cellular processes, and biochemical principles.",
+    prerequisites: "None",
+  },
+  {
+    id: "1072",
+    course_code: "BIOC 2",
+    course_name: "Metabolic Biochemistry",
+    course_units: "4",
+    course_description:
+      "Metabolic biochemistry including metabolic pathways, energy metabolism, and cellular respiration.",
+    prerequisites: "BIOC 1",
+  },
+  {
+    id: "1073",
+    course_code: "BIOC 3",
+    course_name: "Molecular Biochemistry",
+    course_units: "4",
+    course_description:
+      "Molecular biochemistry including molecular mechanisms, protein structure, and enzymatic reactions.",
+    prerequisites: "BIOC 1",
+  },
+  {
+    id: "1074",
+    course_code: "BIOC 4",
+    course_name: "Cellular Biochemistry",
+    course_units: "4",
+    course_description:
+      "Cellular biochemistry including cellular processes, signal transduction, and cellular regulation.",
+    prerequisites: "BIOC 1",
+  },
+  {
+    id: "1075",
+    course_code: "BIOC 5",
+    course_name: "Clinical Biochemistry",
+    course_units: "4",
+    course_description:
+      "Clinical biochemistry including clinical applications, diagnostic methods, and biochemical analysis.",
+    prerequisites: "BIOC 1",
+  },
+  {
+    id: "1076",
+    course_code: "BIOC 100",
+    course_name: "Advanced Biochemistry",
+    course_units: "4",
+    course_description:
+      "Advanced biochemistry including advanced techniques, complex systems, and biochemical research.",
+    prerequisites: "BIOC 1",
+  },
+  {
+    id: "1077",
+    course_code: "BIOC 101",
+    course_name: "Biochemical Techniques",
+    course_units: "4",
+    course_description:
+      "Biochemical techniques including laboratory methods, analytical techniques, and experimental procedures.",
+    prerequisites: "BIOC 1",
+  },
+  {
+    id: "1078",
+    course_code: "BIOC 102",
+    course_name: "Biochemical Genetics",
+    course_units: "4",
+    course_description:
+      "Biochemical genetics including genetic mechanisms, gene expression, and molecular genetics.",
+    prerequisites: "BIOC 1",
+  },
+  {
+    id: "1079",
+    course_code: "BIOC 103",
+    course_name: "Biochemical Evolution",
+    course_units: "4",
+    course_description:
+      "Biochemical evolution including evolutionary processes, molecular evolution, and biochemical adaptation.",
+    prerequisites: "BIOC 1",
+  },
+  {
+    id: "1080",
+    course_code: "BIOC 104",
+    course_name: "Biochemical Research",
+    course_units: "4",
+    course_description:
+      "Biochemical research including research methods, experimental design, and biochemical research projects.",
+    prerequisites: "BIOC 1",
+  },
+
+  // Additional Molecular Biology Courses
+  {
+    id: "1081",
+    course_code: "MOLB 1",
+    course_name: "Introduction to Molecular Biology",
+    course_units: "4",
+    course_description:
+      "Introduction to molecular biology including molecular mechanisms, gene expression, and cellular processes.",
+    prerequisites: "None",
+  },
+  {
+    id: "1082",
+    course_code: "MOLB 2",
+    course_name: "Gene Expression",
+    course_units: "4",
+    course_description:
+      "Gene expression including transcription, translation, and gene regulation mechanisms.",
+    prerequisites: "MOLB 1",
+  },
+  {
+    id: "1083",
+    course_code: "MOLB 3",
+    course_name: "DNA Replication",
+    course_units: "4",
+    course_description:
+      "DNA replication including replication mechanisms, DNA repair, and genome maintenance.",
+    prerequisites: "MOLB 1",
+  },
+  {
+    id: "1084",
+    course_code: "MOLB 4",
+    course_name: "Protein Synthesis",
+    course_units: "4",
+    course_description:
+      "Protein synthesis including translation mechanisms, protein folding, and post-translational modifications.",
+    prerequisites: "MOLB 1",
+  },
+  {
+    id: "1085",
+    course_code: "MOLB 5",
+    course_name: "Molecular Genetics",
+    course_units: "4",
+    course_description:
+      "Molecular genetics including genetic mechanisms, mutation, and genetic variation.",
+    prerequisites: "MOLB 1",
+  },
+  {
+    id: "1086",
+    course_code: "MOLB 100",
+    course_name: "Advanced Molecular Biology",
+    course_units: "4",
+    course_description:
+      "Advanced molecular biology including advanced techniques, complex systems, and molecular research.",
+    prerequisites: "MOLB 1",
+  },
+  {
+    id: "1087",
+    course_code: "MOLB 101",
+    course_name: "Molecular Techniques",
+    course_units: "4",
+    course_description:
+      "Molecular techniques including laboratory methods, molecular tools, and experimental procedures.",
+    prerequisites: "MOLB 1",
+  },
+  {
+    id: "1088",
+    course_code: "MOLB 102",
+    course_name: "Molecular Evolution",
+    course_units: "4",
+    course_description:
+      "Molecular evolution including evolutionary processes, molecular phylogeny, and evolutionary mechanisms.",
+    prerequisites: "MOLB 1",
+  },
+  {
+    id: "1089",
+    course_code: "MOLB 103",
+    course_name: "Molecular Medicine",
+    course_units: "4",
+    course_description:
+      "Molecular medicine including medical applications, disease mechanisms, and therapeutic approaches.",
+    prerequisites: "MOLB 1",
+  },
+  {
+    id: "1090",
+    course_code: "MOLB 104",
+    course_name: "Molecular Research",
+    course_units: "4",
+    course_description:
+      "Molecular research including research methods, experimental design, and molecular research projects.",
+    prerequisites: "MOLB 1",
+  },
+
+  // Additional Digital Arts Courses
+  {
+    id: "1091",
+    course_code: "DIGA 1",
+    course_name: "Introduction to Digital Arts",
+    course_units: "4",
+    course_description:
+      "Introduction to digital arts including digital tools, creative expression, and digital media fundamentals.",
+    prerequisites: "None",
+  },
+  {
+    id: "1092",
+    course_code: "DIGA 2",
+    course_name: "Digital Painting",
+    course_units: "4",
+    course_description:
+      "Digital painting including digital painting techniques, color theory, and artistic expression.",
+    prerequisites: "DIGA 1",
+  },
+  {
+    id: "1093",
+    course_code: "DIGA 3",
+    course_name: "Digital Sculpture",
+    course_units: "4",
+    course_description:
+      "Digital sculpture including 3D modeling, digital sculpting, and three-dimensional art.",
+    prerequisites: "DIGA 1",
+  },
+  {
+    id: "1094",
+    course_code: "DIGA 4",
+    course_name: "Digital Animation",
+    course_units: "4",
+    course_description:
+      "Digital animation including animation principles, digital animation tools, and motion graphics.",
+    prerequisites: "DIGA 1",
+  },
+  {
+    id: "1095",
+    course_code: "DIGA 5",
+    course_name: "Digital Photography",
+    course_units: "4",
+    course_description:
+      "Digital photography including digital camera techniques, image editing, and photographic composition.",
+    prerequisites: "DIGA 1",
+  },
+  {
+    id: "1096",
+    course_code: "DIGA 100",
+    course_name: "Advanced Digital Arts",
+    course_units: "4",
+    course_description:
+      "Advanced digital arts including advanced techniques, complex projects, and digital art innovation.",
+    prerequisites: "DIGA 1",
+  },
+  {
+    id: "1097",
+    course_code: "DIGA 101",
+    course_name: "Digital Art History",
+    course_units: "4",
+    course_description:
+      "Digital art history including historical development, digital art evolution, and artistic movements.",
+    prerequisites: "DIGA 1",
+  },
+  {
+    id: "1098",
+    course_code: "DIGA 102",
+    course_name: "Digital Art Theory",
+    course_units: "4",
+    course_description:
+      "Digital art theory including theoretical approaches, critical analysis, and digital art philosophy.",
+    prerequisites: "DIGA 1",
+  },
+  {
+    id: "1099",
+    course_code: "DIGA 103",
+    course_name: "Digital Art Portfolio",
+    course_units: "4",
+    course_description:
+      "Digital art portfolio including portfolio development, presentation skills, and professional preparation.",
+    prerequisites: "DIGA 1",
+  },
+  {
+    id: "1100",
+    course_name: "Digital Art Research",
+    course_code: "DIGA 104",
+    course_units: "4",
+    course_description:
+      "Digital art research including research methods, experimental design, and digital art research projects.",
+    prerequisites: "DIGA 1",
+  },
+
+  // Additional Media Arts Courses
+  {
+    id: "1101",
+    course_code: "MEDA 1",
+    course_name: "Introduction to Media Arts",
+    course_units: "4",
+    course_description:
+      "Introduction to media arts including media principles, creative expression, and media fundamentals.",
+    prerequisites: "None",
+  },
+  {
+    id: "1102",
+    course_code: "MEDA 2",
+    course_name: "Video Production",
+    course_units: "4",
+    course_description:
+      "Video production including video techniques, editing, and visual storytelling.",
+    prerequisites: "MEDA 1",
+  },
+  {
+    id: "1103",
+    course_code: "MEDA 3",
+    course_name: "Audio Production",
+    course_units: "4",
+    course_description:
+      "Audio production including audio techniques, sound design, and audio editing.",
+    prerequisites: "MEDA 1",
+  },
+  {
+    id: "1104",
+    course_code: "MEDA 4",
+    course_name: "Interactive Media",
+    course_units: "4",
+    course_description:
+      "Interactive media including interactive design, user experience, and interactive applications.",
+    prerequisites: "MEDA 1",
+  },
+  {
+    id: "1105",
+    course_code: "MEDA 5",
+    course_name: "Digital Storytelling",
+    course_units: "4",
+    course_description:
+      "Digital storytelling including narrative techniques, digital narratives, and storytelling platforms.",
+    prerequisites: "MEDA 1",
+  },
+  {
+    id: "1106",
+    course_code: "MEDA 100",
+    course_name: "Advanced Media Arts",
+    course_units: "4",
+    course_description:
+      "Advanced media arts including advanced techniques, complex projects, and media art innovation.",
+    prerequisites: "MEDA 1",
+  },
+  {
+    id: "1107",
+    course_code: "MEDA 101",
+    course_name: "Media Art History",
+    course_units: "4",
+    course_description:
+      "Media art history including historical development, media art evolution, and artistic movements.",
+    prerequisites: "MEDA 1",
+  },
+  {
+    id: "1108",
+    course_code: "MEDA 102",
+    course_name: "Media Art Theory",
+    course_units: "4",
+    course_description:
+      "Media art theory including theoretical approaches, critical analysis, and media art philosophy.",
+    prerequisites: "MEDA 1",
+  },
+  {
+    id: "1109",
+    course_code: "MEDA 103",
+    course_name: "Media Art Portfolio",
+    course_units: "4",
+    course_description:
+      "Media art portfolio including portfolio development, presentation skills, and professional preparation.",
+    prerequisites: "MEDA 1",
+  },
+  {
+    id: "1110",
+    course_code: "MEDA 104",
+    course_name: "Media Art Research",
+    course_units: "4",
+    course_description:
+      "Media art research including research methods, experimental design, and media art research projects.",
+    prerequisites: "MEDA 1",
+  },
+
+  // Additional Sports Management Courses
+  {
+    id: "1111",
+    course_code: "SPMG 1",
+    course_name: "Introduction to Sports Management",
+    course_units: "4",
+    course_description:
+      "Introduction to sports management including management principles, sports industry, and organizational leadership.",
+    prerequisites: "None",
+  },
+  {
+    id: "1112",
+    course_code: "SPMG 2",
+    course_name: "Sports Marketing",
+    course_units: "4",
+    course_description:
+      "Sports marketing including marketing strategies, brand development, and promotional techniques.",
+    prerequisites: "SPMG 1",
+  },
+  {
+    id: "1113",
+    course_code: "SPMG 3",
+    course_name: "Sports Finance",
+    course_units: "4",
+    course_description:
+      "Sports finance including financial management, budgeting, and financial analysis.",
+    prerequisites: "SPMG 1",
+  },
+  {
+    id: "1114",
+    course_code: "SPMG 4",
+    course_name: "Sports Law",
+    course_units: "4",
+    course_description:
+      "Sports law including legal principles, regulations, and legal compliance.",
+    prerequisites: "SPMG 1",
+  },
+  {
+    id: "1115",
+    course_code: "SPMG 5",
+    course_name: "Sports Operations",
+    course_units: "4",
+    course_description:
+      "Sports operations including operational management, facility management, and event operations.",
+    prerequisites: "SPMG 1",
+  },
+  {
+    id: "1116",
+    course_code: "SPMG 100",
+    course_name: "Advanced Sports Management",
+    course_units: "4",
+    course_description:
+      "Advanced sports management including advanced techniques, complex systems, and management innovation.",
+    prerequisites: "SPMG 1",
+  },
+  {
+    id: "1117",
+    course_code: "SPMG 101",
+    course_name: "Sports Analytics",
+    course_units: "4",
+    course_description:
+      "Sports analytics including data analysis, performance metrics, and analytical techniques.",
+    prerequisites: "SPMG 1",
+  },
+  {
+    id: "1118",
+    course_code: "SPMG 102",
+    course_name: "Sports Psychology",
+    course_units: "4",
+    course_description:
+      "Sports psychology including psychological principles, performance psychology, and mental training.",
+    prerequisites: "SPMG 1",
+  },
+  {
+    id: "1119",
+    course_code: "SPMG 103",
+    course_name: "Sports Technology",
+    course_units: "4",
+    course_description:
+      "Sports technology including technological innovation, sports equipment, and technological applications.",
+    prerequisites: "SPMG 1",
+  },
+  {
+    id: "1120",
+    course_code: "SPMG 104",
+    course_name: "Sports Research",
+    course_units: "4",
+    course_description:
+      "Sports research including research methods, experimental design, and sports research projects.",
+    prerequisites: "SPMG 1",
+  },
+
+  // Additional Event Planning Courses
+  {
+    id: "1121",
+    course_code: "EVNT 1",
+    course_name: "Introduction to Event Planning",
+    course_units: "4",
+    course_description:
+      "Introduction to event planning including planning principles, event coordination, and organizational skills.",
+    prerequisites: "None",
+  },
+  {
+    id: "1122",
+    course_code: "EVNT 2",
+    course_name: "Event Coordination",
+    course_units: "4",
+    course_description:
+      "Event coordination including coordination techniques, logistics management, and event execution.",
+    prerequisites: "EVNT 1",
+  },
+  {
+    id: "1123",
+    course_code: "EVNT 3",
+    course_name: "Event Marketing",
+    course_units: "4",
+    course_description:
+      "Event marketing including marketing strategies, promotional techniques, and audience engagement.",
+    prerequisites: "EVNT 1",
+  },
+  {
+    id: "1124",
+    course_code: "EVNT 4",
+    course_name: "Event Budgeting",
+    course_units: "4",
+    course_description:
+      "Event budgeting including financial planning, cost management, and budget analysis.",
+    prerequisites: "EVNT 1",
+  },
+  {
+    id: "1125",
+    course_code: "EVNT 5",
+    course_name: "Event Technology",
+    course_units: "4",
+    course_description:
+      "Event technology including technological applications, digital tools, and technological innovation.",
+    prerequisites: "EVNT 1",
+  },
+  {
+    id: "1126",
+    course_code: "EVNT 100",
+    course_name: "Advanced Event Planning",
+    course_units: "4",
+    course_description:
+      "Advanced event planning including advanced techniques, complex events, and planning innovation.",
+    prerequisites: "EVNT 1",
+  },
+  {
+    id: "1127",
+    course_code: "EVNT 101",
+    course_name: "Event Design",
+    course_units: "4",
+    course_description:
+      "Event design including design principles, creative concepts, and visual design.",
+    prerequisites: "EVNT 1",
+  },
+  {
+    id: "1128",
+    course_code: "EVNT 102",
+    course_name: "Event Production",
+    course_units: "4",
+    course_description:
+      "Event production including production management, technical production, and production coordination.",
+    prerequisites: "EVNT 1",
+  },
+  {
+    id: "1129",
+    course_code: "EVNT 103",
+    course_name: "Event Management",
+    course_units: "4",
+    course_description:
+      "Event management including management principles, team leadership, and organizational management.",
+    prerequisites: "EVNT 1",
+  },
+  {
+    id: "1130",
+    course_code: "EVNT 104",
+    course_name: "Event Research",
+    course_units: "4",
+    course_description:
+      "Event research including research methods, experimental design, and event research projects.",
+    prerequisites: "EVNT 1",
+  },
+
+  // Additional Cloud Computing Courses
+  {
+    id: "1131",
+    course_code: "CLOU 1",
+    course_name: "Introduction to Cloud Computing",
+    course_units: "4",
+    course_description:
+      "Introduction to cloud computing including cloud principles, cloud services, and cloud fundamentals.",
+    prerequisites: "None",
+  },
+  {
+    id: "1132",
+    course_code: "CLOU 2",
+    course_name: "Cloud Architecture",
+    course_units: "4",
+    course_description:
+      "Cloud architecture including architectural design, system architecture, and cloud infrastructure.",
+    prerequisites: "CLOU 1",
+  },
+  {
+    id: "1133",
+    course_code: "CLOU 3",
+    course_name: "Cloud Security",
+    course_units: "4",
+    course_description:
+      "Cloud security including security principles, threat protection, and security compliance.",
+    prerequisites: "CLOU 1",
+  },
+  {
+    id: "1134",
+    course_code: "CLOU 4",
+    course_name: "Cloud Development",
+    course_units: "4",
+    course_description:
+      "Cloud development including development tools, cloud applications, and software development.",
+    prerequisites: "CLOU 1",
+  },
+  {
+    id: "1135",
+    course_code: "CLOU 5",
+    course_name: "Cloud Operations",
+    course_units: "4",
+    course_description:
+      "Cloud operations including operational management, service management, and operational procedures.",
+    prerequisites: "CLOU 1",
+  },
+  {
+    id: "1136",
+    course_code: "CLOU 100",
+    course_name: "Advanced Cloud Computing",
+    course_units: "4",
+    course_description:
+      "Advanced cloud computing including advanced techniques, complex systems, and cloud innovation.",
+    prerequisites: "CLOU 1",
+  },
+  {
+    id: "1137",
+    course_code: "CLOU 101",
+    course_name: "Cloud Analytics",
+    course_units: "4",
+    course_description:
+      "Cloud analytics including data analysis, analytical tools, and analytical techniques.",
+    prerequisites: "CLOU 1",
+  },
+  {
+    id: "1138",
+    course_code: "CLOU 102",
+    course_name: "Cloud Migration",
+    course_units: "4",
+    course_description:
+      "Cloud migration including migration strategies, migration planning, and migration execution.",
+    prerequisites: "CLOU 1",
+  },
+  {
+    id: "1139",
+    course_code: "CLOU 103",
+    course_name: "Cloud Management",
+    course_units: "4",
+    course_description:
+      "Cloud management including management principles, resource management, and service management.",
+    prerequisites: "CLOU 1",
+  },
+  {
+    id: "1140",
+    course_code: "CLOU 104",
+    course_name: "Cloud Research",
+    course_units: "4",
+    course_description:
+      "Cloud research including research methods, experimental design, and cloud research projects.",
+    prerequisites: "CLOU 1",
+  },
+
+  // Additional Internet of Things Courses
+  {
+    id: "1141",
+    course_code: "IOT 1",
+    course_name: "Introduction to Internet of Things",
+    course_units: "4",
+    course_description:
+      "Introduction to Internet of Things including IoT principles, connected devices, and IoT fundamentals.",
+    prerequisites: "None",
+  },
+  {
+    id: "1142",
+    course_code: "IOT 2",
+    course_name: "IoT Architecture",
+    course_units: "4",
+    course_description:
+      "IoT architecture including architectural design, system architecture, and IoT infrastructure.",
+    prerequisites: "IOT 1",
+  },
+  {
+    id: "1143",
+    course_code: "IOT 3",
+    course_name: "IoT Security",
+    course_units: "4",
+    course_description:
+      "IoT security including security principles, threat protection, and security compliance.",
+    prerequisites: "IOT 1",
+  },
+  {
+    id: "1144",
+    course_code: "IOT 4",
+    course_name: "IoT Development",
+    course_units: "4",
+    course_description:
+      "IoT development including development tools, IoT applications, and software development.",
+    prerequisites: "IOT 1",
+  },
+  {
+    id: "1145",
+    course_code: "IOT 5",
+    course_name: "IoT Analytics",
+    course_units: "4",
+    course_description:
+      "IoT analytics including data analysis, analytical tools, and analytical techniques.",
+    prerequisites: "IOT 1",
+  },
+  {
+    id: "1146",
+    course_code: "IOT 100",
+    course_name: "Advanced Internet of Things",
+    course_units: "4",
+    course_description:
+      "Advanced Internet of Things including advanced techniques, complex systems, and IoT innovation.",
+    prerequisites: "IOT 1",
+  },
+  {
+    id: "1147",
+    course_code: "IOT 101",
+    course_name: "IoT Networks",
+    course_units: "4",
+    course_description:
+      "IoT networks including network design, communication protocols, and network management.",
+    prerequisites: "IOT 1",
+  },
+  {
+    id: "1148",
+    course_code: "IOT 102",
+    course_name: "IoT Sensors",
+    course_units: "4",
+    course_description:
+      "IoT sensors including sensor technology, sensor networks, and sensor applications.",
+    prerequisites: "IOT 1",
+  },
+  {
+    id: "1149",
+    course_code: "IOT 103",
+    course_name: "IoT Applications",
+    course_units: "4",
+    course_description:
+      "IoT applications including application development, use cases, and practical applications.",
+    prerequisites: "IOT 1",
+  },
+  {
+    id: "1150",
+    course_name: "IoT Research",
+    course_code: "IOT 104",
+    course_units: "4",
+    course_description:
+      "IoT research including research methods, experimental design, and IoT research projects.",
+    prerequisites: "IOT 1",
+  },
 ];

@@ -190,12 +190,15 @@ class AIService {
   private findSimilarCourses(exactMatchCourse: Course, otherMatches: AIRecommendation[]): AIRecommendation[] {
     const exactMatchDesc = exactMatchCourse.course_description.toLowerCase();
     const exactMatchWords = this.extractKeywords(exactMatchDesc);
+    const exactMatchCourseCode = exactMatchCourse.course_code.toLowerCase();
     
     // Calculate similarity scores for other courses
     const coursesWithSimilarity = otherMatches.map(match => {
       const similarityScore = this.calculateDescriptionSimilarity(
         exactMatchWords,
-        match.course.course_description.toLowerCase()
+        match.course.course_description.toLowerCase(),
+        exactMatchCourseCode,
+        match.course.course_code.toLowerCase()
       );
       
       return {
@@ -211,7 +214,7 @@ class AIService {
       .slice(0, 4);
   }
 
-  // Extract keywords from description (simple approach)
+  // Extract keywords from description (improved approach)
   private extractKeywords(description: string): string[] {
     // Remove common words and extract meaningful terms
     const commonWords = new Set([
@@ -220,7 +223,7 @@ class AIService {
       'will', 'would', 'could', 'should', 'may', 'might', 'can', 'must', 'shall',
       'this', 'that', 'these', 'those', 'i', 'you', 'he', 'she', 'it', 'we', 'they',
       'me', 'him', 'her', 'us', 'them', 'my', 'your', 'his', 'her', 'its', 'our', 'their',
-      'including', 'including', 'course', 'courses', 'study', 'studies', 'introduction', 'advanced',
+      'including', 'course', 'courses', 'study', 'studies', 'introduction', 'advanced',
       'basic', 'fundamental', 'principles', 'theory', 'practical', 'application', 'analysis',
       'design', 'development', 'research', 'methods', 'techniques', 'systems', 'processes'
     ]);
@@ -235,8 +238,8 @@ class AIService {
     return [...new Set(words)];
   }
 
-  // Calculate similarity between two descriptions
-  private calculateDescriptionSimilarity(keywords1: string[], description2: string): number {
+  // Calculate similarity between two descriptions (improved algorithm)
+  private calculateDescriptionSimilarity(keywords1: string[], description2: string, courseCode1: string, courseCode2: string): number {
     if (keywords1.length === 0) return 0;
 
     // Count how many keywords from the exact match appear in the other description
@@ -244,11 +247,56 @@ class AIService {
       description2.includes(keyword)
     );
 
-    // Calculate similarity score (0-1)
-    const similarityScore = matchingKeywords.length / keywords1.length;
+    // Base similarity score (0-1)
+    let similarityScore = matchingKeywords.length / keywords1.length;
 
-    // Boost score for courses that share more keywords
-    return Math.min(0.95, similarityScore + (matchingKeywords.length * 0.1));
+    // Boost for courses that share more keywords
+    similarityScore += (matchingKeywords.length * 0.05);
+
+    // Boost for same department courses (but not too much)
+    if (this.isSameDepartment(courseCode1, courseCode2)) {
+      similarityScore += 0.1;
+    }
+
+    // Boost for courses with similar course numbers (introductory level)
+    if (this.isSimilarLevel(courseCode1, courseCode2)) {
+      similarityScore += 0.15;
+    }
+
+    // Boost for courses with high keyword overlap
+    if (matchingKeywords.length >= 3) {
+      similarityScore += 0.2;
+    }
+
+    // Ensure minimum score for courses with any keyword match
+    if (matchingKeywords.length > 0) {
+      similarityScore = Math.max(similarityScore, 0.4);
+    }
+
+    // Cap at 0.95 to keep exact match as highest
+    return Math.min(0.95, similarityScore);
+  }
+
+  // Check if two courses are from the same department
+  private isSameDepartment(courseCode1: string, courseCode2: string): boolean {
+    const dept1 = courseCode1.split(' ')[0];
+    const dept2 = courseCode2.split(' ')[0];
+    return dept1 === dept2;
+  }
+
+  // Check if two courses are at similar levels (introductory, intermediate, advanced)
+  private isSimilarLevel(courseCode1: string, courseCode2: string): boolean {
+    const num1 = parseInt(courseCode1.match(/\d+/)?.[0] || '0');
+    const num2 = parseInt(courseCode2.match(/\d+/)?.[0] || '0');
+    
+    // Both are introductory (1-19)
+    if (num1 <= 19 && num2 <= 19) return true;
+    // Both are intermediate (20-99)
+    if (num1 >= 20 && num1 <= 99 && num2 >= 20 && num2 <= 99) return true;
+    // Both are advanced (100+)
+    if (num1 >= 100 && num2 >= 100) return true;
+    
+    return false;
   }
 
   // Get subject match score for broader searches
@@ -862,6 +910,76 @@ class AIService {
     // Artificial Intelligence & Machine Learning
     if (searchTerm.includes('artificial intelligence') || searchTerm.includes('machine learning') || searchTerm.includes('natural language processing') || searchTerm.includes('computer vision') || searchTerm.includes('expert systems') || searchTerm.includes('advanced artificial intelligence') || searchTerm.includes('neural networks') || searchTerm.includes('ai ethics') || searchTerm.includes('ai applications') || searchTerm.includes('ai research')) {
       if (courseCode.startsWith('aint') || courseDesc.includes('artificial intelligence') || courseDesc.includes('machine learning') || courseDesc.includes('natural language processing') || courseDesc.includes('computer vision') || courseDesc.includes('expert systems') || courseDesc.includes('advanced artificial intelligence') || courseDesc.includes('neural networks') || courseDesc.includes('ai ethics') || courseDesc.includes('ai applications') || courseDesc.includes('ai research')) {
+        return 0.6;
+      }
+    }
+
+    // Finnish & Scandinavian Languages
+    if (searchTerm.includes('finnish') || searchTerm.includes('modern finnish') || searchTerm.includes('finnish literature') || searchTerm.includes('finnish linguistics') || searchTerm.includes('finnish translation') || searchTerm.includes('finnish culture')) {
+      if (courseCode.startsWith('finn') || courseDesc.includes('finnish') || courseDesc.includes('modern finnish') || courseDesc.includes('finnish literature') || courseDesc.includes('finnish linguistics') || courseDesc.includes('finnish translation') || courseDesc.includes('finnish culture')) {
+        return 0.6;
+      }
+    }
+
+    // Polish & Slavic Languages
+    if (searchTerm.includes('polish') || searchTerm.includes('modern polish') || searchTerm.includes('polish literature') || searchTerm.includes('polish linguistics') || searchTerm.includes('polish translation') || searchTerm.includes('polish culture')) {
+      if (courseCode.startsWith('pol') || courseDesc.includes('polish') || courseDesc.includes('modern polish') || courseDesc.includes('polish literature') || courseDesc.includes('polish linguistics') || courseDesc.includes('polish translation') || courseDesc.includes('polish culture')) {
+        return 0.6;
+      }
+    }
+
+    // Biochemistry & Molecular Sciences
+    if (searchTerm.includes('biochemistry') || searchTerm.includes('metabolic biochemistry') || searchTerm.includes('molecular biochemistry') || searchTerm.includes('cellular biochemistry') || searchTerm.includes('clinical biochemistry') || searchTerm.includes('advanced biochemistry') || searchTerm.includes('biochemical techniques') || searchTerm.includes('biochemical genetics') || searchTerm.includes('biochemical evolution') || searchTerm.includes('biochemical research')) {
+      if (courseCode.startsWith('bioc') || courseDesc.includes('biochemistry') || courseDesc.includes('metabolic biochemistry') || courseDesc.includes('molecular biochemistry') || courseDesc.includes('cellular biochemistry') || courseDesc.includes('clinical biochemistry') || courseDesc.includes('advanced biochemistry') || courseDesc.includes('biochemical techniques') || courseDesc.includes('biochemical genetics') || courseDesc.includes('biochemical evolution') || courseDesc.includes('biochemical research')) {
+        return 0.6;
+      }
+    }
+
+    // Molecular Biology & Genetics
+    if (searchTerm.includes('molecular biology') || searchTerm.includes('gene expression') || searchTerm.includes('dna replication') || searchTerm.includes('protein synthesis') || searchTerm.includes('molecular genetics') || searchTerm.includes('advanced molecular biology') || searchTerm.includes('molecular techniques') || searchTerm.includes('molecular evolution') || searchTerm.includes('molecular medicine') || searchTerm.includes('molecular research')) {
+      if (courseCode.startsWith('molb') || courseDesc.includes('molecular biology') || courseDesc.includes('gene expression') || courseDesc.includes('dna replication') || courseDesc.includes('protein synthesis') || courseDesc.includes('molecular genetics') || courseDesc.includes('advanced molecular biology') || courseDesc.includes('molecular techniques') || courseDesc.includes('molecular evolution') || courseDesc.includes('molecular medicine') || courseDesc.includes('molecular research')) {
+        return 0.6;
+      }
+    }
+
+    // Digital Arts & Creative Media
+    if (searchTerm.includes('digital arts') || searchTerm.includes('digital painting') || searchTerm.includes('digital sculpture') || searchTerm.includes('digital animation') || searchTerm.includes('digital photography') || searchTerm.includes('advanced digital arts') || searchTerm.includes('digital art history') || searchTerm.includes('digital art theory') || searchTerm.includes('digital art portfolio') || searchTerm.includes('digital art research')) {
+      if (courseCode.startsWith('diga') || courseDesc.includes('digital arts') || courseDesc.includes('digital painting') || courseDesc.includes('digital sculpture') || courseDesc.includes('digital animation') || courseDesc.includes('digital photography') || courseDesc.includes('advanced digital arts') || courseDesc.includes('digital art history') || courseDesc.includes('digital art theory') || courseDesc.includes('digital art portfolio') || courseDesc.includes('digital art research')) {
+        return 0.6;
+      }
+    }
+
+    // Media Arts & Production
+    if (searchTerm.includes('media arts') || searchTerm.includes('video production') || searchTerm.includes('audio production') || searchTerm.includes('interactive media') || searchTerm.includes('digital storytelling') || searchTerm.includes('advanced media arts') || searchTerm.includes('media art history') || searchTerm.includes('media art theory') || searchTerm.includes('media art portfolio') || searchTerm.includes('media art research')) {
+      if (courseCode.startsWith('meda') || courseDesc.includes('media arts') || courseDesc.includes('video production') || courseDesc.includes('audio production') || courseDesc.includes('interactive media') || courseDesc.includes('digital storytelling') || courseDesc.includes('advanced media arts') || courseDesc.includes('media art history') || courseDesc.includes('media art theory') || courseDesc.includes('media art portfolio') || courseDesc.includes('media art research')) {
+        return 0.6;
+      }
+    }
+
+    // Sports Management & Athletics
+    if (searchTerm.includes('sports management') || searchTerm.includes('sports marketing') || searchTerm.includes('sports finance') || searchTerm.includes('sports law') || searchTerm.includes('sports operations') || searchTerm.includes('advanced sports management') || searchTerm.includes('sports analytics') || searchTerm.includes('sports psychology') || searchTerm.includes('sports technology') || searchTerm.includes('sports research')) {
+      if (courseCode.startsWith('spmg') || courseDesc.includes('sports management') || courseDesc.includes('sports marketing') || courseDesc.includes('sports finance') || courseDesc.includes('sports law') || courseDesc.includes('sports operations') || courseDesc.includes('advanced sports management') || courseDesc.includes('sports analytics') || courseDesc.includes('sports psychology') || courseDesc.includes('sports technology') || courseDesc.includes('sports research')) {
+        return 0.6;
+      }
+    }
+
+    // Event Planning & Management
+    if (searchTerm.includes('event planning') || searchTerm.includes('event coordination') || searchTerm.includes('event marketing') || searchTerm.includes('event budgeting') || searchTerm.includes('event technology') || searchTerm.includes('advanced event planning') || searchTerm.includes('event design') || searchTerm.includes('event production') || searchTerm.includes('event management') || searchTerm.includes('event research')) {
+      if (courseCode.startsWith('evnt') || courseDesc.includes('event planning') || courseDesc.includes('event coordination') || courseDesc.includes('event marketing') || courseDesc.includes('event budgeting') || courseDesc.includes('event technology') || courseDesc.includes('advanced event planning') || courseDesc.includes('event design') || courseDesc.includes('event production') || courseDesc.includes('event management') || courseDesc.includes('event research')) {
+        return 0.6;
+      }
+    }
+
+    // Cloud Computing & Distributed Systems
+    if (searchTerm.includes('cloud computing') || searchTerm.includes('cloud architecture') || searchTerm.includes('cloud security') || searchTerm.includes('cloud development') || searchTerm.includes('cloud operations') || searchTerm.includes('advanced cloud computing') || searchTerm.includes('cloud analytics') || searchTerm.includes('cloud migration') || searchTerm.includes('cloud management') || searchTerm.includes('cloud research')) {
+      if (courseCode.startsWith('clou') || courseDesc.includes('cloud computing') || courseDesc.includes('cloud architecture') || courseDesc.includes('cloud security') || courseDesc.includes('cloud development') || courseDesc.includes('cloud operations') || courseDesc.includes('advanced cloud computing') || courseDesc.includes('cloud analytics') || courseDesc.includes('cloud migration') || courseDesc.includes('cloud management') || courseDesc.includes('cloud research')) {
+        return 0.6;
+      }
+    }
+
+    // Internet of Things & Connected Systems
+    if (searchTerm.includes('internet of things') || searchTerm.includes('iot') || searchTerm.includes('iot architecture') || searchTerm.includes('iot security') || searchTerm.includes('iot development') || searchTerm.includes('iot analytics') || searchTerm.includes('advanced internet of things') || searchTerm.includes('iot networks') || searchTerm.includes('iot sensors') || searchTerm.includes('iot applications') || searchTerm.includes('iot research')) {
+      if (courseCode.startsWith('iot') || courseDesc.includes('internet of things') || courseDesc.includes('iot') || courseDesc.includes('iot architecture') || courseDesc.includes('iot security') || courseDesc.includes('iot development') || courseDesc.includes('iot analytics') || courseDesc.includes('advanced internet of things') || courseDesc.includes('iot networks') || courseDesc.includes('iot sensors') || courseDesc.includes('iot applications') || courseDesc.includes('iot research')) {
         return 0.6;
       }
     }
