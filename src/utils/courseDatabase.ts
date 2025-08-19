@@ -13358,4 +13358,924 @@ export const courseDatabase: CourseData[] = [
       "Theater research including research methods, theatrical analysis, and theater research projects.",
     prerequisites: "TDGE 10",
   },
+
+  // Additional Data Science Courses
+  {
+    id: "1451",
+    course_code: "DATA 1",
+    course_name: "Introduction to Data Science",
+    course_units: "4",
+    course_description:
+      "Introduction to data science including data analysis, statistical methods, and data science fundamentals.",
+    prerequisites: "None",
+  },
+  {
+    id: "1452",
+    course_code: "DATA 2",
+    course_name: "Data Visualization",
+    course_units: "4",
+    course_description:
+      "Data visualization including visual analytics, chart design, and data presentation techniques.",
+    prerequisites: "DATA 1",
+  },
+  {
+    id: "1453",
+    course_code: "DATA 3",
+    course_name: "Statistical Analysis",
+    course_units: "4",
+    course_description:
+      "Statistical analysis including statistical methods, hypothesis testing, and statistical modeling.",
+    prerequisites: "DATA 1",
+  },
+  {
+    id: "1454",
+    course_code: "DATA 4",
+    course_name: "Machine Learning",
+    course_units: "4",
+    course_description:
+      "Machine learning including algorithms, predictive modeling, and machine learning applications.",
+    prerequisites: "DATA 1",
+  },
+  {
+    id: "1455",
+    course_code: "DATA 5",
+    course_name: "Big Data Analytics",
+    course_units: "4",
+    course_description:
+      "Big data analytics including large-scale data processing, distributed computing, and big data tools.",
+    prerequisites: "DATA 1",
+  },
+  {
+    id: "1456",
+    course_code: "DATA 100",
+    course_name: "Advanced Data Science",
+    course_units: "4",
+    course_description:
+      "Advanced data science including advanced techniques, specialized areas, and data science research.",
+    prerequisites: "DATA 1",
+  },
+  {
+    id: "1457",
+    course_code: "DATA 101",
+    course_name: "Deep Learning",
+    course_units: "4",
+    course_description:
+      "Deep learning including neural networks, deep learning frameworks, and deep learning applications.",
+    prerequisites: "DATA 4",
+  },
+  {
+    id: "1458",
+    course_code: "DATA 102",
+    course_name: "Natural Language Processing",
+    course_units: "4",
+    course_description:
+      "Natural language processing including text analysis, language models, and NLP applications.",
+    prerequisites: "DATA 4",
+  },
+  {
+    id: "1459",
+    course_code: "DATA 103",
+    course_name: "Computer Vision",
+    course_units: "4",
+    course_description:
+      "Computer vision including image processing, computer vision algorithms, and vision applications.",
+    prerequisites: "DATA 4",
+  },
+  {
+    id: "1460",
+    course_code: "DATA 104",
+    course_name: "Data Science Research",
+    course_units: "4",
+    course_description:
+      "Data science research including research methods, data analysis, and data science research projects.",
+    prerequisites: "DATA 1",
+  },
+
+  // Additional Artificial Intelligence Courses
+  {
+    id: "1461",
+    course_code: "AI 1",
+    course_name: "Introduction to Artificial Intelligence",
+    course_units: "4",
+    course_description:
+      "Introduction to artificial intelligence including AI fundamentals, intelligent systems, and AI applications.",
+    prerequisites: "None",
+  },
+  {
+    id: "1462",
+    course_code: "AI 2",
+    course_name: "AI Ethics",
+    course_units: "4",
+    course_description:
+      "AI ethics including ethical AI development, responsible AI, and AI governance.",
+    prerequisites: "AI 1",
+  },
+  {
+    id: "1463",
+    course_code: "AI 3",
+    course_name: "Expert Systems",
+    course_units: "4",
+    course_description:
+      "Expert systems including knowledge representation, rule-based systems, and expert system design.",
+    prerequisites: "AI 1",
+  },
+  {
+    id: "1464",
+    course_code: "AI 4",
+    course_name: "AI Applications",
+    course_units: "4",
+    course_description:
+      "AI applications including real-world AI systems, AI deployment, and AI integration.",
+    prerequisites: "AI 1",
+  },
+  {
+    id: "1465",
+    course_code: "AI 5",
+    course_name: "AI Research",
+    course_units: "4",
+    course_description:
+      "AI research including research methods, AI experimentation, and AI research projects.",
+    prerequisites: "AI 1",
+  },
+  {
+    id: "1466",
+    course_code: "AI 100",
+    course_name: "Advanced AI",
+    course_units: "4",
+    course_description:
+      "Advanced AI including advanced techniques, specialized areas, and AI research.",
+    prerequisites: "AI 1",
+  },
+  {
+    id: "1467",
+    course_code: "AI 101",
+    course_name: "Reinforcement Learning",
+    course_units: "4",
+    course_description:
+      "Reinforcement learning including learning algorithms, decision making, and RL applications.",
+    prerequisites: "AI 1",
+  },
+  {
+    id: "1468",
+    course_code: "AI 102",
+    course_name: "AI Safety",
+    course_units: "4",
+    course_description:
+      "AI safety including safe AI development, risk assessment, and AI safety protocols.",
+    prerequisites: "AI 1",
+  },
+  {
+    id: "1469",
+    course_code: "AI 103",
+    course_name: "AI Governance",
+    course_units: "4",
+    course_description:
+      "AI governance including policy frameworks, regulatory compliance, and AI oversight.",
+    prerequisites: "AI 1",
+  },
+  {
+    id: "1470",
+    course_code: "AI 104",
+    course_name: "AI Innovation",
+    course_units: "4",
+    course_description:
+      "AI innovation including emerging AI technologies, AI entrepreneurship, and AI innovation projects.",
+    prerequisites: "AI 1",
+  },
+
+  // Additional Cybersecurity Courses
+  {
+    id: "1471",
+    course_code: "CYBR 1",
+    course_name: "Introduction to Cybersecurity",
+    course_units: "4",
+    course_description:
+      "Introduction to cybersecurity including security fundamentals, threat analysis, and security principles.",
+    prerequisites: "None",
+  },
+  {
+    id: "1472",
+    course_code: "CYBR 2",
+    course_name: "Network Security",
+    course_units: "4",
+    course_description:
+      "Network security including network protection, security protocols, and network defense.",
+    prerequisites: "CYBR 1",
+  },
+  {
+    id: "1473",
+    course_code: "CYBR 3",
+    course_name: "Cryptography",
+    course_units: "4",
+    course_description:
+      "Cryptography including encryption algorithms, cryptographic protocols, and secure communication.",
+    prerequisites: "CYBR 1",
+  },
+  {
+    id: "1474",
+    course_code: "CYBR 4",
+    course_name: "Digital Forensics",
+    course_units: "4",
+    course_description:
+      "Digital forensics including forensic analysis, evidence collection, and forensic investigation.",
+    prerequisites: "CYBR 1",
+  },
+  {
+    id: "1475",
+    course_code: "CYBR 5",
+    course_name: "Ethical Hacking",
+    course_units: "4",
+    course_description:
+      "Ethical hacking including penetration testing, vulnerability assessment, and security testing.",
+    prerequisites: "CYBR 1",
+  },
+  {
+    id: "1476",
+    course_code: "CYBR 100",
+    course_name: "Advanced Cybersecurity",
+    course_units: "4",
+    course_description:
+      "Advanced cybersecurity including advanced techniques, specialized areas, and security research.",
+    prerequisites: "CYBR 1",
+  },
+  {
+    id: "1477",
+    course_code: "CYBR 101",
+    course_name: "Security Management",
+    course_units: "4",
+    course_description:
+      "Security management including security policies, risk management, and security operations.",
+    prerequisites: "CYBR 1",
+  },
+  {
+    id: "1478",
+    course_code: "CYBR 102",
+    course_name: "Incident Response",
+    course_units: "4",
+    course_description:
+      "Incident response including security incidents, response procedures, and incident management.",
+    prerequisites: "CYBR 1",
+  },
+  {
+    id: "1479",
+    course_code: "CYBR 103",
+    course_name: "Security Architecture",
+    course_units: "4",
+    course_description:
+      "Security architecture including security design, architecture patterns, and security frameworks.",
+    prerequisites: "CYBR 1",
+  },
+  {
+    id: "1480",
+    course_code: "CYBR 104",
+    course_name: "Cybersecurity Research",
+    course_units: "4",
+    course_description:
+      "Cybersecurity research including research methods, security analysis, and cybersecurity research projects.",
+    prerequisites: "CYBR 1",
+  },
+
+  // Additional Robotics Courses
+  {
+    id: "1481",
+    course_code: "ROBO 1",
+    course_name: "Introduction to Robotics",
+    course_units: "4",
+    course_description:
+      "Introduction to robotics including robot fundamentals, robotic systems, and robotics applications.",
+    prerequisites: "None",
+  },
+  {
+    id: "1482",
+    course_code: "ROBO 2",
+    course_name: "Robot Mechanics",
+    course_units: "4",
+    course_description:
+      "Robot mechanics including mechanical design, kinematics, and robot dynamics.",
+    prerequisites: "ROBO 1",
+  },
+  {
+    id: "1483",
+    course_code: "ROBO 3",
+    course_name: "Robot Control",
+    course_units: "4",
+    course_description:
+      "Robot control including control systems, feedback control, and robot programming.",
+    prerequisites: "ROBO 1",
+  },
+  {
+    id: "1484",
+    course_code: "ROBO 4",
+    course_name: "Robot Programming",
+    course_units: "4",
+    course_description:
+      "Robot programming including programming languages, robot software, and programming techniques.",
+    prerequisites: "ROBO 1",
+  },
+  {
+    id: "1485",
+    course_code: "ROBO 5",
+    course_name: "Robot Sensors",
+    course_units: "4",
+    course_description:
+      "Robot sensors including sensor technology, sensor integration, and sensor applications.",
+    prerequisites: "ROBO 1",
+  },
+  {
+    id: "1486",
+    course_code: "ROBO 100",
+    course_name: "Advanced Robotics",
+    course_units: "4",
+    course_description:
+      "Advanced robotics including advanced techniques, specialized areas, and robotics research.",
+    prerequisites: "ROBO 1",
+  },
+  {
+    id: "1487",
+    course_code: "ROBO 101",
+    course_name: "Autonomous Robots",
+    course_units: "4",
+    course_description:
+      "Autonomous robots including autonomous navigation, decision making, and autonomous systems.",
+    prerequisites: "ROBO 1",
+  },
+  {
+    id: "1488",
+    course_code: "ROBO 102",
+    course_name: "Robot Vision",
+    course_units: "4",
+    course_description:
+      "Robot vision including computer vision, image processing, and vision-based robotics.",
+    prerequisites: "ROBO 1",
+  },
+  {
+    id: "1489",
+    course_code: "ROBO 103",
+    course_name: "Robot Learning",
+    course_units: "4",
+    course_description:
+      "Robot learning including machine learning for robots, adaptive systems, and learning algorithms.",
+    prerequisites: "ROBO 1",
+  },
+  {
+    id: "1490",
+    course_code: "ROBO 104",
+    course_name: "Robotics Research",
+    course_units: "4",
+    course_description:
+      "Robotics research including research methods, robotics analysis, and robotics research projects.",
+    prerequisites: "ROBO 1",
+  },
+
+  // Additional Quantum Computing Courses
+  {
+    id: "1491",
+    course_code: "QUAN 1",
+    course_name: "Introduction to Quantum Computing",
+    course_units: "4",
+    course_description:
+      "Introduction to quantum computing including quantum mechanics, quantum algorithms, and quantum systems.",
+    prerequisites: "None",
+  },
+  {
+    id: "1492",
+    course_code: "QUAN 2",
+    course_name: "Quantum Mechanics",
+    course_units: "4",
+    course_description:
+      "Quantum mechanics including quantum theory, wave functions, and quantum phenomena.",
+    prerequisites: "QUAN 1",
+  },
+  {
+    id: "1493",
+    course_code: "QUAN 3",
+    course_name: "Quantum Algorithms",
+    course_units: "4",
+    course_description:
+      "Quantum algorithms including quantum programming, algorithm design, and quantum applications.",
+    prerequisites: "QUAN 1",
+  },
+  {
+    id: "1494",
+    course_code: "QUAN 4",
+    course_name: "Quantum Information",
+    course_units: "4",
+    course_description:
+      "Quantum information including quantum bits, quantum communication, and quantum information theory.",
+    prerequisites: "QUAN 1",
+  },
+  {
+    id: "1495",
+    course_code: "QUAN 5",
+    course_name: "Quantum Cryptography",
+    course_units: "4",
+    course_description:
+      "Quantum cryptography including quantum key distribution, secure communication, and quantum security.",
+    prerequisites: "QUAN 1",
+  },
+  {
+    id: "1496",
+    course_code: "QUAN 100",
+    course_name: "Advanced Quantum Computing",
+    course_units: "4",
+    course_description:
+      "Advanced quantum computing including advanced techniques, specialized areas, and quantum research.",
+    prerequisites: "QUAN 1",
+  },
+  {
+    id: "1497",
+    course_code: "QUAN 101",
+    course_name: "Quantum Error Correction",
+    course_units: "4",
+    course_description:
+      "Quantum error correction including error correction codes, fault tolerance, and quantum reliability.",
+    prerequisites: "QUAN 1",
+  },
+  {
+    id: "1498",
+    course_code: "QUAN 102",
+    course_name: "Quantum Machine Learning",
+    course_units: "4",
+    course_description:
+      "Quantum machine learning including quantum algorithms for ML, quantum neural networks, and quantum AI.",
+    prerequisites: "QUAN 1",
+  },
+  {
+    id: "1499",
+    course_code: "QUAN 103",
+    course_name: "Quantum Hardware",
+    course_units: "4",
+    course_description:
+      "Quantum hardware including quantum processors, quantum devices, and quantum technology.",
+    prerequisites: "QUAN 1",
+  },
+  {
+    id: "1500",
+    course_code: "QUAN 104",
+    course_name: "Quantum Research",
+    course_units: "4",
+    course_description:
+      "Quantum research including research methods, quantum analysis, and quantum research projects.",
+    prerequisites: "QUAN 1",
+  },
+
+  // Additional Blockchain Courses
+  {
+    id: "1501",
+    course_code: "BLOC 1",
+    course_name: "Introduction to Blockchain",
+    course_units: "4",
+    course_description:
+      "Introduction to blockchain including blockchain fundamentals, distributed systems, and blockchain applications.",
+    prerequisites: "None",
+  },
+  {
+    id: "1502",
+    course_code: "BLOC 2",
+    course_name: "Cryptocurrency",
+    course_units: "4",
+    course_description:
+      "Cryptocurrency including digital currencies, cryptocurrency systems, and crypto economics.",
+    prerequisites: "BLOC 1",
+  },
+  {
+    id: "1503",
+    course_code: "BLOC 3",
+    course_name: "Smart Contracts",
+    course_units: "4",
+    course_description:
+      "Smart contracts including contract development, blockchain programming, and decentralized applications.",
+    prerequisites: "BLOC 1",
+  },
+  {
+    id: "1504",
+    course_code: "BLOC 4",
+    course_name: "Blockchain Security",
+    course_units: "4",
+    course_description:
+      "Blockchain security including security protocols, vulnerability assessment, and blockchain protection.",
+    prerequisites: "BLOC 1",
+  },
+  {
+    id: "1505",
+    course_code: "BLOC 5",
+    course_name: "Decentralized Finance",
+    course_units: "4",
+    course_description:
+      "Decentralized finance including DeFi protocols, financial applications, and decentralized systems.",
+    prerequisites: "BLOC 1",
+  },
+  {
+    id: "1506",
+    course_code: "BLOC 100",
+    course_name: "Advanced Blockchain",
+    course_units: "4",
+    course_description:
+      "Advanced blockchain including advanced techniques, specialized areas, and blockchain research.",
+    prerequisites: "BLOC 1",
+  },
+  {
+    id: "1507",
+    course_code: "BLOC 101",
+    course_name: "Blockchain Development",
+    course_units: "4",
+    course_description:
+      "Blockchain development including development frameworks, blockchain platforms, and development tools.",
+    prerequisites: "BLOC 1",
+  },
+  {
+    id: "1508",
+    course_code: "BLOC 102",
+    course_name: "Blockchain Economics",
+    course_units: "4",
+    course_description:
+      "Blockchain economics including token economics, incentive mechanisms, and economic models.",
+    prerequisites: "BLOC 1",
+  },
+  {
+    id: "1509",
+    course_code: "BLOC 103",
+    course_name: "Blockchain Governance",
+    course_units: "4",
+    course_description:
+      "Blockchain governance including governance models, consensus mechanisms, and decentralized governance.",
+    prerequisites: "BLOC 1",
+  },
+  {
+    id: "1510",
+    course_code: "BLOC 104",
+    course_name: "Blockchain Research",
+    course_units: "4",
+    course_description:
+      "Blockchain research including research methods, blockchain analysis, and blockchain research projects.",
+    prerequisites: "BLOC 1",
+  },
+
+  // Additional Cloud Computing Courses
+  {
+    id: "1511",
+    course_code: "CLOU 1",
+    course_name: "Introduction to Cloud Computing",
+    course_units: "4",
+    course_description:
+      "Introduction to cloud computing including cloud fundamentals, cloud services, and cloud architecture.",
+    prerequisites: "None",
+  },
+  {
+    id: "1512",
+    course_code: "CLOU 2",
+    course_name: "Cloud Architecture",
+    course_units: "4",
+    course_description:
+      "Cloud architecture including architectural patterns, design principles, and cloud infrastructure.",
+    prerequisites: "CLOU 1",
+  },
+  {
+    id: "1513",
+    course_code: "CLOU 3",
+    course_name: "Cloud Security",
+    course_units: "4",
+    course_description:
+      "Cloud security including security models, access control, and cloud protection.",
+    prerequisites: "CLOU 1",
+  },
+  {
+    id: "1514",
+    course_code: "CLOU 4",
+    course_name: "Cloud Development",
+    course_units: "4",
+    course_description:
+      "Cloud development including development platforms, cloud APIs, and cloud applications.",
+    prerequisites: "CLOU 1",
+  },
+  {
+    id: "1515",
+    course_code: "CLOU 5",
+    course_name: "Cloud Operations",
+    course_units: "4",
+    course_description:
+      "Cloud operations including operational management, monitoring, and cloud maintenance.",
+    prerequisites: "CLOU 1",
+  },
+  {
+    id: "1516",
+    course_code: "CLOU 100",
+    course_name: "Advanced Cloud Computing",
+    course_units: "4",
+    course_description:
+      "Advanced cloud computing including advanced techniques, specialized areas, and cloud research.",
+    prerequisites: "CLOU 1",
+  },
+  {
+    id: "1517",
+    course_code: "CLOU 101",
+    course_name: "Cloud Analytics",
+    course_units: "4",
+    course_description:
+      "Cloud analytics including data analytics, business intelligence, and cloud-based analysis.",
+    prerequisites: "CLOU 1",
+  },
+  {
+    id: "1518",
+    course_code: "CLOU 102",
+    course_name: "Cloud Migration",
+    course_units: "4",
+    course_description:
+      "Cloud migration including migration strategies, legacy systems, and migration planning.",
+    prerequisites: "CLOU 1",
+  },
+  {
+    id: "1519",
+    course_code: "CLOU 103",
+    course_name: "Cloud Management",
+    course_units: "4",
+    course_description:
+      "Cloud management including resource management, cost optimization, and cloud governance.",
+    prerequisites: "CLOU 1",
+  },
+  {
+    id: "1520",
+    course_code: "CLOU 104",
+    course_name: "Cloud Research",
+    course_units: "4",
+    course_description:
+      "Cloud research including research methods, cloud analysis, and cloud research projects.",
+    prerequisites: "CLOU 1",
+  },
+
+  // Additional Internet of Things Courses
+  {
+    id: "1521",
+    course_code: "IOT 1",
+    course_name: "Introduction to Internet of Things",
+    course_units: "4",
+    course_description:
+      "Introduction to Internet of Things including IoT fundamentals, connected devices, and IoT applications.",
+    prerequisites: "None",
+  },
+  {
+    id: "1522",
+    course_code: "IOT 2",
+    course_name: "IoT Architecture",
+    course_units: "4",
+    course_description:
+      "IoT architecture including system design, network architecture, and IoT infrastructure.",
+    prerequisites: "IOT 1",
+  },
+  {
+    id: "1523",
+    course_code: "IOT 3",
+    course_name: "IoT Security",
+    course_units: "4",
+    course_description:
+      "IoT security including device security, network security, and IoT protection.",
+    prerequisites: "IOT 1",
+  },
+  {
+    id: "1524",
+    course_code: "IOT 4",
+    course_name: "IoT Development",
+    course_units: "4",
+    course_description:
+      "IoT development including device programming, IoT platforms, and IoT applications.",
+    prerequisites: "IOT 1",
+  },
+  {
+    id: "1525",
+    course_code: "IOT 5",
+    course_name: "IoT Analytics",
+    course_units: "4",
+    course_description:
+      "IoT analytics including data collection, sensor analytics, and IoT data processing.",
+    prerequisites: "IOT 1",
+  },
+  {
+    id: "1526",
+    course_code: "IOT 100",
+    course_name: "Advanced IoT",
+    course_units: "4",
+    course_description:
+      "Advanced IoT including advanced techniques, specialized areas, and IoT research.",
+    prerequisites: "IOT 1",
+  },
+  {
+    id: "1527",
+    course_code: "IOT 101",
+    course_name: "IoT Networks",
+    course_units: "4",
+    course_description:
+      "IoT networks including network protocols, wireless communication, and IoT connectivity.",
+    prerequisites: "IOT 1",
+  },
+  {
+    id: "1528",
+    course_code: "IOT 102",
+    course_name: "IoT Sensors",
+    course_units: "4",
+    course_description:
+      "IoT sensors including sensor technology, sensor networks, and sensor applications.",
+    prerequisites: "IOT 1",
+  },
+  {
+    id: "1529",
+    course_code: "IOT 103",
+    course_name: "IoT Applications",
+    course_units: "4",
+    course_description:
+      "IoT applications including smart cities, industrial IoT, and IoT use cases.",
+    prerequisites: "IOT 1",
+  },
+  {
+    id: "1530",
+    course_code: "IOT 104",
+    course_name: "IoT Research",
+    course_units: "4",
+    course_description:
+      "IoT research including research methods, IoT analysis, and IoT research projects.",
+    prerequisites: "IOT 1",
+  },
+
+  // Additional Human-Computer Interaction Courses
+  {
+    id: "1531",
+    course_code: "HCI 1",
+    course_name: "Introduction to Human-Computer Interaction",
+    course_units: "4",
+    course_description:
+      "Introduction to human-computer interaction including HCI fundamentals, user experience, and interface design.",
+    prerequisites: "None",
+  },
+  {
+    id: "1532",
+    course_code: "HCI 2",
+    course_name: "User Interface Design",
+    course_units: "4",
+    course_description:
+      "User interface design including design principles, interface patterns, and design methodologies.",
+    prerequisites: "HCI 1",
+  },
+  {
+    id: "1533",
+    course_code: "HCI 3",
+    course_name: "Usability Testing",
+    course_units: "4",
+    course_description:
+      "Usability testing including testing methods, user research, and evaluation techniques.",
+    prerequisites: "HCI 1",
+  },
+  {
+    id: "1534",
+    course_code: "HCI 4",
+    course_name: "Interaction Design",
+    course_units: "4",
+    course_description:
+      "Interaction design including interaction patterns, user flows, and interaction modeling.",
+    prerequisites: "HCI 1",
+  },
+  {
+    id: "1535",
+    course_code: "HCI 5",
+    course_name: "User Experience Design",
+    course_units: "4",
+    course_description:
+      "User experience design including UX principles, experience mapping, and UX methodologies.",
+    prerequisites: "HCI 1",
+  },
+  {
+    id: "1536",
+    course_code: "HCI 100",
+    course_name: "Advanced HCI",
+    course_units: "4",
+    course_description:
+      "Advanced HCI including advanced techniques, specialized areas, and HCI research.",
+    prerequisites: "HCI 1",
+  },
+  {
+    id: "1537",
+    course_code: "HCI 101",
+    course_name: "Mobile Interface Design",
+    course_units: "4",
+    course_description:
+      "Mobile interface design including mobile design patterns, responsive design, and mobile UX.",
+    prerequisites: "HCI 1",
+  },
+  {
+    id: "1538",
+    course_code: "HCI 102",
+    course_name: "Accessibility Design",
+    course_units: "4",
+    course_description:
+      "Accessibility design including inclusive design, accessibility standards, and universal design.",
+    prerequisites: "HCI 1",
+  },
+  {
+    id: "1539",
+    course_code: "HCI 103",
+    course_name: "Virtual Reality Interfaces",
+    course_units: "4",
+    course_description:
+      "Virtual reality interfaces including VR design, immersive experiences, and VR interaction.",
+    prerequisites: "HCI 1",
+  },
+  {
+    id: "1540",
+    course_code: "HCI 104",
+    course_name: "HCI Research",
+    course_units: "4",
+    course_description:
+      "HCI research including research methods, HCI analysis, and HCI research projects.",
+    prerequisites: "HCI 1",
+  },
+
+  // Additional Environmental Engineering Courses
+  {
+    id: "1541",
+    course_code: "ENVE 1",
+    course_name: "Introduction to Environmental Engineering",
+    course_units: "4",
+    course_description:
+      "Introduction to environmental engineering including environmental systems, sustainability, and engineering principles.",
+    prerequisites: "None",
+  },
+  {
+    id: "1542",
+    course_code: "ENVE 2",
+    course_name: "Water Treatment",
+    course_units: "4",
+    course_description:
+      "Water treatment including water quality, treatment processes, and water management.",
+    prerequisites: "ENVE 1",
+  },
+  {
+    id: "1543",
+    course_code: "ENVE 3",
+    course_name: "Air Pollution Control",
+    course_units: "4",
+    course_description:
+      "Air pollution control including air quality, pollution control, and air management.",
+    prerequisites: "ENVE 1",
+  },
+  {
+    id: "1544",
+    course_code: "ENVE 4",
+    course_name: "Waste Management",
+    course_units: "4",
+    course_description:
+      "Waste management including waste treatment, recycling, and waste reduction.",
+    prerequisites: "ENVE 1",
+  },
+  {
+    id: "1545",
+    course_code: "ENVE 5",
+    course_name: "Environmental Impact Assessment",
+    course_units: "4",
+    course_description:
+      "Environmental impact assessment including impact analysis, environmental planning, and assessment methods.",
+    prerequisites: "ENVE 1",
+  },
+  {
+    id: "1546",
+    course_code: "ENVE 100",
+    course_name: "Advanced Environmental Engineering",
+    course_units: "4",
+    course_description:
+      "Advanced environmental engineering including advanced techniques, specialized areas, and environmental research.",
+    prerequisites: "ENVE 1",
+  },
+  {
+    id: "1547",
+    course_code: "ENVE 101",
+    course_name: "Sustainable Engineering",
+    course_units: "4",
+    course_description:
+      "Sustainable engineering including sustainability principles, green technology, and sustainable design.",
+    prerequisites: "ENVE 1",
+  },
+  {
+    id: "1548",
+    course_code: "ENVE 102",
+    course_name: "Environmental Modeling",
+    course_units: "4",
+    course_description:
+      "Environmental modeling including mathematical modeling, simulation, and environmental analysis.",
+    prerequisites: "ENVE 1",
+  },
+  {
+    id: "1549",
+    course_code: "ENVE 103",
+    course_name: "Environmental Policy",
+    course_units: "4",
+    course_description:
+      "Environmental policy including policy analysis, regulatory frameworks, and environmental governance.",
+    prerequisites: "ENVE 1",
+  },
+  {
+    id: "1550",
+    course_code: "ENVE 104",
+    course_name: "Environmental Research",
+    course_units: "4",
+    course_description:
+      "Environmental research including research methods, environmental analysis, and environmental research projects.",
+    prerequisites: "ENVE 1",
+  },
 ];

@@ -1327,6 +1327,76 @@ class AIService {
       }
     }
 
+    // Data Science & Analytics
+    if (searchTerm.includes('data science') || searchTerm.includes('data visualization') || searchTerm.includes('statistical analysis') || searchTerm.includes('machine learning') || searchTerm.includes('big data analytics') || searchTerm.includes('advanced data science') || searchTerm.includes('deep learning') || searchTerm.includes('natural language processing') || searchTerm.includes('computer vision') || searchTerm.includes('data science research')) {
+      if (courseCode.startsWith('data') || courseDesc.includes('data science') || courseDesc.includes('data visualization') || courseDesc.includes('statistical analysis') || courseDesc.includes('machine learning') || courseDesc.includes('big data analytics') || courseDesc.includes('advanced data science') || courseDesc.includes('deep learning') || courseDesc.includes('natural language processing') || courseDesc.includes('computer vision') || courseDesc.includes('data science research')) {
+        return 0.6;
+      }
+    }
+
+    // Artificial Intelligence & AI Systems
+    if (searchTerm.includes('artificial intelligence') || searchTerm.includes('ai ethics') || searchTerm.includes('expert systems') || searchTerm.includes('ai applications') || searchTerm.includes('ai research') || searchTerm.includes('advanced ai') || searchTerm.includes('reinforcement learning') || searchTerm.includes('ai safety') || searchTerm.includes('ai governance') || searchTerm.includes('ai innovation')) {
+      if (courseCode.startsWith('ai') || courseDesc.includes('artificial intelligence') || courseDesc.includes('ai ethics') || courseDesc.includes('expert systems') || courseDesc.includes('ai applications') || courseDesc.includes('ai research') || courseDesc.includes('advanced ai') || courseDesc.includes('reinforcement learning') || courseDesc.includes('ai safety') || courseDesc.includes('ai governance') || courseDesc.includes('ai innovation')) {
+        return 0.6;
+      }
+    }
+
+    // Cybersecurity & Information Security
+    if (searchTerm.includes('cybersecurity') || searchTerm.includes('network security') || searchTerm.includes('cryptography') || searchTerm.includes('digital forensics') || searchTerm.includes('ethical hacking') || searchTerm.includes('advanced cybersecurity') || searchTerm.includes('security management') || searchTerm.includes('incident response') || searchTerm.includes('security architecture') || searchTerm.includes('cybersecurity research')) {
+      if (courseCode.startsWith('cybr') || courseDesc.includes('cybersecurity') || courseDesc.includes('network security') || courseDesc.includes('cryptography') || courseDesc.includes('digital forensics') || courseDesc.includes('ethical hacking') || courseDesc.includes('advanced cybersecurity') || courseDesc.includes('security management') || courseDesc.includes('incident response') || courseDesc.includes('security architecture') || courseDesc.includes('cybersecurity research')) {
+        return 0.6;
+      }
+    }
+
+    // Robotics & Automation
+    if (searchTerm.includes('robotics') || searchTerm.includes('robot mechanics') || searchTerm.includes('robot control') || searchTerm.includes('robot programming') || searchTerm.includes('robot sensors') || searchTerm.includes('advanced robotics') || searchTerm.includes('autonomous robots') || searchTerm.includes('robot vision') || searchTerm.includes('robot learning') || searchTerm.includes('robotics research')) {
+      if (courseCode.startsWith('robo') || courseDesc.includes('robotics') || courseDesc.includes('robot mechanics') || courseDesc.includes('robot control') || courseDesc.includes('robot programming') || courseDesc.includes('robot sensors') || courseDesc.includes('advanced robotics') || courseDesc.includes('autonomous robots') || courseDesc.includes('robot vision') || courseDesc.includes('robot learning') || courseDesc.includes('robotics research')) {
+        return 0.6;
+      }
+    }
+
+    // Quantum Computing & Quantum Sciences
+    if (searchTerm.includes('quantum computing') || searchTerm.includes('quantum mechanics') || searchTerm.includes('quantum algorithms') || searchTerm.includes('quantum information') || searchTerm.includes('quantum cryptography') || searchTerm.includes('advanced quantum computing') || searchTerm.includes('quantum error correction') || searchTerm.includes('quantum machine learning') || searchTerm.includes('quantum hardware') || searchTerm.includes('quantum research')) {
+      if (courseCode.startsWith('quan') || courseDesc.includes('quantum computing') || courseDesc.includes('quantum mechanics') || courseDesc.includes('quantum algorithms') || courseDesc.includes('quantum information') || courseDesc.includes('quantum cryptography') || courseDesc.includes('advanced quantum computing') || courseDesc.includes('quantum error correction') || courseDesc.includes('quantum machine learning') || courseDesc.includes('quantum hardware') || courseDesc.includes('quantum research')) {
+        return 0.6;
+      }
+    }
+
+    // Blockchain & Distributed Systems
+    if (searchTerm.includes('blockchain') || searchTerm.includes('cryptocurrency') || searchTerm.includes('smart contracts') || searchTerm.includes('blockchain security') || searchTerm.includes('decentralized finance') || searchTerm.includes('advanced blockchain') || searchTerm.includes('blockchain development') || searchTerm.includes('blockchain economics') || searchTerm.includes('blockchain governance') || searchTerm.includes('blockchain research')) {
+      if (courseCode.startsWith('bloc') || courseDesc.includes('blockchain') || courseDesc.includes('cryptocurrency') || courseDesc.includes('smart contracts') || courseDesc.includes('blockchain security') || courseDesc.includes('decentralized finance') || courseDesc.includes('advanced blockchain') || courseDesc.includes('blockchain development') || courseDesc.includes('blockchain economics') || courseDesc.includes('blockchain governance') || courseDesc.includes('blockchain research')) {
+        return 0.6;
+      }
+    }
+
+    // Cloud Computing & Distributed Systems
+    if (searchTerm.includes('cloud computing') || searchTerm.includes('cloud architecture') || searchTerm.includes('cloud security') || searchTerm.includes('cloud development') || searchTerm.includes('cloud operations') || searchTerm.includes('advanced cloud computing') || searchTerm.includes('cloud analytics') || searchTerm.includes('cloud migration') || searchTerm.includes('cloud management') || searchTerm.includes('cloud research')) {
+      if (courseCode.startsWith('clou') || courseDesc.includes('cloud computing') || courseDesc.includes('cloud architecture') || courseDesc.includes('cloud security') || courseDesc.includes('cloud development') || courseDesc.includes('cloud operations') || courseDesc.includes('advanced cloud computing') || courseDesc.includes('cloud analytics') || courseDesc.includes('cloud migration') || courseDesc.includes('cloud management') || courseDesc.includes('cloud research')) {
+        return 0.6;
+      }
+    }
+
+    // Internet of Things & Connected Systems
+    if (searchTerm.includes('internet of things') || searchTerm.includes('iot') || searchTerm.includes('iot architecture') || searchTerm.includes('iot security') || searchTerm.includes('iot development') || searchTerm.includes('iot analytics') || searchTerm.includes('advanced iot') || searchTerm.includes('iot networks') || searchTerm.includes('iot sensors') || searchTerm.includes('iot applications') || searchTerm.includes('iot research')) {
+      if (courseCode.startsWith('iot') || courseDesc.includes('internet of things') || courseDesc.includes('iot') || courseDesc.includes('iot architecture') || courseDesc.includes('iot security') || courseDesc.includes('iot development') || courseDesc.includes('iot analytics') || courseDesc.includes('advanced iot') || courseDesc.includes('iot networks') || courseDesc.includes('iot sensors') || courseDesc.includes('iot applications') || courseDesc.includes('iot research')) {
+        return 0.6;
+      }
+    }
+
+    // Human-Computer Interaction & UX Design
+    if (searchTerm.includes('human-computer interaction') || searchTerm.includes('user interface design') || searchTerm.includes('usability testing') || searchTerm.includes('interaction design') || searchTerm.includes('user experience design') || searchTerm.includes('advanced hci') || searchTerm.includes('mobile interface design') || searchTerm.includes('accessibility design') || searchTerm.includes('virtual reality interfaces') || searchTerm.includes('hci research')) {
+      if (courseCode.startsWith('hci') || courseDesc.includes('human-computer interaction') || courseDesc.includes('user interface design') || courseDesc.includes('usability testing') || courseDesc.includes('interaction design') || courseDesc.includes('user experience design') || courseDesc.includes('advanced hci') || courseDesc.includes('mobile interface design') || courseDesc.includes('accessibility design') || courseDesc.includes('virtual reality interfaces') || courseDesc.includes('hci research')) {
+        return 0.6;
+      }
+    }
+
+    // Environmental Engineering & Sustainability
+    if (searchTerm.includes('environmental engineering') || searchTerm.includes('water treatment') || searchTerm.includes('air pollution control') || searchTerm.includes('waste management') || searchTerm.includes('environmental impact assessment') || searchTerm.includes('advanced environmental engineering') || searchTerm.includes('sustainable engineering') || searchTerm.includes('environmental modeling') || searchTerm.includes('environmental policy') || searchTerm.includes('environmental research')) {
+      if (courseCode.startsWith('enve') || courseDesc.includes('environmental engineering') || courseDesc.includes('water treatment') || courseDesc.includes('air pollution control') || courseDesc.includes('waste management') || courseDesc.includes('environmental impact assessment') || courseDesc.includes('advanced environmental engineering') || courseDesc.includes('sustainable engineering') || courseDesc.includes('environmental modeling') || courseDesc.includes('environmental policy') || courseDesc.includes('environmental research')) {
+        return 0.6;
+      }
+    }
+
     return 0;
   }
 
