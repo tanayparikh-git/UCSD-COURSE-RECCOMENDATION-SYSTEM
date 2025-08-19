@@ -186,36 +186,48 @@ class AIService {
       .slice(0, 5);
   }
 
-  // Find courses similar to the exact match based on description similarity
+  // Find courses similar to the exact match based on combined name and description similarity
   private findSimilarCourses(exactMatchCourse: Course, otherMatches: AIRecommendation[]): AIRecommendation[] {
+    const exactMatchName = exactMatchCourse.course_name.toLowerCase();
     const exactMatchDesc = exactMatchCourse.course_description.toLowerCase();
-    const exactMatchWords = this.extractKeywords(exactMatchDesc);
+    const exactMatchNameWords = this.extractKeywords(exactMatchName);
+    const exactMatchDescWords = this.extractKeywords(exactMatchDesc);
     const exactMatchCourseCode = exactMatchCourse.course_code.toLowerCase();
     
-    // Calculate similarity scores for other courses
+    // Calculate combined similarity scores for other courses
     const coursesWithSimilarity = otherMatches.map(match => {
-      const similarityScore = this.calculateDescriptionSimilarity(
-        exactMatchWords,
+      const nameSimilarity = this.calculateNameSimilarity(
+        exactMatchNameWords,
+        match.course.course_name.toLowerCase(),
+        exactMatchCourseCode,
+        match.course.course_code.toLowerCase()
+      );
+      
+      const descriptionSimilarity = this.calculateDescriptionSimilarity(
+        exactMatchDescWords,
         match.course.course_description.toLowerCase(),
         exactMatchCourseCode,
         match.course.course_code.toLowerCase()
       );
       
+      // Combine the similarities with weights (name: 40%, description: 60%)
+      const combinedScore = (nameSimilarity * 0.4) + (descriptionSimilarity * 0.6);
+      
       return {
         ...match,
-        score: similarityScore,
-        reason: `Similar to ${exactMatchCourse.course_code}: ${match.reason}`,
+        score: combinedScore,
+        reason: `Similar to ${exactMatchCourse.course_code}: Name (${Math.round(nameSimilarity * 100)}%) + Description (${Math.round(descriptionSimilarity * 100)}%) = ${Math.round(combinedScore * 100)}%`,
       };
     });
 
-    // Sort by similarity score and return top 4
+    // Sort by combined similarity score and return top 4
     return coursesWithSimilarity
       .sort((a, b) => b.score - a.score)
       .slice(0, 4);
   }
 
-  // Extract keywords from description (improved approach)
-  private extractKeywords(description: string): string[] {
+  // Extract keywords from text (improved approach)
+  private extractKeywords(text: string): string[] {
     // Remove common words and extract meaningful terms
     const commonWords = new Set([
       'the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'of', 'with', 'by',
@@ -228,7 +240,7 @@ class AIService {
       'design', 'development', 'research', 'methods', 'techniques', 'systems', 'processes'
     ]);
 
-    const words = description
+    const words = text
       .toLowerCase()
       .replace(/[^\w\s]/g, ' ')
       .split(/\s+/)
@@ -238,7 +250,46 @@ class AIService {
     return [...new Set(words)];
   }
 
-  // Calculate similarity between two descriptions (improved algorithm)
+  // Calculate similarity between two course names
+  private calculateNameSimilarity(keywords1: string[], name2: string, courseCode1: string, courseCode2: string): number {
+    if (keywords1.length === 0) return 0;
+
+    // Count how many keywords from the exact match appear in the other name
+    const matchingKeywords = keywords1.filter(keyword => 
+      name2.includes(keyword)
+    );
+
+    // Base similarity score (0-1)
+    let similarityScore = matchingKeywords.length / keywords1.length;
+
+    // Boost for courses that share more keywords
+    similarityScore += (matchingKeywords.length * 0.1);
+
+    // Boost for same department courses
+    if (this.isSameDepartment(courseCode1, courseCode2)) {
+      similarityScore += 0.15;
+    }
+
+    // Boost for courses with similar course numbers
+    if (this.isSimilarLevel(courseCode1, courseCode2)) {
+      similarityScore += 0.2;
+    }
+
+    // Boost for courses with high keyword overlap
+    if (matchingKeywords.length >= 2) {
+      similarityScore += 0.25;
+    }
+
+    // Ensure minimum score for courses with any keyword match
+    if (matchingKeywords.length > 0) {
+      similarityScore = Math.max(similarityScore, 0.3);
+    }
+
+    // Cap at 0.95 to keep exact match as highest
+    return Math.min(0.95, similarityScore);
+  }
+
+  // Calculate similarity between two descriptions
   private calculateDescriptionSimilarity(keywords1: string[], description2: string, courseCode1: string, courseCode2: string): number {
     if (keywords1.length === 0) return 0;
 
