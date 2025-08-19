@@ -37,7 +37,7 @@ class AIService {
       // First, try to get all courses to see the structure
       const testParams = new URLSearchParams({
         select: "*",
-        limit: "5",
+        limit: "100",
       });
 
       const testUrl = `${this.supabaseUrl}/courses?${testParams}`;
@@ -59,8 +59,18 @@ class AIService {
       const testCourses = await testResponse.json();
       console.log("aiService: Test courses structure:", testCourses);
 
-      // For now, just return the test courses as a fallback
-      const courses: Course[] = testCourses;
+      // Filter courses based on the search query
+      const filteredCourses = testCourses.filter((course: any) => {
+        const searchTerm = query.toLowerCase();
+        return (
+          course.course_name?.toLowerCase().includes(searchTerm) ||
+          course.course_code?.toLowerCase().includes(searchTerm) ||
+          course.course_description?.toLowerCase().includes(searchTerm)
+        );
+      });
+
+      console.log("aiService: Filtered courses:", filteredCourses);
+      const courses: Course[] = filteredCourses;
       console.log("aiService: Found courses:", courses.length);
 
       // Get AI recommendations if we have courses
