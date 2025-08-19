@@ -55,7 +55,7 @@ export const AIRecommendations: React.FC<AIRecommendationsProps> = ({
       </h3>
 
       <div className="space-y-4">
-        {recommendations.slice(0, 3).map((rec, index) => (
+        {recommendations.map((rec, index) => (
           <div
             key={rec.course.id}
             className="bg-white rounded-lg p-4 border border-blue-100 hover:border-blue-300 transition-colors cursor-pointer"
@@ -98,14 +98,6 @@ export const AIRecommendations: React.FC<AIRecommendationsProps> = ({
           </div>
         ))}
       </div>
-
-      {recommendations.length > 3 && (
-        <div className="mt-4 text-center">
-          <button className="text-blue-600 hover:text-blue-800 text-sm font-medium">
-            View {recommendations.length - 3} more recommendations
-          </button>
-        </div>
-      )}
     </div>
   );
 };

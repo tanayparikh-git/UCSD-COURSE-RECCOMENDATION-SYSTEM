@@ -91,7 +91,7 @@ class AIService {
 
       // Get AI recommendations if we have courses
       let recommendations: AIRecommendation[] = [];
-      if (courses.length > 0 && query.trim()) {
+      if (query.trim()) {
         try {
           // Skip AI recommendations for now since backend isn't deployed
           console.log("Skipping AI recommendations - backend not deployed");
@@ -419,6 +419,61 @@ class AIService {
         },
         score: 0.87,
         reason: `Great follow-up to "${query}" - organismal biology`,
+      });
+    }
+    
+    // Handle specific course code searches
+    if (searchTerm.includes('econ 1') || searchTerm.includes('econ1')) {
+      recommendations.push({
+        course: {
+          id: "9",
+          course_code: "ECON 1",
+          course_name: "Principles of Microeconomics",
+          course_units: "4",
+          course_description: "Introduction to microeconomic principles including supply and demand, market structures, and consumer behavior.",
+          prerequisites: "None",
+        },
+        score: 0.99,
+        reason: `Exact match for "${query}"`,
+      });
+    } else if (searchTerm.includes('econ 2') || searchTerm.includes('econ2')) {
+      recommendations.push({
+        course: {
+          id: "10",
+          course_code: "ECON 2",
+          course_name: "Principles of Macroeconomics",
+          course_units: "4",
+          course_description: "Introduction to macroeconomic principles including GDP, inflation, unemployment, and fiscal policy.",
+          prerequisites: "ECON 1",
+        },
+        score: 0.99,
+        reason: `Exact match for "${query}"`,
+      });
+    } else if (searchTerm.includes('cse 8a') || searchTerm.includes('cse8a')) {
+      recommendations.push({
+        course: {
+          id: "1",
+          course_code: "CSE 8A",
+          course_name: "Introduction to Computer Science: Java (I)",
+          course_units: "4",
+          course_description: "Introduction to computer programming in Java. Covers fundamental programming concepts including variables, control structures, methods, and arrays.",
+          prerequisites: "None",
+        },
+        score: 0.99,
+        reason: `Exact match for "${query}"`,
+      });
+    } else if (searchTerm.includes('math 20a') || searchTerm.includes('math20a')) {
+      recommendations.push({
+        course: {
+          id: "3",
+          course_code: "MATH 20A",
+          course_name: "Calculus for Science and Engineering",
+          course_units: "4",
+          course_description: "Differential calculus of functions of one variable. Applications to science and engineering.",
+          prerequisites: "MATH 4C or MATH 10A or MATH 20A",
+        },
+        score: 0.99,
+        reason: `Exact match for "${query}"`,
       });
     }
     
