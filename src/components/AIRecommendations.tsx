@@ -19,7 +19,7 @@ export const AIRecommendations: React.FC<AIRecommendationsProps> = ({
           <div className="w-6 h-6 mr-2">
             <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-blue-600"></div>
           </div>
-          AI Recommendations
+          Recommendations
         </h3>
         <div className="space-y-3">
           {[1, 2, 3].map((i) => (
@@ -51,7 +51,7 @@ export const AIRecommendations: React.FC<AIRecommendationsProps> = ({
             clipRule="evenodd"
           />
         </svg>
-        AI-Powered Recommendations
+        Recommendations
       </h3>
 
       <div className="space-y-4">

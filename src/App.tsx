@@ -207,22 +207,12 @@ export function App() {
           </div>
         </div>
 
-        {/* AI Recommendations - Main Search Results */}
+        {/* Recommendations - Main Search Results */}
         {searchQuery && (
           <AIRecommendations
             recommendations={recommendations}
             isLoading={isSearching}
             onCourseClick={openCourseModal}
-          />
-        )}
-
-        {/* Show course grid only when no search query */}
-        {!searchQuery && (
-          <CourseGrid
-            courses={courses}
-            onViewDetails={openCourseModal}
-            favorites={userFavorites}
-            isLoading={isSearching}
           />
         )}
 
