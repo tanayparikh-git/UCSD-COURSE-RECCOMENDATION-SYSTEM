@@ -67,6 +67,10 @@ class AIService {
     const searchWords = searchTerm.split(/\s+/).filter(word => word.length > 0);
     const results: AIRecommendation[] = [];
 
+    // First pass: find exact matches and other matches
+    const exactMatches: AIRecommendation[] = [];
+    const otherMatches: AIRecommendation[] = [];
+
     for (const course of courseDatabase) {
       let score = 0;
       let reason = "";
@@ -81,7 +85,21 @@ class AIService {
         score = 1.0;
         reason = `Exact match for course code "${query}"`;
         matchType = "exact_code";
+        exactMatches.push({
+          course: {
+            id: course.id,
+            course_code: course.course_code,
+            course_name: course.course_name,
+            course_units: course.course_units,
+            course_description: course.course_description,
+            prerequisites: course.prerequisites,
+          },
+          score,
+          reason,
+        });
+        continue; // Skip other scoring for exact matches
       }
+      
       // Partial course code match
       else if (cleanCourseCode.includes(cleanSearchTerm) || cleanSearchTerm.includes(cleanCourseCode)) {
         score = 0.9;
@@ -138,7 +156,7 @@ class AIService {
       }
 
       if (score > 0) {
-        results.push({
+        otherMatches.push({
           course: {
             id: course.id,
             course_code: course.course_code,
@@ -153,10 +171,84 @@ class AIService {
       }
     }
 
-    // Sort by score (highest first) and return top 5
-    return results
+    // If we have exact matches, find similar courses based on description
+    if (exactMatches.length > 0) {
+      const exactMatch = exactMatches[0]; // Take the first exact match
+      const similarCourses = this.findSimilarCourses(exactMatch.course, otherMatches);
+      
+      // Return exact match + similar courses
+      return [exactMatch, ...similarCourses].slice(0, 5);
+    }
+
+    // If no exact matches, return regular results
+    return otherMatches
       .sort((a, b) => b.score - a.score)
       .slice(0, 5);
+  }
+
+  // Find courses similar to the exact match based on description similarity
+  private findSimilarCourses(exactMatchCourse: Course, otherMatches: AIRecommendation[]): AIRecommendation[] {
+    const exactMatchDesc = exactMatchCourse.course_description.toLowerCase();
+    const exactMatchWords = this.extractKeywords(exactMatchDesc);
+    
+    // Calculate similarity scores for other courses
+    const coursesWithSimilarity = otherMatches.map(match => {
+      const similarityScore = this.calculateDescriptionSimilarity(
+        exactMatchWords,
+        match.course.course_description.toLowerCase()
+      );
+      
+      return {
+        ...match,
+        score: similarityScore,
+        reason: `Similar to ${exactMatchCourse.course_code}: ${match.reason}`,
+      };
+    });
+
+    // Sort by similarity score and return top 4
+    return coursesWithSimilarity
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 4);
+  }
+
+  // Extract keywords from description (simple approach)
+  private extractKeywords(description: string): string[] {
+    // Remove common words and extract meaningful terms
+    const commonWords = new Set([
+      'the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'of', 'with', 'by',
+      'is', 'are', 'was', 'were', 'be', 'been', 'being', 'have', 'has', 'had', 'do', 'does', 'did',
+      'will', 'would', 'could', 'should', 'may', 'might', 'can', 'must', 'shall',
+      'this', 'that', 'these', 'those', 'i', 'you', 'he', 'she', 'it', 'we', 'they',
+      'me', 'him', 'her', 'us', 'them', 'my', 'your', 'his', 'her', 'its', 'our', 'their',
+      'including', 'including', 'course', 'courses', 'study', 'studies', 'introduction', 'advanced',
+      'basic', 'fundamental', 'principles', 'theory', 'practical', 'application', 'analysis',
+      'design', 'development', 'research', 'methods', 'techniques', 'systems', 'processes'
+    ]);
+
+    const words = description
+      .toLowerCase()
+      .replace(/[^\w\s]/g, ' ')
+      .split(/\s+/)
+      .filter(word => word.length > 2 && !commonWords.has(word));
+
+    // Return unique words
+    return [...new Set(words)];
+  }
+
+  // Calculate similarity between two descriptions
+  private calculateDescriptionSimilarity(keywords1: string[], description2: string): number {
+    if (keywords1.length === 0) return 0;
+
+    // Count how many keywords from the exact match appear in the other description
+    const matchingKeywords = keywords1.filter(keyword => 
+      description2.includes(keyword)
+    );
+
+    // Calculate similarity score (0-1)
+    const similarityScore = matchingKeywords.length / keywords1.length;
+
+    // Boost score for courses that share more keywords
+    return Math.min(0.95, similarityScore + (matchingKeywords.length * 0.1));
   }
 
   // Get subject match score for broader searches
