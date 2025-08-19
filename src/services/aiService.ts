@@ -68,8 +68,12 @@ class AIService {
         const courseName = course.course_name?.toLowerCase() || '';
         const courseDesc = course.course_description?.toLowerCase() || '';
         
+        // Remove spaces for course code matching
+        const cleanSearchTerm = searchTerm.replace(/\s+/g, '');
+        const cleanCourseCode = courseCode.replace(/\s+/g, '');
+        
         // Exact course code match (e.g., "econ 1" matches "ECON 1")
-        if (courseCode.includes(searchTerm.replace(/\s+/g, ''))) {
+        if (cleanCourseCode.includes(cleanSearchTerm) || cleanSearchTerm.includes(cleanCourseCode)) {
           return true;
         }
         
@@ -185,7 +189,7 @@ class AIService {
     const recommendations: AIRecommendation[] = [];
     
     // Add relevant courses based on search term
-    if (searchTerm.includes('computer') || searchTerm.includes('cse') || searchTerm.includes('programming')) {
+    if (searchTerm.includes('computer') || searchTerm.includes('cse') || searchTerm.includes('programming') || searchTerm.includes('cs')) {
       recommendations.push({
         course: {
           id: "1",
@@ -210,6 +214,58 @@ class AIService {
         },
         score: 0.90,
         reason: `Great follow-up to "${query}" - advanced programming concepts`,
+      });
+      
+      recommendations.push({
+        course: {
+          id: "3",
+          course_code: "CSE 12",
+          course_name: "Basic Data Structures and Object-Oriented Design",
+          course_units: "4",
+          course_description: "Implementation of basic data structures and object-oriented design principles.",
+          prerequisites: "CSE 8B or CSE 11",
+        },
+        score: 0.88,
+        reason: `Essential for "${query}" - data structures and OOP`,
+      });
+      
+      recommendations.push({
+        course: {
+          id: "4",
+          course_code: "CSE 15L",
+          course_name: "Software Tools and Techniques Laboratory",
+          course_units: "2",
+          course_description: "Hands-on experience with software development tools and techniques.",
+          prerequisites: "CSE 8B or CSE 11",
+        },
+        score: 0.85,
+        reason: `Practical skills for "${query}" - development tools`,
+      });
+      
+      recommendations.push({
+        course: {
+          id: "5",
+          course_code: "CSE 20",
+          course_name: "Discrete Mathematics",
+          course_units: "4",
+          course_description: "Mathematical foundations for computer science including logic, sets, and combinatorics.",
+          prerequisites: "MATH 20A",
+        },
+        score: 0.87,
+        reason: `Mathematical foundation for "${query}" - discrete math`,
+      });
+      
+      recommendations.push({
+        course: {
+          id: "6",
+          course_code: "CSE 21",
+          course_name: "Mathematics for Algorithms and Systems",
+          course_units: "4",
+          course_description: "Mathematical concepts essential for algorithm analysis and system design.",
+          prerequisites: "CSE 20, MATH 20B",
+        },
+        score: 0.84,
+        reason: `Advanced math for "${query}" - algorithm analysis`,
       });
     }
     
@@ -266,6 +322,45 @@ class AIService {
         },
         score: 0.89,
         reason: `Great follow-up to "${query}" - macroeconomic perspective`,
+      });
+      
+      recommendations.push({
+        course: {
+          id: "11",
+          course_code: "ECON 3",
+          course_name: "Intermediate Microeconomics",
+          course_units: "4",
+          course_description: "Advanced microeconomic theory including consumer choice, production theory, and market equilibrium.",
+          prerequisites: "ECON 1, MATH 20A",
+        },
+        score: 0.85,
+        reason: `Advanced course for "${query}" - intermediate theory`,
+      });
+      
+      recommendations.push({
+        course: {
+          id: "12",
+          course_code: "ECON 4",
+          course_name: "Intermediate Macroeconomics",
+          course_units: "4",
+          course_description: "Advanced macroeconomic theory including economic growth, business cycles, and monetary policy.",
+          prerequisites: "ECON 2, MATH 20A",
+        },
+        score: 0.83,
+        reason: `Advanced course for "${query}" - macroeconomic theory`,
+      });
+      
+      recommendations.push({
+        course: {
+          id: "13",
+          course_code: "ECON 100A",
+          course_name: "Microeconomic Analysis",
+          course_units: "4",
+          course_description: "Upper-division microeconomic analysis with mathematical rigor and advanced applications.",
+          prerequisites: "ECON 3, MATH 20B",
+        },
+        score: 0.80,
+        reason: `Upper-division course for "${query}" - advanced analysis`,
       });
     }
     

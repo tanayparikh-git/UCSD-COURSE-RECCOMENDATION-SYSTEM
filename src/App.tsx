@@ -133,7 +133,7 @@ export function App() {
           <SearchBar onSearch={handleSearch} />
         </div>
 
-        {/* AI Recommendations */}
+        {/* AI Recommendations - Main Search Results */}
         {searchQuery && (
           <AIRecommendations
             recommendations={recommendations}
@@ -142,13 +142,15 @@ export function App() {
           />
         )}
 
-        {/* Course Grid */}
-        <CourseGrid
-          courses={courses}
-          onViewDetails={openCourseModal}
-          favorites={favorites}
-          isLoading={isSearching}
-        />
+        {/* Show course grid only when no search query */}
+        {!searchQuery && (
+          <CourseGrid
+            courses={courses}
+            onViewDetails={openCourseModal}
+            favorites={favorites}
+            isLoading={isSearching}
+          />
+        )}
 
         {/* Course Modal with Similar Courses */}
         {selectedCourse && (
