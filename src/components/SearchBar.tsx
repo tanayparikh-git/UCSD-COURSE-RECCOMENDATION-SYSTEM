@@ -24,7 +24,7 @@ export function SearchBar({ onSearch }: SearchBarProps) {
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search for courses (e.g., 'computer science', 'math', 'biology')..."
+          placeholder="Type here (e.g., game theory, bild1, art...)"
           className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#003B5C] focus:border-transparent text-lg"
         />
       </div>
