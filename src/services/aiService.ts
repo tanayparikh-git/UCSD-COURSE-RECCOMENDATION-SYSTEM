@@ -21,7 +21,9 @@ export interface SearchResult {
 }
 
 class AIService {
-  private baseUrl = "http://localhost:5000"; // Python backend URL
+  private baseUrl = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000"; // Python backend URL
+  private supabaseUrl = import.meta.env.VITE_SUPABASE_URL || "https://snrkourgqlpkketqlgte.supabase.co/rest/v1";
+  private supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY || "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNucmtvdXJncWxwa2tldHFsZ3RlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTU1NTI0MzQsImV4cCI6MjA3MTEyODQzNH0.uXuVaTiO-vIQzy3TQvg68HRMeRgSosR23qVWHYHwGw0";
 
   // Search courses with AI recommendations
   async searchCourses(
@@ -30,20 +32,16 @@ class AIService {
   ): Promise<SearchResult> {
     try {
       // First, get courses from Supabase
-      const supabaseUrl = "https://snrkourgqlpkketqlgte.supabase.co/rest/v1";
-      const supabaseKey =
-        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNucmtvdXJncWxwa2tldHFsZ3RlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTU1NTI0MzQsImV4cCI6MjA3MTEyODQzNH0.uXuVaTiO-vIQzy3TQvg68HRMeRgSosR23qVWHYHwGw0";
-
       const searchParams = new URLSearchParams({
         select: "*",
         or: `course_name.ilike.%${query}%,course_code.ilike.%${query}%,course_description.ilike.%${query}%`,
         limit: limit.toString(),
       });
 
-      const response = await fetch(`${supabaseUrl}/courses?${searchParams}`, {
+      const response = await fetch(`${this.supabaseUrl}/courses?${searchParams}`, {
         headers: {
-          apikey: supabaseKey,
-          Authorization: `Bearer ${supabaseKey}`,
+          apikey: this.supabaseKey,
+          Authorization: `Bearer ${this.supabaseKey}`,
         },
       });
 
