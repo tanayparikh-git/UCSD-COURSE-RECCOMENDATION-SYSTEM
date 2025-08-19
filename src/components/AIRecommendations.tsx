@@ -61,13 +61,20 @@ export const AIRecommendations: React.FC<AIRecommendationsProps> = ({
             className="bg-white rounded-lg p-4 border border-blue-100 hover:border-blue-300 transition-colors cursor-pointer"
             onClick={() => onCourseClick(rec.course)}
           >
-            <div className="mb-2">
-              <h4 className="font-medium text-gray-900">
-                {rec.course.course_code}: {rec.course.course_name}
-              </h4>
-              <p className="text-sm text-gray-600 mt-1">
-                {rec.course.course_units} units
-              </p>
+            <div className="flex justify-between items-start mb-2">
+              <div className="flex-1">
+                <h4 className="font-medium text-gray-900">
+                  {rec.course.course_code}: {rec.course.course_name}
+                </h4>
+                <p className="text-sm text-gray-600 mt-1">
+                  {rec.course.course_units} units
+                </p>
+              </div>
+              <div className="flex items-center">
+                <div className="bg-blue-100 text-blue-800 text-xs font-medium px-2 py-1 rounded-full">
+                  {Math.round(rec.score * 100)}% match
+                </div>
+              </div>
             </div>
 
             <p className="text-sm text-gray-700 line-clamp-2">
