@@ -6918,4 +6918,924 @@ export const courseDatabase: CourseData[] = [
       "Environmental research including research methods, environmental analysis, and environmental research design.",
     prerequisites: "ENVS 1",
   },
+
+  // Additional Turkish Language Courses
+  {
+    id: "751",
+    course_code: "TURK 1",
+    course_name: "Elementary Turkish I",
+    course_units: "4",
+    course_description:
+      "Elementary Turkish I including basic grammar, vocabulary, and reading skills for beginners.",
+    prerequisites: "None",
+  },
+  {
+    id: "752",
+    course_code: "TURK 2",
+    course_name: "Elementary Turkish II",
+    course_units: "4",
+    course_description:
+      "Elementary Turkish II including intermediate grammar, vocabulary, and reading skills.",
+    prerequisites: "TURK 1",
+  },
+  {
+    id: "753",
+    course_code: "TURK 3",
+    course_name: "Intermediate Turkish I",
+    course_units: "4",
+    course_description:
+      "Intermediate Turkish I including advanced grammar, reading comprehension, and cultural studies.",
+    prerequisites: "TURK 2",
+  },
+  {
+    id: "754",
+    course_code: "TURK 4",
+    course_name: "Intermediate Turkish II",
+    course_units: "4",
+    course_description:
+      "Intermediate Turkish II including advanced reading, composition, and Turkish literature.",
+    prerequisites: "TURK 3",
+  },
+  {
+    id: "755",
+    course_code: "TURK 5",
+    course_name: "Advanced Turkish",
+    course_units: "4",
+    course_description:
+      "Advanced Turkish including advanced reading, literary analysis, and cultural studies.",
+    prerequisites: "TURK 4",
+  },
+  {
+    id: "756",
+    course_code: "TURK 100",
+    course_name: "Turkish Literature",
+    course_units: "4",
+    course_description:
+      "Turkish literature including major works, literary analysis, and cultural context.",
+    prerequisites: "TURK 5",
+  },
+  {
+    id: "757",
+    course_code: "TURK 101",
+    course_name: "Modern Turkish",
+    course_units: "4",
+    course_description:
+      "Modern Turkish including contemporary Turkish, modern literature, and current events.",
+    prerequisites: "TURK 4",
+  },
+  {
+    id: "758",
+    course_code: "TURK 102",
+    course_name: "Ottoman Turkish",
+    course_units: "4",
+    course_description:
+      "Ottoman Turkish including historical Turkish, classical texts, and historical language study.",
+    prerequisites: "TURK 3",
+  },
+  {
+    id: "759",
+    course_code: "TURK 103",
+    course_name: "Turkish Linguistics",
+    course_units: "4",
+    course_description:
+      "Turkish linguistics including Turkish phonology, morphology, syntax, and historical linguistics.",
+    prerequisites: "LING 1, TURK 4",
+  },
+  {
+    id: "760",
+    course_code: "TURK 104",
+    course_name: "Turkish Translation",
+    course_units: "4",
+    course_description:
+      "Turkish translation including translation theory, techniques, and practical translation exercises.",
+    prerequisites: "TURK 5",
+  },
+
+  // Additional Hindi Language Courses
+  {
+    id: "761",
+    course_code: "HIND 1",
+    course_name: "Elementary Hindi I",
+    course_units: "4",
+    course_description:
+      "Elementary Hindi I including basic grammar, vocabulary, and reading skills for beginners.",
+    prerequisites: "None",
+  },
+  {
+    id: "762",
+    course_code: "HIND 2",
+    course_name: "Elementary Hindi II",
+    course_units: "4",
+    course_description:
+      "Elementary Hindi II including intermediate grammar, vocabulary, and reading skills.",
+    prerequisites: "HIND 1",
+  },
+  {
+    id: "763",
+    course_code: "HIND 3",
+    course_name: "Intermediate Hindi I",
+    course_units: "4",
+    course_description:
+      "Intermediate Hindi I including advanced grammar, reading comprehension, and cultural studies.",
+    prerequisites: "HIND 2",
+  },
+  {
+    id: "764",
+    course_code: "HIND 4",
+    course_name: "Intermediate Hindi II",
+    course_units: "4",
+    course_description:
+      "Intermediate Hindi II including advanced reading, composition, and Hindi literature.",
+    prerequisites: "HIND 3",
+  },
+  {
+    id: "765",
+    course_code: "HIND 5",
+    course_name: "Advanced Hindi",
+    course_units: "4",
+    course_description:
+      "Advanced Hindi including advanced reading, literary analysis, and cultural studies.",
+    prerequisites: "HIND 4",
+  },
+  {
+    id: "766",
+    course_code: "HIND 100",
+    course_name: "Hindi Literature",
+    course_units: "4",
+    course_description:
+      "Hindi literature including major works, literary analysis, and cultural context.",
+    prerequisites: "HIND 5",
+  },
+  {
+    id: "767",
+    course_code: "HIND 101",
+    course_name: "Modern Hindi",
+    course_units: "4",
+    course_description:
+      "Modern Hindi including contemporary Hindi, modern literature, and current events.",
+    prerequisites: "HIND 4",
+  },
+  {
+    id: "768",
+    course_code: "HIND 102",
+    course_name: "Classical Hindi",
+    course_units: "4",
+    course_description:
+      "Classical Hindi including classical texts, historical language study, and ancient literature.",
+    prerequisites: "HIND 3",
+  },
+  {
+    id: "769",
+    course_code: "HIND 103",
+    course_name: "Hindi Linguistics",
+    course_units: "4",
+    course_description:
+      "Hindi linguistics including Hindi phonology, morphology, syntax, and historical linguistics.",
+    prerequisites: "LING 1, HIND 4",
+  },
+  {
+    id: "770",
+    course_code: "HIND 104",
+    course_name: "Hindi Translation",
+    course_units: "4",
+    course_description:
+      "Hindi translation including translation theory, techniques, and practical translation exercises.",
+    prerequisites: "HIND 5",
+  },
+
+  // Additional Botany Courses
+  {
+    id: "771",
+    course_code: "BOT 1",
+    course_name: "Introduction to Botany",
+    course_units: "4",
+    course_description:
+      "Introduction to botany including plant biology, plant structure, and plant diversity.",
+    prerequisites: "None",
+  },
+  {
+    id: "772",
+    course_code: "BOT 2",
+    course_name: "Plant Anatomy",
+    course_units: "4",
+    course_description:
+      "Plant anatomy including plant structure, tissue organization, and anatomical features.",
+    prerequisites: "BOT 1",
+  },
+  {
+    id: "773",
+    course_code: "BOT 3",
+    course_name: "Plant Physiology",
+    course_units: "4",
+    course_description:
+      "Plant physiology including plant metabolism, growth processes, and physiological functions.",
+    prerequisites: "BOT 1",
+  },
+  {
+    id: "774",
+    course_code: "BOT 4",
+    course_name: "Plant Taxonomy",
+    course_units: "4",
+    course_description:
+      "Plant taxonomy including plant classification, identification, and systematic botany.",
+    prerequisites: "BOT 1",
+  },
+  {
+    id: "775",
+    course_code: "BOT 5",
+    course_name: "Plant Ecology",
+    course_units: "4",
+    course_description:
+      "Plant ecology including plant-environment interactions, ecological processes, and plant communities.",
+    prerequisites: "BOT 1",
+  },
+  {
+    id: "776",
+    course_code: "BOT 100",
+    course_name: "Plant Genetics",
+    course_units: "4",
+    course_description:
+      "Plant genetics including plant breeding, genetic variation, and molecular genetics.",
+    prerequisites: "BOT 1",
+  },
+  {
+    id: "777",
+    course_code: "BOT 101",
+    course_name: "Plant Pathology",
+    course_units: "4",
+    course_description:
+      "Plant pathology including plant diseases, disease management, and plant health.",
+    prerequisites: "BOT 1",
+  },
+  {
+    id: "778",
+    course_code: "BOT 102",
+    course_name: "Plant Evolution",
+    course_units: "4",
+    course_description:
+      "Plant evolution including evolutionary processes, plant phylogeny, and evolutionary history.",
+    prerequisites: "BOT 1",
+  },
+  {
+    id: "779",
+    course_code: "BOT 103",
+    course_name: "Plant Biotechnology",
+    course_units: "4",
+    course_description:
+      "Plant biotechnology including genetic engineering, biotechnological applications, and plant improvement.",
+    prerequisites: "BOT 1",
+  },
+  {
+    id: "780",
+    course_code: "BOT 104",
+    course_name: "Plant Conservation",
+    course_units: "4",
+    course_description:
+      "Plant conservation including conservation biology, endangered species, and conservation strategies.",
+    prerequisites: "BOT 1",
+  },
+
+  // Additional Zoology Courses
+  {
+    id: "781",
+    course_code: "ZOOL 1",
+    course_name: "Introduction to Zoology",
+    course_units: "4",
+    course_description:
+      "Introduction to zoology including animal biology, animal diversity, and animal structure.",
+    prerequisites: "None",
+  },
+  {
+    id: "782",
+    course_code: "ZOOL 2",
+    course_name: "Animal Anatomy",
+    course_units: "4",
+    course_description:
+      "Animal anatomy including animal structure, tissue organization, and anatomical features.",
+    prerequisites: "ZOOL 1",
+  },
+  {
+    id: "783",
+    course_code: "ZOOL 3",
+    course_name: "Animal Physiology",
+    course_units: "4",
+    course_description:
+      "Animal physiology including animal metabolism, physiological processes, and organ systems.",
+    prerequisites: "ZOOL 1",
+  },
+  {
+    id: "784",
+    course_code: "ZOOL 4",
+    course_name: "Animal Taxonomy",
+    course_units: "4",
+    course_description:
+      "Animal taxonomy including animal classification, identification, and systematic zoology.",
+    prerequisites: "ZOOL 1",
+  },
+  {
+    id: "785",
+    course_code: "ZOOL 5",
+    course_name: "Animal Ecology",
+    course_units: "4",
+    course_description:
+      "Animal ecology including animal-environment interactions, ecological processes, and animal communities.",
+    prerequisites: "ZOOL 1",
+  },
+  {
+    id: "786",
+    course_code: "ZOOL 100",
+    course_name: "Animal Behavior",
+    course_units: "4",
+    course_description:
+      "Animal behavior including behavioral ecology, ethology, and behavioral patterns.",
+    prerequisites: "ZOOL 1",
+  },
+  {
+    id: "787",
+    course_code: "ZOOL 101",
+    course_name: "Animal Genetics",
+    course_units: "4",
+    course_description:
+      "Animal genetics including genetic variation, breeding, and molecular genetics.",
+    prerequisites: "ZOOL 1",
+  },
+  {
+    id: "788",
+    course_code: "ZOOL 102",
+    course_name: "Animal Evolution",
+    course_units: "4",
+    course_description:
+      "Animal evolution including evolutionary processes, phylogeny, and evolutionary history.",
+    prerequisites: "ZOOL 1",
+  },
+  {
+    id: "789",
+    course_code: "ZOOL 103",
+    course_name: "Animal Conservation",
+    course_units: "4",
+    course_description:
+      "Animal conservation including conservation biology, endangered species, and conservation strategies.",
+    prerequisites: "ZOOL 1",
+  },
+  {
+    id: "790",
+    course_code: "ZOOL 104",
+    course_name: "Animal Research",
+    course_units: "4",
+    course_description:
+      "Animal research including research methods, experimental design, and zoological research.",
+    prerequisites: "ZOOL 1",
+  },
+
+  // Additional Graphic Design Courses
+  {
+    id: "791",
+    course_code: "DESN 1",
+    course_name: "Introduction to Graphic Design",
+    course_units: "4",
+    course_description:
+      "Introduction to graphic design including design principles, visual communication, and design fundamentals.",
+    prerequisites: "None",
+  },
+  {
+    id: "792",
+    course_code: "DESN 2",
+    course_name: "Typography",
+    course_units: "4",
+    course_description:
+      "Typography including type design, letterforms, and typographic principles.",
+    prerequisites: "DESN 1",
+  },
+  {
+    id: "793",
+    course_code: "DESN 3",
+    course_name: "Digital Design",
+    course_units: "4",
+    course_description:
+      "Digital design including digital tools, software applications, and digital design techniques.",
+    prerequisites: "DESN 1",
+  },
+  {
+    id: "794",
+    course_code: "DESN 4",
+    course_name: "Brand Design",
+    course_units: "4",
+    course_description:
+      "Brand design including brand identity, logo design, and brand development.",
+    prerequisites: "DESN 1",
+  },
+  {
+    id: "795",
+    course_code: "DESN 5",
+    course_name: "Web Design",
+    course_units: "4",
+    course_description:
+      "Web design including web layout, user interface design, and web development.",
+    prerequisites: "DESN 1",
+  },
+  {
+    id: "796",
+    course_code: "DESN 100",
+    course_name: "Advanced Graphic Design",
+    course_units: "4",
+    course_description:
+      "Advanced graphic design including advanced techniques, creative expression, and design projects.",
+    prerequisites: "DESN 1",
+  },
+  {
+    id: "797",
+    course_code: "DESN 101",
+    course_name: "Design History",
+    course_units: "4",
+    course_description:
+      "Design history including historical design movements, design evolution, and design theory.",
+    prerequisites: "DESN 1",
+  },
+  {
+    id: "798",
+    course_code: "DESN 102",
+    course_name: "Design Theory",
+    course_units: "4",
+    course_description:
+      "Design theory including design principles, theoretical approaches, and design analysis.",
+    prerequisites: "DESN 1",
+  },
+  {
+    id: "799",
+    course_code: "DESN 103",
+    course_name: "Design Portfolio",
+    course_units: "4",
+    course_description:
+      "Design portfolio including portfolio development, presentation skills, and professional preparation.",
+    prerequisites: "DESN 1",
+  },
+  {
+    id: "800",
+    course_code: "DESN 104",
+    course_name: "Design Research",
+    course_units: "4",
+    course_description:
+      "Design research including research methods, design analysis, and design research projects.",
+    prerequisites: "DESN 1",
+  },
+
+  // Additional Animation Courses
+  {
+    id: "801",
+    course_code: "ANIM 1",
+    course_name: "Introduction to Animation",
+    course_units: "4",
+    course_description:
+      "Introduction to animation including animation principles, motion, and animation fundamentals.",
+    prerequisites: "None",
+  },
+  {
+    id: "802",
+    course_code: "ANIM 2",
+    course_name: "2D Animation",
+    course_units: "4",
+    course_description:
+      "2D animation including traditional animation, digital 2D, and 2D techniques.",
+    prerequisites: "ANIM 1",
+  },
+  {
+    id: "803",
+    course_code: "ANIM 3",
+    course_name: "3D Animation",
+    course_units: "4",
+    course_description:
+      "3D animation including 3D modeling, 3D animation software, and 3D techniques.",
+    prerequisites: "ANIM 1",
+  },
+  {
+    id: "804",
+    course_code: "ANIM 4",
+    course_name: "Character Animation",
+    course_units: "4",
+    course_description:
+      "Character animation including character design, character movement, and character development.",
+    prerequisites: "ANIM 1",
+  },
+  {
+    id: "805",
+    course_code: "ANIM 5",
+    course_name: "Storyboarding",
+    course_units: "4",
+    course_description:
+      "Storyboarding including visual storytelling, storyboard development, and narrative design.",
+    prerequisites: "ANIM 1",
+  },
+  {
+    id: "806",
+    course_code: "ANIM 100",
+    course_name: "Advanced Animation",
+    course_units: "4",
+    course_description:
+      "Advanced animation including advanced techniques, complex animation, and animation projects.",
+    prerequisites: "ANIM 1",
+  },
+  {
+    id: "807",
+    course_code: "ANIM 101",
+    course_name: "Animation History",
+    course_units: "4",
+    course_description:
+      "Animation history including historical animation, animation evolution, and animation theory.",
+    prerequisites: "ANIM 1",
+  },
+  {
+    id: "808",
+    course_code: "ANIM 102",
+    course_name: "Animation Theory",
+    course_units: "4",
+    course_description:
+      "Animation theory including animation principles, theoretical approaches, and animation analysis.",
+    prerequisites: "ANIM 1",
+  },
+  {
+    id: "809",
+    course_code: "ANIM 103",
+    course_name: "Animation Production",
+    course_units: "4",
+    course_description:
+      "Animation production including production pipeline, project management, and animation workflow.",
+    prerequisites: "ANIM 1",
+  },
+  {
+    id: "810",
+    course_code: "ANIM 104",
+    course_name: "Animation Portfolio",
+    course_units: "4",
+    course_description:
+      "Animation portfolio including portfolio development, demo reel creation, and professional preparation.",
+    prerequisites: "ANIM 1",
+  },
+
+  // Additional Journalism Courses
+  {
+    id: "811",
+    course_code: "JOUR 1",
+    course_name: "Introduction to Journalism",
+    course_units: "4",
+    course_description:
+      "Introduction to journalism including news writing, journalistic principles, and media ethics.",
+    prerequisites: "None",
+  },
+  {
+    id: "812",
+    course_code: "JOUR 2",
+    course_name: "News Writing",
+    course_units: "4",
+    course_description:
+      "News writing including news stories, journalistic writing, and news reporting.",
+    prerequisites: "JOUR 1",
+  },
+  {
+    id: "813",
+    course_code: "JOUR 3",
+    course_name: "Feature Writing",
+    course_units: "4",
+    course_description:
+      "Feature writing including feature stories, long-form journalism, and narrative writing.",
+    prerequisites: "JOUR 1",
+  },
+  {
+    id: "814",
+    course_code: "JOUR 4",
+    course_name: "Investigative Journalism",
+    course_units: "4",
+    course_description:
+      "Investigative journalism including investigative reporting, research methods, and in-depth journalism.",
+    prerequisites: "JOUR 1",
+  },
+  {
+    id: "815",
+    course_code: "JOUR 5",
+    course_name: "Digital Journalism",
+    course_units: "4",
+    course_description:
+      "Digital journalism including online journalism, multimedia journalism, and digital media.",
+    prerequisites: "JOUR 1",
+  },
+  {
+    id: "816",
+    course_code: "JOUR 100",
+    course_name: "Broadcast Journalism",
+    course_units: "4",
+    course_description:
+      "Broadcast journalism including television journalism, radio journalism, and broadcast reporting.",
+    prerequisites: "JOUR 1",
+  },
+  {
+    id: "817",
+    course_code: "JOUR 101",
+    course_name: "Photojournalism",
+    course_units: "4",
+    course_description:
+      "Photojournalism including news photography, documentary photography, and visual journalism.",
+    prerequisites: "JOUR 1",
+  },
+  {
+    id: "818",
+    course_code: "JOUR 102",
+    course_name: "Media Law",
+    course_units: "4",
+    course_description:
+      "Media law including legal issues, media regulations, and journalistic law.",
+    prerequisites: "JOUR 1",
+  },
+  {
+    id: "819",
+    course_code: "JOUR 103",
+    course_name: "Journalism Ethics",
+    course_units: "4",
+    course_description:
+      "Journalism ethics including ethical principles, media ethics, and journalistic standards.",
+    prerequisites: "JOUR 1",
+  },
+  {
+    id: "820",
+    course_code: "JOUR 104",
+    course_name: "Journalism Research",
+    course_units: "4",
+    course_description:
+      "Journalism research including research methods, media research, and journalistic research.",
+    prerequisites: "JOUR 1",
+  },
+
+  // Additional Hospitality Management Courses
+  {
+    id: "821",
+    course_code: "HOSP 1",
+    course_name: "Introduction to Hospitality Management",
+    course_units: "4",
+    course_description:
+      "Introduction to hospitality management including hospitality industry, service management, and hospitality operations.",
+    prerequisites: "None",
+  },
+  {
+    id: "822",
+    course_code: "HOSP 2",
+    course_name: "Hotel Management",
+    course_units: "4",
+    course_description:
+      "Hotel management including hotel operations, guest services, and hotel administration.",
+    prerequisites: "HOSP 1",
+  },
+  {
+    id: "823",
+    course_code: "HOSP 3",
+    course_name: "Restaurant Management",
+    course_units: "4",
+    course_description:
+      "Restaurant management including food service operations, restaurant administration, and culinary management.",
+    prerequisites: "HOSP 1",
+  },
+  {
+    id: "824",
+    course_code: "HOSP 4",
+    course_name: "Event Management",
+    course_units: "4",
+    course_description:
+      "Event management including event planning, event coordination, and event production.",
+    prerequisites: "HOSP 1",
+  },
+  {
+    id: "825",
+    course_code: "HOSP 5",
+    course_name: "Tourism Management",
+    course_units: "4",
+    course_description:
+      "Tourism management including tourism industry, travel management, and tourism operations.",
+    prerequisites: "HOSP 1",
+  },
+  {
+    id: "826",
+    course_code: "HOSP 100",
+    course_name: "Hospitality Marketing",
+    course_units: "4",
+    course_description:
+      "Hospitality marketing including marketing strategies, customer relations, and hospitality promotion.",
+    prerequisites: "HOSP 1",
+  },
+  {
+    id: "827",
+    course_code: "HOSP 101",
+    course_name: "Hospitality Finance",
+    course_units: "4",
+    course_description:
+      "Hospitality finance including financial management, budgeting, and hospitality accounting.",
+    prerequisites: "HOSP 1",
+  },
+  {
+    id: "828",
+    course_code: "HOSP 102",
+    course_name: "Hospitality Law",
+    course_units: "4",
+    course_description:
+      "Hospitality law including legal issues, regulations, and hospitality legal matters.",
+    prerequisites: "HOSP 1",
+  },
+  {
+    id: "829",
+    course_code: "HOSP 103",
+    course_name: "Customer Service",
+    course_units: "4",
+    course_description:
+      "Customer service including service quality, customer relations, and service management.",
+    prerequisites: "HOSP 1",
+  },
+  {
+    id: "830",
+    course_code: "HOSP 104",
+    course_name: "Hospitality Technology",
+    course_units: "4",
+    course_description:
+      "Hospitality technology including technology applications, digital systems, and hospitality innovation.",
+    prerequisites: "HOSP 1",
+  },
+
+  // Additional Fashion Design Courses
+  {
+    id: "831",
+    course_code: "FASH 1",
+    course_name: "Introduction to Fashion Design",
+    course_units: "4",
+    course_description:
+      "Introduction to fashion design including design principles, fashion fundamentals, and design process.",
+    prerequisites: "None",
+  },
+  {
+    id: "832",
+    course_code: "FASH 2",
+    course_name: "Fashion Drawing",
+    course_units: "4",
+    course_description:
+      "Fashion drawing including fashion illustration, design sketching, and visual communication.",
+    prerequisites: "FASH 1",
+  },
+  {
+    id: "833",
+    course_code: "FASH 3",
+    course_name: "Pattern Making",
+    course_units: "4",
+    course_description:
+      "Pattern making including pattern development, garment construction, and technical design.",
+    prerequisites: "FASH 1",
+  },
+  {
+    id: "834",
+    course_code: "FASH 4",
+    course_name: "Fashion History",
+    course_units: "4",
+    course_description:
+      "Fashion history including historical fashion, fashion evolution, and cultural fashion.",
+    prerequisites: "FASH 1",
+  },
+  {
+    id: "835",
+    course_code: "FASH 5",
+    course_name: "Textile Design",
+    course_units: "4",
+    course_description:
+      "Textile design including fabric design, textile technology, and material development.",
+    prerequisites: "FASH 1",
+  },
+  {
+    id: "836",
+    course_code: "FASH 100",
+    course_name: "Advanced Fashion Design",
+    course_units: "4",
+    course_description:
+      "Advanced fashion design including advanced techniques, creative expression, and design projects.",
+    prerequisites: "FASH 1",
+  },
+  {
+    id: "837",
+    course_code: "FASH 101",
+    course_name: "Fashion Marketing",
+    course_units: "4",
+    course_description:
+      "Fashion marketing including marketing strategies, brand development, and fashion promotion.",
+    prerequisites: "FASH 1",
+  },
+  {
+    id: "838",
+    course_code: "FASH 102",
+    course_name: "Fashion Merchandising",
+    course_units: "4",
+    course_description:
+      "Fashion merchandising including retail management, product development, and fashion business.",
+    prerequisites: "FASH 1",
+  },
+  {
+    id: "839",
+    course_code: "FASH 103",
+    course_name: "Sustainable Fashion",
+    course_units: "4",
+    course_description:
+      "Sustainable fashion including eco-friendly design, sustainable practices, and ethical fashion.",
+    prerequisites: "FASH 1",
+  },
+  {
+    id: "840",
+    course_code: "FASH 104",
+    course_name: "Fashion Portfolio",
+    course_units: "4",
+    course_description:
+      "Fashion portfolio including portfolio development, presentation skills, and professional preparation.",
+    prerequisites: "FASH 1",
+  },
+
+  // Additional Interior Design Courses
+  {
+    id: "841",
+    course_code: "INTD 1",
+    course_name: "Introduction to Interior Design",
+    course_units: "4",
+    course_description:
+      "Introduction to interior design including design principles, space planning, and design fundamentals.",
+    prerequisites: "None",
+  },
+  {
+    id: "842",
+    course_code: "INTD 2",
+    course_name: "Space Planning",
+    course_units: "4",
+    course_description:
+      "Space planning including layout design, spatial organization, and functional planning.",
+    prerequisites: "INTD 1",
+  },
+  {
+    id: "843",
+    course_code: "INTD 3",
+    course_name: "Interior Materials",
+    course_units: "4",
+    course_description:
+      "Interior materials including material selection, finishes, and material applications.",
+    prerequisites: "INTD 1",
+  },
+  {
+    id: "844",
+    course_code: "INTD 4",
+    course_name: "Interior Lighting",
+    course_units: "4",
+    course_description:
+      "Interior lighting including lighting design, lighting systems, and lighting applications.",
+    prerequisites: "INTD 1",
+  },
+  {
+    id: "845",
+    course_code: "INTD 5",
+    course_name: "Furniture Design",
+    course_units: "4",
+    course_description:
+      "Furniture design including furniture selection, custom furniture, and furniture arrangement.",
+    prerequisites: "INTD 1",
+  },
+  {
+    id: "846",
+    course_code: "INTD 100",
+    course_name: "Advanced Interior Design",
+    course_units: "4",
+    course_description:
+      "Advanced interior design including advanced techniques, creative expression, and design projects.",
+    prerequisites: "INTD 1",
+  },
+  {
+    id: "847",
+    course_code: "INTD 101",
+    course_name: "Interior Design History",
+    course_units: "4",
+    course_description:
+      "Interior design history including historical design, design evolution, and cultural design.",
+    prerequisites: "INTD 1",
+  },
+  {
+    id: "848",
+    course_code: "INTD 102",
+    course_name: "Sustainable Design",
+    course_units: "4",
+    course_description:
+      "Sustainable design including eco-friendly design, sustainable practices, and green design.",
+    prerequisites: "INTD 1",
+  },
+  {
+    id: "849",
+    course_code: "INTD 103",
+    course_name: "Commercial Design",
+    course_units: "4",
+    course_description:
+      "Commercial design including commercial spaces, retail design, and workplace design.",
+    prerequisites: "INTD 1",
+  },
+  {
+    id: "850",
+    course_code: "INTD 104",
+    course_name: "Interior Design Portfolio",
+    course_units: "4",
+    course_description:
+      "Interior design portfolio including portfolio development, presentation skills, and professional preparation.",
+    prerequisites: "INTD 1",
+  },
 ];

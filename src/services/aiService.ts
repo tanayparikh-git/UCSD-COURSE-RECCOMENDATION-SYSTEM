@@ -564,6 +564,76 @@ class AIService {
       }
     }
 
+    // Turkish & Middle Eastern Languages
+    if (searchTerm.includes('turkish') || searchTerm.includes('modern turkish') || searchTerm.includes('ottoman turkish') || searchTerm.includes('turkish literature') || searchTerm.includes('turkish linguistics') || searchTerm.includes('turkish translation')) {
+      if (courseCode.startsWith('turk') || courseDesc.includes('turkish') || courseDesc.includes('modern turkish') || courseDesc.includes('ottoman turkish') || courseDesc.includes('turkish literature') || courseDesc.includes('turkish linguistics') || courseDesc.includes('turkish translation')) {
+        return 0.6;
+      }
+    }
+
+    // Hindi & South Asian Languages
+    if (searchTerm.includes('hindi') || searchTerm.includes('modern hindi') || searchTerm.includes('classical hindi') || searchTerm.includes('hindi literature') || searchTerm.includes('hindi linguistics') || searchTerm.includes('hindi translation')) {
+      if (courseCode.startsWith('hind') || courseDesc.includes('hindi') || courseDesc.includes('modern hindi') || courseDesc.includes('classical hindi') || courseDesc.includes('hindi literature') || courseDesc.includes('hindi linguistics') || courseDesc.includes('hindi translation')) {
+        return 0.6;
+      }
+    }
+
+    // Botany & Plant Sciences
+    if (searchTerm.includes('botany') || searchTerm.includes('plant anatomy') || searchTerm.includes('plant physiology') || searchTerm.includes('plant taxonomy') || searchTerm.includes('plant ecology') || searchTerm.includes('plant genetics') || searchTerm.includes('plant pathology') || searchTerm.includes('plant evolution') || searchTerm.includes('plant biotechnology') || searchTerm.includes('plant conservation')) {
+      if (courseCode.startsWith('bot') || courseDesc.includes('botany') || courseDesc.includes('plant anatomy') || courseDesc.includes('plant physiology') || courseDesc.includes('plant taxonomy') || courseDesc.includes('plant ecology') || courseDesc.includes('plant genetics') || courseDesc.includes('plant pathology') || courseDesc.includes('plant evolution') || courseDesc.includes('plant biotechnology') || courseDesc.includes('plant conservation')) {
+        return 0.6;
+      }
+    }
+
+    // Zoology & Animal Sciences
+    if (searchTerm.includes('zoology') || searchTerm.includes('animal anatomy') || searchTerm.includes('animal physiology') || searchTerm.includes('animal taxonomy') || searchTerm.includes('animal ecology') || searchTerm.includes('animal behavior') || searchTerm.includes('animal genetics') || searchTerm.includes('animal evolution') || searchTerm.includes('animal conservation') || searchTerm.includes('animal research')) {
+      if (courseCode.startsWith('zool') || courseDesc.includes('zoology') || courseDesc.includes('animal anatomy') || courseDesc.includes('animal physiology') || courseDesc.includes('animal taxonomy') || courseDesc.includes('animal ecology') || courseDesc.includes('animal behavior') || courseDesc.includes('animal genetics') || courseDesc.includes('animal evolution') || courseDesc.includes('animal conservation') || courseDesc.includes('animal research')) {
+        return 0.6;
+      }
+    }
+
+    // Graphic Design & Visual Communication
+    if (searchTerm.includes('graphic design') || searchTerm.includes('typography') || searchTerm.includes('digital design') || searchTerm.includes('brand design') || searchTerm.includes('web design') || searchTerm.includes('advanced graphic design') || searchTerm.includes('design history') || searchTerm.includes('design theory') || searchTerm.includes('design portfolio') || searchTerm.includes('design research')) {
+      if (courseCode.startsWith('desn') || courseDesc.includes('graphic design') || courseDesc.includes('typography') || courseDesc.includes('digital design') || courseDesc.includes('brand design') || courseDesc.includes('web design') || courseDesc.includes('advanced graphic design') || courseDesc.includes('design history') || courseDesc.includes('design theory') || courseDesc.includes('design portfolio') || courseDesc.includes('design research')) {
+        return 0.6;
+      }
+    }
+
+    // Animation & Motion Graphics
+    if (searchTerm.includes('animation') || searchTerm.includes('2d animation') || searchTerm.includes('3d animation') || searchTerm.includes('character animation') || searchTerm.includes('storyboarding') || searchTerm.includes('advanced animation') || searchTerm.includes('animation history') || searchTerm.includes('animation theory') || searchTerm.includes('animation production') || searchTerm.includes('animation portfolio')) {
+      if (courseCode.startsWith('anim') || courseDesc.includes('animation') || courseDesc.includes('2d animation') || courseDesc.includes('3d animation') || courseDesc.includes('character animation') || courseDesc.includes('storyboarding') || courseDesc.includes('advanced animation') || courseDesc.includes('animation history') || courseDesc.includes('animation theory') || courseDesc.includes('animation production') || courseDesc.includes('animation portfolio')) {
+        return 0.6;
+      }
+    }
+
+    // Journalism & Media
+    if (searchTerm.includes('journalism') || searchTerm.includes('news writing') || searchTerm.includes('feature writing') || searchTerm.includes('investigative journalism') || searchTerm.includes('digital journalism') || searchTerm.includes('broadcast journalism') || searchTerm.includes('photojournalism') || searchTerm.includes('media law') || searchTerm.includes('journalism ethics') || searchTerm.includes('journalism research')) {
+      if (courseCode.startsWith('jour') || courseDesc.includes('journalism') || courseDesc.includes('news writing') || courseDesc.includes('feature writing') || courseDesc.includes('investigative journalism') || courseDesc.includes('digital journalism') || courseDesc.includes('broadcast journalism') || courseDesc.includes('photojournalism') || courseDesc.includes('media law') || courseDesc.includes('journalism ethics') || courseDesc.includes('journalism research')) {
+        return 0.6;
+      }
+    }
+
+    // Hospitality & Tourism Management
+    if (searchTerm.includes('hospitality management') || searchTerm.includes('hotel management') || searchTerm.includes('restaurant management') || searchTerm.includes('event management') || searchTerm.includes('tourism management') || searchTerm.includes('hospitality marketing') || searchTerm.includes('hospitality finance') || searchTerm.includes('hospitality law') || searchTerm.includes('customer service') || searchTerm.includes('hospitality technology')) {
+      if (courseCode.startsWith('hosp') || courseDesc.includes('hospitality management') || courseDesc.includes('hotel management') || courseDesc.includes('restaurant management') || courseDesc.includes('event management') || courseDesc.includes('tourism management') || courseDesc.includes('hospitality marketing') || courseDesc.includes('hospitality finance') || courseDesc.includes('hospitality law') || courseDesc.includes('customer service') || courseDesc.includes('hospitality technology')) {
+        return 0.6;
+      }
+    }
+
+    // Fashion Design & Textiles
+    if (searchTerm.includes('fashion design') || searchTerm.includes('fashion drawing') || searchTerm.includes('pattern making') || searchTerm.includes('fashion history') || searchTerm.includes('textile design') || searchTerm.includes('advanced fashion design') || searchTerm.includes('fashion marketing') || searchTerm.includes('fashion merchandising') || searchTerm.includes('sustainable fashion') || searchTerm.includes('fashion portfolio')) {
+      if (courseCode.startsWith('fash') || courseDesc.includes('fashion design') || courseDesc.includes('fashion drawing') || courseDesc.includes('pattern making') || courseDesc.includes('fashion history') || courseDesc.includes('textile design') || courseDesc.includes('advanced fashion design') || courseDesc.includes('fashion marketing') || courseDesc.includes('fashion merchandising') || courseDesc.includes('sustainable fashion') || courseDesc.includes('fashion portfolio')) {
+        return 0.6;
+      }
+    }
+
+    // Interior Design & Space Planning
+    if (searchTerm.includes('interior design') || searchTerm.includes('space planning') || searchTerm.includes('interior materials') || searchTerm.includes('interior lighting') || searchTerm.includes('furniture design') || searchTerm.includes('advanced interior design') || searchTerm.includes('interior design history') || searchTerm.includes('sustainable design') || searchTerm.includes('commercial design') || searchTerm.includes('interior design portfolio')) {
+      if (courseCode.startsWith('intd') || courseDesc.includes('interior design') || courseDesc.includes('space planning') || courseDesc.includes('interior materials') || courseDesc.includes('interior lighting') || courseDesc.includes('furniture design') || courseDesc.includes('advanced interior design') || courseDesc.includes('interior design history') || courseDesc.includes('sustainable design') || courseDesc.includes('commercial design') || courseDesc.includes('interior design portfolio')) {
+        return 0.6;
+      }
+    }
+
     return 0;
   }
 
