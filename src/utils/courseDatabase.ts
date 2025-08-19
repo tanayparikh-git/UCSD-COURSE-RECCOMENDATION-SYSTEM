@@ -7838,4 +7838,1844 @@ export const courseDatabase: CourseData[] = [
       "Interior design portfolio including portfolio development, presentation skills, and professional preparation.",
     prerequisites: "INTD 1",
   },
+
+  // Additional Swedish Language Courses
+  {
+    id: "851",
+    course_code: "SWED 1",
+    course_name: "Elementary Swedish I",
+    course_units: "4",
+    course_description:
+      "Elementary Swedish I including basic grammar, vocabulary, and reading skills for beginners.",
+    prerequisites: "None",
+  },
+  {
+    id: "852",
+    course_code: "SWED 2",
+    course_name: "Elementary Swedish II",
+    course_units: "4",
+    course_description:
+      "Elementary Swedish II including intermediate grammar, vocabulary, and reading skills.",
+    prerequisites: "SWED 1",
+  },
+  {
+    id: "853",
+    course_code: "SWED 3",
+    course_name: "Intermediate Swedish I",
+    course_units: "4",
+    course_description:
+      "Intermediate Swedish I including advanced grammar, reading comprehension, and cultural studies.",
+    prerequisites: "SWED 2",
+  },
+  {
+    id: "854",
+    course_code: "SWED 4",
+    course_name: "Intermediate Swedish II",
+    course_units: "4",
+    course_description:
+      "Intermediate Swedish II including advanced reading, composition, and Swedish literature.",
+    prerequisites: "SWED 3",
+  },
+  {
+    id: "855",
+    course_code: "SWED 5",
+    course_name: "Advanced Swedish",
+    course_units: "4",
+    course_description:
+      "Advanced Swedish including advanced reading, literary analysis, and cultural studies.",
+    prerequisites: "SWED 4",
+  },
+  {
+    id: "856",
+    course_code: "SWED 100",
+    course_name: "Swedish Literature",
+    course_units: "4",
+    course_description:
+      "Swedish literature including major works, literary analysis, and cultural context.",
+    prerequisites: "SWED 5",
+  },
+  {
+    id: "857",
+    course_code: "SWED 101",
+    course_name: "Modern Swedish",
+    course_units: "4",
+    course_description:
+      "Modern Swedish including contemporary Swedish, modern literature, and current events.",
+    prerequisites: "SWED 4",
+  },
+  {
+    id: "858",
+    course_code: "SWED 102",
+    course_name: "Swedish Linguistics",
+    course_units: "4",
+    course_description:
+      "Swedish linguistics including Swedish phonology, morphology, syntax, and historical linguistics.",
+    prerequisites: "LING 1, SWED 4",
+  },
+  {
+    id: "859",
+    course_code: "SWED 103",
+    course_name: "Swedish Translation",
+    course_units: "4",
+    course_description:
+      "Swedish translation including translation theory, techniques, and practical translation exercises.",
+    prerequisites: "SWED 5",
+  },
+  {
+    id: "860",
+    course_code: "SWED 104",
+    course_name: "Swedish Culture",
+    course_units: "4",
+    course_description:
+      "Swedish culture including cultural studies, traditions, and contemporary Swedish society.",
+    prerequisites: "SWED 3",
+  },
+
+  // Additional Dutch Language Courses
+  {
+    id: "861",
+    course_code: "DUTCH 1",
+    course_name: "Elementary Dutch I",
+    course_units: "4",
+    course_description:
+      "Elementary Dutch I including basic grammar, vocabulary, and reading skills for beginners.",
+    prerequisites: "None",
+  },
+  {
+    id: "862",
+    course_code: "DUTCH 2",
+    course_name: "Elementary Dutch II",
+    course_units: "4",
+    course_description:
+      "Elementary Dutch II including intermediate grammar, vocabulary, and reading skills.",
+    prerequisites: "DUTCH 1",
+  },
+  {
+    id: "863",
+    course_code: "DUTCH 3",
+    course_name: "Intermediate Dutch I",
+    course_units: "4",
+    course_description:
+      "Intermediate Dutch I including advanced grammar, reading comprehension, and cultural studies.",
+    prerequisites: "DUTCH 2",
+  },
+  {
+    id: "864",
+    course_code: "DUTCH 4",
+    course_name: "Intermediate Dutch II",
+    course_units: "4",
+    course_description:
+      "Intermediate Dutch II including advanced reading, composition, and Dutch literature.",
+    prerequisites: "DUTCH 3",
+  },
+  {
+    id: "865",
+    course_code: "DUTCH 5",
+    course_name: "Advanced Dutch",
+    course_units: "4",
+    course_description:
+      "Advanced Dutch including advanced reading, literary analysis, and cultural studies.",
+    prerequisites: "DUTCH 4",
+  },
+  {
+    id: "866",
+    course_code: "DUTCH 100",
+    course_name: "Dutch Literature",
+    course_units: "4",
+    course_description:
+      "Dutch literature including major works, literary analysis, and cultural context.",
+    prerequisites: "DUTCH 5",
+  },
+  {
+    id: "867",
+    course_code: "DUTCH 101",
+    course_name: "Modern Dutch",
+    course_units: "4",
+    course_description:
+      "Modern Dutch including contemporary Dutch, modern literature, and current events.",
+    prerequisites: "DUTCH 4",
+  },
+  {
+    id: "868",
+    course_code: "DUTCH 102",
+    course_name: "Dutch Linguistics",
+    course_units: "4",
+    course_description:
+      "Dutch linguistics including Dutch phonology, morphology, syntax, and historical linguistics.",
+    prerequisites: "LING 1, DUTCH 4",
+  },
+  {
+    id: "869",
+    course_code: "DUTCH 103",
+    course_name: "Dutch Translation",
+    course_units: "4",
+    course_description:
+      "Dutch translation including translation theory, techniques, and practical translation exercises.",
+    prerequisites: "DUTCH 5",
+  },
+  {
+    id: "870",
+    course_code: "DUTCH 104",
+    course_name: "Dutch Culture",
+    course_units: "4",
+    course_description:
+      "Dutch culture including cultural studies, traditions, and contemporary Dutch society.",
+    prerequisites: "DUTCH 3",
+  },
+
+  // Additional Microbiology Courses
+  {
+    id: "871",
+    course_code: "MICR 1",
+    course_name: "Introduction to Microbiology",
+    course_units: "4",
+    course_description:
+      "Introduction to microbiology including microbial diversity, microbial structure, and microbial function.",
+    prerequisites: "None",
+  },
+  {
+    id: "872",
+    course_code: "MICR 2",
+    course_name: "Bacterial Physiology",
+    course_units: "4",
+    course_description:
+      "Bacterial physiology including bacterial metabolism, growth, and physiological processes.",
+    prerequisites: "MICR 1",
+  },
+  {
+    id: "873",
+    course_code: "MICR 3",
+    course_name: "Microbial Genetics",
+    course_units: "4",
+    course_description:
+      "Microbial genetics including genetic mechanisms, gene transfer, and genetic engineering.",
+    prerequisites: "MICR 1",
+  },
+  {
+    id: "874",
+    course_code: "MICR 4",
+    course_name: "Microbial Ecology",
+    course_units: "4",
+    course_description:
+      "Microbial ecology including microbial communities, environmental microbiology, and microbial interactions.",
+    prerequisites: "MICR 1",
+  },
+  {
+    id: "875",
+    course_code: "MICR 5",
+    course_name: "Medical Microbiology",
+    course_units: "4",
+    course_description:
+      "Medical microbiology including pathogenic microorganisms, infectious diseases, and host-microbe interactions.",
+    prerequisites: "MICR 1",
+  },
+  {
+    id: "876",
+    course_code: "MICR 100",
+    course_name: "Virology",
+    course_units: "4",
+    course_description:
+      "Virology including virus structure, viral replication, and viral pathogenesis.",
+    prerequisites: "MICR 1",
+  },
+  {
+    id: "877",
+    course_code: "MICR 101",
+    course_name: "Immunology",
+    course_units: "4",
+    course_description:
+      "Immunology including immune system function, immune responses, and immunological disorders.",
+    prerequisites: "MICR 1",
+  },
+  {
+    id: "878",
+    course_code: "MICR 102",
+    course_name: "Microbial Biotechnology",
+    course_units: "4",
+    course_description:
+      "Microbial biotechnology including biotechnological applications, industrial microbiology, and microbial products.",
+    prerequisites: "MICR 1",
+  },
+  {
+    id: "879",
+    course_code: "MICR 103",
+    course_name: "Microbial Evolution",
+    course_units: "4",
+    course_description:
+      "Microbial evolution including evolutionary processes, microbial phylogeny, and evolutionary history.",
+    prerequisites: "MICR 1",
+  },
+  {
+    id: "880",
+    course_code: "MICR 104",
+    course_name: "Microbial Research",
+    course_units: "4",
+    course_description:
+      "Microbial research including research methods, experimental design, and microbiological research.",
+    prerequisites: "MICR 1",
+  },
+
+  // Additional Immunology Courses
+  {
+    id: "881",
+    course_code: "IMMU 1",
+    course_name: "Introduction to Immunology",
+    course_units: "4",
+    course_description:
+      "Introduction to immunology including immune system components, immune responses, and immunological principles.",
+    prerequisites: "None",
+  },
+  {
+    id: "882",
+    course_code: "IMMU 2",
+    course_name: "Cellular Immunology",
+    course_units: "4",
+    course_description:
+      "Cellular immunology including immune cell function, cell interactions, and cellular immune responses.",
+    prerequisites: "IMMU 1",
+  },
+  {
+    id: "883",
+    course_code: "IMMU 3",
+    course_name: "Molecular Immunology",
+    course_units: "4",
+    course_description:
+      "Molecular immunology including molecular mechanisms, immune signaling, and molecular immune processes.",
+    prerequisites: "IMMU 1",
+  },
+  {
+    id: "884",
+    course_code: "IMMU 4",
+    course_name: "Clinical Immunology",
+    course_units: "4",
+    course_description:
+      "Clinical immunology including immunological disorders, clinical applications, and therapeutic approaches.",
+    prerequisites: "IMMU 1",
+  },
+  {
+    id: "885",
+    course_code: "IMMU 5",
+    course_name: "Immunopathology",
+    course_units: "4",
+    course_description:
+      "Immunopathology including immune-mediated diseases, pathological processes, and disease mechanisms.",
+    prerequisites: "IMMU 1",
+  },
+  {
+    id: "886",
+    course_code: "IMMU 100",
+    course_name: "Immunotherapy",
+    course_units: "4",
+    course_description:
+      "Immunotherapy including therapeutic approaches, treatment strategies, and clinical applications.",
+    prerequisites: "IMMU 1",
+  },
+  {
+    id: "887",
+    course_code: "IMMU 101",
+    course_name: "Vaccine Immunology",
+    course_units: "4",
+    course_description:
+      "Vaccine immunology including vaccine development, immune responses to vaccines, and vaccination strategies.",
+    prerequisites: "IMMU 1",
+  },
+  {
+    id: "888",
+    course_code: "IMMU 102",
+    course_name: "Autoimmunity",
+    course_units: "4",
+    course_description:
+      "Autoimmunity including autoimmune diseases, self-tolerance, and autoimmune mechanisms.",
+    prerequisites: "IMMU 1",
+  },
+  {
+    id: "889",
+    course_code: "IMMU 103",
+    course_name: "Immunogenetics",
+    course_units: "4",
+    course_description:
+      "Immunogenetics including genetic basis of immunity, immune gene regulation, and genetic immune disorders.",
+    prerequisites: "IMMU 1",
+  },
+  {
+    id: "890",
+    course_code: "IMMU 104",
+    course_name: "Immunological Research",
+    course_units: "4",
+    course_description:
+      "Immunological research including research methods, experimental design, and immunological research.",
+    prerequisites: "IMMU 1",
+  },
+
+  // Additional Game Design Courses
+  {
+    id: "891",
+    course_code: "GAME 1",
+    course_name: "Introduction to Game Design",
+    course_units: "4",
+    course_description:
+      "Introduction to game design including game mechanics, game theory, and design fundamentals.",
+    prerequisites: "None",
+  },
+  {
+    id: "892",
+    course_code: "GAME 2",
+    course_name: "Game Mechanics",
+    course_units: "4",
+    course_description:
+      "Game mechanics including core mechanics, gameplay systems, and mechanical design.",
+    prerequisites: "GAME 1",
+  },
+  {
+    id: "893",
+    course_code: "GAME 3",
+    course_name: "Level Design",
+    course_units: "4",
+    course_description:
+      "Level design including spatial design, environmental storytelling, and level creation.",
+    prerequisites: "GAME 1",
+  },
+  {
+    id: "894",
+    course_code: "GAME 4",
+    course_name: "Game Programming",
+    course_units: "4",
+    course_description:
+      "Game programming including game development, programming languages, and software development.",
+    prerequisites: "GAME 1",
+  },
+  {
+    id: "895",
+    course_code: "GAME 5",
+    course_name: "Game Art",
+    course_units: "4",
+    course_description:
+      "Game art including visual design, character design, and artistic development.",
+    prerequisites: "GAME 1",
+  },
+  {
+    id: "896",
+    course_code: "GAME 100",
+    course_name: "Advanced Game Design",
+    course_units: "4",
+    course_description:
+      "Advanced game design including advanced techniques, complex systems, and design projects.",
+    prerequisites: "GAME 1",
+  },
+  {
+    id: "897",
+    course_code: "GAME 101",
+    course_name: "Game Production",
+    course_units: "4",
+    course_description:
+      "Game production including production pipeline, project management, and development workflow.",
+    prerequisites: "GAME 1",
+  },
+  {
+    id: "898",
+    course_code: "GAME 102",
+    course_name: "Game History",
+    course_units: "4",
+    course_description:
+      "Game history including historical development, game evolution, and industry history.",
+    prerequisites: "GAME 1",
+  },
+  {
+    id: "899",
+    course_code: "GAME 103",
+    course_name: "Game Theory",
+    course_units: "4",
+    course_description:
+      "Game theory including theoretical approaches, analytical methods, and game analysis.",
+    prerequisites: "GAME 1",
+  },
+  {
+    id: "900",
+    course_code: "GAME 104",
+    course_name: "Game Portfolio",
+    course_units: "4",
+    course_description:
+      "Game portfolio including portfolio development, project presentation, and professional preparation.",
+    prerequisites: "GAME 1",
+  },
+
+  // Additional Industrial Design Courses
+  {
+    id: "901",
+    course_code: "INDD 1",
+    course_name: "Introduction to Industrial Design",
+    course_units: "4",
+    course_description:
+      "Introduction to industrial design including design principles, product design, and design process.",
+    prerequisites: "None",
+  },
+  {
+    id: "902",
+    course_code: "INDD 2",
+    course_name: "Product Design",
+    course_units: "4",
+    course_description:
+      "Product design including product development, design thinking, and product innovation.",
+    prerequisites: "INDD 1",
+  },
+  {
+    id: "903",
+    course_code: "INDD 3",
+    course_name: "Design Materials",
+    course_units: "4",
+    course_description:
+      "Design materials including material selection, material properties, and material applications.",
+    prerequisites: "INDD 1",
+  },
+  {
+    id: "904",
+    course_code: "INDD 4",
+    course_name: "Manufacturing Processes",
+    course_units: "4",
+    course_description:
+      "Manufacturing processes including production methods, manufacturing techniques, and process design.",
+    prerequisites: "INDD 1",
+  },
+  {
+    id: "905",
+    course_code: "INDD 5",
+    course_name: "Design Technology",
+    course_units: "4",
+    course_description:
+      "Design technology including digital tools, software applications, and technological innovation.",
+    prerequisites: "INDD 1",
+  },
+  {
+    id: "906",
+    course_code: "INDD 100",
+    course_name: "Advanced Industrial Design",
+    course_units: "4",
+    course_description:
+      "Advanced industrial design including advanced techniques, complex projects, and design innovation.",
+    prerequisites: "INDD 1",
+  },
+  {
+    id: "907",
+    course_code: "INDD 101",
+    course_name: "Design Research",
+    course_units: "4",
+    course_description:
+      "Design research including research methods, user research, and design analysis.",
+    prerequisites: "INDD 1",
+  },
+  {
+    id: "908",
+    course_code: "INDD 102",
+    course_name: "Sustainable Design",
+    course_units: "4",
+    course_description:
+      "Sustainable design including eco-friendly design, sustainable practices, and environmental considerations.",
+    prerequisites: "INDD 1",
+  },
+  {
+    id: "909",
+    course_code: "INDD 103",
+    course_name: "Design Management",
+    course_units: "4",
+    course_description:
+      "Design management including project management, team leadership, and design strategy.",
+    prerequisites: "INDD 1",
+  },
+  {
+    id: "910",
+    course_code: "INDD 104",
+    course_name: "Design Portfolio",
+    course_units: "4",
+    course_description:
+      "Design portfolio including portfolio development, presentation skills, and professional preparation.",
+    prerequisites: "INDD 1",
+  },
+
+  // Additional Real Estate Courses
+  {
+    id: "911",
+    course_code: "REAL 1",
+    course_name: "Introduction to Real Estate",
+    course_units: "4",
+    course_description:
+      "Introduction to real estate including real estate principles, market analysis, and industry fundamentals.",
+    prerequisites: "None",
+  },
+  {
+    id: "912",
+    course_code: "REAL 2",
+    course_name: "Real Estate Finance",
+    course_units: "4",
+    course_description:
+      "Real estate finance including financing methods, investment analysis, and financial management.",
+    prerequisites: "REAL 1",
+  },
+  {
+    id: "913",
+    course_code: "REAL 3",
+    course_name: "Real Estate Law",
+    course_units: "4",
+    course_description:
+      "Real estate law including legal principles, property rights, and regulatory compliance.",
+    prerequisites: "REAL 1",
+  },
+  {
+    id: "914",
+    course_code: "REAL 4",
+    course_name: "Real Estate Marketing",
+    course_units: "4",
+    course_description:
+      "Real estate marketing including marketing strategies, market research, and promotional techniques.",
+    prerequisites: "REAL 1",
+  },
+  {
+    id: "915",
+    course_code: "REAL 5",
+    course_name: "Property Management",
+    course_units: "4",
+    course_description:
+      "Property management including property operations, tenant relations, and maintenance management.",
+    prerequisites: "REAL 1",
+  },
+  {
+    id: "916",
+    course_code: "REAL 100",
+    course_name: "Real Estate Investment",
+    course_units: "4",
+    course_description:
+      "Real estate investment including investment strategies, portfolio management, and risk analysis.",
+    prerequisites: "REAL 1",
+  },
+  {
+    id: "917",
+    course_code: "REAL 101",
+    course_name: "Real Estate Development",
+    course_units: "4",
+    course_description:
+      "Real estate development including development process, project management, and construction oversight.",
+    prerequisites: "REAL 1",
+  },
+  {
+    id: "918",
+    course_code: "REAL 102",
+    course_name: "Real Estate Appraisal",
+    course_units: "4",
+    course_description:
+      "Real estate appraisal including valuation methods, market analysis, and appraisal techniques.",
+    prerequisites: "REAL 1",
+  },
+  {
+    id: "919",
+    course_code: "REAL 103",
+    course_name: "Real Estate Economics",
+    course_units: "4",
+    course_description:
+      "Real estate economics including economic principles, market dynamics, and economic analysis.",
+    prerequisites: "REAL 1",
+  },
+  {
+    id: "920",
+    course_code: "REAL 104",
+    course_name: "Real Estate Ethics",
+    course_units: "4",
+    course_description:
+      "Real estate ethics including ethical principles, professional standards, and ethical decision-making.",
+    prerequisites: "REAL 1",
+  },
+
+  // Additional Aviation Courses
+  {
+    id: "921",
+    course_code: "AVIA 1",
+    course_name: "Introduction to Aviation",
+    course_units: "4",
+    course_description:
+      "Introduction to aviation including aviation principles, flight fundamentals, and industry overview.",
+    prerequisites: "None",
+  },
+  {
+    id: "922",
+    course_code: "AVIA 2",
+    course_name: "Aircraft Systems",
+    course_units: "4",
+    course_description:
+      "Aircraft systems including aircraft components, system operation, and technical systems.",
+    prerequisites: "AVIA 1",
+  },
+  {
+    id: "923",
+    course_code: "AVIA 3",
+    course_name: "Flight Operations",
+    course_units: "4",
+    course_description:
+      "Flight operations including flight planning, navigation, and operational procedures.",
+    prerequisites: "AVIA 1",
+  },
+  {
+    id: "924",
+    course_code: "AVIA 4",
+    course_name: "Aviation Safety",
+    course_units: "4",
+    course_description:
+      "Aviation safety including safety principles, risk management, and safety procedures.",
+    prerequisites: "AVIA 1",
+  },
+  {
+    id: "925",
+    course_code: "AVIA 5",
+    course_name: "Aviation Weather",
+    course_units: "4",
+    course_description:
+      "Aviation weather including weather analysis, meteorological principles, and weather effects on flight.",
+    prerequisites: "AVIA 1",
+  },
+  {
+    id: "926",
+    course_code: "AVIA 100",
+    course_name: "Aviation Management",
+    course_units: "4",
+    course_description:
+      "Aviation management including management principles, operational management, and administrative functions.",
+    prerequisites: "AVIA 1",
+  },
+  {
+    id: "927",
+    course_code: "AVIA 101",
+    course_name: "Air Traffic Control",
+    course_units: "4",
+    course_description:
+      "Air traffic control including control procedures, communication systems, and traffic management.",
+    prerequisites: "AVIA 1",
+  },
+  {
+    id: "928",
+    course_code: "AVIA 102",
+    course_name: "Aviation Law",
+    course_units: "4",
+    course_description:
+      "Aviation law including legal principles, regulatory compliance, and aviation regulations.",
+    prerequisites: "AVIA 1",
+  },
+  {
+    id: "929",
+    course_code: "AVIA 103",
+    course_name: "Aviation Technology",
+    course_units: "4",
+    course_description:
+      "Aviation technology including technological innovation, advanced systems, and technological applications.",
+    prerequisites: "AVIA 1",
+  },
+  {
+    id: "930",
+    course_code: "AVIA 104",
+    course_name: "Aviation Research",
+    course_units: "4",
+    course_description:
+      "Aviation research including research methods, experimental design, and aviation research projects.",
+    prerequisites: "AVIA 1",
+  },
+
+  // Additional Marine Biology Courses
+  {
+    id: "931",
+    course_code: "MARB 1",
+    course_name: "Introduction to Marine Biology",
+    course_units: "4",
+    course_description:
+      "Introduction to marine biology including marine ecosystems, marine organisms, and ocean science.",
+    prerequisites: "None",
+  },
+  {
+    id: "932",
+    course_code: "MARB 2",
+    course_name: "Marine Ecology",
+    course_units: "4",
+    course_description:
+      "Marine ecology including marine ecosystems, ecological processes, and marine communities.",
+    prerequisites: "MARB 1",
+  },
+  {
+    id: "933",
+    course_code: "MARB 3",
+    course_name: "Marine Physiology",
+    course_units: "4",
+    course_description:
+      "Marine physiology including physiological adaptations, marine organism function, and physiological processes.",
+    prerequisites: "MARB 1",
+  },
+  {
+    id: "934",
+    course_code: "MARB 4",
+    course_name: "Marine Conservation",
+    course_units: "4",
+    course_description:
+      "Marine conservation including conservation biology, marine protected areas, and conservation strategies.",
+    prerequisites: "MARB 1",
+  },
+  {
+    id: "935",
+    course_code: "MARB 5",
+    course_name: "Marine Biotechnology",
+    course_units: "4",
+    course_description:
+      "Marine biotechnology including biotechnological applications, marine products, and technological innovation.",
+    prerequisites: "MARB 1",
+  },
+  {
+    id: "936",
+    course_code: "MARB 100",
+    course_name: "Marine Microbiology",
+    course_units: "4",
+    course_description:
+      "Marine microbiology including marine microorganisms, microbial ecology, and microbial processes.",
+    prerequisites: "MARB 1",
+  },
+  {
+    id: "937",
+    course_code: "MARB 101",
+    course_name: "Marine Genetics",
+    course_units: "4",
+    course_description:
+      "Marine genetics including genetic diversity, evolutionary processes, and genetic research.",
+    prerequisites: "MARB 1",
+  },
+  {
+    id: "938",
+    course_code: "MARB 102",
+    course_name: "Marine Evolution",
+    course_units: "4",
+    course_description:
+      "Marine evolution including evolutionary processes, marine phylogeny, and evolutionary history.",
+    prerequisites: "MARB 1",
+  },
+  {
+    id: "939",
+    course_code: "MARB 103",
+    course_name: "Marine Research",
+    course_units: "4",
+    course_description:
+      "Marine research including research methods, field techniques, and marine research projects.",
+    prerequisites: "MARB 1",
+  },
+  {
+    id: "940",
+    course_code: "MARB 104",
+    course_name: "Marine Policy",
+    course_units: "4",
+    course_description:
+      "Marine policy including policy development, regulatory frameworks, and marine governance.",
+    prerequisites: "MARB 1",
+  },
+
+  // Additional Forensic Science Courses
+  {
+    id: "941",
+    course_code: "FORS 1",
+    course_name: "Introduction to Forensic Science",
+    course_units: "4",
+    course_description:
+      "Introduction to forensic science including forensic principles, scientific methods, and forensic applications.",
+    prerequisites: "None",
+  },
+  {
+    id: "942",
+    course_code: "FORS 2",
+    course_name: "Forensic Biology",
+    course_units: "4",
+    course_description:
+      "Forensic biology including biological evidence, DNA analysis, and biological forensic techniques.",
+    prerequisites: "FORS 1",
+  },
+  {
+    id: "943",
+    course_code: "FORS 3",
+    course_name: "Forensic Chemistry",
+    course_units: "4",
+    course_description:
+      "Forensic chemistry including chemical analysis, toxicology, and chemical forensic techniques.",
+    prerequisites: "FORS 1",
+  },
+  {
+    id: "944",
+    course_code: "FORS 4",
+    course_name: "Forensic Anthropology",
+    course_units: "4",
+    course_description:
+      "Forensic anthropology including human remains analysis, skeletal identification, and anthropological techniques.",
+    prerequisites: "FORS 1",
+  },
+  {
+    id: "945",
+    course_code: "FORS 5",
+    course_name: "Forensic Psychology",
+    course_units: "4",
+    course_description:
+      "Forensic psychology including psychological assessment, criminal profiling, and behavioral analysis.",
+    prerequisites: "FORS 1",
+  },
+  {
+    id: "946",
+    course_code: "FORS 100",
+    course_name: "Forensic Toxicology",
+    course_units: "4",
+    course_description:
+      "Forensic toxicology including drug analysis, poison detection, and toxicological testing.",
+    prerequisites: "FORS 1",
+  },
+  {
+    id: "947",
+    course_code: "FORS 101",
+    course_name: "Forensic Entomology",
+    course_units: "4",
+    course_description:
+      "Forensic entomology including insect analysis, decomposition studies, and entomological evidence.",
+    prerequisites: "FORS 1",
+  },
+  {
+    id: "948",
+    course_code: "FORS 102",
+    course_name: "Forensic Pathology",
+    course_units: "4",
+    course_description:
+      "Forensic pathology including death investigation, autopsy procedures, and pathological analysis.",
+    prerequisites: "FORS 1",
+  },
+  {
+    id: "949",
+    course_code: "FORS 103",
+    course_name: "Forensic Technology",
+    course_units: "4",
+    course_description:
+      "Forensic technology including technological applications, digital forensics, and technological innovation.",
+    prerequisites: "FORS 1",
+  },
+  {
+    id: "950",
+    course_code: "FORS 104",
+    course_name: "Forensic Research",
+    course_units: "4",
+    course_description:
+      "Forensic research including research methods, experimental design, and forensic research projects.",
+    prerequisites: "FORS 1",
+  },
+
+  // Additional Norwegian Language Courses
+  {
+    id: "951",
+    course_code: "NORW 1",
+    course_name: "Elementary Norwegian I",
+    course_units: "4",
+    course_description:
+      "Elementary Norwegian I including basic grammar, vocabulary, and reading skills for beginners.",
+    prerequisites: "None",
+  },
+  {
+    id: "952",
+    course_code: "NORW 2",
+    course_name: "Elementary Norwegian II",
+    course_units: "4",
+    course_description:
+      "Elementary Norwegian II including intermediate grammar, vocabulary, and reading skills.",
+    prerequisites: "NORW 1",
+  },
+  {
+    id: "953",
+    course_code: "NORW 3",
+    course_name: "Intermediate Norwegian I",
+    course_units: "4",
+    course_description:
+      "Intermediate Norwegian I including advanced grammar, reading comprehension, and cultural studies.",
+    prerequisites: "NORW 2",
+  },
+  {
+    id: "954",
+    course_code: "NORW 4",
+    course_name: "Intermediate Norwegian II",
+    course_units: "4",
+    course_description:
+      "Intermediate Norwegian II including advanced reading, composition, and Norwegian literature.",
+    prerequisites: "NORW 3",
+  },
+  {
+    id: "955",
+    course_code: "NORW 5",
+    course_name: "Advanced Norwegian",
+    course_units: "4",
+    course_description:
+      "Advanced Norwegian including advanced reading, literary analysis, and cultural studies.",
+    prerequisites: "NORW 4",
+  },
+  {
+    id: "956",
+    course_code: "NORW 100",
+    course_name: "Norwegian Literature",
+    course_units: "4",
+    course_description:
+      "Norwegian literature including major works, literary analysis, and cultural context.",
+    prerequisites: "NORW 5",
+  },
+  {
+    id: "957",
+    course_code: "NORW 101",
+    course_name: "Modern Norwegian",
+    course_units: "4",
+    course_description:
+      "Modern Norwegian including contemporary Norwegian, modern literature, and current events.",
+    prerequisites: "NORW 4",
+  },
+  {
+    id: "958",
+    course_code: "NORW 102",
+    course_name: "Norwegian Linguistics",
+    course_units: "4",
+    course_description:
+      "Norwegian linguistics including Norwegian phonology, morphology, syntax, and historical linguistics.",
+    prerequisites: "LING 1, NORW 4",
+  },
+  {
+    id: "959",
+    course_code: "NORW 103",
+    course_name: "Norwegian Translation",
+    course_units: "4",
+    course_description:
+      "Norwegian translation including translation theory, techniques, and practical translation exercises.",
+    prerequisites: "NORW 5",
+  },
+  {
+    id: "960",
+    course_code: "NORW 104",
+    course_name: "Norwegian Culture",
+    course_units: "4",
+    course_description:
+      "Norwegian culture including cultural studies, traditions, and contemporary Norwegian society.",
+    prerequisites: "NORW 3",
+  },
+
+  // Additional Danish Language Courses
+  {
+    id: "961",
+    course_code: "DAN 1",
+    course_name: "Elementary Danish I",
+    course_units: "4",
+    course_description:
+      "Elementary Danish I including basic grammar, vocabulary, and reading skills for beginners.",
+    prerequisites: "None",
+  },
+  {
+    id: "962",
+    course_code: "DAN 2",
+    course_name: "Elementary Danish II",
+    course_units: "4",
+    course_description:
+      "Elementary Danish II including intermediate grammar, vocabulary, and reading skills.",
+    prerequisites: "DAN 1",
+  },
+  {
+    id: "963",
+    course_code: "DAN 3",
+    course_name: "Intermediate Danish I",
+    course_units: "4",
+    course_description:
+      "Intermediate Danish I including advanced grammar, reading comprehension, and cultural studies.",
+    prerequisites: "DAN 2",
+  },
+  {
+    id: "964",
+    course_code: "DAN 4",
+    course_name: "Intermediate Danish II",
+    course_units: "4",
+    course_description:
+      "Intermediate Danish II including advanced reading, composition, and Danish literature.",
+    prerequisites: "DAN 3",
+  },
+  {
+    id: "965",
+    course_code: "DAN 5",
+    course_name: "Advanced Danish",
+    course_units: "4",
+    course_description:
+      "Advanced Danish including advanced reading, literary analysis, and cultural studies.",
+    prerequisites: "DAN 4",
+  },
+  {
+    id: "966",
+    course_code: "DAN 100",
+    course_name: "Danish Literature",
+    course_units: "4",
+    course_description:
+      "Danish literature including major works, literary analysis, and cultural context.",
+    prerequisites: "DAN 5",
+  },
+  {
+    id: "967",
+    course_code: "DAN 101",
+    course_name: "Modern Danish",
+    course_units: "4",
+    course_description:
+      "Modern Danish including contemporary Danish, modern literature, and current events.",
+    prerequisites: "DAN 4",
+  },
+  {
+    id: "968",
+    course_code: "DAN 102",
+    course_name: "Danish Linguistics",
+    course_units: "4",
+    course_description:
+      "Danish linguistics including Danish phonology, morphology, syntax, and historical linguistics.",
+    prerequisites: "LING 1, DAN 4",
+  },
+  {
+    id: "969",
+    course_code: "DAN 103",
+    course_name: "Danish Translation",
+    course_units: "4",
+    course_description:
+      "Danish translation including translation theory, techniques, and practical translation exercises.",
+    prerequisites: "DAN 5",
+  },
+  {
+    id: "970",
+    course_code: "DAN 104",
+    course_name: "Danish Culture",
+    course_units: "4",
+    course_description:
+      "Danish culture including cultural studies, traditions, and contemporary Danish society.",
+    prerequisites: "DAN 3",
+  },
+
+  // Additional Pharmacology Courses
+  {
+    id: "971",
+    course_code: "PHAR 1",
+    course_name: "Introduction to Pharmacology",
+    course_units: "4",
+    course_description:
+      "Introduction to pharmacology including drug principles, drug mechanisms, and pharmacological fundamentals.",
+    prerequisites: "None",
+  },
+  {
+    id: "972",
+    course_code: "PHAR 2",
+    course_name: "Drug Metabolism",
+    course_units: "4",
+    course_description:
+      "Drug metabolism including metabolic pathways, drug transformation, and pharmacokinetics.",
+    prerequisites: "PHAR 1",
+  },
+  {
+    id: "973",
+    course_code: "PHAR 3",
+    course_name: "Clinical Pharmacology",
+    course_units: "4",
+    course_description:
+      "Clinical pharmacology including therapeutic applications, drug interactions, and clinical drug use.",
+    prerequisites: "PHAR 1",
+  },
+  {
+    id: "974",
+    course_code: "PHAR 4",
+    course_name: "Toxicology",
+    course_units: "4",
+    course_description:
+      "Toxicology including toxic effects, poison mechanisms, and toxicological assessment.",
+    prerequisites: "PHAR 1",
+  },
+  {
+    id: "975",
+    course_code: "PHAR 5",
+    course_name: "Drug Development",
+    course_units: "4",
+    course_description:
+      "Drug development including drug discovery, development process, and regulatory requirements.",
+    prerequisites: "PHAR 1",
+  },
+  {
+    id: "976",
+    course_code: "PHAR 100",
+    course_name: "Molecular Pharmacology",
+    course_units: "4",
+    course_description:
+      "Molecular pharmacology including molecular mechanisms, drug targets, and molecular drug action.",
+    prerequisites: "PHAR 1",
+  },
+  {
+    id: "977",
+    course_code: "PHAR 101",
+    course_name: "Neuropharmacology",
+    course_units: "4",
+    course_description:
+      "Neuropharmacology including nervous system drugs, brain pharmacology, and neurological drug effects.",
+    prerequisites: "PHAR 1",
+  },
+  {
+    id: "978",
+    course_code: "PHAR 102",
+    course_name: "Cardiovascular Pharmacology",
+    course_units: "4",
+    course_description:
+      "Cardiovascular pharmacology including heart drugs, vascular pharmacology, and cardiovascular drug effects.",
+    prerequisites: "PHAR 1",
+  },
+  {
+    id: "979",
+    course_code: "PHAR 103",
+    course_name: "Cancer Pharmacology",
+    course_units: "4",
+    course_description:
+      "Cancer pharmacology including anticancer drugs, chemotherapy, and cancer drug mechanisms.",
+    prerequisites: "PHAR 1",
+  },
+  {
+    id: "980",
+    course_code: "PHAR 104",
+    course_name: "Pharmacological Research",
+    course_units: "4",
+    course_description:
+      "Pharmacological research including research methods, experimental design, and pharmacological research.",
+    prerequisites: "PHAR 1",
+  },
+
+  // Additional Epidemiology Courses
+  {
+    id: "981",
+    course_code: "EPID 1",
+    course_name: "Introduction to Epidemiology",
+    course_units: "4",
+    course_description:
+      "Introduction to epidemiology including disease patterns, population health, and epidemiological methods.",
+    prerequisites: "None",
+  },
+  {
+    id: "982",
+    course_code: "EPID 2",
+    course_name: "Epidemiological Methods",
+    course_units: "4",
+    course_description:
+      "Epidemiological methods including study design, data collection, and statistical analysis.",
+    prerequisites: "EPID 1",
+  },
+  {
+    id: "983",
+    course_code: "EPID 3",
+    course_name: "Infectious Disease Epidemiology",
+    course_units: "4",
+    course_description:
+      "Infectious disease epidemiology including disease transmission, outbreak investigation, and infection control.",
+    prerequisites: "EPID 1",
+  },
+  {
+    id: "984",
+    course_code: "EPID 4",
+    course_name: "Chronic Disease Epidemiology",
+    course_units: "4",
+    course_description:
+      "Chronic disease epidemiology including chronic conditions, risk factors, and disease prevention.",
+    prerequisites: "EPID 1",
+  },
+  {
+    id: "985",
+    course_code: "EPID 5",
+    course_name: "Environmental Epidemiology",
+    course_units: "4",
+    course_description:
+      "Environmental epidemiology including environmental health, exposure assessment, and environmental risks.",
+    prerequisites: "EPID 1",
+  },
+  {
+    id: "986",
+    course_code: "EPID 100",
+    course_name: "Clinical Epidemiology",
+    course_units: "4",
+    course_description:
+      "Clinical epidemiology including clinical research, evidence-based medicine, and clinical applications.",
+    prerequisites: "EPID 1",
+  },
+  {
+    id: "987",
+    course_code: "EPID 101",
+    course_name: "Genetic Epidemiology",
+    course_units: "4",
+    course_description:
+      "Genetic epidemiology including genetic factors, gene-environment interactions, and genetic disease patterns.",
+    prerequisites: "EPID 1",
+  },
+  {
+    id: "988",
+    course_code: "EPID 102",
+    course_name: "Social Epidemiology",
+    course_units: "4",
+    course_description:
+      "Social epidemiology including social determinants, health disparities, and social health factors.",
+    prerequisites: "EPID 1",
+  },
+  {
+    id: "989",
+    course_code: "EPID 103",
+    course_name: "Global Epidemiology",
+    course_units: "4",
+    course_description:
+      "Global epidemiology including global health, international health, and worldwide disease patterns.",
+    prerequisites: "EPID 1",
+  },
+  {
+    id: "990",
+    course_code: "EPID 104",
+    course_name: "Epidemiological Research",
+    course_units: "4",
+    course_description:
+      "Epidemiological research including research methods, study design, and epidemiological research projects.",
+    prerequisites: "EPID 1",
+  },
+
+  // Additional Cybersecurity Courses
+  {
+    id: "991",
+    course_code: "CYBR 1",
+    course_name: "Introduction to Cybersecurity",
+    course_units: "4",
+    course_description:
+      "Introduction to cybersecurity including security principles, threat analysis, and security fundamentals.",
+    prerequisites: "None",
+  },
+  {
+    id: "992",
+    course_code: "CYBR 2",
+    course_name: "Network Security",
+    course_units: "4",
+    course_description:
+      "Network security including network protection, security protocols, and network defense.",
+    prerequisites: "CYBR 1",
+  },
+  {
+    id: "993",
+    course_code: "CYBR 3",
+    course_name: "Cryptography",
+    course_units: "4",
+    course_description:
+      "Cryptography including encryption methods, cryptographic algorithms, and secure communication.",
+    prerequisites: "CYBR 1",
+  },
+  {
+    id: "994",
+    course_code: "CYBR 4",
+    course_name: "Digital Forensics",
+    course_units: "4",
+    course_description:
+      "Digital forensics including forensic analysis, evidence collection, and digital investigation.",
+    prerequisites: "CYBR 1",
+  },
+  {
+    id: "995",
+    course_code: "CYBR 5",
+    course_name: "Ethical Hacking",
+    course_units: "4",
+    course_description:
+      "Ethical hacking including penetration testing, vulnerability assessment, and security testing.",
+    prerequisites: "CYBR 1",
+  },
+  {
+    id: "996",
+    course_code: "CYBR 100",
+    course_name: "Advanced Cybersecurity",
+    course_units: "4",
+    course_description:
+      "Advanced cybersecurity including advanced techniques, complex threats, and security strategies.",
+    prerequisites: "CYBR 1",
+  },
+  {
+    id: "997",
+    course_code: "CYBR 101",
+    course_name: "Security Management",
+    course_units: "4",
+    course_description:
+      "Security management including security policies, risk management, and security administration.",
+    prerequisites: "CYBR 1",
+  },
+  {
+    id: "998",
+    course_code: "CYBR 102",
+    course_name: "Incident Response",
+    course_units: "4",
+    course_description:
+      "Incident response including security incidents, response procedures, and incident management.",
+    prerequisites: "CYBR 1",
+  },
+  {
+    id: "999",
+    course_code: "CYBR 103",
+    course_name: "Security Architecture",
+    course_units: "4",
+    course_description:
+      "Security architecture including security design, system architecture, and architectural security.",
+    prerequisites: "CYBR 1",
+  },
+  {
+    id: "1000",
+    course_code: "CYBR 104",
+    course_name: "Cybersecurity Research",
+    course_units: "4",
+    course_description:
+      "Cybersecurity research including research methods, security research, and cybersecurity projects.",
+    prerequisites: "CYBR 1",
+  },
+
+  // Additional Data Science Courses
+  {
+    id: "1001",
+    course_code: "DATA 1",
+    course_name: "Introduction to Data Science",
+    course_units: "4",
+    course_description:
+      "Introduction to data science including data analysis, statistical methods, and data science fundamentals.",
+    prerequisites: "None",
+  },
+  {
+    id: "1002",
+    course_code: "DATA 2",
+    course_name: "Data Analysis",
+    course_units: "4",
+    course_description:
+      "Data analysis including analytical techniques, data processing, and statistical analysis.",
+    prerequisites: "DATA 1",
+  },
+  {
+    id: "1003",
+    course_code: "DATA 3",
+    course_name: "Machine Learning",
+    course_units: "4",
+    course_description:
+      "Machine learning including algorithms, predictive modeling, and automated learning systems.",
+    prerequisites: "DATA 1",
+  },
+  {
+    id: "1004",
+    course_code: "DATA 4",
+    course_name: "Data Visualization",
+    course_units: "4",
+    course_description:
+      "Data visualization including visual representation, chart design, and data presentation.",
+    prerequisites: "DATA 1",
+  },
+  {
+    id: "1005",
+    course_code: "DATA 5",
+    course_name: "Big Data",
+    course_units: "4",
+    course_description:
+      "Big data including large-scale data processing, distributed systems, and big data technologies.",
+    prerequisites: "DATA 1",
+  },
+  {
+    id: "1006",
+    course_code: "DATA 100",
+    course_name: "Advanced Data Science",
+    course_units: "4",
+    course_description:
+      "Advanced data science including advanced techniques, complex analysis, and data science projects.",
+    prerequisites: "DATA 1",
+  },
+  {
+    id: "1007",
+    course_code: "DATA 101",
+    course_name: "Deep Learning",
+    course_units: "4",
+    course_description:
+      "Deep learning including neural networks, artificial intelligence, and advanced machine learning.",
+    prerequisites: "DATA 1",
+  },
+  {
+    id: "1008",
+    course_code: "DATA 102",
+    course_name: "Data Engineering",
+    course_units: "4",
+    course_description:
+      "Data engineering including data pipelines, data infrastructure, and data system design.",
+    prerequisites: "DATA 1",
+  },
+  {
+    id: "1009",
+    course_code: "DATA 103",
+    course_name: "Data Ethics",
+    course_units: "4",
+    course_description:
+      "Data ethics including ethical considerations, privacy protection, and responsible data use.",
+    prerequisites: "DATA 1",
+  },
+  {
+    id: "1010",
+    course_code: "DATA 104",
+    course_name: "Data Science Research",
+    course_units: "4",
+    course_description:
+      "Data science research including research methods, experimental design, and data science projects.",
+    prerequisites: "DATA 1",
+  },
+
+  // Additional Robotics Courses
+  {
+    id: "1011",
+    course_code: "ROBO 1",
+    course_name: "Introduction to Robotics",
+    course_units: "4",
+    course_description:
+      "Introduction to robotics including robot principles, mechanical systems, and robotic fundamentals.",
+    prerequisites: "None",
+  },
+  {
+    id: "1012",
+    course_code: "ROBO 2",
+    course_name: "Robot Mechanics",
+    course_units: "4",
+    course_description:
+      "Robot mechanics including mechanical design, kinematics, and robotic movement.",
+    prerequisites: "ROBO 1",
+  },
+  {
+    id: "1013",
+    course_code: "ROBO 3",
+    course_name: "Robot Control",
+    course_units: "4",
+    course_description:
+      "Robot control including control systems, feedback mechanisms, and robotic control algorithms.",
+    prerequisites: "ROBO 1",
+  },
+  {
+    id: "1014",
+    course_code: "ROBO 4",
+    course_name: "Robot Programming",
+    course_units: "4",
+    course_description:
+      "Robot programming including programming languages, software development, and robotic applications.",
+    prerequisites: "ROBO 1",
+  },
+  {
+    id: "1015",
+    course_code: "ROBO 5",
+    course_name: "Robot Sensors",
+    course_units: "4",
+    course_description:
+      "Robot sensors including sensor technology, perception systems, and environmental sensing.",
+    prerequisites: "ROBO 1",
+  },
+  {
+    id: "1016",
+    course_code: "ROBO 100",
+    course_name: "Advanced Robotics",
+    course_units: "4",
+    course_description:
+      "Advanced robotics including advanced techniques, complex systems, and robotic innovation.",
+    prerequisites: "ROBO 1",
+  },
+  {
+    id: "1017",
+    course_code: "ROBO 101",
+    course_name: "Autonomous Robots",
+    course_units: "4",
+    course_description:
+      "Autonomous robots including autonomous systems, decision-making, and independent operation.",
+    prerequisites: "ROBO 1",
+  },
+  {
+    id: "1018",
+    course_code: "ROBO 102",
+    course_name: "Robot Vision",
+    course_units: "4",
+    course_description:
+      "Robot vision including computer vision, image processing, and visual perception.",
+    prerequisites: "ROBO 1",
+  },
+  {
+    id: "1019",
+    course_code: "ROBO 103",
+    course_name: "Robot Learning",
+    course_units: "4",
+    course_description:
+      "Robot learning including machine learning, adaptive systems, and learning algorithms.",
+    prerequisites: "ROBO 1",
+  },
+  {
+    id: "1020",
+    course_code: "ROBO 104",
+    course_name: "Robotics Research",
+    course_units: "4",
+    course_description:
+      "Robotics research including research methods, experimental design, and robotics research projects.",
+    prerequisites: "ROBO 1",
+  },
+
+  // Additional Quantum Computing Courses
+  {
+    id: "1021",
+    course_code: "QUAN 1",
+    course_name: "Introduction to Quantum Computing",
+    course_units: "4",
+    course_description:
+      "Introduction to quantum computing including quantum principles, quantum mechanics, and quantum fundamentals.",
+    prerequisites: "None",
+  },
+  {
+    id: "1022",
+    course_code: "QUAN 2",
+    course_name: "Quantum Mechanics",
+    course_units: "4",
+    course_description:
+      "Quantum mechanics including quantum theory, wave functions, and quantum phenomena.",
+    prerequisites: "QUAN 1",
+  },
+  {
+    id: "1023",
+    course_code: "QUAN 3",
+    course_name: "Quantum Algorithms",
+    course_units: "4",
+    course_description:
+      "Quantum algorithms including quantum programming, algorithm design, and quantum computation.",
+    prerequisites: "QUAN 1",
+  },
+  {
+    id: "1024",
+    course_code: "QUAN 4",
+    course_name: "Quantum Information",
+    course_units: "4",
+    course_description:
+      "Quantum information including information theory, quantum bits, and quantum information processing.",
+    prerequisites: "QUAN 1",
+  },
+  {
+    id: "1025",
+    course_code: "QUAN 5",
+    course_name: "Quantum Cryptography",
+    course_units: "4",
+    course_description:
+      "Quantum cryptography including quantum security, encryption methods, and quantum communication.",
+    prerequisites: "QUAN 1",
+  },
+  {
+    id: "1026",
+    course_code: "QUAN 100",
+    course_name: "Advanced Quantum Computing",
+    course_units: "4",
+    course_description:
+      "Advanced quantum computing including advanced techniques, complex systems, and quantum innovation.",
+    prerequisites: "QUAN 1",
+  },
+  {
+    id: "1027",
+    course_code: "QUAN 101",
+    course_name: "Quantum Error Correction",
+    course_units: "4",
+    course_description:
+      "Quantum error correction including error detection, correction methods, and fault tolerance.",
+    prerequisites: "QUAN 1",
+  },
+  {
+    id: "1028",
+    course_code: "QUAN 102",
+    course_name: "Quantum Machine Learning",
+    course_units: "4",
+    course_description:
+      "Quantum machine learning including quantum algorithms, machine learning, and quantum AI.",
+    prerequisites: "QUAN 1",
+  },
+  {
+    id: "1029",
+    course_code: "QUAN 103",
+    course_name: "Quantum Hardware",
+    course_units: "4",
+    course_description:
+      "Quantum hardware including quantum devices, physical implementation, and quantum technology.",
+    prerequisites: "QUAN 1",
+  },
+  {
+    id: "1030",
+    course_code: "QUAN 104",
+    course_name: "Quantum Research",
+    course_units: "4",
+    course_description:
+      "Quantum research including research methods, experimental design, and quantum research projects.",
+    prerequisites: "QUAN 1",
+  },
+
+  // Additional Blockchain Courses
+  {
+    id: "1031",
+    course_code: "BLOC 1",
+    course_name: "Introduction to Blockchain",
+    course_units: "4",
+    course_description:
+      "Introduction to blockchain including blockchain principles, distributed systems, and blockchain fundamentals.",
+    prerequisites: "None",
+  },
+  {
+    id: "1032",
+    course_code: "BLOC 2",
+    course_name: "Cryptocurrency",
+    course_units: "4",
+    course_description:
+      "Cryptocurrency including digital currencies, cryptocurrency systems, and digital finance.",
+    prerequisites: "BLOC 1",
+  },
+  {
+    id: "1033",
+    course_code: "BLOC 3",
+    course_name: "Smart Contracts",
+    course_units: "4",
+    course_description:
+      "Smart contracts including contract programming, automated agreements, and decentralized applications.",
+    prerequisites: "BLOC 1",
+  },
+  {
+    id: "1034",
+    course_code: "BLOC 4",
+    course_name: "Blockchain Security",
+    course_units: "4",
+    course_description:
+      "Blockchain security including security principles, vulnerability assessment, and blockchain protection.",
+    prerequisites: "BLOC 1",
+  },
+  {
+    id: "1035",
+    course_code: "BLOC 5",
+    course_name: "Decentralized Finance",
+    course_units: "4",
+    course_description:
+      "Decentralized finance including DeFi protocols, financial applications, and decentralized systems.",
+    prerequisites: "BLOC 1",
+  },
+  {
+    id: "1036",
+    course_code: "BLOC 100",
+    course_name: "Advanced Blockchain",
+    course_units: "4",
+    course_description:
+      "Advanced blockchain including advanced techniques, complex systems, and blockchain innovation.",
+    prerequisites: "BLOC 1",
+  },
+  {
+    id: "1037",
+    course_code: "BLOC 101",
+    course_name: "Blockchain Development",
+    course_units: "4",
+    course_description:
+      "Blockchain development including development tools, programming languages, and blockchain applications.",
+    prerequisites: "BLOC 1",
+  },
+  {
+    id: "1038",
+    course_code: "BLOC 102",
+    course_name: "Blockchain Economics",
+    course_units: "4",
+    course_description:
+      "Blockchain economics including economic models, token economics, and blockchain business models.",
+    prerequisites: "BLOC 1",
+  },
+  {
+    id: "1039",
+    course_code: "BLOC 103",
+    course_name: "Blockchain Governance",
+    course_units: "4",
+    course_description:
+      "Blockchain governance including governance models, decision-making, and blockchain regulation.",
+    prerequisites: "BLOC 1",
+  },
+  {
+    id: "1040",
+    course_code: "BLOC 104",
+    course_name: "Blockchain Research",
+    course_units: "4",
+    course_description:
+      "Blockchain research including research methods, experimental design, and blockchain research projects.",
+    prerequisites: "BLOC 1",
+  },
+
+  // Additional Artificial Intelligence Courses
+  {
+    id: "1041",
+    course_code: "AINT 1",
+    course_name: "Introduction to Artificial Intelligence",
+    course_units: "4",
+    course_description:
+      "Introduction to artificial intelligence including AI principles, intelligent systems, and AI fundamentals.",
+    prerequisites: "None",
+  },
+  {
+    id: "1042",
+    course_code: "AINT 2",
+    course_name: "Machine Learning",
+    course_units: "4",
+    course_description:
+      "Machine learning including learning algorithms, pattern recognition, and automated learning.",
+    prerequisites: "AINT 1",
+  },
+  {
+    id: "1043",
+    course_code: "AINT 3",
+    course_name: "Natural Language Processing",
+    course_units: "4",
+    course_description:
+      "Natural language processing including language understanding, text analysis, and computational linguistics.",
+    prerequisites: "AINT 1",
+  },
+  {
+    id: "1044",
+    course_code: "AINT 4",
+    course_name: "Computer Vision",
+    course_units: "4",
+    course_description:
+      "Computer vision including image processing, visual recognition, and visual intelligence.",
+    prerequisites: "AINT 1",
+  },
+  {
+    id: "1045",
+    course_code: "AINT 5",
+    course_name: "Expert Systems",
+    course_units: "4",
+    course_description:
+      "Expert systems including knowledge representation, reasoning systems, and expert knowledge.",
+    prerequisites: "AINT 1",
+  },
+  {
+    id: "1046",
+    course_code: "AINT 100",
+    course_name: "Advanced Artificial Intelligence",
+    course_units: "4",
+    course_description:
+      "Advanced artificial intelligence including advanced techniques, complex systems, and AI innovation.",
+    prerequisites: "AINT 1",
+  },
+  {
+    id: "1047",
+    course_code: "AINT 101",
+    course_name: "Neural Networks",
+    course_units: "4",
+    course_description:
+      "Neural networks including network architecture, learning algorithms, and neural computation.",
+    prerequisites: "AINT 1",
+  },
+  {
+    id: "1048",
+    course_code: "AINT 102",
+    course_name: "AI Ethics",
+    course_units: "4",
+    course_description:
+      "AI ethics including ethical considerations, responsible AI, and artificial intelligence ethics.",
+    prerequisites: "AINT 1",
+  },
+  {
+    id: "1049",
+    course_code: "AINT 103",
+    course_name: "AI Applications",
+    course_units: "4",
+    course_description:
+      "AI applications including practical applications, real-world systems, and AI implementation.",
+    prerequisites: "AINT 1",
+  },
+  {
+    id: "1050",
+    course_code: "AINT 104",
+    course_name: "AI Research",
+    course_units: "4",
+    course_description:
+      "AI research including research methods, experimental design, and artificial intelligence research.",
+    prerequisites: "AINT 1",
+  },
 ];

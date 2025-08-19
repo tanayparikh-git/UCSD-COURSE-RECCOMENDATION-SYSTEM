@@ -634,6 +634,146 @@ class AIService {
       }
     }
 
+    // Swedish & Scandinavian Languages
+    if (searchTerm.includes('swedish') || searchTerm.includes('modern swedish') || searchTerm.includes('swedish literature') || searchTerm.includes('swedish linguistics') || searchTerm.includes('swedish translation') || searchTerm.includes('swedish culture')) {
+      if (courseCode.startsWith('swed') || courseDesc.includes('swedish') || courseDesc.includes('modern swedish') || courseDesc.includes('swedish literature') || courseDesc.includes('swedish linguistics') || courseDesc.includes('swedish translation') || courseDesc.includes('swedish culture')) {
+        return 0.6;
+      }
+    }
+
+    // Dutch & Germanic Languages
+    if (searchTerm.includes('dutch') || searchTerm.includes('modern dutch') || searchTerm.includes('dutch literature') || searchTerm.includes('dutch linguistics') || searchTerm.includes('dutch translation') || searchTerm.includes('dutch culture')) {
+      if (courseCode.startsWith('dutch') || courseDesc.includes('dutch') || courseDesc.includes('modern dutch') || courseDesc.includes('dutch literature') || courseDesc.includes('dutch linguistics') || courseDesc.includes('dutch translation') || courseDesc.includes('dutch culture')) {
+        return 0.6;
+      }
+    }
+
+    // Microbiology & Microbial Sciences
+    if (searchTerm.includes('microbiology') || searchTerm.includes('bacterial physiology') || searchTerm.includes('microbial genetics') || searchTerm.includes('microbial ecology') || searchTerm.includes('medical microbiology') || searchTerm.includes('virology') || searchTerm.includes('immunology') || searchTerm.includes('microbial biotechnology') || searchTerm.includes('microbial evolution') || searchTerm.includes('microbial research')) {
+      if (courseCode.startsWith('micr') || courseDesc.includes('microbiology') || courseDesc.includes('bacterial physiology') || courseDesc.includes('microbial genetics') || courseDesc.includes('microbial ecology') || courseDesc.includes('medical microbiology') || courseDesc.includes('virology') || courseDesc.includes('immunology') || courseDesc.includes('microbial biotechnology') || courseDesc.includes('microbial evolution') || courseDesc.includes('microbial research')) {
+        return 0.6;
+      }
+    }
+
+    // Immunology & Immune System
+    if (searchTerm.includes('immunology') || searchTerm.includes('cellular immunology') || searchTerm.includes('molecular immunology') || searchTerm.includes('clinical immunology') || searchTerm.includes('immunopathology') || searchTerm.includes('immunotherapy') || searchTerm.includes('vaccine immunology') || searchTerm.includes('autoimmunity') || searchTerm.includes('immunogenetics') || searchTerm.includes('immunological research')) {
+      if (courseCode.startsWith('immu') || courseDesc.includes('immunology') || courseDesc.includes('cellular immunology') || courseDesc.includes('molecular immunology') || courseDesc.includes('clinical immunology') || courseDesc.includes('immunopathology') || courseDesc.includes('immunotherapy') || courseDesc.includes('vaccine immunology') || courseDesc.includes('autoimmunity') || courseDesc.includes('immunogenetics') || courseDesc.includes('immunological research')) {
+        return 0.6;
+      }
+    }
+
+    // Game Design & Interactive Media
+    if (searchTerm.includes('game design') || searchTerm.includes('game mechanics') || searchTerm.includes('level design') || searchTerm.includes('game programming') || searchTerm.includes('game art') || searchTerm.includes('advanced game design') || searchTerm.includes('game production') || searchTerm.includes('game history') || searchTerm.includes('game theory') || searchTerm.includes('game portfolio')) {
+      if (courseCode.startsWith('game') || courseDesc.includes('game design') || courseDesc.includes('game mechanics') || courseDesc.includes('level design') || courseDesc.includes('game programming') || courseDesc.includes('game art') || courseDesc.includes('advanced game design') || courseDesc.includes('game production') || courseDesc.includes('game history') || courseDesc.includes('game theory') || courseDesc.includes('game portfolio')) {
+        return 0.6;
+      }
+    }
+
+    // Industrial Design & Product Design
+    if (searchTerm.includes('industrial design') || searchTerm.includes('product design') || searchTerm.includes('design materials') || searchTerm.includes('manufacturing processes') || searchTerm.includes('design technology') || searchTerm.includes('advanced industrial design') || searchTerm.includes('design research') || searchTerm.includes('sustainable design') || searchTerm.includes('design management') || searchTerm.includes('design portfolio')) {
+      if (courseCode.startsWith('indd') || courseDesc.includes('industrial design') || courseDesc.includes('product design') || courseDesc.includes('design materials') || courseDesc.includes('manufacturing processes') || courseDesc.includes('design technology') || courseDesc.includes('advanced industrial design') || courseDesc.includes('design research') || courseDesc.includes('sustainable design') || courseDesc.includes('design management') || courseDesc.includes('design portfolio')) {
+        return 0.6;
+      }
+    }
+
+    // Real Estate & Property Management
+    if (searchTerm.includes('real estate') || searchTerm.includes('real estate finance') || searchTerm.includes('real estate law') || searchTerm.includes('real estate marketing') || searchTerm.includes('property management') || searchTerm.includes('real estate investment') || searchTerm.includes('real estate development') || searchTerm.includes('real estate appraisal') || searchTerm.includes('real estate economics') || searchTerm.includes('real estate ethics')) {
+      if (courseCode.startsWith('real') || courseDesc.includes('real estate') || courseDesc.includes('real estate finance') || courseDesc.includes('real estate law') || courseDesc.includes('real estate marketing') || courseDesc.includes('property management') || courseDesc.includes('real estate investment') || courseDesc.includes('real estate development') || courseDesc.includes('real estate appraisal') || courseDesc.includes('real estate economics') || courseDesc.includes('real estate ethics')) {
+        return 0.6;
+      }
+    }
+
+    // Aviation & Aerospace
+    if (searchTerm.includes('aviation') || searchTerm.includes('aircraft systems') || searchTerm.includes('flight operations') || searchTerm.includes('aviation safety') || searchTerm.includes('aviation weather') || searchTerm.includes('aviation management') || searchTerm.includes('air traffic control') || searchTerm.includes('aviation law') || searchTerm.includes('aviation technology') || searchTerm.includes('aviation research')) {
+      if (courseCode.startsWith('avia') || courseDesc.includes('aviation') || courseDesc.includes('aircraft systems') || courseDesc.includes('flight operations') || courseDesc.includes('aviation safety') || courseDesc.includes('aviation weather') || courseDesc.includes('aviation management') || courseDesc.includes('air traffic control') || courseDesc.includes('aviation law') || courseDesc.includes('aviation technology') || courseDesc.includes('aviation research')) {
+        return 0.6;
+      }
+    }
+
+    // Marine Biology & Ocean Sciences
+    if (searchTerm.includes('marine biology') || searchTerm.includes('marine ecology') || searchTerm.includes('marine physiology') || searchTerm.includes('marine conservation') || searchTerm.includes('marine biotechnology') || searchTerm.includes('marine microbiology') || searchTerm.includes('marine genetics') || searchTerm.includes('marine evolution') || searchTerm.includes('marine research') || searchTerm.includes('marine policy')) {
+      if (courseCode.startsWith('marb') || courseDesc.includes('marine biology') || courseDesc.includes('marine ecology') || courseDesc.includes('marine physiology') || courseDesc.includes('marine conservation') || courseDesc.includes('marine biotechnology') || courseDesc.includes('marine microbiology') || courseDesc.includes('marine genetics') || courseDesc.includes('marine evolution') || courseDesc.includes('marine research') || courseDesc.includes('marine policy')) {
+        return 0.6;
+      }
+    }
+
+    // Forensic Science & Criminal Investigation
+    if (searchTerm.includes('forensic science') || searchTerm.includes('forensic biology') || searchTerm.includes('forensic chemistry') || searchTerm.includes('forensic anthropology') || searchTerm.includes('forensic psychology') || searchTerm.includes('forensic toxicology') || searchTerm.includes('forensic entomology') || searchTerm.includes('forensic pathology') || searchTerm.includes('forensic technology') || searchTerm.includes('forensic research')) {
+      if (courseCode.startsWith('fors') || courseDesc.includes('forensic science') || courseDesc.includes('forensic biology') || courseDesc.includes('forensic chemistry') || courseDesc.includes('forensic anthropology') || courseDesc.includes('forensic psychology') || courseDesc.includes('forensic toxicology') || courseDesc.includes('forensic entomology') || courseDesc.includes('forensic pathology') || courseDesc.includes('forensic technology') || courseDesc.includes('forensic research')) {
+        return 0.6;
+      }
+    }
+
+    // Norwegian & Scandinavian Languages
+    if (searchTerm.includes('norwegian') || searchTerm.includes('modern norwegian') || searchTerm.includes('norwegian literature') || searchTerm.includes('norwegian linguistics') || searchTerm.includes('norwegian translation') || searchTerm.includes('norwegian culture')) {
+      if (courseCode.startsWith('norw') || courseDesc.includes('norwegian') || courseDesc.includes('modern norwegian') || courseDesc.includes('norwegian literature') || courseDesc.includes('norwegian linguistics') || courseDesc.includes('norwegian translation') || courseDesc.includes('norwegian culture')) {
+        return 0.6;
+      }
+    }
+
+    // Danish & Scandinavian Languages
+    if (searchTerm.includes('danish') || searchTerm.includes('modern danish') || searchTerm.includes('danish literature') || searchTerm.includes('danish linguistics') || searchTerm.includes('danish translation') || searchTerm.includes('danish culture')) {
+      if (courseCode.startsWith('dan') || courseDesc.includes('danish') || courseDesc.includes('modern danish') || courseDesc.includes('danish literature') || courseDesc.includes('danish linguistics') || courseDesc.includes('danish translation') || courseDesc.includes('danish culture')) {
+        return 0.6;
+      }
+    }
+
+    // Pharmacology & Drug Sciences
+    if (searchTerm.includes('pharmacology') || searchTerm.includes('drug metabolism') || searchTerm.includes('clinical pharmacology') || searchTerm.includes('toxicology') || searchTerm.includes('drug development') || searchTerm.includes('molecular pharmacology') || searchTerm.includes('neuropharmacology') || searchTerm.includes('cardiovascular pharmacology') || searchTerm.includes('cancer pharmacology') || searchTerm.includes('pharmacological research')) {
+      if (courseCode.startsWith('phar') || courseDesc.includes('pharmacology') || courseDesc.includes('drug metabolism') || courseDesc.includes('clinical pharmacology') || courseDesc.includes('toxicology') || courseDesc.includes('drug development') || courseDesc.includes('molecular pharmacology') || courseDesc.includes('neuropharmacology') || courseDesc.includes('cardiovascular pharmacology') || courseDesc.includes('cancer pharmacology') || courseDesc.includes('pharmacological research')) {
+        return 0.6;
+      }
+    }
+
+    // Epidemiology & Public Health
+    if (searchTerm.includes('epidemiology') || searchTerm.includes('epidemiological methods') || searchTerm.includes('infectious disease epidemiology') || searchTerm.includes('chronic disease epidemiology') || searchTerm.includes('environmental epidemiology') || searchTerm.includes('clinical epidemiology') || searchTerm.includes('genetic epidemiology') || searchTerm.includes('social epidemiology') || searchTerm.includes('global epidemiology') || searchTerm.includes('epidemiological research')) {
+      if (courseCode.startsWith('epid') || courseDesc.includes('epidemiology') || courseDesc.includes('epidemiological methods') || courseDesc.includes('infectious disease epidemiology') || courseDesc.includes('chronic disease epidemiology') || courseDesc.includes('environmental epidemiology') || courseDesc.includes('clinical epidemiology') || courseDesc.includes('genetic epidemiology') || courseDesc.includes('social epidemiology') || courseDesc.includes('global epidemiology') || courseDesc.includes('epidemiological research')) {
+        return 0.6;
+      }
+    }
+
+    // Cybersecurity & Information Security
+    if (searchTerm.includes('cybersecurity') || searchTerm.includes('network security') || searchTerm.includes('cryptography') || searchTerm.includes('digital forensics') || searchTerm.includes('ethical hacking') || searchTerm.includes('advanced cybersecurity') || searchTerm.includes('security management') || searchTerm.includes('incident response') || searchTerm.includes('security architecture') || searchTerm.includes('cybersecurity research')) {
+      if (courseCode.startsWith('cybr') || courseDesc.includes('cybersecurity') || courseDesc.includes('network security') || courseDesc.includes('cryptography') || courseDesc.includes('digital forensics') || courseDesc.includes('ethical hacking') || courseDesc.includes('advanced cybersecurity') || courseDesc.includes('security management') || courseDesc.includes('incident response') || courseDesc.includes('security architecture') || courseDesc.includes('cybersecurity research')) {
+        return 0.6;
+      }
+    }
+
+    // Data Science & Analytics
+    if (searchTerm.includes('data science') || searchTerm.includes('data analysis') || searchTerm.includes('machine learning') || searchTerm.includes('data visualization') || searchTerm.includes('big data') || searchTerm.includes('advanced data science') || searchTerm.includes('deep learning') || searchTerm.includes('data engineering') || searchTerm.includes('data ethics') || searchTerm.includes('data science research')) {
+      if (courseCode.startsWith('data') || courseDesc.includes('data science') || courseDesc.includes('data analysis') || courseDesc.includes('machine learning') || courseDesc.includes('data visualization') || courseDesc.includes('big data') || courseDesc.includes('advanced data science') || courseDesc.includes('deep learning') || courseDesc.includes('data engineering') || courseDesc.includes('data ethics') || courseDesc.includes('data science research')) {
+        return 0.6;
+      }
+    }
+
+    // Robotics & Automation
+    if (searchTerm.includes('robotics') || searchTerm.includes('robot mechanics') || searchTerm.includes('robot control') || searchTerm.includes('robot programming') || searchTerm.includes('robot sensors') || searchTerm.includes('advanced robotics') || searchTerm.includes('autonomous robots') || searchTerm.includes('robot vision') || searchTerm.includes('robot learning') || searchTerm.includes('robotics research')) {
+      if (courseCode.startsWith('robo') || courseDesc.includes('robotics') || courseDesc.includes('robot mechanics') || courseDesc.includes('robot control') || courseDesc.includes('robot programming') || courseDesc.includes('robot sensors') || courseDesc.includes('advanced robotics') || courseDesc.includes('autonomous robots') || courseDesc.includes('robot vision') || courseDesc.includes('robot learning') || courseDesc.includes('robotics research')) {
+        return 0.6;
+      }
+    }
+
+    // Quantum Computing & Quantum Sciences
+    if (searchTerm.includes('quantum computing') || searchTerm.includes('quantum mechanics') || searchTerm.includes('quantum algorithms') || searchTerm.includes('quantum information') || searchTerm.includes('quantum cryptography') || searchTerm.includes('advanced quantum computing') || searchTerm.includes('quantum error correction') || searchTerm.includes('quantum machine learning') || searchTerm.includes('quantum hardware') || searchTerm.includes('quantum research')) {
+      if (courseCode.startsWith('quan') || courseDesc.includes('quantum computing') || courseDesc.includes('quantum mechanics') || courseDesc.includes('quantum algorithms') || courseDesc.includes('quantum information') || courseDesc.includes('quantum cryptography') || courseDesc.includes('advanced quantum computing') || courseDesc.includes('quantum error correction') || courseDesc.includes('quantum machine learning') || courseDesc.includes('quantum hardware') || courseDesc.includes('quantum research')) {
+        return 0.6;
+      }
+    }
+
+    // Blockchain & Distributed Systems
+    if (searchTerm.includes('blockchain') || searchTerm.includes('cryptocurrency') || searchTerm.includes('smart contracts') || searchTerm.includes('blockchain security') || searchTerm.includes('decentralized finance') || searchTerm.includes('advanced blockchain') || searchTerm.includes('blockchain development') || searchTerm.includes('blockchain economics') || searchTerm.includes('blockchain governance') || searchTerm.includes('blockchain research')) {
+      if (courseCode.startsWith('bloc') || courseDesc.includes('blockchain') || courseDesc.includes('cryptocurrency') || courseDesc.includes('smart contracts') || courseDesc.includes('blockchain security') || courseDesc.includes('decentralized finance') || courseDesc.includes('advanced blockchain') || courseDesc.includes('blockchain development') || courseDesc.includes('blockchain economics') || courseDesc.includes('blockchain governance') || courseDesc.includes('blockchain research')) {
+        return 0.6;
+      }
+    }
+
+    // Artificial Intelligence & Machine Learning
+    if (searchTerm.includes('artificial intelligence') || searchTerm.includes('machine learning') || searchTerm.includes('natural language processing') || searchTerm.includes('computer vision') || searchTerm.includes('expert systems') || searchTerm.includes('advanced artificial intelligence') || searchTerm.includes('neural networks') || searchTerm.includes('ai ethics') || searchTerm.includes('ai applications') || searchTerm.includes('ai research')) {
+      if (courseCode.startsWith('aint') || courseDesc.includes('artificial intelligence') || courseDesc.includes('machine learning') || courseDesc.includes('natural language processing') || courseDesc.includes('computer vision') || courseDesc.includes('expert systems') || courseDesc.includes('advanced artificial intelligence') || courseDesc.includes('neural networks') || courseDesc.includes('ai ethics') || courseDesc.includes('ai applications') || courseDesc.includes('ai research')) {
+        return 0.6;
+      }
+    }
+
     return 0;
   }
 
