@@ -494,6 +494,76 @@ class AIService {
       }
     }
 
+    // Arabic & Middle Eastern Languages
+    if (searchTerm.includes('arabic') || searchTerm.includes('modern arabic') || searchTerm.includes('classical arabic') || searchTerm.includes('arabic literature') || searchTerm.includes('arabic linguistics') || searchTerm.includes('arabic translation')) {
+      if (courseCode.startsWith('arab') || courseDesc.includes('arabic') || courseDesc.includes('modern arabic') || courseDesc.includes('classical arabic') || courseDesc.includes('arabic literature') || courseDesc.includes('arabic linguistics') || courseDesc.includes('arabic translation')) {
+        return 0.6;
+      }
+    }
+
+    // Oceanography & Marine Science
+    if (searchTerm.includes('oceanography') || searchTerm.includes('marine science') || searchTerm.includes('physical oceanography') || searchTerm.includes('chemical oceanography') || searchTerm.includes('biological oceanography') || searchTerm.includes('geological oceanography') || searchTerm.includes('marine ecology') || searchTerm.includes('ocean climate') || searchTerm.includes('marine conservation') || searchTerm.includes('ocean technology')) {
+      if (courseCode.startsWith('ocea') || courseDesc.includes('oceanography') || courseDesc.includes('marine science') || courseDesc.includes('physical oceanography') || courseDesc.includes('chemical oceanography') || courseDesc.includes('biological oceanography') || courseDesc.includes('geological oceanography') || courseDesc.includes('marine ecology') || courseDesc.includes('ocean climate') || courseDesc.includes('marine conservation') || courseDesc.includes('ocean technology')) {
+        return 0.6;
+      }
+    }
+
+    // Meteorology & Atmospheric Science
+    if (searchTerm.includes('meteorology') || searchTerm.includes('atmospheric science') || searchTerm.includes('atmospheric physics') || searchTerm.includes('weather analysis') || searchTerm.includes('climate science') || searchTerm.includes('atmospheric chemistry') || searchTerm.includes('weather forecasting') || searchTerm.includes('severe weather') || searchTerm.includes('atmospheric dynamics') || searchTerm.includes('meteorological instruments')) {
+      if (courseCode.startsWith('metr') || courseDesc.includes('meteorology') || courseDesc.includes('atmospheric science') || courseDesc.includes('atmospheric physics') || courseDesc.includes('weather analysis') || courseDesc.includes('climate science') || courseDesc.includes('atmospheric chemistry') || courseDesc.includes('weather forecasting') || courseDesc.includes('severe weather') || courseDesc.includes('atmospheric dynamics') || courseDesc.includes('meteorological instruments')) {
+        return 0.6;
+      }
+    }
+
+    // Photography & Visual Arts
+    if (searchTerm.includes('photography') || searchTerm.includes('digital photography') || searchTerm.includes('black and white photography') || searchTerm.includes('portrait photography') || searchTerm.includes('documentary photography') || searchTerm.includes('advanced photography') || searchTerm.includes('photojournalism') || searchTerm.includes('commercial photography') || searchTerm.includes('photographic history') || searchTerm.includes('photographic theory')) {
+      if (courseCode.startsWith('phot') || courseDesc.includes('photography') || courseDesc.includes('digital photography') || courseDesc.includes('black and white photography') || courseDesc.includes('portrait photography') || courseDesc.includes('documentary photography') || courseDesc.includes('advanced photography') || courseDesc.includes('photojournalism') || courseDesc.includes('commercial photography') || courseDesc.includes('photographic history') || courseDesc.includes('photographic theory')) {
+        return 0.6;
+      }
+    }
+
+    // Sculpture & 3D Arts
+    if (searchTerm.includes('sculpture') || searchTerm.includes('clay sculpture') || searchTerm.includes('metal sculpture') || searchTerm.includes('wood sculpture') || searchTerm.includes('mixed media sculpture') || searchTerm.includes('advanced sculpture') || searchTerm.includes('installation art') || searchTerm.includes('public art') || searchTerm.includes('sculptural history') || searchTerm.includes('sculptural theory')) {
+      if (courseCode.startsWith('scul') || courseDesc.includes('sculpture') || courseDesc.includes('clay sculpture') || courseDesc.includes('metal sculpture') || courseDesc.includes('wood sculpture') || courseDesc.includes('mixed media sculpture') || courseDesc.includes('advanced sculpture') || courseDesc.includes('installation art') || courseDesc.includes('public art') || courseDesc.includes('sculptural history') || courseDesc.includes('sculptural theory')) {
+        return 0.6;
+      }
+    }
+
+    // Education & Teaching
+    if (searchTerm.includes('education') || searchTerm.includes('educational psychology') || searchTerm.includes('curriculum development') || searchTerm.includes('teaching methods') || searchTerm.includes('educational assessment') || searchTerm.includes('special education') || searchTerm.includes('educational technology') || searchTerm.includes('educational leadership') || searchTerm.includes('educational research') || searchTerm.includes('educational policy')) {
+      if (courseCode.startsWith('eds') || courseDesc.includes('education') || courseDesc.includes('educational psychology') || courseDesc.includes('curriculum development') || courseDesc.includes('teaching methods') || courseDesc.includes('educational assessment') || courseDesc.includes('special education') || courseDesc.includes('educational technology') || courseDesc.includes('educational leadership') || courseDesc.includes('educational research') || courseDesc.includes('educational policy')) {
+        return 0.6;
+      }
+    }
+
+    // Nursing & Healthcare
+    if (searchTerm.includes('nursing') || searchTerm.includes('nursing fundamentals') || searchTerm.includes('health assessment') || searchTerm.includes('nursing pharmacology') || searchTerm.includes('medical-surgical nursing') || searchTerm.includes('pediatric nursing') || searchTerm.includes('mental health nursing') || searchTerm.includes('community health nursing') || searchTerm.includes('nursing research') || searchTerm.includes('nursing leadership')) {
+      if (courseCode.startsWith('nurs') || courseDesc.includes('nursing') || courseDesc.includes('nursing fundamentals') || courseDesc.includes('health assessment') || courseDesc.includes('nursing pharmacology') || courseDesc.includes('medical-surgical nursing') || courseDesc.includes('pediatric nursing') || courseDesc.includes('mental health nursing') || courseDesc.includes('community health nursing') || courseDesc.includes('nursing research') || courseDesc.includes('nursing leadership')) {
+        return 0.6;
+      }
+    }
+
+    // Nutrition & Food Science
+    if (searchTerm.includes('nutrition') || searchTerm.includes('human nutrition') || searchTerm.includes('clinical nutrition') || searchTerm.includes('community nutrition') || searchTerm.includes('sports nutrition') || searchTerm.includes('nutritional biochemistry') || searchTerm.includes('food science') || searchTerm.includes('nutritional epidemiology') || searchTerm.includes('nutritional counseling') || searchTerm.includes('nutritional policy')) {
+      if (courseCode.startsWith('nutr') || courseDesc.includes('nutrition') || courseDesc.includes('human nutrition') || courseDesc.includes('clinical nutrition') || courseDesc.includes('community nutrition') || courseDesc.includes('sports nutrition') || courseDesc.includes('nutritional biochemistry') || courseDesc.includes('food science') || courseDesc.includes('nutritional epidemiology') || courseDesc.includes('nutritional counseling') || courseDesc.includes('nutritional policy')) {
+        return 0.6;
+      }
+    }
+
+    // Kinesiology & Exercise Science
+    if (searchTerm.includes('kinesiology') || searchTerm.includes('exercise physiology') || searchTerm.includes('biomechanics') || searchTerm.includes('motor learning') || searchTerm.includes('sports psychology') || searchTerm.includes('physical education') || searchTerm.includes('athletic training') || searchTerm.includes('fitness and wellness') || searchTerm.includes('adapted physical education') || searchTerm.includes('kinesiology research')) {
+      if (courseCode.startsWith('kine') || courseDesc.includes('kinesiology') || courseDesc.includes('exercise physiology') || courseDesc.includes('biomechanics') || courseDesc.includes('motor learning') || courseDesc.includes('sports psychology') || courseDesc.includes('physical education') || courseDesc.includes('athletic training') || courseDesc.includes('fitness and wellness') || courseDesc.includes('adapted physical education') || courseDesc.includes('kinesiology research')) {
+        return 0.6;
+      }
+    }
+
+    // Environmental Science & Sustainability
+    if (searchTerm.includes('environmental science') || searchTerm.includes('environmental chemistry') || searchTerm.includes('environmental biology') || searchTerm.includes('environmental policy') || searchTerm.includes('environmental economics') || searchTerm.includes('climate change') || searchTerm.includes('sustainability') || searchTerm.includes('environmental toxicology') || searchTerm.includes('environmental monitoring') || searchTerm.includes('environmental research')) {
+      if (courseCode.startsWith('envs') || courseDesc.includes('environmental science') || courseDesc.includes('environmental chemistry') || courseDesc.includes('environmental biology') || courseDesc.includes('environmental policy') || courseDesc.includes('environmental economics') || courseDesc.includes('climate change') || courseDesc.includes('sustainability') || courseDesc.includes('environmental toxicology') || courseDesc.includes('environmental monitoring') || courseDesc.includes('environmental research')) {
+        return 0.6;
+      }
+    }
+
     return 0;
   }
 

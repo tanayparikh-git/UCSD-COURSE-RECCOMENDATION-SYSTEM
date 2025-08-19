@@ -5998,4 +5998,924 @@ export const courseDatabase: CourseData[] = [
       "Public administration research including administrative research methods, public sector data analysis, and administrative research design.",
     prerequisites: "PA 1",
   },
+
+  // Additional Arabic Language Courses
+  {
+    id: "651",
+    course_code: "ARAB 1",
+    course_name: "Elementary Arabic I",
+    course_units: "4",
+    course_description:
+      "Elementary Arabic I including basic grammar, vocabulary, and reading skills for beginners.",
+    prerequisites: "None",
+  },
+  {
+    id: "652",
+    course_code: "ARAB 2",
+    course_name: "Elementary Arabic II",
+    course_units: "4",
+    course_description:
+      "Elementary Arabic II including intermediate grammar, vocabulary, and reading skills.",
+    prerequisites: "ARAB 1",
+  },
+  {
+    id: "653",
+    course_code: "ARAB 3",
+    course_name: "Intermediate Arabic I",
+    course_units: "4",
+    course_description:
+      "Intermediate Arabic I including advanced grammar, reading comprehension, and cultural studies.",
+    prerequisites: "ARAB 2",
+  },
+  {
+    id: "654",
+    course_code: "ARAB 4",
+    course_name: "Intermediate Arabic II",
+    course_units: "4",
+    course_description:
+      "Intermediate Arabic II including advanced reading, composition, and Arabic literature.",
+    prerequisites: "ARAB 3",
+  },
+  {
+    id: "655",
+    course_code: "ARAB 5",
+    course_name: "Advanced Arabic",
+    course_units: "4",
+    course_description:
+      "Advanced Arabic including advanced reading, literary analysis, and cultural studies.",
+    prerequisites: "ARAB 4",
+  },
+  {
+    id: "656",
+    course_code: "ARAB 100",
+    course_name: "Arabic Literature",
+    course_units: "4",
+    course_description:
+      "Arabic literature including major works, literary analysis, and cultural context.",
+    prerequisites: "ARAB 5",
+  },
+  {
+    id: "657",
+    course_code: "ARAB 101",
+    course_name: "Modern Arabic",
+    course_units: "4",
+    course_description:
+      "Modern Arabic including contemporary Arabic, modern literature, and current events.",
+    prerequisites: "ARAB 4",
+  },
+  {
+    id: "658",
+    course_code: "ARAB 102",
+    course_name: "Classical Arabic",
+    course_units: "4",
+    course_description:
+      "Classical Arabic including classical texts, historical language study, and ancient literature.",
+    prerequisites: "ARAB 3",
+  },
+  {
+    id: "659",
+    course_code: "ARAB 103",
+    course_name: "Arabic Linguistics",
+    course_units: "4",
+    course_description:
+      "Arabic linguistics including Arabic phonology, morphology, syntax, and historical linguistics.",
+    prerequisites: "LING 1, ARAB 4",
+  },
+  {
+    id: "660",
+    course_code: "ARAB 104",
+    course_name: "Arabic Translation",
+    course_units: "4",
+    course_description:
+      "Arabic translation including translation theory, techniques, and practical translation exercises.",
+    prerequisites: "ARAB 5",
+  },
+
+  // Additional Oceanography Courses
+  {
+    id: "661",
+    course_code: "OCEA 1",
+    course_name: "Introduction to Oceanography",
+    course_units: "4",
+    course_description:
+      "Introduction to oceanography including ocean systems, marine science, and oceanographic processes.",
+    prerequisites: "None",
+  },
+  {
+    id: "662",
+    course_code: "OCEA 2",
+    course_name: "Physical Oceanography",
+    course_units: "4",
+    course_description:
+      "Physical oceanography including ocean currents, waves, tides, and ocean dynamics.",
+    prerequisites: "OCEA 1",
+  },
+  {
+    id: "663",
+    course_code: "OCEA 3",
+    course_name: "Chemical Oceanography",
+    course_units: "4",
+    course_description:
+      "Chemical oceanography including ocean chemistry, biogeochemical cycles, and marine chemistry.",
+    prerequisites: "OCEA 1",
+  },
+  {
+    id: "664",
+    course_code: "OCEA 4",
+    course_name: "Biological Oceanography",
+    course_units: "4",
+    course_description:
+      "Biological oceanography including marine biology, ocean ecosystems, and marine organisms.",
+    prerequisites: "OCEA 1",
+  },
+  {
+    id: "665",
+    course_code: "OCEA 5",
+    course_name: "Geological Oceanography",
+    course_units: "4",
+    course_description:
+      "Geological oceanography including seafloor geology, marine sediments, and ocean basin formation.",
+    prerequisites: "OCEA 1",
+  },
+  {
+    id: "666",
+    course_code: "OCEA 100",
+    course_name: "Marine Ecology",
+    course_units: "4",
+    course_description:
+      "Marine ecology including marine ecosystems, species interactions, and ecological processes.",
+    prerequisites: "OCEA 1",
+  },
+  {
+    id: "667",
+    course_code: "OCEA 101",
+    course_name: "Ocean Climate",
+    course_units: "4",
+    course_description:
+      "Ocean climate including ocean-atmosphere interactions, climate change, and ocean circulation.",
+    prerequisites: "OCEA 1",
+  },
+  {
+    id: "668",
+    course_code: "OCEA 102",
+    course_name: "Marine Conservation",
+    course_units: "4",
+    course_description:
+      "Marine conservation including marine protected areas, conservation biology, and marine policy.",
+    prerequisites: "OCEA 1",
+  },
+  {
+    id: "669",
+    course_code: "OCEA 103",
+    course_name: "Ocean Technology",
+    course_units: "4",
+    course_description:
+      "Ocean technology including oceanographic instruments, remote sensing, and marine technology.",
+    prerequisites: "OCEA 1",
+  },
+  {
+    id: "670",
+    course_code: "OCEA 104",
+    course_name: "Ocean Research Methods",
+    course_units: "4",
+    course_description:
+      "Ocean research methods including field methods, data analysis, and oceanographic research.",
+    prerequisites: "OCEA 1",
+  },
+
+  // Additional Meteorology Courses
+  {
+    id: "671",
+    course_code: "METR 1",
+    course_name: "Introduction to Meteorology",
+    course_units: "4",
+    course_description:
+      "Introduction to meteorology including weather systems, atmospheric science, and meteorological processes.",
+    prerequisites: "None",
+  },
+  {
+    id: "672",
+    course_code: "METR 2",
+    course_name: "Atmospheric Physics",
+    course_units: "4",
+    course_description:
+      "Atmospheric physics including atmospheric dynamics, thermodynamics, and physical processes.",
+    prerequisites: "METR 1",
+  },
+  {
+    id: "673",
+    course_code: "METR 3",
+    course_name: "Weather Analysis",
+    course_units: "4",
+    course_description:
+      "Weather analysis including weather patterns, forecasting techniques, and meteorological data.",
+    prerequisites: "METR 1",
+  },
+  {
+    id: "674",
+    course_code: "METR 4",
+    course_name: "Climate Science",
+    course_units: "4",
+    course_description:
+      "Climate science including climate systems, climate change, and climate modeling.",
+    prerequisites: "METR 1",
+  },
+  {
+    id: "675",
+    course_code: "METR 5",
+    course_name: "Atmospheric Chemistry",
+    course_units: "4",
+    course_description:
+      "Atmospheric chemistry including air quality, atmospheric composition, and chemical processes.",
+    prerequisites: "METR 1",
+  },
+  {
+    id: "676",
+    course_code: "METR 100",
+    course_name: "Weather Forecasting",
+    course_units: "4",
+    course_description:
+      "Weather forecasting including forecast methods, numerical modeling, and prediction techniques.",
+    prerequisites: "METR 1",
+  },
+  {
+    id: "677",
+    course_code: "METR 101",
+    course_name: "Severe Weather",
+    course_units: "4",
+    course_description:
+      "Severe weather including thunderstorms, tornadoes, hurricanes, and extreme weather events.",
+    prerequisites: "METR 1",
+  },
+  {
+    id: "678",
+    course_code: "METR 102",
+    course_name: "Atmospheric Dynamics",
+    course_units: "4",
+    course_description:
+      "Atmospheric dynamics including fluid dynamics, atmospheric circulation, and dynamic processes.",
+    prerequisites: "METR 1",
+  },
+  {
+    id: "679",
+    course_code: "METR 103",
+    course_name: "Meteorological Instruments",
+    course_units: "4",
+    course_description:
+      "Meteorological instruments including weather instruments, measurement techniques, and data collection.",
+    prerequisites: "METR 1",
+  },
+  {
+    id: "680",
+    course_code: "METR 104",
+    course_name: "Meteorological Research",
+    course_units: "4",
+    course_description:
+      "Meteorological research including research methods, data analysis, and meteorological research.",
+    prerequisites: "METR 1",
+  },
+
+  // Additional Photography Courses
+  {
+    id: "681",
+    course_code: "PHOT 1",
+    course_name: "Introduction to Photography",
+    course_units: "4",
+    course_description:
+      "Introduction to photography including camera operation, composition, and photographic techniques.",
+    prerequisites: "None",
+  },
+  {
+    id: "682",
+    course_code: "PHOT 2",
+    course_name: "Digital Photography",
+    course_units: "4",
+    course_description:
+      "Digital photography including digital cameras, image processing, and digital techniques.",
+    prerequisites: "PHOT 1",
+  },
+  {
+    id: "683",
+    course_code: "PHOT 3",
+    course_name: "Black and White Photography",
+    course_units: "4",
+    course_description:
+      "Black and white photography including film photography, darkroom techniques, and monochrome aesthetics.",
+    prerequisites: "PHOT 1",
+  },
+  {
+    id: "684",
+    course_code: "PHOT 4",
+    course_name: "Portrait Photography",
+    course_units: "4",
+    course_description:
+      "Portrait photography including lighting, posing, and portrait techniques.",
+    prerequisites: "PHOT 1",
+  },
+  {
+    id: "685",
+    course_code: "PHOT 5",
+    course_name: "Documentary Photography",
+    course_units: "4",
+    course_description:
+      "Documentary photography including photojournalism, storytelling, and documentary techniques.",
+    prerequisites: "PHOT 1",
+  },
+  {
+    id: "686",
+    course_code: "PHOT 100",
+    course_name: "Advanced Photography",
+    course_units: "4",
+    course_description:
+      "Advanced photography including advanced techniques, creative expression, and photographic art.",
+    prerequisites: "PHOT 1",
+  },
+  {
+    id: "687",
+    course_code: "PHOT 101",
+    course_name: "Photojournalism",
+    course_units: "4",
+    course_description:
+      "Photojournalism including news photography, editorial photography, and journalistic techniques.",
+    prerequisites: "PHOT 1",
+  },
+  {
+    id: "688",
+    course_code: "PHOT 102",
+    course_name: "Commercial Photography",
+    course_units: "4",
+    course_description:
+      "Commercial photography including advertising photography, product photography, and commercial techniques.",
+    prerequisites: "PHOT 1",
+  },
+  {
+    id: "689",
+    course_code: "PHOT 103",
+    course_name: "Photographic History",
+    course_units: "4",
+    course_description:
+      "Photographic history including historical photography, photographic movements, and photographic evolution.",
+    prerequisites: "PHOT 1",
+  },
+  {
+    id: "690",
+    course_code: "PHOT 104",
+    course_name: "Photographic Theory",
+    course_units: "4",
+    course_description:
+      "Photographic theory including photographic criticism, theoretical approaches, and photographic analysis.",
+    prerequisites: "PHOT 1",
+  },
+
+  // Additional Sculpture Courses
+  {
+    id: "691",
+    course_code: "SCUL 1",
+    course_name: "Introduction to Sculpture",
+    course_units: "4",
+    course_description:
+      "Introduction to sculpture including three-dimensional art, sculptural techniques, and material exploration.",
+    prerequisites: "None",
+  },
+  {
+    id: "692",
+    course_code: "SCUL 2",
+    course_name: "Clay Sculpture",
+    course_units: "4",
+    course_description:
+      "Clay sculpture including ceramic techniques, clay modeling, and ceramic sculpture.",
+    prerequisites: "SCUL 1",
+  },
+  {
+    id: "693",
+    course_code: "SCUL 3",
+    course_name: "Metal Sculpture",
+    course_units: "4",
+    course_description:
+      "Metal sculpture including metalworking, welding, and metal fabrication techniques.",
+    prerequisites: "SCUL 1",
+  },
+  {
+    id: "694",
+    course_code: "SCUL 4",
+    course_name: "Wood Sculpture",
+    course_units: "4",
+    course_description:
+      "Wood sculpture including woodworking, carving, and wood fabrication techniques.",
+    prerequisites: "SCUL 1",
+  },
+  {
+    id: "695",
+    course_code: "SCUL 5",
+    course_name: "Mixed Media Sculpture",
+    course_units: "4",
+    course_description:
+      "Mixed media sculpture including combined materials, installation art, and contemporary sculpture.",
+    prerequisites: "SCUL 1",
+  },
+  {
+    id: "696",
+    course_code: "SCUL 100",
+    course_name: "Advanced Sculpture",
+    course_units: "4",
+    course_description:
+      "Advanced sculpture including advanced techniques, conceptual sculpture, and sculptural art.",
+    prerequisites: "SCUL 1",
+  },
+  {
+    id: "697",
+    course_code: "SCUL 101",
+    course_name: "Installation Art",
+    course_units: "4",
+    course_description:
+      "Installation art including site-specific art, environmental art, and installation techniques.",
+    prerequisites: "SCUL 1",
+  },
+  {
+    id: "698",
+    course_code: "SCUL 102",
+    course_name: "Public Art",
+    course_units: "4",
+    course_description:
+      "Public art including public sculpture, community art, and public art projects.",
+    prerequisites: "SCUL 1",
+  },
+  {
+    id: "699",
+    course_code: "SCUL 103",
+    course_name: "Sculptural History",
+    course_units: "4",
+    course_description:
+      "Sculptural history including historical sculpture, sculptural movements, and sculptural evolution.",
+    prerequisites: "SCUL 1",
+  },
+  {
+    id: "700",
+    course_code: "SCUL 104",
+    course_name: "Sculptural Theory",
+    course_units: "4",
+    course_description:
+      "Sculptural theory including sculptural criticism, theoretical approaches, and sculptural analysis.",
+    prerequisites: "SCUL 1",
+  },
+
+  // Additional Education Courses
+  {
+    id: "701",
+    course_code: "EDS 1",
+    course_name: "Introduction to Education",
+    course_units: "4",
+    course_description:
+      "Introduction to education including educational theory, teaching methods, and educational systems.",
+    prerequisites: "None",
+  },
+  {
+    id: "702",
+    course_code: "EDS 2",
+    course_name: "Educational Psychology",
+    course_units: "4",
+    course_description:
+      "Educational psychology including learning theory, cognitive development, and psychological processes.",
+    prerequisites: "EDS 1",
+  },
+  {
+    id: "703",
+    course_code: "EDS 3",
+    course_name: "Curriculum Development",
+    course_units: "4",
+    course_description:
+      "Curriculum development including curriculum design, instructional planning, and educational content.",
+    prerequisites: "EDS 1",
+  },
+  {
+    id: "704",
+    course_code: "EDS 4",
+    course_name: "Teaching Methods",
+    course_units: "4",
+    course_description:
+      "Teaching methods including instructional strategies, classroom management, and teaching techniques.",
+    prerequisites: "EDS 1",
+  },
+  {
+    id: "705",
+    course_code: "EDS 5",
+    course_name: "Educational Assessment",
+    course_units: "4",
+    course_description:
+      "Educational assessment including testing, evaluation, and assessment methods.",
+    prerequisites: "EDS 1",
+  },
+  {
+    id: "706",
+    course_code: "EDS 100",
+    course_name: "Special Education",
+    course_units: "4",
+    course_description:
+      "Special education including learning disabilities, special needs, and inclusive education.",
+    prerequisites: "EDS 1",
+  },
+  {
+    id: "707",
+    course_code: "EDS 101",
+    course_name: "Educational Technology",
+    course_units: "4",
+    course_description:
+      "Educational technology including digital learning, educational software, and technology integration.",
+    prerequisites: "EDS 1",
+  },
+  {
+    id: "708",
+    course_code: "EDS 102",
+    course_name: "Educational Leadership",
+    course_units: "4",
+    course_description:
+      "Educational leadership including school administration, educational policy, and leadership development.",
+    prerequisites: "EDS 1",
+  },
+  {
+    id: "709",
+    course_code: "EDS 103",
+    course_name: "Educational Research",
+    course_units: "4",
+    course_description:
+      "Educational research including research methods, data analysis, and educational research design.",
+    prerequisites: "EDS 1",
+  },
+  {
+    id: "710",
+    course_code: "EDS 104",
+    course_name: "Educational Policy",
+    course_units: "4",
+    course_description:
+      "Educational policy including policy analysis, educational reform, and policy development.",
+    prerequisites: "EDS 1",
+  },
+
+  // Additional Nursing Courses
+  {
+    id: "711",
+    course_code: "NURS 1",
+    course_name: "Introduction to Nursing",
+    course_units: "4",
+    course_description:
+      "Introduction to nursing including nursing theory, nursing practice, and healthcare systems.",
+    prerequisites: "None",
+  },
+  {
+    id: "712",
+    course_code: "NURS 2",
+    course_name: "Nursing Fundamentals",
+    course_units: "4",
+    course_description:
+      "Nursing fundamentals including basic nursing skills, patient care, and nursing procedures.",
+    prerequisites: "NURS 1",
+  },
+  {
+    id: "713",
+    course_code: "NURS 3",
+    course_name: "Health Assessment",
+    course_units: "4",
+    course_description:
+      "Health assessment including physical assessment, health history, and assessment techniques.",
+    prerequisites: "NURS 1",
+  },
+  {
+    id: "714",
+    course_code: "NURS 4",
+    course_name: "Nursing Pharmacology",
+    course_units: "4",
+    course_description:
+      "Nursing pharmacology including medication administration, drug interactions, and pharmacological principles.",
+    prerequisites: "NURS 1",
+  },
+  {
+    id: "715",
+    course_code: "NURS 5",
+    course_name: "Medical-Surgical Nursing",
+    course_units: "4",
+    course_description:
+      "Medical-surgical nursing including adult health, surgical nursing, and medical nursing care.",
+    prerequisites: "NURS 1",
+  },
+  {
+    id: "716",
+    course_code: "NURS 100",
+    course_name: "Pediatric Nursing",
+    course_units: "4",
+    course_description:
+      "Pediatric nursing including child health, pediatric care, and family-centered care.",
+    prerequisites: "NURS 1",
+  },
+  {
+    id: "717",
+    course_code: "NURS 101",
+    course_name: "Mental Health Nursing",
+    course_units: "4",
+    course_description:
+      "Mental health nursing including psychiatric nursing, mental health care, and therapeutic communication.",
+    prerequisites: "NURS 1",
+  },
+  {
+    id: "718",
+    course_code: "NURS 102",
+    course_name: "Community Health Nursing",
+    course_units: "4",
+    course_description:
+      "Community health nursing including public health, community care, and population health.",
+    prerequisites: "NURS 1",
+  },
+  {
+    id: "719",
+    course_code: "NURS 103",
+    course_name: "Nursing Research",
+    course_units: "4",
+    course_description:
+      "Nursing research including research methods, evidence-based practice, and nursing research design.",
+    prerequisites: "NURS 1",
+  },
+  {
+    id: "720",
+    course_code: "NURS 104",
+    course_name: "Nursing Leadership",
+    course_units: "4",
+    course_description:
+      "Nursing leadership including nursing management, healthcare leadership, and nursing administration.",
+    prerequisites: "NURS 1",
+  },
+
+  // Additional Nutrition Courses
+  {
+    id: "721",
+    course_code: "NUTR 1",
+    course_name: "Introduction to Nutrition",
+    course_units: "4",
+    course_description:
+      "Introduction to nutrition including nutritional science, dietary principles, and nutritional health.",
+    prerequisites: "None",
+  },
+  {
+    id: "722",
+    course_code: "NUTR 2",
+    course_name: "Human Nutrition",
+    course_units: "4",
+    course_description:
+      "Human nutrition including nutrient metabolism, dietary requirements, and nutritional physiology.",
+    prerequisites: "NUTR 1",
+  },
+  {
+    id: "723",
+    course_code: "NUTR 3",
+    course_name: "Clinical Nutrition",
+    course_units: "4",
+    course_description:
+      "Clinical nutrition including medical nutrition therapy, therapeutic diets, and clinical applications.",
+    prerequisites: "NUTR 1",
+  },
+  {
+    id: "724",
+    course_code: "NUTR 4",
+    course_name: "Community Nutrition",
+    course_units: "4",
+    course_description:
+      "Community nutrition including public health nutrition, nutrition programs, and community health.",
+    prerequisites: "NUTR 1",
+  },
+  {
+    id: "725",
+    course_code: "NUTR 5",
+    course_name: "Sports Nutrition",
+    course_units: "4",
+    course_description:
+      "Sports nutrition including athletic nutrition, performance nutrition, and exercise nutrition.",
+    prerequisites: "NUTR 1",
+  },
+  {
+    id: "726",
+    course_code: "NUTR 100",
+    course_name: "Nutritional Biochemistry",
+    course_units: "4",
+    course_description:
+      "Nutritional biochemistry including nutrient biochemistry, metabolic pathways, and biochemical processes.",
+    prerequisites: "NUTR 1",
+  },
+  {
+    id: "727",
+    course_code: "NUTR 101",
+    course_name: "Food Science",
+    course_units: "4",
+    course_description:
+      "Food science including food chemistry, food processing, and food technology.",
+    prerequisites: "NUTR 1",
+  },
+  {
+    id: "728",
+    course_code: "NUTR 102",
+    course_name: "Nutritional Epidemiology",
+    course_units: "4",
+    course_description:
+      "Nutritional epidemiology including nutrition research, dietary assessment, and nutritional studies.",
+    prerequisites: "NUTR 1",
+  },
+  {
+    id: "729",
+    course_code: "NUTR 103",
+    course_name: "Nutritional Counseling",
+    course_units: "4",
+    course_description:
+      "Nutritional counseling including dietary counseling, behavior change, and nutritional guidance.",
+    prerequisites: "NUTR 1",
+  },
+  {
+    id: "730",
+    course_code: "NUTR 104",
+    course_name: "Nutritional Policy",
+    course_units: "4",
+    course_description:
+      "Nutritional policy including food policy, nutrition programs, and policy development.",
+    prerequisites: "NUTR 1",
+  },
+
+  // Additional Kinesiology Courses
+  {
+    id: "731",
+    course_code: "KINE 1",
+    course_name: "Introduction to Kinesiology",
+    course_units: "4",
+    course_description:
+      "Introduction to kinesiology including human movement, exercise science, and physical activity.",
+    prerequisites: "None",
+  },
+  {
+    id: "732",
+    course_code: "KINE 2",
+    course_name: "Exercise Physiology",
+    course_units: "4",
+    course_description:
+      "Exercise physiology including physiological responses to exercise, fitness, and exercise science.",
+    prerequisites: "KINE 1",
+  },
+  {
+    id: "733",
+    course_code: "KINE 3",
+    course_name: "Biomechanics",
+    course_units: "4",
+    course_description:
+      "Biomechanics including movement mechanics, mechanical principles, and biomechanical analysis.",
+    prerequisites: "KINE 1",
+  },
+  {
+    id: "734",
+    course_code: "KINE 4",
+    course_name: "Motor Learning",
+    course_units: "4",
+    course_description:
+      "Motor learning including skill acquisition, motor development, and learning principles.",
+    prerequisites: "KINE 1",
+  },
+  {
+    id: "735",
+    course_code: "KINE 5",
+    course_name: "Sports Psychology",
+    course_units: "4",
+    course_description:
+      "Sports psychology including psychological aspects of sports, motivation, and performance psychology.",
+    prerequisites: "KINE 1",
+  },
+  {
+    id: "736",
+    course_code: "KINE 100",
+    course_name: "Physical Education",
+    course_units: "4",
+    course_description:
+      "Physical education including teaching physical education, curriculum development, and physical activity.",
+    prerequisites: "KINE 1",
+  },
+  {
+    id: "737",
+    course_code: "KINE 101",
+    course_name: "Athletic Training",
+    course_units: "4",
+    course_description:
+      "Athletic training including sports medicine, injury prevention, and athletic care.",
+    prerequisites: "KINE 1",
+  },
+  {
+    id: "738",
+    course_code: "KINE 102",
+    course_name: "Fitness and Wellness",
+    course_units: "4",
+    course_description:
+      "Fitness and wellness including personal fitness, wellness programs, and health promotion.",
+    prerequisites: "KINE 1",
+  },
+  {
+    id: "739",
+    course_code: "KINE 103",
+    course_name: "Adapted Physical Education",
+    course_units: "4",
+    course_description:
+      "Adapted physical education including special populations, adaptive sports, and inclusive physical activity.",
+    prerequisites: "KINE 1",
+  },
+  {
+    id: "740",
+    course_code: "KINE 104",
+    course_name: "Kinesiology Research",
+    course_units: "4",
+    course_description:
+      "Kinesiology research including research methods, data analysis, and kinesiology research design.",
+    prerequisites: "KINE 1",
+  },
+
+  // Additional Environmental Science Courses
+  {
+    id: "741",
+    course_code: "ENVS 1",
+    course_name: "Introduction to Environmental Science",
+    course_units: "4",
+    course_description:
+      "Introduction to environmental science including environmental systems, ecological principles, and environmental issues.",
+    prerequisites: "None",
+  },
+  {
+    id: "742",
+    course_code: "ENVS 2",
+    course_name: "Environmental Chemistry",
+    course_units: "4",
+    course_description:
+      "Environmental chemistry including environmental pollutants, chemical processes, and environmental analysis.",
+    prerequisites: "ENVS 1",
+  },
+  {
+    id: "743",
+    course_code: "ENVS 3",
+    course_name: "Environmental Biology",
+    course_units: "4",
+    course_description:
+      "Environmental biology including ecological systems, biodiversity, and environmental biology.",
+    prerequisites: "ENVS 1",
+  },
+  {
+    id: "744",
+    course_code: "ENVS 4",
+    course_name: "Environmental Policy",
+    course_units: "4",
+    course_description:
+      "Environmental policy including environmental regulations, policy analysis, and environmental governance.",
+    prerequisites: "ENVS 1",
+  },
+  {
+    id: "745",
+    course_code: "ENVS 5",
+    course_name: "Environmental Economics",
+    course_units: "4",
+    course_description:
+      "Environmental economics including economic analysis of environmental issues, cost-benefit analysis, and environmental markets.",
+    prerequisites: "ENVS 1",
+  },
+  {
+    id: "746",
+    course_code: "ENVS 100",
+    course_name: "Climate Change",
+    course_units: "4",
+    course_description:
+      "Climate change including climate science, climate impacts, and climate policy.",
+    prerequisites: "ENVS 1",
+  },
+  {
+    id: "747",
+    course_code: "ENVS 101",
+    course_name: "Sustainability",
+    course_units: "4",
+    course_description:
+      "Sustainability including sustainable development, sustainable practices, and sustainability science.",
+    prerequisites: "ENVS 1",
+  },
+  {
+    id: "748",
+    course_code: "ENVS 102",
+    course_name: "Environmental Toxicology",
+    course_units: "4",
+    course_description:
+      "Environmental toxicology including environmental contaminants, toxic effects, and risk assessment.",
+    prerequisites: "ENVS 1",
+  },
+  {
+    id: "749",
+    course_code: "ENVS 103",
+    course_name: "Environmental Monitoring",
+    course_units: "4",
+    course_description:
+      "Environmental monitoring including environmental assessment, monitoring techniques, and environmental data.",
+    prerequisites: "ENVS 1",
+  },
+  {
+    id: "750",
+    course_code: "ENVS 104",
+    course_name: "Environmental Research",
+    course_units: "4",
+    course_description:
+      "Environmental research including research methods, environmental analysis, and environmental research design.",
+    prerequisites: "ENVS 1",
+  },
 ];
