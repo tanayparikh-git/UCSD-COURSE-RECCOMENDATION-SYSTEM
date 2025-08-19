@@ -1,158 +1,216 @@
-# 🎓 Course Recommendation System
+# 🎓 UCSD Course Recommendation System
 
-A comprehensive course recommendation system built with Google Gemini AI, Supabase, and modern web technologies.
+A modern, full-stack course recommendation system built with React, TypeScript, Google Gemini AI, and Supabase.
 
 ## 🚀 Features
 
-- **5,261 UCSD Courses**: Complete course catalog with search functionality
-- **AI-Powered Recommendations**: Google Gemini AI for intelligent course suggestions
-- **Modern Web Interface**: Clean, responsive design
-- **Real-time Search**: Instant course search by name, code, or description
-- **Supabase Backend**: Scalable database with real-time capabilities
+- **🎨 Modern React UI**: Beautiful, responsive interface built with TypeScript and Tailwind CSS
+- **🧠 AI-Powered Recommendations**: Google Gemini AI for intelligent course suggestions
+- **📊 5,261 UCSD Courses**: Complete course catalog with real-time search
+- **⚡ Fast Performance**: Vite-powered development with instant hot reload
+- **🌐 Real-time Database**: Supabase backend with PostgreSQL
+- **🔍 Advanced Search**: Semantic search and keyword-based filtering
 
 ## 🛠️ Tech Stack
 
-- **Backend**: Python, Google Gemini AI, Supabase
-- **Frontend**: HTML, CSS, JavaScript
-- **Database**: Supabase (PostgreSQL)
-- **AI**: Google Gemini 1.5 Pro
-- **Deployment**: Vercel (frontend), Railway/Render (backend)
+### Frontend
+
+- **React 18** with TypeScript
+- **Tailwind CSS** for styling
+- **Vite** for fast development
+- **React Router** for navigation
+
+### Backend
+
+- **Python** with Google Gemini AI
+- **Supabase** (PostgreSQL) for database
+- **Pandas** for data processing
+
+### AI & ML
+
+- **Google Gemini 1.5 Pro** for recommendations
+- **Semantic Search** with embeddings
+- **Intelligent Course Matching**
 
 ## 📁 Project Structure
 
 ```
-├── frontend.html              # Main web interface
-├── gemini_receng_optimized.py # AI recommendation engine
-├── webscraper.py             # Course data scraper
-├── courses.csv               # Course dataset (5,261 courses)
-├── clear_and_import.py       # Database import script
-├── requirements.txt          # Python dependencies
-├── .env                      # Environment variables (not in repo)
-└── docs/                     # Documentation
-    ├── QUICK_START_MAGICPATTERNS.md
-    └── MAGICPATTERNS_WITH_API_KEY.md
+├── src/                          # React frontend
+│   ├── components/               # React components
+│   ├── pages/                    # Page components
+│   ├── contexts/                 # React contexts
+│   ├── utils/                    # Utility functions
+│   └── App.tsx                   # Main app component
+├── backend/                      # Python backend
+│   ├── gemini_receng_optimized.py # AI recommendation engine
+│   ├── webscraper.py            # Course data scraper
+│   ├── clear_and_import.py      # Database import script
+│   └── requirements.txt         # Python dependencies
+├── data/                         # Data files
+│   ├── courses.csv              # Course dataset (5,261 courses)
+│   └── embeddings_cache.pkl     # AI embeddings cache
+├── docs/                         # Documentation
+│   ├── MAGICPATTERNS_WITH_API_KEY.md
+│   └── SUPABASE_SETUP_GUIDE.md
+└── package.json                  # Node.js dependencies
 ```
 
 ## 🚀 Quick Start
 
-### Option 1: Use the Ready-Made Frontend (1 minute)
-1. **Open `frontend.html`** in your browser
-2. **Search for courses** - try "computer science", "math", "physics"
-3. **That's it!** No setup needed
-
-### Option 2: Deploy to Vercel (5 minutes)
-1. Go to [Vercel](https://vercel.com)
-2. Connect your GitHub repository
-3. Deploy `frontend.html`
-4. Get a live URL instantly
-
-### Option 3: Use MagicPatterns (10 minutes)
-1. Follow the guide in `MAGICPATTERNS_WITH_API_KEY.md`
-2. Use your MagicPatterns API key
-3. Build custom UI components
-
-## 🔧 Development Setup
-
 ### Prerequisites
+
+- Node.js 18+
 - Python 3.8+
 - Google Gemini API key
 - Supabase account
 
 ### Installation
+
+1. **Clone the repository**
+
 ```bash
-# Clone the repository
-git clone <your-repo-url>
-cd indep
+git clone https://github.com/tanayparikh-git/UCSD-Course-Reccomendation.git
+cd UCSD-Course-Reccomendation
+```
 
-# Install dependencies
+2. **Install frontend dependencies**
+
+```bash
+npm install
+```
+
+3. **Install backend dependencies**
+
+```bash
 pip install -r requirements.txt
+```
 
-# Set up environment variables
+4. **Set up environment variables**
+
+```bash
 cp .env.example .env
 # Edit .env with your API keys
 ```
 
 ### Environment Variables
-Create a `.env` file with:
+
 ```env
+# Google Gemini AI
 GOOGLE_API_KEY=your_gemini_api_key
+
+# Supabase
 SUPABASE_URL=your_supabase_url
 SUPABASE_ANON_KEY=your_supabase_anon_key
+```
+
+### Development
+
+1. **Start the frontend development server**
+
+```bash
+npm run dev
+```
+
+2. **Run the backend AI engine**
+
+```bash
+python backend/gemini_receng_optimized.py
+```
+
+3. **Open your browser** to `http://localhost:5173`
+
+## 🎨 UI Features
+
+### Modern Design
+
+- **Responsive Layout**: Works on desktop, tablet, and mobile
+- **Dark/Light Mode**: Toggle between themes
+- **Smooth Animations**: CSS transitions and micro-interactions
+- **Accessibility**: WCAG compliant design
+
+### Course Search
+
+- **Real-time Search**: Instant results as you type
+- **Advanced Filters**: Filter by department, units, prerequisites
+- **Semantic Search**: Find courses by meaning, not just keywords
+- **AI Recommendations**: Personalized course suggestions
+
+### Course Display
+
+- **Course Cards**: Clean, informative course information
+- **Detailed Views**: Full course descriptions and prerequisites
+- **Similar Courses**: AI-powered course recommendations
+- **Save Favorites**: Bookmark courses for later
+
+## 🧠 AI Features
+
+### Intelligent Recommendations
+
+- **User Interest Analysis**: Understand what you want to learn
+- **Prerequisite Tracking**: Ensure you meet course requirements
+- **Difficulty Matching**: Suggest courses at your level
+- **Learning Paths**: Create sequences of related courses
+
+### Semantic Search
+
+- **Natural Language**: Search using everyday language
+- **Context Understanding**: AI understands course relationships
+- **Smart Ranking**: Most relevant courses appear first
+- **Query Expansion**: Find courses even with partial information
+
+## 🌐 API Integration
+
+### Supabase REST API
+
+- **Real-time Data**: Live course information
+- **User Authentication**: Secure user accounts
+- **Favorites System**: Save preferred courses
+- **Search Analytics**: Track popular searches
+
+### Frontend-Backend Communication
+
+- **RESTful API**: Clean, predictable endpoints
+- **TypeScript Types**: Type-safe API calls
+- **Error Handling**: Graceful error management
+- **Loading States**: Smooth user experience
+
+## 🚀 Deployment
+
+### Frontend (Vercel)
+
+```bash
+npm run build
+# Deploy to Vercel
+```
+
+### Backend (Railway/Render)
+
+```bash
+# Deploy Python backend
+# Set environment variables
 ```
 
 ## 📊 Database Schema
 
 ### Courses Table
-- `id`: UUID (Primary Key)
-- `course_code`: VARCHAR(20) - Course code (e.g., "CSE 101")
-- `course_name`: TEXT - Course name
-- `course_units`: VARCHAR(10) - Credit units
-- `course_description`: TEXT - Course description
-- `prerequisites`: TEXT - Prerequisites
 
-## 🧠 AI Recommendation Engine
-
-The system uses Google Gemini AI to provide intelligent course recommendations based on:
-- User interests
-- Completed courses
-- Course similarity
-- Prerequisites
-
-### Features
-- **Semantic Search**: Find courses by meaning, not just keywords
-- **Smart Recommendations**: AI-powered course suggestions
-- **Caching**: Optimized performance with embedding cache
-- **Similarity Matching**: Find similar courses
-
-## 🌐 API Endpoints
-
-### Supabase REST API
-- `GET /rest/v1/courses` - Get all courses
-- `GET /rest/v1/courses?select=*&or=(course_name.ilike.%term%)` - Search courses
-- `GET /rest/v1/courses?id=eq.{id}` - Get specific course
-
-### Frontend Integration
-The frontend connects directly to Supabase using the JavaScript client.
-
-## 🎨 UI Components
-
-### Search Interface
-- Real-time search input
-- Course results grid
-- Responsive design
-- Modern styling
-
-### Course Cards
-- Course code and name
-- Credit units
-- Description preview
-- Hover effects
-
-## 🚀 Deployment
-
-### Frontend (Vercel)
-1. Connect GitHub repository to Vercel
-2. Deploy automatically on push
-3. Custom domain support
-
-### Backend (Railway/Render)
-1. Deploy Python backend
-2. Set environment variables
-3. Connect to Supabase
-
-## 📈 Performance
-
-- **5,261 courses** in database
-- **Real-time search** with instant results
-- **AI-powered recommendations** with caching
-- **Responsive design** for all devices
+```sql
+CREATE TABLE courses (
+    id UUID PRIMARY KEY,
+    course_code VARCHAR(20) UNIQUE,
+    course_name TEXT,
+    course_units VARCHAR(10),
+    course_description TEXT,
+    prerequisites TEXT
+);
+```
 
 ## 🔒 Security
 
-- **Environment variables** for sensitive data
-- **Supabase RLS** for database security
-- **API key management** for external services
-- **CORS configuration** for web security
+- **Environment Variables**: Secure API key management
+- **Supabase RLS**: Row-level security for data
+- **CORS Configuration**: Secure cross-origin requests
+- **Input Validation**: Sanitize user inputs
 
 ## 🤝 Contributing
 
@@ -163,21 +221,22 @@ The frontend connects directly to Supabase using the JavaScript client.
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+MIT License - see LICENSE file for details
 
 ## 🆘 Support
 
 - **Documentation**: Check the `docs/` folder
 - **Issues**: Create an issue on GitHub
-- **Questions**: Check the troubleshooting guides
+- **Discussions**: Use GitHub Discussions
 
 ## 🎉 Acknowledgments
 
 - **UCSD**: Course data source
 - **Google**: Gemini AI platform
 - **Supabase**: Database and backend
-- **MagicPatterns**: UI components (optional)
+- **Vite**: Fast build tool
+- **Tailwind CSS**: Utility-first CSS framework
 
 ---
 
-**Built with ❤️ for better course discovery**
+**Built with ❤️ for better course discovery at UCSD**
