@@ -270,6 +270,41 @@ class AIService {
       }
     }
 
+    // History & Historical Studies
+    if (searchTerm.includes('history') || searchTerm.includes('historical') || searchTerm.includes('ancient') || searchTerm.includes('medieval') || searchTerm.includes('modern') || searchTerm.includes('civilization') || searchTerm.includes('warfare') || searchTerm.includes('military') || searchTerm.includes('archaeology')) {
+      if (courseCode.startsWith('hist') || courseDesc.includes('history') || courseDesc.includes('historical') || courseDesc.includes('ancient') || courseDesc.includes('medieval') || courseDesc.includes('modern') || courseDesc.includes('civilization') || courseDesc.includes('warfare') || courseDesc.includes('military') || courseDesc.includes('archaeology')) {
+        return 0.6;
+      }
+    }
+
+    // Political Science & Government
+    if (searchTerm.includes('political') || searchTerm.includes('politics') || searchTerm.includes('government') || searchTerm.includes('democracy') || searchTerm.includes('international relations') || searchTerm.includes('public policy') || searchTerm.includes('political theory') || searchTerm.includes('voting') || searchTerm.includes('diplomacy') || searchTerm.includes('security')) {
+      if (courseCode.startsWith('poli') || courseDesc.includes('political') || courseDesc.includes('politics') || courseDesc.includes('government') || courseDesc.includes('democracy') || courseDesc.includes('international relations') || courseDesc.includes('public policy') || courseDesc.includes('political theory') || courseDesc.includes('voting') || courseDesc.includes('diplomacy') || courseDesc.includes('security')) {
+        return 0.6;
+      }
+    }
+
+    // Sociology & Social Studies
+    if (searchTerm.includes('sociology') || searchTerm.includes('social') || searchTerm.includes('society') || searchTerm.includes('inequality') || searchTerm.includes('family') || searchTerm.includes('education') || searchTerm.includes('urban') || searchTerm.includes('community') || searchTerm.includes('social problems') || searchTerm.includes('social theory')) {
+      if (courseCode.startsWith('soc') || courseDesc.includes('sociology') || courseDesc.includes('social') || courseDesc.includes('society') || courseDesc.includes('inequality') || courseDesc.includes('family') || courseDesc.includes('education') || courseDesc.includes('urban') || courseDesc.includes('community') || courseDesc.includes('social problems') || courseDesc.includes('social theory')) {
+        return 0.6;
+      }
+    }
+
+    // Anthropology & Cultural Studies
+    if (searchTerm.includes('anthropology') || searchTerm.includes('cultural') || searchTerm.includes('culture') || searchTerm.includes('ethnography') || searchTerm.includes('evolution') || searchTerm.includes('archaeology') || searchTerm.includes('linguistic') || searchTerm.includes('fieldwork') || searchTerm.includes('cross-cultural')) {
+      if (courseCode.startsWith('anth') || courseDesc.includes('anthropology') || courseDesc.includes('cultural') || courseDesc.includes('culture') || courseDesc.includes('ethnography') || courseDesc.includes('evolution') || courseDesc.includes('archaeology') || courseDesc.includes('linguistic') || courseDesc.includes('fieldwork') || courseDesc.includes('cross-cultural')) {
+        return 0.6;
+      }
+    }
+
+    // Philosophy & Logic
+    if (searchTerm.includes('philosophy') || searchTerm.includes('philosophical') || searchTerm.includes('logic') || searchTerm.includes('ethics') || searchTerm.includes('metaphysics') || searchTerm.includes('epistemology') || searchTerm.includes('moral') || searchTerm.includes('reasoning') || searchTerm.includes('consciousness') || searchTerm.includes('mind')) {
+      if (courseCode.startsWith('phil') || courseDesc.includes('philosophy') || courseDesc.includes('philosophical') || courseDesc.includes('logic') || courseDesc.includes('ethics') || courseDesc.includes('metaphysics') || courseDesc.includes('epistemology') || courseDesc.includes('moral') || courseDesc.includes('reasoning') || courseDesc.includes('consciousness') || courseDesc.includes('mind')) {
+        return 0.6;
+      }
+    }
+
     return 0;
   }
 
