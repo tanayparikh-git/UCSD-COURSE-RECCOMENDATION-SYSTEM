@@ -9,6 +9,7 @@ import { aiService, Course, AIRecommendation } from "./services/aiService";
 import { mockCourses } from "./utils/mockData";
 
 export function App() {
+  console.log("App component rendering");
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCourse, setSelectedCourse] = useState<Course | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
