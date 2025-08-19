@@ -389,6 +389,41 @@ class AIService {
       }
     }
 
+    // Urban Planning & Development
+    if (searchTerm.includes('urban planning') || searchTerm.includes('planning') || searchTerm.includes('land use') || searchTerm.includes('transportation planning') || searchTerm.includes('environmental planning') || searchTerm.includes('housing') || searchTerm.includes('community development') || searchTerm.includes('regional planning') || searchTerm.includes('zoning') || searchTerm.includes('development regulations') || searchTerm.includes('transit systems') || searchTerm.includes('neighborhood development')) {
+      if (courseCode.startsWith('usp') || courseDesc.includes('urban planning') || courseDesc.includes('planning') || courseDesc.includes('land use') || courseDesc.includes('transportation planning') || courseDesc.includes('environmental planning') || courseDesc.includes('housing') || courseDesc.includes('community development') || courseDesc.includes('regional planning') || courseDesc.includes('zoning') || courseDesc.includes('development regulations') || courseDesc.includes('transit systems') || courseDesc.includes('neighborhood development')) {
+        return 0.6;
+      }
+    }
+
+    // Public Policy & Administration
+    if (searchTerm.includes('public policy') || searchTerm.includes('policy analysis') || searchTerm.includes('public administration') || searchTerm.includes('policy implementation') || searchTerm.includes('public budgeting') || searchTerm.includes('health policy') || searchTerm.includes('education policy') || searchTerm.includes('environmental policy') || searchTerm.includes('social policy') || searchTerm.includes('policy research') || searchTerm.includes('evidence-based policymaking') || searchTerm.includes('fiscal policy')) {
+      if (courseCode.startsWith('poli') || courseDesc.includes('public policy') || courseDesc.includes('policy analysis') || courseDesc.includes('public administration') || courseDesc.includes('policy implementation') || courseDesc.includes('public budgeting') || courseDesc.includes('health policy') || courseDesc.includes('education policy') || courseDesc.includes('environmental policy') || courseDesc.includes('social policy') || courseDesc.includes('policy research') || courseDesc.includes('evidence-based policymaking') || courseDesc.includes('fiscal policy')) {
+        return 0.6;
+      }
+    }
+
+    // Public Health & Epidemiology
+    if (searchTerm.includes('public health') || searchTerm.includes('epidemiology') || searchTerm.includes('biostatistics') || searchTerm.includes('health behavior') || searchTerm.includes('environmental health') || searchTerm.includes('health policy') || searchTerm.includes('global health') || searchTerm.includes('health communication') || searchTerm.includes('community health') || searchTerm.includes('health promotion') || searchTerm.includes('disease patterns') || searchTerm.includes('health systems')) {
+      if (courseCode.startsWith('fmph') || courseDesc.includes('public health') || courseDesc.includes('epidemiology') || courseDesc.includes('biostatistics') || courseDesc.includes('health behavior') || courseDesc.includes('environmental health') || courseDesc.includes('health policy') || courseDesc.includes('global health') || courseDesc.includes('health communication') || courseDesc.includes('community health') || courseDesc.includes('health promotion') || courseDesc.includes('disease patterns') || courseDesc.includes('health systems')) {
+        return 0.6;
+      }
+    }
+
+    // Social Work & Human Services
+    if (searchTerm.includes('social work') || searchTerm.includes('human behavior') || searchTerm.includes('social policy') || searchTerm.includes('child welfare') || searchTerm.includes('mental health') || searchTerm.includes('aging') || searchTerm.includes('gerontology') || searchTerm.includes('substance abuse') || searchTerm.includes('community organizing') || searchTerm.includes('case management') || searchTerm.includes('intervention methods') || searchTerm.includes('social services')) {
+      if (courseCode.startsWith('socw') || courseDesc.includes('social work') || courseDesc.includes('human behavior') || courseDesc.includes('social policy') || courseDesc.includes('child welfare') || courseDesc.includes('mental health') || courseDesc.includes('aging') || courseDesc.includes('gerontology') || courseDesc.includes('substance abuse') || courseDesc.includes('community organizing') || courseDesc.includes('case management') || courseDesc.includes('intervention methods') || courseDesc.includes('social services')) {
+        return 0.6;
+      }
+    }
+
+    // Information Science & Technology
+    if (searchTerm.includes('information science') || searchTerm.includes('information systems') || searchTerm.includes('data science') || searchTerm.includes('information retrieval') || searchTerm.includes('human-computer interaction') || searchTerm.includes('information ethics') || searchTerm.includes('digital libraries') || searchTerm.includes('information policy') || searchTerm.includes('knowledge management') || searchTerm.includes('information visualization') || searchTerm.includes('database management') || searchTerm.includes('user interface design')) {
+      if (courseCode.startsWith('info') || courseDesc.includes('information science') || courseDesc.includes('information systems') || courseDesc.includes('data science') || courseDesc.includes('information retrieval') || courseDesc.includes('human-computer interaction') || courseDesc.includes('information ethics') || courseDesc.includes('digital libraries') || courseDesc.includes('information policy') || courseDesc.includes('knowledge management') || courseDesc.includes('information visualization') || courseDesc.includes('database management') || courseDesc.includes('user interface design')) {
+        return 0.6;
+      }
+    }
+
     return 0;
   }
 

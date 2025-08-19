@@ -4618,4 +4618,464 @@ export const courseDatabase: CourseData[] = [
       "Architectural theory including theoretical frameworks, critical analysis, and architectural philosophy.",
     prerequisites: "ARCH 1",
   },
+
+  // Additional Urban Planning Courses
+  {
+    id: "501",
+    course_code: "USP 1",
+    course_name: "Introduction to Urban Planning",
+    course_units: "4",
+    course_description:
+      "Introduction to urban planning including planning theory, urban development, and planning processes.",
+    prerequisites: "None",
+  },
+  {
+    id: "502",
+    course_code: "USP 2",
+    course_name: "Urban Design",
+    course_units: "4",
+    course_description:
+      "Urban design including design principles, spatial planning, and urban form analysis.",
+    prerequisites: "USP 1",
+  },
+  {
+    id: "503",
+    course_code: "USP 3",
+    course_name: "Land Use Planning",
+    course_units: "4",
+    course_description:
+      "Land use planning including zoning, development regulations, and land use policy.",
+    prerequisites: "USP 1",
+  },
+  {
+    id: "504",
+    course_code: "USP 4",
+    course_name: "Transportation Planning",
+    course_units: "4",
+    course_description:
+      "Transportation planning including transit systems, traffic analysis, and transportation policy.",
+    prerequisites: "USP 1",
+  },
+  {
+    id: "505",
+    course_code: "USP 5",
+    course_name: "Environmental Planning",
+    course_units: "4",
+    course_description:
+      "Environmental planning including environmental impact assessment, sustainability, and natural resource planning.",
+    prerequisites: "USP 1",
+  },
+  {
+    id: "506",
+    course_code: "USP 100",
+    course_name: "Housing and Community Development",
+    course_units: "4",
+    course_description:
+      "Housing and community development including affordable housing, community planning, and neighborhood development.",
+    prerequisites: "USP 1",
+  },
+  {
+    id: "507",
+    course_code: "USP 101",
+    course_name: "Regional Planning",
+    course_units: "4",
+    course_description:
+      "Regional planning including metropolitan planning, regional governance, and intergovernmental coordination.",
+    prerequisites: "USP 1",
+  },
+  {
+    id: "508",
+    course_code: "USP 102",
+    course_name: "Planning Law and Policy",
+    course_units: "4",
+    course_description:
+      "Planning law and policy including legal frameworks, regulatory processes, and planning policy analysis.",
+    prerequisites: "USP 1",
+  },
+  {
+    id: "509",
+    course_code: "USP 103",
+    course_name: "Economic Development Planning",
+    course_units: "4",
+    course_description:
+      "Economic development planning including economic analysis, development strategies, and planning for growth.",
+    prerequisites: "USP 1",
+  },
+  {
+    id: "510",
+    course_code: "USP 104",
+    course_name: "Planning Methods and Analysis",
+    course_units: "4",
+    course_description:
+      "Planning methods and analysis including research methods, data analysis, and planning evaluation.",
+    prerequisites: "USP 1",
+  },
+
+  // Additional Public Policy Courses
+  {
+    id: "511",
+    course_code: "POLI 200",
+    course_name: "Introduction to Public Policy",
+    course_units: "4",
+    course_description:
+      "Introduction to public policy including policy analysis, policy-making processes, and policy evaluation.",
+    prerequisites: "None",
+  },
+  {
+    id: "512",
+    course_code: "POLI 201",
+    course_name: "Policy Analysis",
+    course_units: "4",
+    course_description:
+      "Policy analysis including analytical frameworks, policy evaluation methods, and evidence-based policymaking.",
+    prerequisites: "POLI 200",
+  },
+  {
+    id: "513",
+    course_code: "POLI 202",
+    course_name: "Public Administration",
+    course_units: "4",
+    course_description:
+      "Public administration including organizational theory, public management, and administrative processes.",
+    prerequisites: "POLI 200",
+  },
+  {
+    id: "514",
+    course_code: "POLI 203",
+    course_name: "Policy Implementation",
+    course_units: "4",
+    course_description:
+      "Policy implementation including implementation strategies, program management, and policy outcomes.",
+    prerequisites: "POLI 200",
+  },
+  {
+    id: "515",
+    course_code: "POLI 204",
+    course_name: "Public Budgeting",
+    course_units: "4",
+    course_description:
+      "Public budgeting including budget processes, fiscal policy, and financial management in government.",
+    prerequisites: "POLI 200",
+  },
+  {
+    id: "516",
+    course_code: "POLI 205",
+    course_name: "Health Policy",
+    course_units: "4",
+    course_description:
+      "Health policy including healthcare systems, health policy analysis, and public health policy.",
+    prerequisites: "POLI 200",
+  },
+  {
+    id: "517",
+    course_code: "POLI 206",
+    course_name: "Education Policy",
+    course_units: "4",
+    course_description:
+      "Education policy including educational systems, education reform, and policy analysis in education.",
+    prerequisites: "POLI 200",
+  },
+  {
+    id: "518",
+    course_code: "POLI 207",
+    course_name: "Environmental Policy",
+    course_units: "4",
+    course_description:
+      "Environmental policy including environmental regulations, sustainability policy, and environmental governance.",
+    prerequisites: "POLI 200",
+  },
+  {
+    id: "519",
+    course_code: "POLI 208",
+    course_name: "Social Policy",
+    course_units: "4",
+    course_description:
+      "Social policy including welfare policy, social services, and policy for vulnerable populations.",
+    prerequisites: "POLI 200",
+  },
+  {
+    id: "520",
+    course_code: "POLI 209",
+    course_name: "Policy Research Methods",
+    course_units: "4",
+    course_description:
+      "Policy research methods including research design, data collection, and policy evaluation methods.",
+    prerequisites: "POLI 200",
+  },
+
+  // Additional Public Health Courses
+  {
+    id: "521",
+    course_code: "FMPH 1",
+    course_name: "Introduction to Public Health",
+    course_units: "4",
+    course_description:
+      "Introduction to public health including public health principles, population health, and health systems.",
+    prerequisites: "None",
+  },
+  {
+    id: "522",
+    course_code: "FMPH 2",
+    course_name: "Epidemiology",
+    course_units: "4",
+    course_description:
+      "Epidemiology including disease patterns, study design, and epidemiological methods.",
+    prerequisites: "FMPH 1",
+  },
+  {
+    id: "523",
+    course_code: "FMPH 3",
+    course_name: "Biostatistics",
+    course_units: "4",
+    course_description:
+      "Biostatistics including statistical methods, data analysis, and statistical inference in public health.",
+    prerequisites: "STAT 10",
+  },
+  {
+    id: "524",
+    course_code: "FMPH 4",
+    course_name: "Health Behavior",
+    course_units: "4",
+    course_description:
+      "Health behavior including behavioral theory, health promotion, and behavior change interventions.",
+    prerequisites: "FMPH 1",
+  },
+  {
+    id: "525",
+    course_code: "FMPH 5",
+    course_name: "Environmental Health",
+    course_units: "4",
+    course_description:
+      "Environmental health including environmental hazards, health effects, and environmental health policy.",
+    prerequisites: "FMPH 1",
+  },
+  {
+    id: "526",
+    course_code: "FMPH 100",
+    course_name: "Health Policy and Management",
+    course_units: "4",
+    course_description:
+      "Health policy and management including healthcare systems, health policy analysis, and healthcare management.",
+    prerequisites: "FMPH 1",
+  },
+  {
+    id: "527",
+    course_code: "FMPH 101",
+    course_name: "Global Health",
+    course_units: "4",
+    course_description:
+      "Global health including international health issues, global health policy, and health disparities.",
+    prerequisites: "FMPH 1",
+  },
+  {
+    id: "528",
+    course_code: "FMPH 102",
+    course_name: "Health Communication",
+    course_units: "4",
+    course_description:
+      "Health communication including health messaging, risk communication, and health education.",
+    prerequisites: "FMPH 1",
+  },
+  {
+    id: "529",
+    course_code: "FMPH 103",
+    course_name: "Community Health",
+    course_units: "4",
+    course_description:
+      "Community health including community health assessment, community interventions, and health promotion.",
+    prerequisites: "FMPH 1",
+  },
+  {
+    id: "530",
+    course_code: "FMPH 104",
+    course_name: "Public Health Research",
+    course_units: "4",
+    course_description:
+      "Public health research including research methods, program evaluation, and public health surveillance.",
+    prerequisites: "FMPH 1",
+  },
+
+  // Additional Social Work Courses
+  {
+    id: "531",
+    course_code: "SOCW 1",
+    course_name: "Introduction to Social Work",
+    course_units: "4",
+    course_description:
+      "Introduction to social work including social work values, ethics, and professional practice.",
+    prerequisites: "None",
+  },
+  {
+    id: "532",
+    course_code: "SOCW 2",
+    course_name: "Social Work Practice",
+    course_units: "4",
+    course_description:
+      "Social work practice including intervention methods, case management, and direct practice skills.",
+    prerequisites: "SOCW 1",
+  },
+  {
+    id: "533",
+    course_code: "SOCW 3",
+    course_name: "Human Behavior",
+    course_units: "4",
+    course_description:
+      "Human behavior including human development, social systems, and behavioral theory.",
+    prerequisites: "SOCW 1",
+  },
+  {
+    id: "534",
+    course_code: "SOCW 4",
+    course_name: "Social Policy",
+    course_units: "4",
+    course_description:
+      "Social policy including welfare policy, social services, and policy advocacy.",
+    prerequisites: "SOCW 1",
+  },
+  {
+    id: "535",
+    course_code: "SOCW 5",
+    course_name: "Research Methods",
+    course_units: "4",
+    course_description:
+      "Research methods including social work research, program evaluation, and evidence-based practice.",
+    prerequisites: "SOCW 1",
+  },
+  {
+    id: "536",
+    course_code: "SOCW 100",
+    course_name: "Child Welfare",
+    course_units: "4",
+    course_description:
+      "Child welfare including child protection, family services, and child welfare policy.",
+    prerequisites: "SOCW 1",
+  },
+  {
+    id: "537",
+    course_code: "SOCW 101",
+    course_name: "Mental Health",
+    course_units: "4",
+    course_description:
+      "Mental health including mental health assessment, treatment, and mental health policy.",
+    prerequisites: "SOCW 1",
+  },
+  {
+    id: "538",
+    course_code: "SOCW 102",
+    course_name: "Aging and Gerontology",
+    course_units: "4",
+    course_description:
+      "Aging and gerontology including aging services, elder care, and gerontological social work.",
+    prerequisites: "SOCW 1",
+  },
+  {
+    id: "539",
+    course_code: "SOCW 103",
+    course_name: "Substance Abuse",
+    course_units: "4",
+    course_description:
+      "Substance abuse including addiction treatment, prevention, and substance abuse policy.",
+    prerequisites: "SOCW 1",
+  },
+  {
+    id: "540",
+    course_code: "SOCW 104",
+    course_name: "Community Organizing",
+    course_units: "4",
+    course_description:
+      "Community organizing including community development, advocacy, and social change.",
+    prerequisites: "SOCW 1",
+  },
+
+  // Additional Information Science Courses
+  {
+    id: "541",
+    course_code: "INFO 1",
+    course_name: "Introduction to Information Science",
+    course_units: "4",
+    course_description:
+      "Introduction to information science including information systems, data management, and information theory.",
+    prerequisites: "None",
+  },
+  {
+    id: "542",
+    course_code: "INFO 2",
+    course_name: "Information Systems",
+    course_units: "4",
+    course_description:
+      "Information systems including system design, database management, and information technology.",
+    prerequisites: "INFO 1",
+  },
+  {
+    id: "543",
+    course_code: "INFO 3",
+    course_name: "Data Science",
+    course_units: "4",
+    course_description:
+      "Data science including data analysis, machine learning, and statistical computing.",
+    prerequisites: "INFO 1",
+  },
+  {
+    id: "544",
+    course_code: "INFO 4",
+    course_name: "Information Retrieval",
+    course_units: "4",
+    course_description:
+      "Information retrieval including search systems, information organization, and retrieval algorithms.",
+    prerequisites: "INFO 1",
+  },
+  {
+    id: "545",
+    course_code: "INFO 5",
+    course_name: "Human-Computer Interaction",
+    course_units: "4",
+    course_description:
+      "Human-computer interaction including user interface design, usability, and user experience.",
+    prerequisites: "INFO 1",
+  },
+  {
+    id: "546",
+    course_code: "INFO 100",
+    course_name: "Information Ethics",
+    course_units: "4",
+    course_description:
+      "Information ethics including privacy, security, and ethical issues in information technology.",
+    prerequisites: "INFO 1",
+  },
+  {
+    id: "547",
+    course_code: "INFO 101",
+    course_name: "Digital Libraries",
+    course_units: "4",
+    course_description:
+      "Digital libraries including digital collections, metadata, and library information systems.",
+    prerequisites: "INFO 1",
+  },
+  {
+    id: "548",
+    course_code: "INFO 102",
+    course_name: "Information Policy",
+    course_units: "4",
+    course_description:
+      "Information policy including information governance, policy analysis, and information law.",
+    prerequisites: "INFO 1",
+  },
+  {
+    id: "549",
+    course_code: "INFO 103",
+    course_name: "Knowledge Management",
+    course_units: "4",
+    course_description:
+      "Knowledge management including knowledge systems, organizational learning, and knowledge sharing.",
+    prerequisites: "INFO 1",
+  },
+  {
+    id: "550",
+    course_code: "INFO 104",
+    course_name: "Information Visualization",
+    course_units: "4",
+    course_description:
+      "Information visualization including data visualization, visual analytics, and information design.",
+    prerequisites: "INFO 1",
+  },
 ];
