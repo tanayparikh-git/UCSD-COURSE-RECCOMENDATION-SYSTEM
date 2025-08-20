@@ -138,12 +138,13 @@ export function App() {
           </p>
         </div>
 
-        {/* Fake Reviews Section - Moved to Top */}
-        <div className="max-w-6xl mx-auto mb-12">
-          <h2 className="text-2xl font-bold text-center text-[#003B5C] mb-8">
-            What Students Are Saying
-          </h2>
-          <div className="grid md:grid-cols-3 gap-6">
+        {/* Fake Reviews Section - Only show when no search query */}
+        {!searchQuery && (
+          <div className="max-w-6xl mx-auto mb-12">
+            <h2 className="text-2xl font-bold text-center text-[#003B5C] mb-8">
+              What Students Are Saying
+            </h2>
+            <div className="grid md:grid-cols-3 gap-6">
             {/* 5 Star Review */}
             <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-green-500">
               <div className="flex items-center mb-4">
@@ -209,6 +210,7 @@ export function App() {
             </div>
           </div>
         </div>
+        )}
 
         {/* Recommendations - Main Search Results */}
         {searchQuery && (
